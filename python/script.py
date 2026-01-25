@@ -16,9 +16,7 @@ REPORT_HEADER_TEMPLATE = "# Report {}"
 REPORT_SECTION_SEPARATOR = "\n"
 GIT_COMMIT_MESSAGE_TEMPLATE = "docs: report of {} (auto commit)"
 
-def _run_research_for_ticker(api_key, search_config, ticker_code, prompt_template, output_directory, date_string):
-    client = genai.Client(api_key=api_key)
-    
+def _run_research_for_ticker(client, search_config, ticker_code, prompt_template, output_directory, date_string):
     response = client.models.generate_content(
         model="gemini-2.5-pro",
         contents=prompt_template.format(ticker_code=ticker_code),
@@ -31,11 +29,9 @@ def _run_research_for_ticker(api_key, search_config, ticker_code, prompt_templat
         f.write(response.text)
 
 def perform_initial_research(client, search_config, tickers, prompt_template, output_directory, date_string):
-    api_key = client.api_key
-
-    Parallel(n_jobs=-1)(
+    Parallel(n_jobs=-1, prefer="threads")(
         delayed(_run_research_for_ticker)(
-            api_key, 
+            client, 
             search_config, 
             ticker_code, 
             prompt_template, 
@@ -45,7 +41,7 @@ def perform_initial_research(client, search_config, tickers, prompt_template, ou
         for ticker_code in tickers
     )
 
-def _run_comparison_for_ticker(api_key, ticker_code, prompt_template, today_dir, previous_dir, date_string):
+def _run_comparison_for_ticker(client, ticker_code, prompt_template, today_dir, previous_dir, date_string):
     current_file = today_dir / f"{ticker_code}_{date_string}.md"
 
     if not current_file.exists():
@@ -58,8 +54,6 @@ def _run_comparison_for_ticker(api_key, ticker_code, prompt_template, today_dir,
     
     if previous_file.exists():
         previous_result = previous_file.read_text(encoding="utf-8")
-
-    client = genai.Client(api_key=api_key)
 
     response = client.models.generate_content(
         model="gemini-2.5-pro",
@@ -80,11 +74,10 @@ def generate_comparison_report(client, tickers, prompt_template, base_directory,
         return
 
     previous_dir = previous_dirs[-1]
-    api_key = client.api_key
 
-    results = Parallel(n_jobs=-1)(
+    results = Parallel(n_jobs=-1, prefer="threads")(
         delayed(_run_comparison_for_ticker)(
-            api_key,
+            client,
             ticker_code,
             prompt_template,
             today_dir,
