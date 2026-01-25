@@ -25,8 +25,11 @@ def _run_research_for_ticker(client, search_config, ticker_code, prompt_template
     
     output_file = output_directory / f"{ticker_code}_{date_string}.md"
 
+    # Fix: Handle cases where response.text is None (e.g., Safety Blocks)
+    content_to_write = response.text if response.text else f"Error: No content generated for {ticker_code} (Likely Safety Filter Block)."
+
     with output_file.open("w", encoding="utf-8") as f:
-        f.write(response.text)
+        f.write(content_to_write)
 
 def perform_initial_research(client, search_config, tickers, prompt_template, output_directory, date_string):
     Parallel(n_jobs=-1, prefer="threads")(
@@ -63,7 +66,10 @@ def _run_comparison_for_ticker(client, ticker_code, prompt_template, today_dir, 
         )
     )
 
-    return "## " + ticker_code + "\n\n" + response.text.replace("\n---\n", "")
+    # Fix: Handle cases where response.text is None
+    text_content = response.text if response.text else "Error: No comparison generated."
+
+    return "## " + ticker_code + "\n\n" + text_content.replace("\n---\n", "")
 
 def generate_comparison_report(client, tickers, prompt_template, base_directory, date_string):
     today_dir = base_directory / date_string
