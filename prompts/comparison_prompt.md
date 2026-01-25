@@ -51,7 +51,7 @@ Foque exclusivamente em mudanças que sejam **materiais para um investidor**, ta
 
 ## Formato de Saída (OBRIGATÓRIO)
 
-Sua resposta **deve seguir estritamente a estrutura abaixo**. Não adicione, remova ou reordene seções. Começe sua resposta diretamente com "1. Avaliação de Mudança" e siga com a resposta conforme as regras descritas a seguir.
+Sua resposta **deve seguir estritamente a estrutura abaixo**. Não adicione, remova ou reordene seções. Começe sua resposta diretamente com "### 1. Avaliação de Mudança", pule uma linha e siga com a resposta conforme as regras descritas a seguir.
 
 ---
 
@@ -91,4 +91,4 @@ Declare claramente **um** dos seguintes resultados:
 * Seja conciso e focado na tomada de decisão.
 * **Não especule** além do que está contido nos relatórios fornecidos.
 * Mantenha a formatação Markdown para garantir a legibilidade no relatório final.
-* Começe sua resposta diretamente com "1. Avaliação de Mudança" e siga com a resposta.
+* Começe sua resposta diretamente com "### 1. Avaliação de Mudança"
