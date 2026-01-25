@@ -4,31 +4,74 @@ from datetime import date
 from pathlib import Path
 from google import genai
 from google.genai import types
+from joblib import Parallel, delayed
 from tickers_list import tickers_list
 
 CREDENTIALS_PATH = Path("../credentials/credentials.json")
 RESEARCH_PROMPT_PATH = Path("../prompts/stocks_prompt.md")
 COMPARISON_PROMPT_PATH = Path("../prompts/comparison_prompt.md")
 RESULTS_BASE_DIR = Path("..") / "results"
-REPORT_HEADER_TEMPLATE = "# Report {}\n\n---\n\n"
-REPORT_SECTION_SEPARATOR = "\n\n---\n\n"
+
+REPORT_HEADER_TEMPLATE = "# Report {}"
+REPORT_SECTION_SEPARATOR = "\n"
 GIT_COMMIT_MESSAGE_TEMPLATE = "docs: report of {} (auto commit)"
 
-def perform_initial_research(client, search_config, tickers, prompt_template, output_directory, date_string):
-    for ticker_code in tickers:
-        response = client.models.generate_content(
-            model="gemini-2.5-pro",
-            contents=prompt_template.format(ticker_code=ticker_code),
-            config=search_config,
-        )
-        
-        output_file = output_directory / f"{ticker_code}_{date_string}.md"
+def _run_research_for_ticker(api_key, search_config, ticker_code, prompt_template, output_directory, date_string):
+    client = genai.Client(api_key=api_key)
+    
+    response = client.models.generate_content(
+        model="gemini-2.5-pro",
+        contents=prompt_template.format(ticker_code=ticker_code),
+        config=search_config,
+    )
+    
+    output_file = output_directory / f"{ticker_code}_{date_string}.md"
 
-        with output_file.open("w", encoding="utf-8") as f:
-            f.write(response.text)
+    with output_file.open("w", encoding="utf-8") as f:
+        f.write(response.text)
+
+def perform_initial_research(client, search_config, tickers, prompt_template, output_directory, date_string):
+    api_key = client.api_key
+
+    Parallel(n_jobs=-1)(
+        delayed(_run_research_for_ticker)(
+            api_key, 
+            search_config, 
+            ticker_code, 
+            prompt_template, 
+            output_directory, 
+            date_string
+        ) 
+        for ticker_code in tickers
+    )
+
+def _run_comparison_for_ticker(api_key, ticker_code, prompt_template, today_dir, previous_dir, date_string):
+    current_file = today_dir / f"{ticker_code}_{date_string}.md"
+
+    if not current_file.exists():
+        return None
+
+    current_result = current_file.read_text(encoding="utf-8")
+    
+    previous_file = previous_dir / f"{ticker_code}_{previous_dir.name}.md"
+    previous_result = 'NOT FOUND'
+    
+    if previous_file.exists():
+        previous_result = previous_file.read_text(encoding="utf-8")
+
+    client = genai.Client(api_key=api_key)
+
+    response = client.models.generate_content(
+        model="gemini-2.5-pro",
+        contents=prompt_template.format(
+            previous_result=previous_result,
+            current_result=current_result
+        )
+    )
+
+    return "## " + ticker_code + "\n\n" + response.text.replace("\n---\n", "")
 
 def generate_comparison_report(client, tickers, prompt_template, base_directory, date_string):
-    responses = []
     today_dir = base_directory / date_string
     
     previous_dirs = sorted([d for d in base_directory.iterdir() if d.is_dir() and d.name != date_string])
@@ -37,30 +80,21 @@ def generate_comparison_report(client, tickers, prompt_template, base_directory,
         return
 
     previous_dir = previous_dirs[-1]
+    api_key = client.api_key
 
-    for ticker_code in tickers:
-        current_file = today_dir / f"{ticker_code}_{date_string}.md"
-
-        if not current_file.exists():
-            continue
-
-        current_result = current_file.read_text(encoding="utf-8")
-        
-        previous_file = previous_dir / f"{ticker_code}_{previous_dir.name}.md"
-        previous_result = 'NOT FOUND'
-        
-        if previous_file.exists():
-            previous_result = previous_file.read_text(encoding="utf-8")
-
-        response = client.models.generate_content(
-            model="gemini-2.5-pro",
-            contents=prompt_template.format(
-                previous_result=previous_result,
-                current_result=current_result
-            )
+    results = Parallel(n_jobs=-1)(
+        delayed(_run_comparison_for_ticker)(
+            api_key,
+            ticker_code,
+            prompt_template,
+            today_dir,
+            previous_dir,
+            date_string
         )
+        for ticker_code in tickers
+    )
 
-        responses.append("## " + ticker_code + "\n\n" + response.text.replace("\n---\n", ""))
+    responses = [res for res in results if res is not None]
 
     final_report_content = REPORT_HEADER_TEMPLATE.format(date_string) + REPORT_SECTION_SEPARATOR.join(responses)
     output_file = today_dir / f"final_report_{date_string}.md"
