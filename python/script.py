@@ -24,8 +24,6 @@ def _run_research_for_ticker(client, search_config, ticker_code, prompt_template
     )
     
     output_file = output_directory / f"{ticker_code}_{date_string}.md"
-
-    # Fix: Handle cases where response.text is None (e.g., Safety Blocks)
     content_to_write = response.text if response.text else f"Error: No content generated for {ticker_code} (Likely Safety Filter Block)."
 
     with output_file.open("w", encoding="utf-8") as f:
@@ -65,8 +63,7 @@ def _run_comparison_for_ticker(client, ticker_code, prompt_template, today_dir, 
             current_result=current_result
         )
     )
-
-    # Fix: Handle cases where response.text is None
+    
     text_content = response.text if response.text else "Error: No comparison generated."
 
     return "## " + ticker_code + "\n\n" + text_content.replace("\n---\n", "")
