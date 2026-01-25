@@ -6,6 +6,6 @@ The core idea of the project is to automatically research the internet for **rec
 
 Instead of email notifications, the final outputs are sent directly to **Google Chat**, which is the primary communication tool used in the company I work in, making things very easy in my daily workflow.
 
-The project also persists daily results as **txt files**, building a chronological history of analyses. Before sending any new message, a final comparison step evaluates whether the current day’s output is meaningfully different from the previous day’s result, reducing noise and avoiding unnecessary notifications.
+The project also persists daily results as **markdown files**, building a chronological history of analyses. Before sending any new message, a final comparison step evaluates whether the current day’s output is meaningfully different from the previous day’s result, reducing noise and avoiding unnecessary notifications.
 
 The script is designed to run locally on **Ubuntu 22.04 LTS**, executed automatically as part of the system startup via shell configuration for my personal use case.
