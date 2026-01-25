@@ -19,13 +19,9 @@ tickers_list = [
     "PSSA3",
     "B3SA3",
     "RANI3",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    ""
+    "KLBN3",
+    "CMIG4",
+    "WEGE3",
+    "BPAC11",
+    "GRND3"
 ]
