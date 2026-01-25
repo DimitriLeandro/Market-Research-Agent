@@ -12,7 +12,7 @@ RESEARCH_PROMPT_PATH = Path("../prompts/stocks_prompt.md")
 COMPARISON_PROMPT_PATH = Path("../prompts/comparison_prompt.md")
 RESULTS_BASE_DIR = Path("..") / "results"
 
-REPORT_HEADER_TEMPLATE = "# Report {}"
+REPORT_HEADER_TEMPLATE = "# Report {}\n\n"
 REPORT_SECTION_SEPARATOR = "\n"
 GIT_COMMIT_MESSAGE_TEMPLATE = "docs: report of {} (auto commit)"
 

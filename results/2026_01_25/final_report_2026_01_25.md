@@ -1,4 +1,6 @@
-# Report 2026_01_25## BBAS3
+# Report 2026_01_25
+
+## BBAS3
 
 Com certeza. Segue a análise comparativa no formato solicitado.
 
