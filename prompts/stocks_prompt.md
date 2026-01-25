@@ -1,110 +1,164 @@
 # Market Intelligence Research Prompt
 
-You are an AI research analyst tasked with performing **comprehensive, up-to-date internet research** about the publicly traded Brazilian stock **{ticker_code}**.
+You are an AI research analyst tasked with performing **deep, multi-step, up-to-date internet research** about the publicly traded Brazilian stock **{ticker_code}**.
 
-Your objective is to synthesize **recent, credible, and relevant information** and assess the current market sentiment and short-term trend associated with this asset. Use only **reliable and widely recognized sources**, such as major financial news outlets, official company communications, regulatory filings, analyst reports, and reputable market commentary.
+Your task is not to rely on a single search or a superficial summary. Instead, you must actively **perform multiple targeted web searches**, from different analytical angles, and **synthesize evidence across sources** to form a robust, decision-relevant assessment.
+
+Use only **credible, authoritative, and recent sources**, such as major financial news outlets, official company releases, regulatory filings, analyst reports, and widely recognized market commentary. Prioritize information published or updated in the most recent days.
 
 ---
 
-## 1. Recent Price Behavior and Trend
+## 0. Research Methodology (Mandatory)
 
-* Analyze the **price movement over the last days and weeks**.
-* Indicate whether the short-term trend appears to be:
+Before synthesizing conclusions, you must:
 
-  * Stable
+* Perform **multiple independent search queries**, each focused on a different analytical dimension (price action, news, sentiment, risk, macro).
+* Cross-check information across more than one source whenever possible.
+* Favor primary or near-primary sources (earnings releases, official filings, reputable financial press).
+* Discard outdated, speculative, or low-credibility information.
+
+Your analysis must reflect **aggregation and comparison of search results**, not a single narrative.
+
+---
+
+## 1. Recent Price Behavior and Market Trend
+
+* Analyze the **price movement of {ticker_code} over the last days and weeks**.
+* Identify whether the short-term trend is best classified as:
+
+  * Stable / Range-bound
   * Mild upward movement
   * Strong upward movement
   * Mild downward movement
   * Strong downward movement
-* If available, mention **notable volatility**, unusual trading volume, or abrupt price changes.
+* Highlight:
+
+  * Unusual volatility
+  * Abnormal trading volume
+  * Sharp intraday or multi-day price moves
+* If the price reacted strongly to a specific event or news item, explicitly link the movement to that catalyst.
 
 ---
 
-## 2. Recent News and Material Events
+## 2. Recent News and Material Corporate Events
 
-Identify and summarize **recent news** directly related to {ticker_code}, focusing on events that may influence investor perception, including but not limited to:
+Identify and summarize **all material news related to {ticker_code}**, focusing on events that may influence valuation or investor expectations, including but not limited to:
 
-* Earnings releases or financial guidance
-* Dividend announcements, changes, or cancellations
+* Earnings results, earnings surprises, or guidance updates
+* Dividend announcements, changes, suspensions, or confirmations
 * Mergers, acquisitions, divestments, or strategic partnerships
-* Management or governance changes
-* Regulatory issues, investigations, fines, or lawsuits
-* Significant capital expenditures or funding activities
-* Credit rating changes or notable shifts in debt levels
+* Management, board, or governance changes
+* Regulatory actions, investigations, fines, or lawsuits
+* Capital expenditures, asset sales, refinancing, or funding activities
+* Credit rating actions or significant changes in debt profile
 
-Classify each major event as **market-positive**, **market-negative**, or **neutral**, and briefly explain why.
+For each major event:
+
+* Classify it as **market-positive**, **market-negative**, or **neutral**
+* Explain *why* the market is likely to perceive it that way
+* Indicate whether the impact is likely **short-term** or **structural**
 
 ---
 
-## 3. Investor and Market Sentiment
+## 3. Investor and Analyst Sentiment
 
-* Assess the **general sentiment** among investors and analysts based on recent commentary.
-* Identify whether sentiment is predominantly:
+Based on recent commentary and reports:
+
+* Assess the prevailing **investor and analyst sentiment** toward {ticker_code}
+* Classify sentiment as:
 
   * Bullish
   * Bearish
   * Mixed / Uncertain
-* Highlight recurring concerns, expectations, or narratives present in market discussions.
+* Identify:
+
+  * Recurrent concerns or risks emphasized by the market
+  * Common bullish narratives or positive expectations
+  * Points of disagreement among analysts or investors
+
+Avoid anecdotal opinions; focus on **patterns across multiple sources**.
 
 ---
 
-## 4. Dividends and Shareholder Returns
+## 4. Dividends and Shareholder Return Signals
 
-* Indicate whether the company has **recently announced or paid dividends**.
+* Determine whether the company has **recently announced, confirmed, or paid dividends**.
 * If applicable, summarize:
 
-  * Dividend amount and frequency
-  * Changes relative to prior payments
-  * Market reaction to dividend-related news
+  * Dividend value and frequency
+  * Changes versus historical payout patterns
+  * Market reaction to dividend-related announcements
+* Indicate whether dividend policy appears:
+
+  * Sustainable
+  * Under pressure
+  * Improved or strengthened
 
 ---
 
-## 5. Financial Health Signals
+## 5. Financial Health and Balance Sheet Signals
 
-Based on recent information, evaluate whether there are **signals of improvement or deterioration** in the company’s financial position, including:
+Using recent disclosures and analysis, evaluate whether there are **signals of improvement or deterioration** in the company’s financial condition, including:
 
-* Changes in debt levels or leverage
-* Liquidity concerns or improvements
-* Cash flow trends
-* Profitability pressures or margin expansion
+* Debt levels, leverage, and refinancing risk
+* Liquidity position and cash availability
+* Cash flow generation and sustainability
+* Profitability trends, margin compression, or expansion
+
+Explicitly note whether financial factors are acting as a **tailwind or headwind** for the stock.
 
 ---
 
 ## 6. Legal, Regulatory, and Risk Factors
 
-* Identify any **ongoing or recent legal, regulatory, or compliance issues**.
-* Note potential financial or reputational impacts.
-* Mention any government or regulatory actions that could materially affect the company.
+Identify any **ongoing or newly emerging risks**, including:
+
+* Legal disputes, lawsuits, or regulatory investigations
+* Fines, sanctions, or compliance-related penalties
+* Government or regulatory decisions that may materially affect operations
+
+Explain the **potential financial, operational, or reputational impact** of these risks.
 
 ---
 
-## 7. Macro and Sector-Level Influences
+## 7. Macro, Sector, and External Influences
 
-Analyze **external factors** that may impact {ticker_code}, such as:
+Analyze external forces that may influence {ticker_code}, such as:
 
-* Brazilian macroeconomic conditions (interest rates, inflation, fiscal policy)
-* Sector-specific trends or disruptions
-* Commodity prices, if relevant
-* Global economic or geopolitical developments
-* International market movements that may influence investor behavior
+* Brazilian macroeconomic conditions (interest rates, inflation, fiscal or monetary policy)
+* Sector-wide trends or structural shifts
+* Commodity price movements, if applicable
+* Global economic, geopolitical, or financial market developments
+* International market correlations affecting investor risk appetite
+
+Clarify whether these forces currently represent **supportive or adverse conditions** for the stock.
 
 ---
 
-## 8. Summary Assessment
+## 8. Integrated Assessment and Outlook
 
-Provide a **concise, well-reasoned synthesis** that answers the following:
+Provide a **clear, evidence-based synthesis** addressing:
 
-* What is the **overall short-term outlook** for {ticker_code} based on current information?
-* Is the dominant pressure on the stock **positive, negative, or neutral**?
-* What are the **key drivers** behind this assessment?
+* The overall **short-term outlook** for {ticker_code}
+* Whether the dominant pressure is **positive, negative, or neutral**
+* The **primary drivers** behind this outlook (news, fundamentals, sentiment, macro)
 
-Avoid speculation unsupported by sources. Prioritize factual accuracy, recency, and relevance.
+Avoid unsupported speculation. Base conclusions strictly on aggregated, recent, and credible information.
+
+Remember to perform **multiple independent search queries**, each focused on a different analytical dimension (price action, news, sentiment, risk, macro). 
+
+Remember to cross-check information across more than one source whenever possible.
+
+Remember to favor primary or near-primary sources (earnings releases, official filings, reputable financial press).
+
+Remember to discard outdated, speculative, or low-credibility information.
 
 ---
 
 ## Output Expectations
 
-* Write clearly and objectively.
-* Prefer structured paragraphs or bullet points where appropriate.
-* Focus on **decision-relevant insights**, not generic explanations.
-* Cite or reference the nature of sources implicitly (e.g., earnings report, major financial press, analyst commentary), without fabricating citations.
+* Write in a clear, analytical, and objective tone
+* Use structured sections and bullet points where appropriate
+* Focus on **actionable, decision-relevant insights**, not generic explanations
+* Reference the *type* of sources used (e.g., earnings report, major financial press, analyst commentary) without fabricating citations
+* Ensure internal consistency between evidence and conclusions
