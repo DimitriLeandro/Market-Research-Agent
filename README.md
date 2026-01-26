@@ -6,4 +6,8 @@ The core idea of the project is to automatically research the internet for **rec
 
 The project also persists daily results as **markdown files**, building a chronological history of analyses. Before sending any new message, a final comparison step evaluates whether the current day’s output is meaningfully different from the previous day’s result, reducing noise and avoiding unnecessary notifications.
 
-The script is designed to run locally on **Ubuntu 22.04 LTS**, executed automatically as part of the system startup via shell configuration for my personal use case.
+To visualize the results, a simple **Streamlit** web application displays the latest analyses, along with historical data and sentiment trends. To run the app locally, use the following command:
+
+```bash
+$ streamlit run python/app.py
+```
