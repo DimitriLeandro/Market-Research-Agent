@@ -1,6 +1,7 @@
 .ipynb_checkpoints
 __pycache__
 *.pyc
-*.json
+*.log
 credentials/
+logs/
 credentials.json
