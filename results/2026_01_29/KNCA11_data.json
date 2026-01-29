@@ -1,0 +1,30 @@
+{
+  "ticker": "KNCA11",
+  "analysis_date": "2026-01-29",
+  "overall_sentiment": "Bullish",
+  "sentiment_score": 0.75,
+  "price_trend": "Sideways",
+  "key_events": [
+    {
+      "event_name": "December 2025 Dividend",
+      "impact": "Positive",
+      "description": "KNCA11 announced a dividend of R$ 1.20 per quota for December 2025, paid on 01/14/2026, representing a yield of 1.18% based on an average entry quota of R$ 101.77 or 1.23% based on the R$97.39 quota.",
+      "source_type": "Official Filing"
+    },
+    {
+      "event_name": "Consistent Dividend Payments",
+      "impact": "Positive",
+      "description": "KNCA11 has consistently paid dividends in the months leading up to December 2025: November (R$ 1.01), October (R$ 1.15), September (R$ 1.15), and August (R$ 1.00) per quota.",
+      "source_type": "Official Filing"
+    }
+  ],
+  "risk_factors": [
+    "Exposure to the agro-industrial sector",
+    "Moderate risk profile of the credit portfolio"
+  ],
+  "investment_thesis": {
+    "bull_case": "Consistent dividend payments and high allocation to target assets (96.8% as of December 2025) make KNCA11 an attractive income-generating investment.",
+    "bear_case": "Lack of recent appraisal data and potential risks associated with the agro-industrial sector could impact the fund's performance."
+  },
+  "summary_markdown": "KNCA11 announced a December 2025 dividend of R$ 1.20 per quota, paid on 01/14/2026. This represents a yield of 1.18% based on an average entry quota of R$ 101.77 or 1.23% based on the R$97.39 quota. The fund also paid dividends in November (R$ 1.01), October (R$ 1.15), September (R$ 1.15), and August (R$ 1.00) of 2025. As of December 2025, 96.8% of the fund's assets were allocated to target assets. The P/VP is 0.98, with a patrimonial value per quota of R$ 101.38. The dividend yield (12 months) is reported as 13.70% or 13.84%, with Investing.com stating 14.75%."
+}

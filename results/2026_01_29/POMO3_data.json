@@ -1,0 +1,42 @@
+{
+  "ticker": "POMO3",
+  "analysis_date": "2026-01-29",
+  "overall_sentiment": "Bullish",
+  "sentiment_score": 0.75,
+  "price_trend": "Uptrend",
+  "key_events": [
+    {
+      "event_name": "Dividend Announcement",
+      "impact": "Positive",
+      "description": "Marcopolo approved a dividend of R$0.69 per share and JCP of R$0.09 per share, with payments starting December 15, 2025.",
+      "source_type": "Official Filing"
+    },
+    {
+      "event_name": "Analyst Recommendation",
+      "impact": "Positive",
+      "description": "JPMorgan reiterated an overweight recommendation with a price target of R$ 11. Itaú BBA reiterated a buy recommendation and a price target of R$ 12.",
+      "source_type": "News"
+    },
+    {
+      "event_name": "Financial Performance",
+      "impact": "Positive",
+      "description": "POMO3 is up year to date in January 2026, starting at R$5.55 and currently at R$6.15.",
+      "source_type": "News"
+    },
+    {
+      "event_name": "Caminho da Escola Program",
+      "impact": "Positive",
+      "description": "JPMorgan anticipates a positive impact from the new Caminho da Escola program auction and sales to the Ministry of Health (up to 3,000 buses).",
+      "source_type": "News"
+    }
+  ],
+  "risk_factors": [
+    "Cooling off of deliveries expected from December 2025 due to collective vacations extending into early January 2026.",
+    "Domestic market recorded a fall of about 8% in the third quarter of 2025."
+  ],
+  "investment_thesis": {
+    "bull_case": "Marcopolo is viewed as a compelling dividend stock for 2026, with Nord Investimentos expecting a dividend yield of around 9%. JPMorgan anticipates a positive impact from the Caminho da Escola program. Itaú BBA and JPMorgan have buy recommendations with price targets of R$ 12 and R$ 11, respectively.",
+    "bear_case": "Deliveries are expected to cool off from December 2025 into early January 2026. The domestic market recorded a fall of about 8% in the third quarter of 2025. Goldman Sachs has a neutral rating with a price target of R$ 14.80."
+  },
+  "summary_markdown": "Marcopolo (POMO3) shows bullish signals for 2026. Nord Investimentos views it as a compelling dividend stock, expecting a 9% yield. JPMorgan anticipates a positive impact from the Caminho da Escola program and sales to the Ministry of Health (up to 3,000 buses). Marcopolo approved a dividend of R$0.69 per share and JCP of R$0.09 per share, starting December 15, 2025. Itaú BBA and JPMorgan reiterated buy recommendations with price targets of R$ 12 and R$ 11, respectively. POMO3 is up year to date in January 2026, from R$5.55 to R$6.15. Deliveries are expected to cool off from December 2025 into early January 2026. The domestic market recorded a fall of about 8% in the third quarter of 2025. Goldman Sachs has a neutral rating with a price target of R$ 14.80."
+}

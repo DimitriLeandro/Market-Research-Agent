@@ -1,0 +1,112 @@
+assets:
+  # Equities
+  - ticker: GMAT3
+    name: Grupo Mateus S.A.
+    type: equity
+    sector: Retail
+  
+  - ticker: ISAE3
+    name: ISA CTEEP (Transmissão Paulista)
+    type: equity
+    sector: Utilities/Energy
+
+  - ticker: TAEE3
+    name: Taesa S.A.
+    type: equity
+    sector: Utilities/Energy
+
+  - ticker: BBAS3
+    name: Banco do Brasil S.A.
+    type: equity
+    sector: Financials
+
+  - ticker: PETR4
+    name: Petróleo Brasileiro S.A. Petrobras
+    type: equity
+    sector: Oil & Gas
+
+  - ticker: ABCB4
+    name: Banco ABC Brasil S.A.
+    type: equity
+    sector: Financials
+
+  - ticker: ITSA4
+    name: Itaúsa S.A.
+    type: equity
+    sector: Financials/Holding
+
+  - ticker: ITUB3
+    name: Itaú Unibanco Holding S.A.
+    type: equity
+    sector: Financials
+
+  - ticker: POMO3
+    name: Marcopolo S.A.
+    type: equity
+    sector: Industrial/Automotive
+
+  - ticker: BBSE3
+    name: BB Seguridade Participações S.A.
+    type: equity
+    sector: Insurance
+
+  - ticker: VALE3
+    name: Vale S.A.
+    type: equity
+    sector: Mining
+
+  - ticker: AGRO3
+    name: BrasilAgro - Cia Brasileira de Propriedades Agrícolas
+    type: equity
+    sector: Agriculture
+
+  # FIIs (Real Estate Funds)
+  - ticker: XPLG11
+    name: XP Log FII
+    type: fii
+    sector: Logistics
+
+  - ticker: HGLG11
+    name: CSHG Logística FII
+    type: fii
+    sector: Logistics
+
+  - ticker: XPML11
+    name: XP Malls FII
+    type: fii
+    sector: Shopping Malls
+
+  - ticker: GARE11
+    name: Guardian Real Estate FII
+    type: fii
+    sector: Hybrid/Logistics
+
+  - ticker: BTLG11
+    name: BTG Pactual Logística FII
+    type: fii
+    sector: Logistics
+
+  - ticker: KNCA11
+    name: Kinea Crédito Agro FII
+    type: fii
+    sector: Paper/Agro
+
+  - ticker: XPCI11
+    name: XP Crédito Imobiliário FII
+    type: fii
+    sector: Paper/Receivables
+
+  - ticker: KNIP11
+    name: Kinea Índice de Preços FII
+    type: fii
+    sector: Paper/Receivables
+
+  - ticker: KNCR11
+    name: Kinea Rendimentos Imobiliários FII
+    type: fii
+    sector: Paper/Receivables
+
+  - ticker: VISC11
+    name: Vinci Shopping Centers FII
+    type: fii
+    sector: Shopping Malls
