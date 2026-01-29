@@ -1,0 +1,42 @@
+{
+  "ticker": "XPLG11",
+  "analysis_date": "2026-01-28",
+  "overall_sentiment": "Bullish",
+  "sentiment_score": 0.75,
+  "price_trend": "Sideways",
+  "key_events": [
+    {
+      "event_name": "Vacancy Decrease",
+      "impact": "Positive",
+      "description": "Physical vacancy decreased from 4.3% to 2.3% in January 2026 after new contracts in Cajamar/SP and Rio de Janeiro/RJ. Financial vacancy is at 1.4%.",
+      "source_type": "Report"
+    },
+    {
+      "event_name": "Dividend Distribution",
+      "impact": "Positive",
+      "description": "Distribution of R$ 0.82 per share announced in January 2026, with a base date of December 30, 2025, and payment on January 15, 2026, yielding 9.3% annualized based on December's closing price of R$ 105.82.",
+      "source_type": "Announcement"
+    },
+    {
+      "event_name": "8th Share Issuance",
+      "impact": "Neutral",
+      "description": "The 8th issuance of shares raised R$ 937,633,237.13. New shares began trading on January 6, 2026, enabling acquisitions from FIIs RBRL11 and RDLI11.",
+      "source_type": "Official Filing"
+    },
+    {
+      "event_name": "Tenant Changes",
+      "impact": "Neutral",
+      "description": "Grupo VIP ended its temporary lease of module 1 in Especulativo Cajamar (15,049 m²) in March 2025. Volo replaced a temporary lease with a definitive contract for 1,461.89 m² in SBP.",
+      "source_type": "Report"
+    }
+  ],
+  "risk_factors": [
+    "Tenant concentration (Leroy Merlin, Renner, Mercado Livre)",
+    "Vacancy fluctuations"
+  ],
+  "investment_thesis": {
+    "bull_case": "Decreasing vacancy rates and consistent dividend payouts make XPLG11 an attractive investment. The 8th share issuance allows for strategic acquisitions, potentially increasing future revenue.",
+    "bear_case": "Tenant departures and fluctuations in vacancy rates could negatively impact revenue. The fund is exposed to risks associated with tenant concentration."
+  },
+  "summary_markdown": "XPLG11 shows positive signs with a decrease in physical vacancy to 2.3% as of January 2026, and a financial vacancy of 1.4%. The fund announced a dividend distribution of R$ 0.82 per share in January 2026, reflecting a 9.3% annualized yield based on the December closing price of R$ 105.82. The 8th share issuance, raising R$ 937,633,237.13, closed in January 2026 and facilitated acquisitions from FIIs RBRL11 and RDLI11. In March 2025, Grupo VIP ended a lease in Cajamar (15,049 m²), while Volo secured a definitive contract for 1,461.89 m² in SBP. Key tenants include Leroy Merlin (12-13%), Renner (8-9%), and Mercado Livre (9%)."
+}

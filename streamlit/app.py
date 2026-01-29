@@ -1,272 +1,219 @@
 import streamlit as st
+import subprocess
+import sys
+import time
 from pathlib import Path
-import re
-import markdown
 
-# --- CONFIGURAÇÃO DA PÁGINA ---
+# Add local helpers - Use absolute resolve to be safe
+current_file_path = Path(__file__).resolve()
+current_dir = current_file_path.parent
+sys.path.append(str(current_dir))
+
+import helpers
+
+# --- PAGE CONFIG ---
 st.set_page_config(
-    page_title="IA Stock Analyst",
+    page_title="Market Research Agent",
     page_icon="📈",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
-# --- DEFINIÇÃO DE CAMINHOS ---
-BASE_DIR  = Path("../results")
-LOGO_PATH = Path("../assets/img/logo.png")
-
-# --- CSS PERSONALIZADO ---
+# --- CSS STYLING (Strict Light Theme) ---
 st.markdown("""
-    <style>
-    /* Fundo Geral */
-    .stApp { background-color: #0E1117; }
-    
-    /* Cabeçalhos */
-    h1 { color: #FAFAFA; margin-bottom: 0px; }
-    h3 { color: #A0A0A0; font-weight: 400; font-size: 1.2rem; margin-top: 0px; }
-    
-    /* Cards (Expanders) */
-    .stExpander {
-        border: 1px solid #303030;
-        border-radius: 8px;
-        background-color: #161B22;
-    }
-    .streamlit-expanderHeader { color: #E6E6E6; font-weight: 600; }
-
-    /* Summary Box Container */
-    .summary-container {
-        padding: 20px;
-        border-radius: 12px;
-        background-color: #1F2937;
-        border-left: 6px solid #3B82F6;
-        margin-bottom: 25px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+<style>
+    /* Force Light Theme Backgrounds */
+    .stApp {
+        background-color: #FFFFFF;
+        color: #000000;
     }
     
-    /* Estilos para o HTML convertido (Markdown -> HTML) */
-    .summary-text {
-        color: #E6E6E6 !important;
-        font-family: sans-serif;
-    }
-    .summary-text h1, .summary-text h2, .summary-text h3 {
-        color: #FFFFFF !important;
-        margin-top: 15px;
-        margin-bottom: 10px;
-        font-weight: 600;
-    }
-    .summary-text h3 {
-        font-size: 1.1rem;
-        border-bottom: 1px solid #374151;
-        padding-bottom: 5px;
-    }
-    .summary-text p, .summary-text li {
-        color: #D1D5DB !important; /* Cinza claro */
-        line-height: 1.6;
-        font-size: 1rem;
-    }
-    .summary-text strong {
-        color: #FFFFFF !important;
-        font-weight: bold;
+    /* Sidebar Background */
+    section[data-testid="stSidebar"] {
+        background-color: #F0F2F6;
     }
     
-    /* Estilo para Links de Ações (Efeito Hover) */
-    a.stock-link {
-        text-decoration: none;
-        transition: opacity 0.3s;
+    /* Metrics Cards Styling (Light Mode) */
+    .metric-card {
+        background-color: #FFFFFF;
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid #E0E0E0;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
-    a.stock-link:hover {
-        opacity: 0.7;
-    }
-    a.stock-link h2 {
-        cursor: pointer;
-    }
-
-    /* Sidebar */
-    [data-testid="stSidebar"] { background-color: #161B22; border-right: 1px solid #303030; }
-    </style>
-    """, unsafe_allow_html=True)
-
-# --- FUNÇÕES AUXILIARES ---
-def get_available_dates():
-    if not BASE_DIR.exists(): return []
-    dates = [d.name for d in BASE_DIR.iterdir() if d.is_dir()]
-    return sorted(dates, reverse=True)
-
-def load_markdown_file(path):
-    if path.exists(): return path.read_text(encoding="utf-8")
-    return None
-
-def format_date_label(date_str):
-    try:
-        parts = date_str.split('_')
-        return f"{parts[2]}/{parts[1]}/{parts[0]}"
-    except:
-        return date_str
-
-def get_ticker_logo_url(ticker):
-    # Retorna a URL direta (usada no st.image)
-    return f"https://raw.githubusercontent.com/thefintz/icones-b3/main/icones/{ticker.upper()}.png"
-
-def get_investidor10_url(ticker):
-    """Gera o link para o site Investidor10."""
-    return f"https://investidor10.com.br/acoes/{ticker.lower()}/"
-
-def parse_consolidated_report(text):
-    """
-    Fatia o relatório baseando-se nos cabeçalhos ## TICKER.
-    """
-    lines = text.split('\n')
-    blocks = []
     
-    current_ticker = None
-    current_content = []
+    /* Tabs Styling (Light Mode) */
+    .stTabs [data-baseweb="tab-list"] {
+        gap: 24px;
+        display: flex; /* Garante comportamento flexível */
+        width: 100%;   /* Garante que a lista ocupe tudo */
+    }
     
-    # Regex ajustada para pegar "## TICKER"
-    ticker_header_pattern = re.compile(r'^##\s+([A-Z0-9]{4,6})\s*$')
-
-    for line in lines:
-        match = ticker_header_pattern.match(line)
+    .stTabs [data-baseweb="tab"] {
+        height: 50px;
+        white-space: pre-wrap;
+        background-color: #FFFFFF;
+        border: 1px solid #E0E0E0;
+        border-radius: 4px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #31333F;
         
-        if match:
-            if current_content:
-                blocks.append({
-                    "ticker": current_ticker,
-                    "content": "\n".join(current_content)
-                })
-            
-            current_ticker = match.group(1)
-            current_content = [] 
-        else:
-            current_content.append(line)
-            
-    if current_content:
-        blocks.append({
-            "ticker": current_ticker,
-            "content": "\n".join(current_content)
-        })
-        
-    return blocks
+        flex: 1;                 /* Faz a aba crescer para ocupar espaço igual */
+        width: 100%;             /* Força largura total dentro da divisão flex */
+        justify-content: center; /* Centraliza o texto horizontalmente */
+        text-align: center;      /* Garante alinhamento do texto */
+    }
+    .stTabs [aria-selected="true"] {
+        background-color: #E8F0FE;
+        color: #1967D2;
+        border-color: #1967D2;
+    }
+    
+    /* Text Color Overrides */
+    h1, h2, h3, h4, h5, h6, p, span {
+        color: #31333F !important;
+    }
+    
+    /* Expander Styling */
+    .streamlit-expanderHeader {
+        background-color: #FFFFFF;
+        color: #31333F;
+    }
+</style>
+""", unsafe_allow_html=True)
 
-# --- APP PRINCIPAL ---
-def main():
-    with st.sidebar:
+# --- SIDEBAR: CONTROLS ---
+with st.sidebar:
+    st.title("🤖 Agent Controls")
+    
+    # Run Button
+    if st.button("🚀 Run Daily Analysis", use_container_width=True, type="primary"):
+        with st.status("Running Market Agent...", expanded=False) as status:
+            # PATH FIX: Determine absolute paths for execution
+            project_root = current_dir.parent
+            script_path = project_root / "market_agent" / "main.py"
 
-        if LOGO_PATH.exists():
-            # Exibe a imagem centralizada na sidebar
-            st.image(str(LOGO_PATH), width='stretch')
-        else:
-            # Fallback caso a imagem não exista
-            st.warning("Arquivo app_logo.png não encontrado.")
-            
-        st.title("📊 IA Stock Analyst")
-        st.markdown("---")
-        
-        # ---------------------------
-        
-        dates = get_available_dates()
-        
-        if not dates:
-            st.error("Nenhum dado encontrado.")
-            st.stop()
-            
-        date_map = {format_date_label(d): d for d in dates}
-        selected_label = st.selectbox("📅 Selecione a Data", list(date_map.keys()))
-        selected_date_dir = date_map[selected_label]
-        
-        st.markdown("---")
-        st.caption("Developed with ❤️ by **Gemini Agent**")
-
-    current_dir = BASE_DIR / selected_date_dir
-
-    # Header
-    col_head1, col_head2 = st.columns([3, 1])
-    with col_head1:
-        st.title(f"Relatório de Mercado")
-        st.markdown(f"### Análise consolidada de {selected_label}")
-    st.markdown("---")
-
-    # --- 1. RELATÓRIO CONSOLIDADO ---
-    final_report_path = current_dir / f"final_report_{selected_date_dir}.md"
-    final_report_content = load_markdown_file(final_report_path)
-
-    if final_report_content:
-        st.subheader("📰 Highlights do Dia")
-        
-        with st.container():
-            st.markdown('<div class="summary-container">', unsafe_allow_html=True) # Abre container cinza
-            
-            report_blocks = parse_consolidated_report(final_report_content)
-            
-            for block in report_blocks:
-                ticker = block['ticker']
-                raw_content = block['content']
+            try:
+                process = subprocess.Popen(
+                    [sys.executable, str(script_path)], # Use absolute path
+                    stdout=subprocess.DEVNULL,
+                    stderr=subprocess.DEVNULL,
+                    text=True,
+                    cwd=str(project_root) # Run from project root
+                )
+                process.wait()
                 
-                # Converter Markdown para HTML
-                html_content = markdown.markdown(raw_content)
-                
-                if ticker:
-                    # Link externo para Investidor10
-                    stock_link = get_investidor10_url(ticker)
-                    
-                    # Bloco com Logo e Título (Linkável)
-                    c_logo, c_text = st.columns([1, 12])
-                    
-                    with c_logo:
-                        st.write("") 
-                        st.image(get_ticker_logo_url(ticker), width=50)
-                    
-                    with c_text:
-                        # Criamos um Link HTML envolvendo o Título H2
-                        # target="_blank" garante que abra em nova aba
-                        st.markdown(f'''
-                            <a href="{stock_link}" target="_blank" class="stock-link" title="Ver fundamentos no Investidor10">
-                                <h2 style="color: white; margin-top: 0;">{ticker} 🔗</h2>
-                            </a>
-                        ''', unsafe_allow_html=True)
-                        
-                        st.markdown(f'<div class="summary-text">{html_content}</div>', unsafe_allow_html=True)
-                        
-                    st.markdown("---") 
-                    
+                if process.returncode == 0:
+                    status.update(label="Analysis Completed!", state="complete", expanded=False)
+                    st.success("Data updated successfully.")
+                    time.sleep(1)
+                    st.rerun()
                 else:
-                    # Bloco Introdutório
-                    if raw_content.strip():
-                        st.markdown(f'<div class="summary-text">{html_content}</div>', unsafe_allow_html=True)
-            
-            st.markdown('</div>', unsafe_allow_html=True) # Fecha container cinza
-            
-    else:
-        st.info(f"O relatório consolidado ainda não foi gerado para {selected_label}.")
+                    status.update(label="Analysis Failed", state="error", expanded=False)
+                    st.error("The agent encountered an error. Please check server logs.")
+            except Exception as e:
+                status.update(label="Execution Error", state="error", expanded=False)
+                st.error("Failed to start the analysis process.")
 
-    # --- 2. DETALHES DOS ATIVOS ---
-    st.markdown("### 🔎 Detalhes por Ativo")
-    search_term = st.text_input("Filtrar Ativo", placeholder="Ex: PETR4, VALE3...").upper().strip()
+    st.divider()
     
-    all_files = sorted([f for f in current_dir.glob("*.md") if "final_report" not in f.name])
-    filtered_files = [f for f in all_files if search_term in f.name]
-
-    if not filtered_files:
-        if search_term: st.warning(f"Nenhum ativo encontrado para '{search_term}'.")
-        else: st.info("Nenhum arquivo de detalhe encontrado nesta data.")
+    # Date Selection
+    dates = helpers.get_available_dates()
+    if not dates:
+        st.warning("No data found.")
+        selected_date_folder = None
     else:
-        cols = st.columns(2)
-        for index, file_path in enumerate(filtered_files):
-            ticker_name = file_path.name.split('_')[0]
-            content = load_markdown_file(file_path)
-            logo_url = get_ticker_logo_url(ticker_name)
-            stock_link = get_investidor10_url(ticker_name)
-            
-            with cols[index % 2]:
-                with st.expander(f"{ticker_name}", expanded=False):
-                    c1, c2 = st.columns([1, 4])
-                    with c1:
-                        st.image(logo_url, width=60) 
-                    with c2:
-                        # Link usando sintaxe Markdown padrão [Texto](Link)
-                        st.markdown(f"### [{ticker_name} 🔗]({stock_link})")
-                        st.caption("Análise Detalhada • Clique no título para ver fundamentos")
-                    st.markdown("---")
-                    st.markdown(content)
+        # Map friendly DD/MM/YYYY labels back to folder names
+        date_map = {helpers.format_date_uk(d): d for d in dates}
+        selected_label = st.selectbox("📅 Select Report Date", list(date_map.keys()), index=0)
+        selected_date_folder = date_map[selected_label]
 
-if __name__ == "__main__":
-    main()
+# --- MAIN CONTENT ---
+if not selected_date_folder:
+    st.info("Please run the agent to generate your first report.")
+    st.stop()
+
+# Display formatted date in title
+formatted_title_date = helpers.format_date_uk(selected_date_folder)
+st.title(f"📊 Market Research Report: {formatted_title_date}")
+
+# Load Data
+report_data = helpers.load_report_data(selected_date_folder)
+equities = report_data["equity"]
+fiis = report_data["fii"]
+
+# Summary Metrics
+col1, col2, col3 = st.columns(3)
+total_assets = len(equities) + len(fiis)
+bullish_count = sum(1 for x in (equities + fiis) if x["sentiment_score"] > 0)
+bearish_count = sum(1 for x in (equities + fiis) if x["sentiment_score"] < 0)
+
+with col1:
+    st.metric("Total Assets Analyzed", total_assets)
+with col2:
+    st.metric("Bullish Sentiment", bullish_count, delta="Positive")
+with col3:
+    st.metric("Bearish Sentiment", bearish_count, delta="-Negative", delta_color="inverse")
+
+st.divider()
+
+# --- TABS FOR ASSET TYPES ---
+tab_stocks, tab_fiis = st.tabs(["📈 Stocks (Ações)", "🏢 REITs (FIIs)"])
+
+def render_asset_view(assets):
+    if not assets:
+        st.info("No data available for this category.")
+        return
+
+    for asset in assets:
+        ticker = asset['ticker']
+        score = asset['sentiment_score']
+        sentiment = asset['overall_sentiment']
+        trend = asset['price_trend']
+        
+        # Date is already formatted in load_report_data
+        analysis_date = asset.get('analysis_date', 'N/A')
+        
+        emoji = helpers.get_sentiment_emoji(score)
+        color = helpers.get_sentiment_color(score)
+
+        with st.expander(f"{emoji} {ticker} | {sentiment} ({score})", expanded=False):
+            
+            # Header Metrics
+            c1, c2, c3 = st.columns([1, 1, 2])
+            with c1:
+                st.caption("Price Trend")
+                st.write(f"**{trend}**")
+            with c2:
+                st.caption("Sentiment Score")
+                st.markdown(f":{color}[{score}]")
+            with c3:
+                st.caption("Analysis Date")
+                st.write(analysis_date)
+            
+            st.divider()
+            
+            # Main Report (Markdown with Dollar Escape)
+            safe_markdown = helpers.escape_markdown_dollars(asset['summary_markdown'])
+            st.markdown(safe_markdown)
+            
+            # Key Events Section (Parsed from JSON)
+            if asset.get('key_events'):
+                st.subheader("🚨 Key Events")
+                for event in asset['key_events']:
+                    e_icon = "✅" if event['impact'] == "Positive" else "⚠️" if event['impact'] == "Negative" else "ℹ️"
+                    # Safe render description
+                    safe_desc = helpers.escape_markdown_dollars(event['description'])
+                    st.markdown(f"- {e_icon} **{event['event_name']}**: {safe_desc}")
+            
+            # Raw Data View
+            with st.expander("🛠️ View Raw JSON Data"):
+                st.json(asset)
+
+with tab_stocks:
+    render_asset_view(equities)
+
+with tab_fiis:
+    render_asset_view(fiis)

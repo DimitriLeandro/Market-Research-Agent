@@ -1,0 +1,51 @@
+{
+  "ticker": "BBAS3",
+  "analysis_date": "2026-01-28",
+  "overall_sentiment": "Cautious",
+  "sentiment_score": -0.2,
+  "price_trend": "Sideways",
+  "key_events": [
+    {
+      "event_name": "2026 Outlook Adjustment",
+      "impact": "Negative",
+      "description": "BTG Pactual anticipates another year of adjustments for Banco do Brasil in 2026, with the first half heavily impacted by provisions. Safra reduced its 2026 profit projection to R$ 22.187 billion, implying a 12.0% ROE.",
+      "source_type": "Analyst Report"
+    },
+    {
+      "event_name": "Dividend Payout Policy",
+      "impact": "Neutral",
+      "description": "Banco do Brasil plans a 30% payout for 2026 via JCP and/or dividends, with potential for extraordinary dividends depending on capital base strengthening. Preference remains for payment via interest on equity (JCP).",
+      "source_type": "Company Announcement"
+    },
+    {
+      "event_name": "Delinquency Concerns",
+      "impact": "Negative",
+      "description": "Administration expects rural delinquency rates to peak in Q1 2026. Non-performing loans over 90 days are expected to peak in Q4 2025, with stabilization signs in 2026.",
+      "source_type": "Management Commentary"
+    },
+    {
+      "event_name": "Renegotiated Loans under MP 1.314",
+      "impact": "Neutral",
+      "description": "Banco do Brasil reported R$ 12 billion in renegotiated loans within the scope of MP 1.314.",
+      "source_type": "Company Report"
+    },
+    {
+      "event_name": "Judicial Recovery Risks",
+      "impact": "Negative",
+      "description": "R$ 5.4 billion in loans are in default due to judicial recovery requests from 808 producers. Banco do Brasil threatens to cut credit to producers requesting judicial recovery.",
+      "source_type": "News Report"
+    }
+  ],
+  "risk_factors": [
+    "Normalization of agribusiness defaults",
+    "Prolonged period to increase profitability",
+    "New regulatory requirements pressuring capital ratios",
+    "Delinquency rates in rural sector",
+    "Legal risks associated with judicial recovery requests"
+  ],
+  "investment_thesis": {
+    "bull_case": "Banco do Brasil conquered 3.9 million clients in 2025, surpassing other big banks. The bank is reformulating its relationship with rural producers, offering advisory and support services. Potential for extraordinary dividends in 2026.",
+    "bear_case": "BTG Pactual expects another year of adjustments for Banco do Brasil in 2026, with the first half heavily impacted by provisions. Safra reduced its 2026 profit projection to R$ 22.187 billion, implying a 12.0% ROE. R$ 5.4 billion in loans are in default due to judicial recovery requests."
+  },
+  "summary_markdown": "BBAS3 faces a cautious outlook for 2026. BTG Pactual anticipates adjustments, with H1 2026 impacted by provisions. Safra projects a reduced profit of R$ 22.187 billion, a 12.0% ROE. The bank plans a 30% dividend payout, with potential for extraordinary dividends. Rural delinquency rates are expected to peak in Q1 2026, with non-performing loans stabilizing thereafter. R$ 12 billion in loans were renegotiated under MP 1.314. R$ 5.4 billion in loans are in default due to judicial recovery requests. BTG Pactual and Safra maintain a neutral recommendation with a price target of R$ 25. Banco do Brasil gained 3.9 million clients in 2025."
+}
