@@ -1,11 +1,12 @@
 # KNCA11 Analysis 🟢
 **Date:** 2026-01-29
-**Sentiment:** Bullish (0.75)
+**Sentiment:** Bullish (0.7)
 **Trend:** Sideways
 
 ## 🚨 Key Events
-- **December 2025 Dividend** (Positive): KNCA11 announced a dividend of R$ 1.20 per quota for December 2025, paid on 01/14/2026, representing a yield of 1.18% based on an average entry quota of R$ 101.77 or 1.23% based on the R$97.39 quota.
-- **Consistent Dividend Payments** (Positive): KNCA11 has consistently paid dividends in the months leading up to December 2025: November (R$ 1.01), October (R$ 1.15), September (R$ 1.15), and August (R$ 1.00) per quota.
+- **December 2025 Dividend** (Positive): Dividend of R$ 1.20 per share distributed on 01/14/2026, representing a yield of 1.18% based on an average entry price of R$ 101.77.
+- **Portfolio Allocation** (Neutral): As of January 2026, portfolio allocation: 96.8% in target assets, 7.2% in LCI, and 5.5% in cash instruments. Assets allocated in CRA linked to IPCA (39.5%), CRA linked to CDI (43.1%), and Fiagro FIDC (14.2%).
+- **Target Price** (Positive): XP Investimentos has a buy recommendation with a target price of R$ 102/share.
 
 ## 📝 Detailed Summary
-KNCA11 announced a December 2025 dividend of R$ 1.20 per quota, paid on 01/14/2026. This represents a yield of 1.18% based on an average entry quota of R$ 101.77 or 1.23% based on the R$97.39 quota. The fund also paid dividends in November (R$ 1.01), October (R$ 1.15), September (R$ 1.15), and August (R$ 1.00) of 2025. As of December 2025, 96.8% of the fund's assets were allocated to target assets. The P/VP is 0.98, with a patrimonial value per quota of R$ 101.38. The dividend yield (12 months) is reported as 13.70% or 13.84%, with Investing.com stating 14.75%.
+KNCA11 distributed a dividend of R$ 1.20 per share on 01/14/2026, representing a 1.18% yield based on a R$ 101.77 entry price. As of January 2026, the portfolio is allocated with 96.8% in target assets. XP Investimentos has a buy recommendation with a target price of R$ 102/share. The fund's net asset value is R$ 101.38, and the P/VP is 0.97. The fund's dividend yield for the last 12 months is 13.84%. BTG Pactual has a 'Top Fundos' recommendation for KNCA11 in January 2026.

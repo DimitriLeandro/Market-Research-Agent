@@ -1,0 +1,50 @@
+{
+  "ticker": "PETR4",
+  "analysis_date": "2026-01-26",
+  "overall_sentiment": "Bullish",
+  "sentiment_score": 0.75,
+  "price_trend": "Uptrend",
+  "key_events": [
+    {
+      "event_name": "CAPEX Increase",
+      "impact": "Positive",
+      "description": "Petrobras plans to commit $60-70 billion in CAPEX in its 2022-2026 plan, up from $55 billion in 2021-2025.",
+      "source_type": "Company Plan"
+    },
+    {
+      "event_name": "Production Guidance Revised Upwards",
+      "impact": "Positive",
+      "description": "Petrobras' production guidance was revised upwards, expecting 3.4 million barrels/day in 2029.",
+      "source_type": "Analyst Report"
+    },
+    {
+      "event_name": "Positive Analyst Recommendations",
+      "impact": "Positive",
+      "description": "Itaú BBA has a buy recommendation with a R$43 price target for PETR4 by the end of 2026. XP Investimentos also has a buy recommendation with a R$37 price target.",
+      "source_type": "Analyst Report"
+    },
+    {
+      "event_name": "Reserves Increase",
+      "impact": "Positive",
+      "description": "Petrobras' proved reserves at the end of 2025 were 12.1 billion boe, up from 11.4 billion boe in 2024.",
+      "source_type": "Company Data"
+    },
+    {
+      "event_name": "Dividend Announcement",
+      "impact": "Neutral",
+      "description": "Last dividend for PETR4 was R$0.34 per share on 2025-12-22, to be paid in 2026-02-20 and 2026-03-20.",
+      "source_type": "Company Announcement"
+    }
+  ],
+  "risk_factors": [
+    "Oil prices falling below US$65/bbl",
+    "CAPEX and OPEX inflation",
+    "Operational risks like the natural decline of production assets",
+    "Increased value for acquisitions (R$18 billion)"
+  ],
+  "investment_thesis": {
+    "bull_case": "Increased CAPEX focused on subsalt exploration and production, upward revision of production guidance to 3.4 million barrels/day in 2029, and positive analyst recommendations with price targets up to R$43 suggest strong growth potential.",
+    "bear_case": "Risks include oil price volatility (below US$65/bbl), CAPEX and OPEX inflation, operational risks, and increased acquisition costs (R$18 billion), which could pressure cash flow and debt neutrality."
+  },
+  "summary_markdown": "Petrobras (PETR4) shows bullish signals based on increased CAPEX ($60-70 billion in 2022-2026), upward revised production guidance (3.4 million barrels/day in 2029), and positive analyst ratings (Itaú BBA target of R$43, XP Investimentos target of R$37). Proved reserves increased to 12.1 billion boe in 2025. Key risks include oil price volatility (below US$65/bbl), CAPEX inflation, and increased acquisition costs (R$18 billion). The last dividend was R$0.34 per share on 2025-12-22."
+}

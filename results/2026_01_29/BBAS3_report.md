@@ -4,11 +4,11 @@
 **Trend:** Sideways
 
 ## 🚨 Key Events
-- **2026 Outlook Adjustment** (Negative): BTG Pactual anticipates another year of adjustments for Banco do Brasil in 2026, with the first half heavily impacted by provisions. Safra reduced its 2026 profit projection to R$ 22.187 billion, implying a 12.0% ROE.
-- **Dividend Payout Policy** (Neutral): Banco do Brasil plans a 30% payout for 2026 via JCP and/or dividends, with potential for extraordinary dividends depending on capital base strengthening. Preference remains for payment via interest on equity (JCP).
-- **Delinquency Concerns** (Negative): Administration expects rural delinquency rates to peak in Q1 2026. Non-performing loans over 90 days are expected to peak in Q4 2025, with stabilization signs in 2026.
-- **Renegotiated Loans under MP 1.314** (Neutral): Banco do Brasil reported R$ 12 billion in renegotiated loans within the scope of MP 1.314.
-- **Judicial Recovery Risks** (Negative): R$ 5.4 billion in loans are in default due to judicial recovery requests from 808 producers. Banco do Brasil threatens to cut credit to producers requesting judicial recovery.
+- **2026 Outlook** (Neutral): Analysts at BTG Pactual, Safra, and XP Investimentos have a neutral outlook on BBAS3 with price targets around R$ 25. BTG Pactual anticipates a payout of around 30% for 2026. The administration expects rural delinquency rates to peak in Q1 2026.
+- **Agribusiness Challenges** (Negative): Banco do Brasil faces challenges in the agribusiness sector, including R$ 5.4 billion in delinquent loans from 808 producers and the deceleration of CPR origination. Safra estimates renegotiations under MP 1.314 (totaling R$ 12 billion) may extend into Q1 2026.
+- **Dividend Policy** (Neutral): The payout for 2026 is expected to remain at 30%, potentially through JCP or dividends, paid in eight installments. The bank will prioritize JCP whenever possible.
+- **Q4 2025 Expectations** (Neutral): BTG Pactual expects a slight sequential improvement in Q4 2025 results, with delinquency above 90 days continuing on an upward trajectory.
+- **Ratings Downgrade** (Negative): BTG Pactual downgraded Banco do Brasil from Buy to Neutral on May 19, 2025, with a target price of R$ 30.
 
 ## 📝 Detailed Summary
-BBAS3 faces a cautious outlook for 2026. BTG Pactual anticipates adjustments, with H1 2026 impacted by provisions. Safra projects a reduced profit of R$ 22.187 billion, a 12.0% ROE. The bank plans a 30% dividend payout, with potential for extraordinary dividends. Rural delinquency rates are expected to peak in Q1 2026, with non-performing loans stabilizing thereafter. R$ 12 billion in loans were renegotiated under MP 1.314. R$ 5.4 billion in loans are in default due to judicial recovery requests. BTG Pactual and Safra maintain a neutral recommendation with a price target of R$ 25. Banco do Brasil gained 3.9 million clients in 2025.
+BBAS3's outlook is cautiously neutral. BTG Pactual, Safra and XP Investimentos have neutral ratings with price targets around R$ 25 for 2026. Challenges persist in agribusiness, with R$ 5.4 billion in delinquent loans. The dividend payout is expected to remain at 30%. BTG Pactual downgraded BBAS3 to Neutral on May 19, 2025. Safra projects a 2026 profit of R$ 22.187 billion. The administration expects rural delinquency rates to peak in Q1 2026. Banco do Brasil aims to disburse approximately R$ 25 billion under the MP 1.314.

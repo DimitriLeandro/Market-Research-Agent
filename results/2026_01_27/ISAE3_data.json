@@ -1,0 +1,49 @@
+{
+  "ticker": "ISAE3",
+  "analysis_date": "2026-01-27",
+  "overall_sentiment": "Bullish",
+  "sentiment_score": 0.75,
+  "price_trend": "Uptrend",
+  "key_events": [
+    {
+      "event_name": "Q4 2025 Results Release",
+      "impact": "Neutral",
+      "description": "ISA CTEEP will release its Q4 2025 results after market close on 2026-02-25 and hold a teleconference on 2026-02-26.",
+      "source_type": "Official Filing"
+    },
+    {
+      "event_name": "JSCP Distribution",
+      "impact": "Positive",
+      "description": "JSCP of R$ 0.25055300 per share announced, with payment date 2026-03-31.",
+      "source_type": "Official Filing"
+    },
+    {
+      "event_name": "Projected Revenue Increase",
+      "impact": "Positive",
+      "description": "Projected revenue for the next quarter is R$ 1.429B.",
+      "source_type": "Analyst Estimate"
+    },
+    {
+      "event_name": "Q3 2025 Net Profit Increase",
+      "impact": "Positive",
+      "description": "ISA Energia reported a net profit of R$ 550 million in Q3 2025, a 27% increase compared to the same period last year.",
+      "source_type": "Official Filing"
+    },
+    {
+      "event_name": "Interim JCP Distribution",
+      "impact": "Positive",
+      "description": "ISA Energia announced an interim distribution of JCP of R$ 445 million related to the first half of 2025, equivalent to R$ 0.674997 per share.",
+      "source_type": "Official Filing"
+    }
+  ],
+  "risk_factors": [
+    "High gross and net debt (R$ 14 billion and R$ 13 billion respectively)",
+    "Net debt/EBITDA ratio of 3.43x",
+    "Decrease in RBSE financial component from R$ 1.5 billion to R$ 1.21 billion"
+  ],
+  "investment_thesis": {
+    "bull_case": "ISA CTEEP has secured 19 lots in ANEEL transmission auctions since 2016, totaling R$ 15.8 billion in investments and increasing RAP by approximately R$ 2.1 billion. The company has R$ 5.0 billion in ANEEL-authorized projects to be carried out between 2025 and 2029. Expected additional revenue from projects in construction is more than R$ 1 billion. For each R$ 100 million invested in CAPEX, ISA Energia obtains an additional RAP of R$ 15 million.",
+    "bear_case": "ISA Energia has a net debt/EBITDA ratio of 3.43x. The financial component of RBSE for ISA Energia was R$ 1.5 billion per year in 2025 and is expected to decrease to approximately R$ 1.21 billion, with receipts until mid-2028. ISA Energia Brasil's net revenue decreased by 7.5% to R$ 1.029 million in Q2 2025."
+  },
+  "summary_markdown": "ISA CTEEP (ISAE3) shows a bullish sentiment. The company will release its Q4 2025 results on 2026-02-25. A JSCP of R$ 0.25055300 per share was announced, payment date 2026-03-31. Projected revenue for the next quarter is R$ 1.429B. ISA Energia reported a net profit of R$ 550 million in Q3 2025, a 27% increase. An interim JCP distribution of R$ 445 million related to the first half of 2025, equivalent to R$ 0.674997 per share, was announced. Since 2016, ISA CTEEP secured 19 lots in ANEEL transmission auctions, totaling R$ 15.8 billion in investments. The company has R$ 5.0 billion in ANEEL-authorized projects to be carried out between 2025 and 2029. Gross debt is R$ 14 billion and net debt is R$ 13 billion, with a net debt/EBITDA ratio of 3.43x. The financial component of RBSE is expected to decrease from R$ 1.5 billion to R$ 1.21 billion. ISAE3 is trading at R$ 35.19 as of 2026-01-27."
+}

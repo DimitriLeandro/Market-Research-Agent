@@ -6,45 +6,61 @@
   "price_trend": "Uptrend",
   "key_events": [
     {
-      "event_name": "CAPEX Increase",
+      "event_name": "Business Plan 2026-2030 Approved",
       "impact": "Positive",
-      "description": "Petrobras plans to commit $60-70 billion in CAPEX in its 2022-2026 plan, up from $55 billion in 2021-2025.",
-      "source_type": "Company Plan"
+      "description": "Petrobras' Board approved the Business Plan 2026-2030, forecasting US$ 109 billion in total investments.",
+      "source_type": "Official Filing"
     },
     {
-      "event_name": "Production Guidance Revised Upwards",
+      "event_name": "Production Peak Forecast",
       "impact": "Positive",
-      "description": "Petrobras' production guidance was revised upwards, expecting 3.4 million barrels/day in 2029.",
+      "description": "Petrobras forecasts peak oil production of 2.7 million bpd in 2028 and peak total production of 3.4 million boed in 2028 and 2029.",
+      "source_type": "Official Filing"
+    },
+    {
+      "event_name": "XP Investimentos Price Target",
+      "impact": "Positive",
+      "description": "XP Investimentos maintains a buy recommendation with a price target of R$ 37/PETR4 (US$ 13.6/ADR), implying a potential upside of +17%.",
       "source_type": "Analyst Report"
     },
     {
-      "event_name": "Positive Analyst Recommendations",
+      "event_name": "Itaú BBA Price Target",
       "impact": "Positive",
-      "description": "Itaú BBA has a buy recommendation with a R$43 price target for PETR4 by the end of 2026. XP Investimentos also has a buy recommendation with a R$37 price target.",
+      "description": "Itaú BBA has a price target of R$ 43 for PETR4 at the end of 2026.",
       "source_type": "Analyst Report"
+    },
+    {
+      "event_name": "Oil Sales with Indian Refineries",
+      "impact": "Positive",
+      "description": "Petrobras has renewed and expanded contracts to sell oil to Indian state-owned refiners, potentially exceeding US$3 billion for up to 60 million barrels.",
+      "source_type": "News"
     },
     {
       "event_name": "Reserves Increase",
       "impact": "Positive",
-      "description": "Petrobras' proved reserves at the end of 2025 were 12.1 billion boe, up from 11.4 billion boe in 2024.",
-      "source_type": "Company Data"
+      "description": "Petrobras' proved reserves reached 12.1 billion boe as of December 31, 2025.",
+      "source_type": "Official Filing"
     },
     {
-      "event_name": "Dividend Announcement",
-      "impact": "Neutral",
-      "description": "Last dividend for PETR4 was R$0.34 per share on 2025-12-22, to be paid in 2026-02-20 and 2026-03-20.",
-      "source_type": "Company Announcement"
+      "event_name": "JP Morgan Recommendation",
+      "impact": "Positive",
+      "description": "JP Morgan has an overweight recommendation for Petrobras with a price target of R$ 44, highlighting consistent reserve additions.",
+      "source_type": "Analyst Report"
+    },
+    {
+      "event_name": "BTG Pactual Recommendation",
+      "impact": "Positive",
+      "description": "BTG Pactual maintains a buy recommendation for Petrobras, seeing upside risks to their 15% dividend yield estimate for the next 12 months.",
+      "source_type": "Analyst Report"
     }
   ],
   "risk_factors": [
-    "Oil prices falling below US$65/bbl",
-    "CAPEX and OPEX inflation",
-    "Operational risks like the natural decline of production assets",
-    "Increased value for acquisitions (R$18 billion)"
+    "Debt concerns if oil prices fall below US$ 65.",
+    "Sensitivity of EBITDA, cash flow, and dividends to oil price variations (US$ 6.6 billion, US$ 3.8 billion, and US$ 1.7 billion respectively per US$ 10/bbl variation)."
   ],
   "investment_thesis": {
-    "bull_case": "Increased CAPEX focused on subsalt exploration and production, upward revision of production guidance to 3.4 million barrels/day in 2029, and positive analyst recommendations with price targets up to R$43 suggest strong growth potential.",
-    "bear_case": "Risks include oil price volatility (below US$65/bbl), CAPEX and OPEX inflation, operational risks, and increased acquisition costs (R$18 billion), which could pressure cash flow and debt neutrality."
+    "bull_case": "Petrobras' Business Plan 2026-2030 forecasts significant investments and production growth, supported by positive analyst ratings from XP Investimentos (R$ 37/PETR4), Itaú BBA (R$ 43/PETR4), and JP Morgan (R$ 44/PETR4). Increased reserves and oil sales agreements further strengthen the bullish outlook.",
+    "bear_case": "Concerns exist regarding Petrobras potentially surpassing the US$ 75 billion gross debt limit if oil prices fall below US$ 65. Sensitivity to oil price fluctuations could significantly impact EBITDA, cash flow, and dividends."
   },
-  "summary_markdown": "Petrobras (PETR4) shows bullish signals based on increased CAPEX ($60-70 billion in 2022-2026), upward revised production guidance (3.4 million barrels/day in 2029), and positive analyst ratings (Itaú BBA target of R$43, XP Investimentos target of R$37). Proved reserves increased to 12.1 billion boe in 2025. Key risks include oil price volatility (below US$65/bbl), CAPEX inflation, and increased acquisition costs (R$18 billion). The last dividend was R$0.34 per share on 2025-12-22."
+  "summary_markdown": "Petrobras (PETR4) exhibits a bullish outlook based on its approved Business Plan 2026-2030, projecting US$ 109 billion in investments. Production is expected to peak at 2.7 million bpd of oil in 2028 and 3.4 million boed in 2028-2029. XP Investimentos has a buy recommendation with a price target of R$ 37/PETR4, while Itaú BBA targets R$ 43/PETR4 by the end of 2026. Petrobras has renewed oil sales contracts with Indian refineries, potentially exceeding US$3 billion. Proved reserves reached 12.1 billion boe as of December 31, 2025. JP Morgan has an overweight recommendation with a price target of R$ 44. BTG Pactual maintains a buy recommendation, estimating a 15% dividend yield. Risks include potential debt issues if oil prices drop below US$ 65 and sensitivity to oil price variations, impacting EBITDA (US$ 6.6 billion), cash flow (US$ 3.8 billion), and dividends (US$ 1.7 billion) per US$ 10/bbl variation."
 }

@@ -1,0 +1,37 @@
+{
+  "ticker": "KNIP11",
+  "analysis_date": "2026-01-27",
+  "overall_sentiment": "Neutral",
+  "sentiment_score": 0.0,
+  "price_trend": "Sideways",
+  "key_events": [
+    {
+      "event_name": "December Dividend",
+      "impact": "Neutral",
+      "description": "Dividend for December (paid in January 2026) was R$ 0.70 per share.",
+      "source_type": "Official Filing"
+    },
+    {
+      "event_name": "January Dividend",
+      "impact": "Neutral",
+      "description": "Monthly dividend of BRL 0.8000 per share payable on January 15, 2026, ex-date on January 02, 2026 and record date on December 30, 2025 was announced.",
+      "source_type": "Official Filing"
+    },
+    {
+      "event_name": "Mark-to-Market Rate Increase",
+      "impact": "Positive",
+      "description": "The mark-to-market rate increased to IPCA + 9.93%.",
+      "source_type": "News"
+    }
+  ],
+  "risk_factors": [
+    "Exposure to real estate ventures through CRIs.",
+    "Reliance on qualified investors.",
+    "Fluctuations in IPCA and real interest rates."
+  ],
+  "investment_thesis": {
+    "bull_case": "KNIP11 offers exposure to a well-diversified portfolio of real estate-related fixed income assets, particularly CRIs, with a target return of IMA-B plus 0.50% per year. The fund's large net worth, high allocation to target assets (103.1%), and attractive dividend yield (11.07% for the last 12 months) make it an appealing investment. BTG Pactual has a buy recommendation with a target price of R$ 95.00.",
+    "bear_case": "The fund's exposure to CRIs and real estate ventures carries inherent risks. The management fee of 1.00% per year could impact returns. The fund's allocation to the office sector (31.8%) and shopping malls (31.2%) may be vulnerable to market fluctuations. Trading at R$ 92.40 with a book value per share of R$ 92.65 (P/VP of 0.99) suggests limited upside."
+  },
+  "summary_markdown": "KNIP11's dividend for December 2025 was R$ 0.70 per share. A monthly dividend of BRL 0.8000 per share payable on January 15, 2026 was announced. The mark-to-market rate increased to IPCA + 9.93%. BTG Pactual has a buy recommendation with a target price of R$ 95.00. As of 2026-01-28, KNIP11 was trading at R$ 92.40 with a book value per share of R$ 92.65. The dividend yield for the last 12 months is 11.07%."
+}

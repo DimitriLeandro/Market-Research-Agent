@@ -1,53 +1,37 @@
 {
   "ticker": "ITUB3",
   "analysis_date": "2026-01-29",
-  "overall_sentiment": "Neutral",
-  "sentiment_score": 0.1,
-  "price_trend": "Sideways",
+  "overall_sentiment": "Bullish",
+  "sentiment_score": 0.85,
+  "price_trend": "Uptrend",
   "key_events": [
     {
-      "event_name": "Capital Increase",
-      "impact": "Neutral",
-      "description": "Board approved a capital increase of R$ 12,846,837,880.00 on December 18, 2025, raising it from R$ 124,063,060,190.00 to R$ 136,909,898,070.00.",
-      "source_type": "Official Filing"
-    },
-    {
-      "event_name": "JCP Payments",
+      "event_name": "Q4 2025 Earnings Release",
       "impact": "Positive",
-      "description": "ITUB3 paid JSCP throughout 2026: R$0.01818200 per share on 01/10/2026, 01/09/2026, 03/08/2026, 01/07/2026, 01/06/2026 and 04/05/2026.",
-      "source_type": "Official Filing"
-    },
-    {
-      "event_name": "Bonus Shares",
-      "impact": "Neutral",
-      "description": "Shareholders can transfer fractions of bonus shares from January 2, 2026, to February 2, 2026, with a cost of R$ 40.00 per share.",
-      "source_type": "Official Filing"
-    },
-    {
-      "event_name": "4T25 Results",
-      "impact": "Neutral",
-      "description": "Itaú (ITUB4) will present its 4T25 results after market close on February 4, 2026.",
+      "description": "Itaú (ITUB4) is scheduled to release Q4 2025 results after market close on February 04, 2026. Itaú Unibanco ON (ITUB3) will publish its next earnings report on February 3, 2026, followed by an interactive meeting on February 05, 2026.",
       "source_type": "News"
     },
     {
-      "event_name": "M&A Outlook",
-      "impact": "Positive",
-      "description": "Itaú BBA forecasts M&A may increase by 10% in 2026.",
-      "source_type": "Analyst Report"
+      "event_name": "Interest on Equity Payment",
+      "impact": "Neutral",
+      "description": "Notice to Shareholders regarding the payment of Interest on Equity (JCP) for the year 2026 on January 26, 2026.",
+      "source_type": "Official Filing"
     },
     {
-      "event_name": "Goldman Sachs Recommendation",
-      "impact": "Positive",
-      "description": "Goldman Sachs maintains a buy recommendation for Itaú, projecting credit growth of around 9.5% per year for Brazilian banks in 2026.",
-      "source_type": "Analyst Report"
+      "event_name": "Ordinary General Meeting",
+      "impact": "Neutral",
+      "description": "Notice to Shareholders regarding the 2026 Ordinary General Meeting on January 13, 2026.",
+      "source_type": "Official Filing"
     }
   ],
   "risk_factors": [
-    "Market caution at the beginning of 2026 leading to price consolidation."
+    "Fluctuations in the Brazilian economy",
+    "Changes in regulatory policies",
+    "Increased competition in the financial sector"
   ],
   "investment_thesis": {
-    "bull_case": "Positive M&A outlook with a potential increase of 10% in 2026, according to Itaú BBA. Goldman Sachs maintains a buy recommendation, projecting credit growth of 9.5% for Brazilian banks in 2026. ITUB3's dividend yield is 11.05%.",
-    "bear_case": "Market is more cautious at the beginning of 2026, leading to price consolidation. BBAS3 iniciou 2026 em baixa, com recuo de 3,28% no ano."
+    "bull_case": "Genial Investimentos projects a net profit of R$12.3 billion for Q4 2025, a 3.5% increase compared to the previous quarter and a 12.9% increase compared to the same period of the previous year. They also project an additional 11% growth in net profit for 2026, reaching R$51.9 billion. Goldman Sachs maintains a buy recommendation for Itaú, expecting moderate to robust credit growth of around 9.5% per year for Brazilian banks in 2026.",
+    "bear_case": "Kroll reports that Brazil registered 1,341 M&A transactions in 2025, compared to 1,426 in 2024, indicating a slight decrease in M&A activity which could impact Itaú BBA's M&A forecasts."
   },
-  "summary_markdown": "Itaú Unibanco (ITUB3) shows mixed signals. The Board approved a capital increase of R$ 12,846,837,880.00 on December 18, 2025. JCP payments of R$0.01818200 per share were made throughout 2026. Goldman Sachs maintains a buy recommendation with projected credit growth of 9.5% for Brazilian banks in 2026. Itaú BBA forecasts M&A may increase by 10% in 2026. ITUB3's dividend yield is 11.05%. However, the market is more cautious at the beginning of 2026, leading to price consolidation."
+  "summary_markdown": "Itaú Unibanco (ITUB3) is showing strong potential for growth. Genial Investimentos projects a net profit of R$12.3 billion for Q4 2025, up 12.9% year-over-year, and R$51.9 billion for 2026, an 11% increase. They estimate a ROE of 24.5% for Q4 2025, expanding to 25% in 2026. The expanded credit portfolio is expected to reach R$1.46 trillion in Q4 2025, a 7.7% annual growth. Goldman Sachs maintains a buy recommendation, anticipating around 9.5% credit growth for Brazilian banks in 2026. Key dates include the Q4 2025 earnings release on February 3, 2026, and shareholder meetings in January 2026. Itaú BBA forecasts M&A may increase by 10% in 2026. The minimum annual dividend ensured to preferred shares will be maintained at R$ 0.022 per share."
 }

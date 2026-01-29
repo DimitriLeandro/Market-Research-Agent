@@ -4,9 +4,10 @@
 **Trend:** Sideways
 
 ## 🚨 Key Events
-- **Dividend Announcement** (Neutral): The latest dividend per share was R$1.3, with an ex-date of February 03, 2026, and a payment date of February 13, 2026. The current dividend yield is 14.66%.
-- **12th Share Issuance** (Neutral): A 12th share issuance occurred, raising R$ 1.36 billion (December 10, 2025).
-- **14th Share Issuance Closing** (Neutral): The fund announced the closing of its 14th issuance of shares, with a fundraising of R$175 million (December 15, 2025).
+- **Dividend Announcement** (Neutral): Latest dividend per share was R$1.3 with an ex date of February 03, 2026 and a payment date of February 13, 2026. The next dividend per share will be R$1.3 with an ex date of February 03, 2026 and a payment date of February 13, 2026.
+- **Dividend Yield** (Neutral): Current dividend yield is 14.66%. KNCR11 has an annual dividend of 14.53 BRL per share, with a yield of 13.67%. Dividends are paid monthly. The dividend for January 2026 was R$1.30 per share. The dividend for December (paid in January 2026) was R$1.30 per share.
+- **Potential Dividend Decrease** (Negative): There is an expectation that dividends may decrease as the Selic rate decreases in 2026.
+- **Share Issuance** (Neutral): KNCR11 closed its 14th issuance of shares in December 2025, raising R$175 million.
 
 ## 📝 Detailed Summary
-KNCR11's latest dividend is R$1.3 per share (ex-date: February 03, 2026, payment date: February 13, 2026), with a current dividend yield of 14.66%. The fund completed its 12th share issuance, raising R$ 1.36 billion (December 10, 2025). The 14th issuance of shares closed, raising R$175 million (December 15, 2025). KNCR11 is trading above its book value.
+KNCR11's latest dividend was R$1.3 per share with ex and payment dates in February 2026. The current dividend yield is 14.66%. An annual dividend of 14.53 BRL per share yields 13.67%. Dividends are paid monthly. The dividend for January 2026 was R$1.30 per share. The dividend for December (paid in January 2026) was R$1.30 per share. Dividends may decrease as the Selic rate decreases in 2026. KNCR11 closed its 14th issuance of shares in December 2025, raising R$175 million.

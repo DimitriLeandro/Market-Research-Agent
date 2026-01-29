@@ -1,0 +1,35 @@
+{
+  "ticker": "BTLG11",
+  "analysis_date": "2026-01-27",
+  "overall_sentiment": "Neutral",
+  "sentiment_score": 0.0,
+  "price_trend": "Sideways",
+  "key_events": [
+    {
+      "event_name": "Contractual Rent Revision",
+      "impact": "Positive",
+      "description": "BTLG Jundiaí experienced a contractual revision resulting in a 31% increase in rent.",
+      "source_type": "News"
+    },
+    {
+      "event_name": "Dividend Announcement",
+      "impact": "Neutral",
+      "description": "The latest dividend per share was R$0.79, with an ex-date of January 16, 2026, and a payment date of January 23, 2026. The next dividend per share will be R$0.79, with an ex-date of January 16, 2026, and a payment date of January 23, 2026.",
+      "source_type": "Official Filing"
+    },
+    {
+      "event_name": "Dividend Guidance",
+      "impact": "Neutral",
+      "description": "XP is expecting BTLG11 to maintain distributions close to the guidance between R$0.78 and R$0.84 per share during the first semester of 2025.",
+      "source_type": "News"
+    }
+  ],
+  "risk_factors": [
+    "Vacancy rates (no specific data found)"
+  ],
+  "investment_thesis": {
+    "bull_case": "Potential growth from renovations and contractual revisions. Assets were recycled at prices 27% above appraisal in the last three years.",
+    "bear_case": "No specific data on current vs. last month vacancy was found. Distributions are only expected to maintain guidance between R$0.78 and R$0.84 per share during the first semester of 2025."
+  },
+  "summary_markdown": "BTLG11's portfolio saw a positive impact from a contractual revision at BTLG Jundiaí, leading to a 31% rent increase. The latest dividend per share was R$0.79, with an ex-date of January 16, 2026, and a payment date of January 23, 2026. The next dividend per share will be R$0.79, with an ex-date of January 16, 2026, and a payment date of January 23, 2026. XP expects BTLG11 to maintain distributions close to the guidance between R$0.78 and R$0.84 per share during the first semester of 2025. The portfolio's cap rate is around 8%, and assets were recycled at prices 27% above appraisal in the last three years."
+}

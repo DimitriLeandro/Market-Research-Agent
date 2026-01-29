@@ -1,13 +1,14 @@
 # POMO3 Analysis 🟢
 **Date:** 2026-01-29
-**Sentiment:** Bullish (0.75)
+**Sentiment:** Cautious (0.3)
 **Trend:** Uptrend
 
 ## 🚨 Key Events
-- **Dividend Announcement** (Positive): Marcopolo approved a dividend of R$0.69 per share and JCP of R$0.09 per share, with payments starting December 15, 2025.
-- **Analyst Recommendation** (Positive): JPMorgan reiterated an overweight recommendation with a price target of R$ 11. Itaú BBA reiterated a buy recommendation and a price target of R$ 12.
-- **Financial Performance** (Positive): POMO3 is up year to date in January 2026, starting at R$5.55 and currently at R$6.15.
-- **Caminho da Escola Program** (Positive): JPMorgan anticipates a positive impact from the new Caminho da Escola program auction and sales to the Ministry of Health (up to 3,000 buses).
+- **Price Increase** (Positive): POMO3 increased from R$5.55 to R$6.15 in 2026.
+- **Dividend Payments** (Positive): Dividend and JCP payments occurred throughout 2025 with 'data com' dates in November, August, April, and February.
+- **Analyst Recommendation** (Positive): Nord Investimentos recommends buying POMO3, highlighting high dividends and cheap shares.
+- **Q3 2025 Results** (Negative): Q3 2025 results missed expectations, with LPA at 0.2689 (-6.57%) and revenue at 2.51 billion BRL (-4.92%). Shares fell 6.46% to BRL 8.25 following the release.
+- **Shareholder Remuneration** (Positive): A 10% stock bonus was approved by the Board of Directors, with a cost per share of R$6.21.
 
 ## 📝 Detailed Summary
-Marcopolo (POMO3) shows bullish signals for 2026. Nord Investimentos views it as a compelling dividend stock, expecting a 9% yield. JPMorgan anticipates a positive impact from the Caminho da Escola program and sales to the Ministry of Health (up to 3,000 buses). Marcopolo approved a dividend of R$0.69 per share and JCP of R$0.09 per share, starting December 15, 2025. Itaú BBA and JPMorgan reiterated buy recommendations with price targets of R$ 12 and R$ 11, respectively. POMO3 is up year to date in January 2026, from R$5.55 to R$6.15. Deliveries are expected to cool off from December 2025 into early January 2026. The domestic market recorded a fall of about 8% in the third quarter of 2025. Goldman Sachs has a neutral rating with a price target of R$ 14.80.
+POMO3 experienced a price increase in 2026, starting at R$5.55 and reaching R$6.15. Dividend payments occurred throughout 2025. Nord Investimentos recommends buying POMO3, expecting a dividend yield around 9% in 2026, while the current year saw yields over 20%. A 10% stock bonus was approved. Q3 2025 results disappointed, with LPA at 0.2689 (-6.57%) and revenue at 2.51 billion BRL (-4.92%), causing shares to fall 6.46% to BRL 8.25. BB Investimentos added Marcopolo (POMO4) to its recommended stock portfolio for January. 2024 recorded the highest bus production volume in the last ten years, with 27,100 units. Next balance release date is February 25, 2026, with Q4 2025 results disclosed on February 26, 2026.

@@ -3,60 +3,53 @@
   "analysis_date": "2026-01-29",
   "overall_sentiment": "Cautious",
   "sentiment_score": -0.2,
-  "price_trend": "Downtrend",
+  "price_trend": "Volatile",
   "key_events": [
-    {
-      "event_name": "Novo Atacarejo Consolidation",
-      "impact": "Neutral",
-      "description": "Grupo Mateus consolidated Novo Atacarejo in Q3 2025, adding 36 stores and 1 distribution center. Novo Atacarejo reported -0.5% SSS and R$ 1.5 billion in net sales.",
-      "source_type": "News"
-    },
-    {
-      "event_name": "Q4 2024 Results",
-      "impact": "Positive",
-      "description": "Grupo Mateus reported mixed Q4 2024 results with decelerating revenue growth but better profitability and cash generation. Net sales increased 16%.",
-      "source_type": "News"
-    },
-    {
-      "event_name": "BB-BI Price Target",
-      "impact": "Positive",
-      "description": "BB-BI set a new price target for GMAT3 at R$ 9.00 by the end of 2026, maintaining a \"Buy\" recommendation.",
-      "source_type": "Analyst Report"
-    },
-    {
-      "event_name": "Stock Decline & Accounting Revision",
-      "impact": "Negative",
-      "description": "GMAT3 shares fell more than 20% YTD as of November 21, 2025, after the company reported adjustments to stock balances and cost of goods sold (CMV) due to a revision in accounting policy, with a R$1.1 billion revision in its inventories in Q3 2025.",
-      "source_type": "News"
-    },
     {
       "event_name": "JPMorgan Downgrade",
       "impact": "Negative",
-      "description": "JPMorgan downgraded Grupo Mateus to \"underweight\" due to a more challenging revenue growth projection for 2026 and concerns about corporate governance.",
+      "description": "JPMorgan downgraded Grupo Mateus to underweight on 2025-12-19, citing a more challenging outlook for revenue growth in 2026.",
+      "source_type": "News"
+    },
+    {
+      "event_name": "BB-BI Valuation Revision",
+      "impact": "Negative",
+      "description": "BB-BI revised GMAT3's price target to R$ 9.00 for the end of 2026 (previously R$ 10.40), maintaining a buy recommendation.",
       "source_type": "Analyst Report"
     },
     {
-      "event_name": "Q3 2025 Results Miss",
-      "impact": "Negative",
-      "description": "Grupo Mateus SA's Q3 2025 results missed expectations, with revenue of $9.25 billion (4.84% below forecast), causing a 7.21% drop in the share price to $6.24.",
-      "source_type": "Earnings Release"
+      "event_name": "Q3 2025 Results",
+      "impact": "Neutral",
+      "description": "Q3 2025 gross revenue was R$12.1 billion (28.3% growth year-over-year), with net income of R$846 million (net margin 4.7% ex-extraordinary effects).",
+      "source_type": "Official Filing"
     },
     {
-      "event_name": "Capital Increase",
-      "impact": "Neutral",
-      "description": "On January 6, 2026, Grupo Mateus S.A. announced additional information regarding the capital increase approved on November 14, 2025, with a share issuance price of R$ 6.37.",
+      "event_name": "Store Expansion",
+      "impact": "Positive",
+      "description": "Grupo Mateus plans to open approximately 30 new stores in 2026.",
+      "source_type": "Company Plan"
+    },
+    {
+      "event_name": "Dividend Payment",
+      "impact": "Positive",
+      "description": "Grupo Mateus approved payment of R$111.3 million in JCP.",
+      "source_type": "Official Filing"
+    },
+    {
+      "event_name": "Equity Increase",
+      "impact": "Positive",
+      "description": "Grupo Mateus approved an increase in capital of up to R$475.9 million.",
       "source_type": "Official Filing"
     }
   ],
   "risk_factors": [
-    "Persistent inflation and potentially higher interest rate environment",
-    "Intense competition requiring constant innovation and cost control",
-    "Risk of negative same-store sales (SSS) in the first half of 2026",
-    "Corporate governance concerns after recent accounting adjustments"
+    "Infraction notice from Receita Federal",
+    "Challenging outlook for revenue growth in 2026",
+    "Negative free cash flow of R$ 101 million in Q3 2025"
   ],
   "investment_thesis": {
-    "bull_case": "BTG Pactual sees GMAT3 as a resilient option, trading at 10x P/L for 2025 and 8x P/L for 2026. The company has exposure to the Northeast and North regions, where national players are less predominant. Gradual improvement in profitability is expected as new stores mature. BB-BI set a price target of R$ 9.00 by the end of 2026.",
-    "bear_case": "JPMorgan downgraded Grupo Mateus to \"underweight\" due to a more challenging revenue growth projection for 2026. Sales trends have been steadily deteriorating in the food retail sector, with risks of negative same-store sales (SSS) in the first half of 2026. Corporate governance issues should keep the company out of the radar of many investors, after recent accounting adjustments. GMAT3 shares fell more than 20% YTD as of November 21, 2025, after the company reported adjustments to stock balances and cost of goods sold (CMV)."
+    "bull_case": "BTG Pactual sees GMAT3 as a resilient option with low financial leverage and cheap valuation (10x P/L for 2025 and 8x P/L for 2026). BB-BI maintains a buy recommendation with a price target of R$ 9.00 for the end of 2026. Expectation of R$ 1.4 billion in delivery in the first quarter of 2026, which will probably lead to a strong cash generation, and very likely the company will have net cash.",
+    "bear_case": "JPMorgan downgraded Grupo Mateus to underweight on 2025-12-19, citing a more challenging outlook for revenue growth in 2026. Q3 2025 free cash flow was negative R$ 101 million due to a higher CAPEX (+28% year-over-year). Novo Atacarejo presented SSS of -0.5% in Q3 2025."
   },
-  "summary_markdown": "GMAT3 faces mixed prospects. BTG Pactual views it as resilient, trading at 10x P/L (2025) and 8x P/L (2026), with BB-BI setting a R$9.00 target. It benefits from exposure in the Northeast and North regions. However, JPMorgan downgraded GMAT3 to \"underweight\" due to challenging revenue growth in 2026 and governance concerns after accounting adjustments in November 2025, which led to a 20% YTD stock decline. Q3 2025 results missed expectations, with revenue at $9.25 billion. The company consolidated Novo Atacarejo in Q3 2025. A capital increase was announced on January 6, 2026, at R$ 6.37 per share. Q4 2024 saw a 16% net sales increase, but SSS decelerated to +4%. Risks include inflation, competition, and potential negative SSS in 1H 2026."
+  "summary_markdown": "GMAT3 (Grupo Mateus S.A.) faces a mixed outlook. BTG Pactual sees it as resilient with a cheap valuation (10x P/L for 2025 and 8x P/L for 2026), while JPMorgan downgraded it to underweight on 2025-12-19 due to challenging revenue growth in 2026. BB-BI revised its price target to R$ 9.00 for the end of 2026, maintaining a buy recommendation. Q3 2025 gross revenue was R$12.1 billion (28.3% growth), but free cash flow was negative R$ 101 million. The company plans to open approximately 30 new stores in 2026 and approved a dividend payment of R$111.3 million and an equity increase of up to R$475.9 million. Novo Atacarejo presented SSS of -0.5% in Q3 2025."
 }

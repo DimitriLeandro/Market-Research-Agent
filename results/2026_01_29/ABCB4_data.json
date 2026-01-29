@@ -8,47 +8,34 @@
     {
       "event_name": "BTG Pactual Recommendation",
       "impact": "Positive",
-      "description": "BTG Pactual has a \"Compra\" recommendation for ABCB4 with a price target of R$ 29.00, a 9.35% potential upside from the current price of R$ 26.52 (2026-01-29).",
+      "description": "BTG Pactual has a 'buy' recommendation for ABCB4 with a target price of R$ 29.00, representing a potential upside of 9.35% (2026-01-29).",
       "source_type": "Analyst Report"
     },
     {
-      "event_name": "Below Book Value",
+      "event_name": "Q3 2025 Results",
       "impact": "Positive",
-      "description": "Banco ABC Brasil (ABCB4) is trading below its book value of R$ 27.39, with a market price of R$ 25.81 (2026-01-27).",
-      "source_type": "Market Data"
+      "description": "Banco ABC Brasil reported Q3 2025 net income of R$ 257 million, a 15.5% ROE, with a loan portfolio of R$ 22.8 billion and managed financial margin of R$ 652.0 million.",
+      "source_type": "Earnings Report"
     },
     {
-      "event_name": "Dividend Yield Projection",
+      "event_name": "JCP Distribution Approved",
       "impact": "Positive",
-      "description": "Projected dividend yield is between 8% and 14% per year (2026-01-27). A YouTube analysis projects a dividend of R$ 2.19 per share for 2026 (2026-01-07).",
-      "source_type": "Analyst Report"
+      "description": "Board approved JCP distribution of R$ 369.4 million, equivalent to R$ 1.532 per share, with payment scheduled for February 11, 2026 (Approved 2025-12-23).",
+      "source_type": "Corporate Action"
     },
     {
-      "event_name": "Earnings Growth",
-      "impact": "Positive",
-      "description": "Projected earnings growth is around 10% per year, with accumulated earnings growth of nearly 65% in 5 years (2026-01-27).",
-      "source_type": "Analyst Report"
-    },
-    {
-      "event_name": "JCP Distribution",
-      "impact": "Positive",
-      "description": "Banco ABC Brasil approved JCP distribution of R$ 369.4 million, equivalent to R$ 1.532 per share, with payment scheduled for February 11, 2026 (2025-12-23).",
-      "source_type": "Company Announcement"
-    },
-    {
-      "event_name": "M&A Activity Increase",
-      "impact": "Positive",
-      "description": "Itaú BBA forecasts M&A activity could increase by 10% in 2026, with mid-sized companies contributing to the growth (2026-01-20). Citi projects that M&A transactions will gain traction in late 2025 and surpass 2025 levels in 2026 (2025-11-04).",
-      "source_type": "Analyst Forecast"
+      "event_name": "Capital Increase",
+      "impact": "Neutral",
+      "description": "A capital increase of up to R$ 314.06 million was approved through the issuance of up to 15,944,224 new shares at R$ 19.69 per share (Approved 2025-12-23).",
+      "source_type": "Corporate Action"
     }
   ],
   "risk_factors": [
-    "Increased number of shares due to recent subscriptions could dilute earnings by approximately 6% (2026-01-07).",
-    "Cut growth projections (2025-11-06)."
+    "Potential dividend dilution of approximately 6% due to new share issuance if subscription rights are not exercised (2026 Projection)."
   ],
   "investment_thesis": {
-    "bull_case": "ABCB4 is a solid mid-sized bank trading below book value (R$ 27.39 book value vs. R$ 25.81 market price as of 2026-01-27). It offers a projected dividend yield between 8% and 14% and earnings growth around 10% per year. BTG Pactual has a \"Compra\" recommendation with a price target of R$ 29.00 (2026-01-29).",
-    "bear_case": "Potential earnings dilution of approximately 6% due to increased shares from recent subscriptions (2026-01-07). There are cut growth projections (2025-11-06)."
+    "bull_case": "BTG Pactual considers ABCB4 a long-term value play, trading below book value with potential for improved profitability as interest rates decline (2025-12-22). The company has the lowest default rate among banks. Projections point to a potential dividend yield between 8% and 14% per year.",
+    "bear_case": "Potential dividend dilution of approximately 6% due to new share issuance if subscription rights are not exercised. Q3 2025 results were 3% below BTG Pactual's estimate and 2% below consensus."
   },
-  "summary_markdown": "ABCB4 presents a bullish outlook as of January 2026. BTG Pactual recommends a \"Compra\" with a price target of R$ 29.00 (2026-01-29). The bank is trading below its book value of R$ 27.39 (2026-01-27). Projected dividend yield is between 8% and 14% (2026-01-27), with a YouTube analysis projecting R$ 2.19 per share for 2026 (2026-01-07). Earnings are expected to grow around 10% per year (2026-01-27). A JCP distribution of R$ 1.532 per share is scheduled for February 11, 2026 (2025-12-23). Itaú BBA forecasts a 10% increase in M&A activity in 2026 (2026-01-20). Risks include potential earnings dilution of 6% due to increased shares (2026-01-07) and cut growth projections (2025-11-06)."
+  "summary_markdown": "Banco ABC Brasil (ABCB4) shows positive momentum with a 'buy' recommendation from BTG Pactual (target price of R$ 29.00) and a strong Q3 2025 performance (net income of R$ 257 million). A JCP distribution of R$ 369.4 million (R$ 1.532 per share) was approved, payable on February 11, 2026. BTG Pactual views ABCB4 as a long-term value play. A capital increase of up to R$ 314.06 million was approved. Potential risks include dividend dilution due to new share issuance. The company has the lowest default rate among banks. Projections point to a potential dividend yield between 8% and 14% per year."
 }

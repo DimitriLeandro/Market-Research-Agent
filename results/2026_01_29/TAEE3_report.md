@@ -4,11 +4,11 @@
 **Trend:** Sideways
 
 ## 🚨 Key Events
-- **Q3 2025 Results** (Positive): Taesa's Q3 2025 regulatory net profit increased 5.2% year-over-year to R$323 million. Regulatory EBITDA was R$549 million, a 12.6% year-over-year increase, exceeding estimates. Revenue increased by 9.8%.
-- **São Pedro Reinforcement Project Energization** (Positive): Taesa announced the energization of the São Pedro reinforcement project on January 9, 2026.
-- **Dividend Announcement** (Neutral): Taesa paid JCP of R$0.17298440 on 2026-01-28, with declaration date of 2025-01-28 and JCP of R$0.13980241 on 2026-01-28, with declaration date of 2025-11-14.
-- **Q4 and Full Year 2025 Results Videoconference** (Neutral): Taesa will discuss Q4 2025 and Full Year 2025 results in a videoconference on March 18, 2026.
-- **Q1 2026 Results Release** (Neutral): Taesa will release Q1 2026 results on May 6, 2026.
+- **Dividend Payment** (Neutral): Taesa (TAEE11) paid dividends on January 28, 2026, with payment dates for JCP and Dividends on 28/01/2026, 27/11/2025, 27/08/2025 and 27/11/2025. TAEE11 paid R$ 0.93 per Unit for shareholders on November 14, 2025.
+- **Q4 2025 & Full Year Results Videoconference** (Neutral): Videoconference to discuss Q4 2025 and full year 2025 results scheduled for March 18, 2026.
+- **Q1 2026 Results Release** (Neutral): Release of Q1 2026 results scheduled for May 6, 2026.
+- **Extraordinary General Meeting** (Neutral): Extraordinary General Meeting scheduled for February 27, 2026.
+- **São Pedro Reinforcement Energization** (Positive): Taesa energized the São Pedro reinforcement on January 9, 2026, adding R$ 6.4 million in Annual Permitted Revenue.
 
 ## 📝 Detailed Summary
-TAEE3's Q3 2025 regulatory net profit was R$323 million, up 5.2% year-over-year. Regulatory EBITDA was R$549 million, exceeding the IBES/LSEG estimate of R$515 million, a 12.6% increase. Revenue increased 9.8%. Taesa announced the energization of the São Pedro reinforcement project on January 9, 2026. Taesa paid JCP of R$0.17298440 on 2026-01-28 and JCP of R$0.13980241 on 2026-01-28. Results for Q4 2025 and Full Year 2025 will be discussed on March 18, 2026, and Q1 2026 results will be released on May 6, 2026. Analysts predict a 6-8% dividend yield for 2026. The 'preço teto' for TAEE3/TAEE4 is R$16.55. TAEE3 was trading at R$14.23 on January 28, 2026. TAEE4 'preço justo' is R$16.23.
+Taesa (TAEE3) analysis on January 28, 2026, reveals a neutral sentiment. Key events include a dividend payment on January 28, 2026, and the energization of the São Pedro reinforcement on January 9, 2026, adding R$ 6.4 million in Annual Permitted Revenue. Upcoming events are the Q4 2025 & Full Year results videoconference on March 18, 2026, the Q1 2026 results release on May 6, 2026, and an Extraordinary General Meeting on February 27, 2026. Bradesco BBI is reportedly cautious on Taesa in the long term. One analysis estimates a price ceiling of R$ 16.55 for TAEE3/TAEE4 if aiming for a 6% yield. Taesa's dividend policy distributes 90-100% of regulatory net profit. Interest rates are expected to decrease from March 2026, which should be positive for Taesa's leverage. Taesa's operational leverage should decrease from 13.9x in 2026 to 6.1x in 2033.

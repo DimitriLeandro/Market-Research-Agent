@@ -2,48 +2,42 @@
   "ticker": "ISAE3",
   "analysis_date": "2026-01-29",
   "overall_sentiment": "Bullish",
-  "sentiment_score": 0.75,
+  "sentiment_score": 0.7,
   "price_trend": "Uptrend",
   "key_events": [
     {
-      "event_name": "Q4 2025 Results Release",
+      "event_name": "Debt Issuance Adjustment",
       "impact": "Neutral",
-      "description": "ISA CTEEP will release its Q4 2025 results after market close on 2026-02-25 and hold a teleconference on 2026-02-26.",
+      "description": "ISA Energia adjusted the schedule for its 21st debenture issuance, totaling up to R$ 3.785 billion, exclusively for professional investors, with collection of intentions on January 28, 2026.",
       "source_type": "Official Filing"
     },
     {
-      "event_name": "JSCP Distribution",
+      "event_name": "Dividend Announcement",
       "impact": "Positive",
-      "description": "JSCP of R$ 0.25055300 per share announced, with payment date 2026-03-31.",
+      "description": "JSCP (Juros Sobre Capital Próprio) was announced on January 29, 2026, with payment on February 25, 2026, value of R$0.25055300.",
       "source_type": "Official Filing"
     },
     {
-      "event_name": "Projected Revenue Increase",
-      "impact": "Positive",
-      "description": "Projected revenue for the next quarter is R$ 1.429B.",
-      "source_type": "Analyst Estimate"
-    },
-    {
-      "event_name": "Q3 2025 Net Profit Increase",
-      "impact": "Positive",
-      "description": "ISA Energia reported a net profit of R$ 550 million in Q3 2025, a 27% increase compared to the same period last year.",
+      "event_name": "Q4 2025 Results Disclosure",
+      "impact": "Neutral",
+      "description": "ISA Energia will disclose its Q4 2025 results on February 25, 2026, after market close, followed by a teleconference on February 26, 2026.",
       "source_type": "Official Filing"
     },
     {
-      "event_name": "Interim JCP Distribution",
-      "impact": "Positive",
-      "description": "ISA Energia announced an interim distribution of JCP of R$ 445 million related to the first half of 2025, equivalent to R$ 0.674997 per share.",
+      "event_name": "Increased Debenture Issuance",
+      "impact": "Neutral",
+      "description": "ISA Energia increased its 21st debenture issuance, which could reach up to R$3.86 billion.",
       "source_type": "Official Filing"
     }
   ],
   "risk_factors": [
-    "High gross and net debt (R$ 14 billion and R$ 13 billion respectively)",
-    "Net debt/EBITDA ratio of 3.43x",
-    "Decrease in RBSE financial component from R$ 1.5 billion to R$ 1.21 billion"
+    "Fluctuations in energy demand",
+    "Regulatory changes in the Brazilian electricity sector",
+    "Debenture issuance impacting financial leverage"
   ],
   "investment_thesis": {
-    "bull_case": "ISA CTEEP has secured 19 lots in ANEEL transmission auctions since 2016, totaling R$ 15.8 billion in investments and increasing RAP by approximately R$ 2.1 billion. The company has R$ 5.0 billion in ANEEL-authorized projects to be carried out between 2025 and 2029. Expected additional revenue from projects in construction is more than R$ 1 billion. For each R$ 100 million invested in CAPEX, ISA Energia obtains an additional RAP of R$ 15 million.",
-    "bear_case": "ISA Energia has a net debt/EBITDA ratio of 3.43x. The financial component of RBSE for ISA Energia was R$ 1.5 billion per year in 2025 and is expected to decrease to approximately R$ 1.21 billion, with receipts until mid-2028. ISA Energia Brasil's net revenue decreased by 7.5% to R$ 1.029 million in Q2 2025."
+    "bull_case": "ISAE3 offers voting rights and 80% tag-along rights. The stock has an estimated dividend yield of ~7%. Analyst ratings indicate a 'buy' trend. The revenue projection for ISA Energia ON is R$ 1.429B.",
+    "bear_case": "ISAE3 has lower liquidity than ISAE4. Revenue of R$ 1.07 Billion last quarter was below the estimate of R$ 1.13 Billion."
   },
-  "summary_markdown": "ISA CTEEP (ISAE3) shows a bullish sentiment. The company will release its Q4 2025 results on 2026-02-25. A JSCP of R$ 0.25055300 per share was announced, payment date 2026-03-31. Projected revenue for the next quarter is R$ 1.429B. ISA Energia reported a net profit of R$ 550 million in Q3 2025, a 27% increase. An interim JCP distribution of R$ 445 million related to the first half of 2025, equivalent to R$ 0.674997 per share, was announced. Since 2016, ISA CTEEP secured 19 lots in ANEEL transmission auctions, totaling R$ 15.8 billion in investments. The company has R$ 5.0 billion in ANEEL-authorized projects to be carried out between 2025 and 2029. Gross debt is R$ 14 billion and net debt is R$ 13 billion, with a net debt/EBITDA ratio of 3.43x. The financial component of RBSE is expected to decrease from R$ 1.5 billion to R$ 1.21 billion. ISAE3 is trading at R$ 35.19 as of 2026-01-29."
+  "summary_markdown": "ISA CTEEP (ISAE3) shows a bullish sentiment based on recent news. The company announced JSCP dividend payments of R$0.25055300 to be paid on February 25, 2026. The 21st debenture issuance was increased to R$3.86 billion. The stock price for ISAE3 on January 29, 2026, was R$ 35.19. Revenue projection for ISA Energia ON is R$ 1.429B. Analyst ratings indicate a 'buy' trend."
 }

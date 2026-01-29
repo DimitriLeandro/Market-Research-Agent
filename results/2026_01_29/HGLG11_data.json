@@ -1,55 +1,48 @@
 {
   "ticker": "HGLG11",
   "analysis_date": "2026-01-29",
-  "overall_sentiment": "Neutral",
-  "sentiment_score": 0.1,
+  "overall_sentiment": "Cautious",
+  "sentiment_score": -0.2,
   "price_trend": "Sideways",
   "key_events": [
     {
       "event_name": "Vacancy Increase",
       "impact": "Negative",
-      "description": "Physical vacancy increased from 2.4% in November 2025 to a projected 4.5% in February 2026.",
+      "description": "Physical vacancy increased to 2.4% at the end of November 2025 and is projected to reach 4.5% by the end of February 2026.",
       "source_type": "Report"
     },
     {
       "event_name": "Tenant Exits",
       "impact": "Negative",
-      "description": "Multiple tenant exits occurred between November 2025 and February 2026, including Roja, Eletrobras (Syslog), Memodoc (Duque de Caxias), Plastic Omnium (São José), Êxito (Syslog), TLS (CLE), and RV Imola (Ribeirão Preto).",
+      "description": "Multiple tenants exited properties, including Roja and Eletrobras (Syslog), Memodoc (Duque de Caxias), Plastic Omnium (São José), with Êxito (Syslog), TLS (CLE), and RV Imola (Ribeirão Preto) expected to exit in January and February 2026.",
       "source_type": "Report"
     },
     {
-      "event_name": "Tenant Acquisition",
+      "event_name": "New Tenant",
       "impact": "Positive",
-      "description": "Knight Therapeutics became a new tenant in Masterlabs in December 2025.",
+      "description": "Knight Therapeutics to enter Masterlabs in December 2025.",
       "source_type": "Report"
     },
     {
-      "event_name": "Monthly Dividend",
+      "event_name": "Consistent Dividends",
       "impact": "Neutral",
-      "description": "Maintained monthly dividend of R$ 1.10 per share with ex-dates on January 2, 2026, and February 03, 2026, and payment dates on January 15, 2026, and February 13, 2026.",
+      "description": "R$ 1.10 per share dividend has been consistently paid for the last 30 months, with the next dividend also at R$1.1, ex-date February 03, 2026.",
       "source_type": "Dividend Announcement"
     },
     {
-      "event_name": "Asset Revaluation",
+      "event_name": "Property Revaluation",
       "impact": "Positive",
-      "description": "Real estate assets reevaluated in November 2025, resulting in an average increase of 2.52% compared to December 2024 accounting values.",
-      "source_type": "Asset Revaluation Report"
-    },
-    {
-      "event_name": "Share Issuance",
-      "impact": "Neutral",
-      "description": "Completed the 10th share issuance, raising R$ 1.4 billion.",
-      "source_type": "Official Filing"
+      "description": "Property revaluation showed an average increase of 2.52% compared to the accounting values of December 2024.",
+      "source_type": "Report"
     }
   ],
   "risk_factors": [
-    "Increased vacancy rate impacting revenue.",
-    "Tenant turnover affecting cash flow.",
-    "Market fluctuations impacting asset values."
+    "Increased vacancy rates",
+    "Tenant turnover"
   ],
   "investment_thesis": {
-    "bull_case": "Consistent dividend yield of approximately 8.69% and asset revaluation suggest stable returns.",
-    "bear_case": "Rising vacancy and tenant exits pose risks to income and asset utilization."
+    "bull_case": "Consistent dividend payments of R$1.10 per share and property revaluation increase of 2.52% suggest stability and potential growth.",
+    "bear_case": "Rising vacancy rates, projected to reach 4.5% by February 2026, and multiple tenant exits pose a risk to income and portfolio stability."
   },
-  "summary_markdown": "HGLG11's physical vacancy increased from 2.4% in November 2025 to a projected 4.5% in February 2026. Tenant exits included Roja, Eletrobras (Syslog), Memodoc (Duque de Caxias), Plastic Omnium (São José), Êxito (Syslog), TLS (CLE), and RV Imola (Ribeirão Preto) between November 2025 and February 2026. Knight Therapeutics became a new tenant in Masterlabs in December 2025. The fund maintained a monthly dividend of R$ 1.10 per share (ex-dates January 2, 2026, and February 03, 2026). A November 2025 asset revaluation resulted in a 2.52% average increase compared to December 2024. The 10th share issuance was completed, raising R$ 1.4 billion. The dividend yield is approximately 8.69% annually."
+  "summary_markdown": "HGLG11 faces increasing vacancy, rising to 2.4% in November 2025 and projected to 4.5% by February 2026. Tenant exits include Roja, Eletrobras (Syslog), Memodoc (Duque de Caxias), and Plastic Omnium (São José), with further exits expected in January and February 2026. Knight Therapeutics will enter Masterlabs in December 2025. The fund has consistently paid R$1.10 per share in dividends for 30 months, with the next dividend at the same value (ex-date February 03, 2026). Property revaluation showed a 2.52% increase compared to December 2024 values."
 }
