@@ -22,88 +22,68 @@ class GeminiProvider(IResearchProvider):
         self.templates = TemplateManager()
 
     def _clean_json(self, raw_text: str) -> str:
-        """Removes markdown fences and extra whitespace."""
         cleaned = re.sub(r"```json\s*", "", raw_text)
         cleaned = re.sub(r"```", "", cleaned)
         return cleaned.strip()
 
     async def conduct_research(self, asset: Asset, context: dict) -> ResearchResult:
-        queries = SearchVectorGenerator.get_queries(asset)
-        
-        # ---------------------------------------------------------
-        # PHASE 1: Data Collection (High Recall, "Data Hoarder" Persona)
-        # ---------------------------------------------------------
-        logger.info(f"Phase 1: Researching {asset.ticker} (Google Search)...")
-        
-        prompt_content = self.templates.render(
-            asset.template_name,
-            ticker=asset.ticker,
-            name=asset.name,
-            financial_data=context,
-            queries=queries
-        )
+        # NOTE: This single method is deprecated in the new flow but kept for interface compatibility.
+        # Ideally, the Agent should call specific methods below.
+        raise NotImplementedError("Use specific research step methods.")
 
-        @retry(
-            retry=retry_if_exception_type(ClientError),
-            stop=stop_after_attempt(5),
-            wait=wait_exponential(multiplier=1, min=4, max=60),
-            reraise=True
-        )
-        def _call_research():
+    @retry(retry=retry_if_exception_type(ClientError), stop=stop_after_attempt(5), wait=wait_exponential(multiplier=2, min=4, max=60))
+    async def _execute_step(self, template_name: str, **kwargs) -> str:
+        prompt = self.templates.render(template_name, **kwargs)
+        
+        def _call():
             return self.client.models.generate_content(
                 model="gemini-2.0-flash",
-                contents=prompt_content,
+                contents=prompt,
                 config=types.GenerateContentConfig(
-                    temperature=0.2, # Low temp for factual extraction
+                    temperature=0.2,
                     tools=[types.Tool(google_search=types.GoogleSearch())]
                 )
             )
-
-        try:
-            research_response = await asyncio.to_thread(_call_research)
-            
-            if not research_response.text:
-                raise ValueError(f"Empty response from Research Phase for {asset.ticker}")
-                
-            raw_findings = research_response.text
-
-        except Exception as e:
-            logger.error(f"Phase 1 Failed for {asset.ticker}: {str(e)}")
-            raise e
-
-        # ---------------------------------------------------------
-        # PHASE 2: Structuring & Synthesis (High Precision, "Analyst" Persona)
-        # ---------------------------------------------------------
-        logger.info(f"Phase 2: Structuring Data for {asset.ticker} (Schema Enforcement)...")
-
-        structuring_prompt = f"""
-        You are a Senior Equity Analyst.
         
-        INPUT DATA (Raw Intelligence Log):
-        {raw_findings}
-        
-        TASK:
-        Synthesize this raw data into a professional JSON Report.
-        
-        RULES FOR SYNTHESIS:
-        1. **Eliminate Noise**: If a point is generic (e.g., "Monitor the market"), DELETE IT.
-        2. **Grounding**: Every claim in 'summary_markdown' must be backed by a specific entity, number, or date found in the input.
-        3. **Tone**: Direct, professional, and dense. No introductions.
-        4. **Schema**: Map the sentiment strictly based on the *recent* news found.
-        
-        Output ONLY valid JSON.
-        """
+        response = await asyncio.to_thread(_call)
+        return response.text if response.text else "No data found."
 
-        @retry(
-            retry=retry_if_exception_type(ClientError),
-            stop=stop_after_attempt(5),
-            wait=wait_exponential(multiplier=1, min=4, max=60),
-            reraise=True
+    async def research_sector(self, asset: Asset) -> str:
+        logger.info(f"Researching Sector: {asset.sector}")
+        queries = SearchVectorGenerator.get_sector_queries(asset.sector)
+        return await self._execute_step("sector.j2", sector=asset.sector, name=asset.name, queries=queries)
+
+    async def research_fundamentals(self, asset: Asset) -> str:
+        logger.info(f"Researching Fundamentals: {asset.ticker}")
+        queries = SearchVectorGenerator.get_fundamentals_queries(asset)
+        return await self._execute_step("fundamentals.j2", ticker=asset.ticker, name=asset.name, queries=queries)
+
+    async def research_financials(self, asset: Asset) -> str:
+        logger.info(f"Researching Financials: {asset.ticker}")
+        queries = SearchVectorGenerator.get_financials_queries(asset)
+        return await self._execute_step("financials.j2", ticker=asset.ticker, name=asset.name, queries=queries)
+
+    async def research_news(self, asset: Asset) -> str:
+        logger.info(f"Researching News: {asset.ticker}")
+        queries = SearchVectorGenerator.get_news_queries(asset)
+        return await self._execute_step("news.j2", ticker=asset.ticker, name=asset.name, queries=queries)
+
+    async def synthesize_report(self, asset: Asset, sector: str, fundamentals: str, financials: str, news: str) -> ResearchResult:
+        logger.info(f"Synthesizing Final Report: {asset.ticker}")
+        
+        prompt = self.templates.render(
+            "synthesis.j2",
+            sector_data=sector,
+            fundamentals_data=fundamentals,
+            financials_data=financials,
+            news_data=news
         )
-        def _call_structure():
+
+        @retry(retry=retry_if_exception_type(ClientError), stop=stop_after_attempt(5), wait=wait_exponential(multiplier=2, min=4, max=60))
+        def _call_synthesis():
             return self.client.models.generate_content(
                 model="gemini-2.0-flash",
-                contents=structuring_prompt,
+                contents=prompt,
                 config=types.GenerateContentConfig(
                     temperature=0.1,
                     response_mime_type="application/json",
@@ -111,20 +91,6 @@ class GeminiProvider(IResearchProvider):
                 )
             )
 
-        try:
-            structure_response = await asyncio.to_thread(_call_structure)
-            
-            if not structure_response.text:
-                raise ValueError(f"Empty response from Structuring Phase for {asset.ticker}")
-
-            cleaned_json = self._clean_json(structure_response.text)
-            data_dict = json.loads(cleaned_json)
-            
-            return ResearchResult(**data_dict)
-
-        except json.JSONDecodeError as e:
-            logger.error(f"JSON Parse Error for {asset.ticker}: {structure_response.text}")
-            raise e
-        except Exception as e:
-            logger.error(f"Phase 2 Failed for {asset.ticker}: {str(e)}")
-            raise e
+        response = await asyncio.to_thread(_call_synthesis)
+        data = json.loads(self._clean_json(response.text))
+        return ResearchResult(**data)

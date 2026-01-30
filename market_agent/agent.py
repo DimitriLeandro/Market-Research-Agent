@@ -10,35 +10,27 @@ from .assets.fii import FIIAsset
 from .research.provider import GeminiProvider
 from .research.enrichment import YFinanceEnricher
 from .persistence.repository import ResearchRepository
-from .persistence.renderer import ReportRenderer
+# Renderer import removed - redundant artifact logic deleted
 
 logger = logging.getLogger(__name__)
 
 class MarketAgent:
     def __init__(self):
-        # Dependency Injection via Constructor
         self.api_key = Config.load_api_key()
         self.provider = GeminiProvider(self.api_key)
-        
-        # Switched to Real YFinance Enricher
         self.enricher = YFinanceEnricher()
-        
         self.repository = ResearchRepository(Config.RESULTS_DIR)
         self.assets = self._load_assets()
-        
-        # Rate Limiting: Set to 1 to prevent 429 RESOURCE_EXHAUSTED errors
-        # This processes assets sequentially instead of in parallel bursts.
+        # Strictly sequential to avoid Rate Limits (429)
         self.semaphore = asyncio.Semaphore(1)
 
     def _load_assets(self) -> List[Asset]:
         raw = Config.load_portfolio()
         assets = []
         for item in raw:
-            # Fix: Map YAML 'type' to class 'asset_type'
-            # We create a copy to avoid modifying the original dict if used elsewhere
             asset_data = item.copy()
-            asset_type_str = asset_data.pop('type') # Remove 'type' key
-            asset_data['asset_type'] = asset_type_str # Add 'asset_type' key
+            asset_type_str = asset_data.pop('type')
+            asset_data['asset_type'] = asset_type_str
 
             if asset_type_str == 'equity':
                 assets.append(EquityAsset(**asset_data))
@@ -47,47 +39,54 @@ class MarketAgent:
         return assets
 
     async def _process_single_asset(self, asset: Asset, today: date):
-        async with self.semaphore: # Rate Limiter
-            logger.info(f"Starting {asset.ticker}")
+        async with self.semaphore:
+            logger.info(f"=== Starting Pipeline for {asset.ticker} ===")
             try:
-                # 1. Idempotency Check
                 if self.repository.exists(asset.ticker, today):
-                    logger.info(f"Skipping {asset.ticker} (Already exists)")
+                    logger.info(f"Skipping {asset.ticker} (Already completed)")
                     return
 
-                # 2. Enrichment (Now fetches Real Data: Price, P/L, P/VP)
-                context = await self.enricher.get_financial_data(asset)
+                # 1. Sector Research
+                sector_res = await self.provider.research_sector(asset)
+                self.repository.save_raw(asset.ticker, "sector_analysis", sector_res, today)
 
-                # 3. Research
-                result = await self.provider.conduct_research(asset, context)
+                # 2. Fundamentals Research
+                fund_res = await self.provider.research_fundamentals(asset)
+                self.repository.save_raw(asset.ticker, "fundamentals", fund_res, today)
 
-                # 4. Deterministic Date Assignment
-                # Overwrite LLM-generated date with the actual execution date to prevent hallucinations.
+                # 3. Financials Research
+                fin_res = await self.provider.research_financials(asset)
+                self.repository.save_raw(asset.ticker, "financials", fin_res, today)
+
+                # 4. News Research
+                news_res = await self.provider.research_news(asset)
+                self.repository.save_raw(asset.ticker, "news", news_res, today)
+
+                # 5. Synthesis
+                result = await self.provider.synthesize_report(
+                    asset, 
+                    sector=sector_res,
+                    fundamentals=fund_res,
+                    financials=fin_res,
+                    news=news_res
+                )
+
+                # 6. Finalize (JSON ONLY)
                 result.analysis_date = today.isoformat()
-
-                # 5. Rendering
-                report_md = ReportRenderer.render(result)
-
-                # 6. Save
-                self.repository.save(
+                
+                # FIX: Removed 'report_md' argument to match new Repository signature
+                self.repository.save_final(
                     asset.ticker, 
                     result.model_dump(mode='json'), 
-                    report_md, 
                     today
                 )
-                logger.info(f"Completed {asset.ticker}")
+                logger.info(f"=== Completed {asset.ticker} ===")
 
             except Exception as e:
                 logger.error(f"Failed to process {asset.ticker}: {e}", exc_info=True)
 
     async def run_cycle(self):
         today = date.today()
-        # Removed logic to find previous date
         logger.info(f"Cycle Date: {today}")
-
-        tasks = [
-            self._process_single_asset(asset, today)
-            for asset in self.assets
-        ]
-        
+        tasks = [self._process_single_asset(asset, today) for asset in self.assets]
         await asyncio.gather(*tasks)

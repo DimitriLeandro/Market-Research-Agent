@@ -195,18 +195,32 @@ def render_asset_view(assets):
             
             st.divider()
             
-            # Main Report (Markdown with Dollar Escape)
-            safe_markdown = helpers.escape_markdown_dollars(asset['summary_markdown'])
-            st.markdown(safe_markdown)
+            # --- STRUCTURED MARKDOWN RENDERING ---
+            # Instead of one blob, we render sections independently
             
-            # Key Events Section (Parsed from JSON)
-            if asset.get('key_events'):
-                st.subheader("🚨 Key Events")
-                for event in asset['key_events']:
-                    e_icon = "✅" if event['impact'] == "Positive" else "⚠️" if event['impact'] == "Negative" else "ℹ️"
-                    # Safe render description
-                    safe_desc = helpers.escape_markdown_dollars(event['description'])
-                    st.markdown(f"- {e_icon} **{event['event_name']}**: {safe_desc}")
+            # 1. Summary
+            st.subheader("📋 Executive Summary")
+            st.markdown(helpers.escape_markdown_dollars(asset.get('summary', 'No summary available.')))
+            st.divider()
+
+            # 2. Bullish Thesis
+            st.subheader("🐂 Bullish Thesis")
+            st.markdown(helpers.escape_markdown_dollars(asset.get('bullish_thesis', 'N/A')))
+            st.divider()
+
+            # 3. Bearish Thesis
+            st.subheader("🐻 Bearish Thesis")
+            st.markdown(helpers.escape_markdown_dollars(asset.get('bearish_thesis', 'N/A')))
+            st.divider()
+
+            # 4. Financial Analysis
+            st.subheader("📊 Financial Analysis")
+            st.markdown(helpers.escape_markdown_dollars(asset.get('financial_analysis', 'N/A')))
+            st.divider()
+
+            # 5. News & Events
+            st.subheader("📰 Recent News & Events")
+            st.markdown(helpers.escape_markdown_dollars(asset.get('news_and_events', 'N/A')))
             
             # Raw Data View
             with st.expander("🛠️ View Raw JSON Data"):

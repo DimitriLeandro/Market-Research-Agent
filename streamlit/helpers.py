@@ -5,7 +5,6 @@ from datetime import datetime
 from typing import List, Dict, Any
 
 # --- PATH FIX: USE ABSOLUTE PATHS BASED ON FILE LOCATION ---
-# This ensures it works regardless of where 'streamlit run' is executed
 CURRENT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = CURRENT_DIR.parent
 RESULTS_DIR = PROJECT_ROOT / "results"
@@ -51,6 +50,7 @@ def get_available_dates() -> List[str]:
 def load_report_data(date_folder_name: str) -> Dict[str, Any]:
     """
     Loads all JSON data for a specific date folder.
+    Traverses: Results/DATE/TICKER/final/report.json
     Returns a dict with 'equity' and 'fii' lists.
     """
     target_dir = RESULTS_DIR / date_folder_name
@@ -59,29 +59,35 @@ def load_report_data(date_folder_name: str) -> Dict[str, Any]:
 
     data_store = {"equity": [], "fii": []}
 
-    # Iterate over all JSON files to get structured data
-    for json_file in target_dir.glob("*_data.json"):
-        try:
-            with json_file.open("r", encoding="utf-8") as f:
-                data = json.load(f)
-            
-            ticker = data.get("ticker", "UNKNOWN")
-            
-            # Identify type
-            if "11" in ticker:
-                asset_type = "fii"
-            else:
-                asset_type = "equity"
-            
-            # Pre-format date for UI consistency
-            if "analysis_date" in data:
-                data["analysis_date"] = format_date_uk(data["analysis_date"])
-            
-            data_store[asset_type].append(data)
-
-        except Exception:
-            # Silently skip malformed files in UI
+    # Iterate over all directories (Tickers) inside the date folder
+    for ticker_dir in target_dir.iterdir():
+        if not ticker_dir.is_dir():
             continue
+            
+        json_path = ticker_dir / "final" / "report.json"
+        
+        if json_path.exists():
+            try:
+                with json_path.open("r", encoding="utf-8") as f:
+                    data = json.load(f)
+                
+                ticker = data.get("ticker", "UNKNOWN")
+                
+                # Identify type based on ticker suffix
+                if "11" in ticker:
+                    asset_type = "fii"
+                else:
+                    asset_type = "equity"
+                
+                # Pre-format date for UI consistency
+                if "analysis_date" in data:
+                    data["analysis_date"] = format_date_uk(data["analysis_date"])
+                
+                data_store[asset_type].append(data)
+
+            except Exception:
+                # Silently skip malformed files in UI
+                continue
 
     # Sort by ticker
     data_store["equity"].sort(key=lambda x: x["ticker"])
