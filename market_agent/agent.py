@@ -1,5 +1,6 @@
 import asyncio
 import logging
+import subprocess
 from datetime import date
 from typing import List
 
@@ -37,6 +38,23 @@ class MarketAgent:
             elif asset_type_str == 'fii':
                 assets.append(FIIAsset(**asset_data))
         return assets
+
+    def _git_auto_commit(self):
+        today_str = date.today().strftime("%Y-%m-%d")
+        try:
+            # 1. Add changes
+            subprocess.run(["git", "add", "results/"], check=True)
+            
+            # 2. Commit
+            commit_msg = f"docs: adding {today_str} results (auto commit)"
+            subprocess.run(["git", "commit", "-m", commit_msg], check=True)
+            
+            # 3. Push
+            subprocess.run(["git", "push"], check=True)
+            logger.info(f"Git auto-commit successful: {commit_msg}")
+            
+        except subprocess.CalledProcessError as e:
+            logger.error(f"Git auto-commit failed: {e}")
 
     async def _process_single_asset(self, asset: Asset, today: date):
         async with self.semaphore:
@@ -90,3 +108,6 @@ class MarketAgent:
         logger.info(f"Cycle Date: {today}")
         tasks = [self._process_single_asset(asset, today) for asset in self.assets]
         await asyncio.gather(*tasks)
+        
+        # Trigger Git Auto-Commit after all tasks are done
+        self._git_auto_commit()
