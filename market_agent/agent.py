@@ -1,6 +1,7 @@
 import asyncio
 import logging
 import subprocess
+import time
 from datetime import date
 from typing import List, Set
 
@@ -109,15 +110,56 @@ class MarketAgent:
                 logger.error(f"Failed to process asset {asset.ticker}: {e}", exc_info=True)
 
     def _git_auto_commit(self):
+        """
+        Attempts to add, commit, and push results with retries and exponential backoff.
+        """
         today_str = date.today().strftime("%Y-%m-%d")
-        try:
-            subprocess.run(["git", "add", "results/"], check=True)
-            commit_msg = f"docs: adding {today_str} results (auto commit)"
-            subprocess.run(["git", "commit", "-m", commit_msg], check=True)
-            subprocess.run(["git", "push"], check=True)
-            logger.info(f"Git auto-commit successful: {commit_msg}")
-        except subprocess.CalledProcessError as e:
-            logger.error(f"Git auto-commit failed: {e}")
+        commit_msg = f"docs: adding {today_str} results (auto commit)"
+        
+        max_retries = 5
+        attempts = 0
+        
+        while attempts <= max_retries:
+            try:
+                # 1. Add changes
+                subprocess.run(["git", "add", "results/"], check=True, capture_output=True, text=True)
+                
+                # 2. Commit (Check if there are changes first to avoid empty commit errors)
+                # We simply run commit; if nothing to commit, git usually exits with 1, 
+                # but for this script's resilience we accept it might fail if clean.
+                # However, usually we expect results. We wrap strictly.
+                try:
+                    subprocess.run(["git", "commit", "-m", commit_msg], check=True, capture_output=True, text=True)
+                except subprocess.CalledProcessError as e:
+                    if "nothing to commit" in e.stdout.lower():
+                        logger.info("Git: Nothing to commit.")
+                        return
+                    raise e # Re-raise if it's a real error
+
+                # 3. Push
+                subprocess.run(["git", "push"], check=True, capture_output=True, text=True)
+                
+                logger.info(f"Git auto-commit successful: {commit_msg}")
+                return # Success, exit function
+
+            except subprocess.CalledProcessError as e:
+                # Calculate backoff time: 2^attempts (1, 2, 4, 8, 16)
+                sleep_time = 2 ** attempts
+                
+                if attempts < max_retries:
+                    logger.warning(
+                        f"Git auto-commit attempt {attempts + 1} failed: {e}. "
+                        f"Retrying in {sleep_time} seconds..."
+                    )
+                    time.sleep(sleep_time)
+                    attempts += 1
+                else:
+                    logger.error(
+                        f"Git auto-commit failed after {max_retries + 1} attempts. "
+                        f"Final error: {e}"
+                    )
+                    # Exit gracefully without crashing the app, just log the failure.
+                    return
 
     async def run_cycle(self):
         today = date.today()
@@ -134,4 +176,5 @@ class MarketAgent:
         if asset_tasks:
             await asyncio.gather(*asset_tasks)
         
+        # Phase 3: Persistence
         self._git_auto_commit()
