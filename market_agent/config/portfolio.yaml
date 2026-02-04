@@ -4,66 +4,95 @@ assets:
   ### Equities ###
   ################
   
+  # --- Financials ---
   - ticker: BNBR3
     name: Banco do Nordeste do Brasil S.A.
     type: equity
     sector: Financials
   
-  - ticker: GMAT3
-    name: Grupo Mateus S.A.
-    type: equity
-    sector: Retail
-  
-  - ticker: ISAE3
-    name: ISA CTEEP (Transmissão Paulista)
-    type: equity
-    sector: Utilities/Energy
-  
-  - ticker: TAEE3
-    name: Taesa S.A.
-    type: equity
-    sector: Utilities/Energy
-  
   - ticker: BBAS3
     name: Banco do Brasil S.A.
     type: equity
     sector: Financials
-  
-  - ticker: PETR4
-    name: Petróleo Brasileiro S.A. Petrobras
-    type: equity
-    sector: Oil & Gas
-  
+
   - ticker: ABCB4
     name: Banco ABC Brasil S.A.
     type: equity
     sector: Financials
-  
+
   - ticker: ITSA4
     name: Itaúsa S.A.
     type: equity
     sector: Financials/Holding
-  
+
   - ticker: ITUB3
     name: Itaú Unibanco Holding S.A.
     type: equity
     sector: Financials
-  
-  - ticker: POMO3
-    name: Marcopolo S.A.
+
+  - ticker: BBDC3
+    name: Banco Bradesco S.A.
     type: equity
-    sector: Industrial/Automotive
-  
+    sector: Financials
+
+  - ticker: B3SA3
+    name: B3 S.A. - Brasil, Bolsa, Balcão
+    type: equity
+    sector: Financials/Infrastructure
+
+  - ticker: PSSA3
+    name: Porto Seguro S.A.
+    type: equity
+    sector: Insurance
+
   - ticker: BBSE3
     name: BB Seguridade Participações S.A.
     type: equity
     sector: Insurance
-  
+
+  # --- Utilities & Energy ---
+  - ticker: ISAE3
+    name: ISA CTEEP (Transmissão Paulista)
+    type: equity
+    sector: Utilities/Energy
+
+  - ticker: TAEE3
+    name: Taesa S.A.
+    type: equity
+    sector: Utilities/Energy
+
+  - ticker: PETR4
+    name: Petróleo Brasileiro S.A. Petrobras
+    type: equity
+    sector: Oil & Gas
+
+  # --- Industrial & Materials ---
   - ticker: VALE3
     name: Vale S.A.
     type: equity
     sector: Mining
-  
+
+  - ticker: POMO3
+    name: Marcopolo S.A.
+    type: equity
+    sector: Industrial/Automotive
+
+  - ticker: KEPL3
+    name: Kepler Weber S.A.
+    type: equity
+    sector: Industrial/Agro Storage
+
+  - ticker: UNIP3
+    name: Unipar Carbocloro S.A.
+    type: equity
+    sector: Materials/Chemicals
+
+  # --- Retail & Agro ---
+  - ticker: GMAT3
+    name: Grupo Mateus S.A.
+    type: equity
+    sector: Retail
+
   - ticker: AGRO3
     name: BrasilAgro - Cia Brasileira de Propriedades Agrícolas
     type: equity
@@ -147,6 +176,11 @@ assets:
     name: Kinea Crédito Agro FII
     type: fii
     sector: Paper/Agro
+
+  - ticker: RZAK11
+    name: Riza Akin FII
+    type: fii
+    sector: Paper/High Yield
 
   # Liquidity
   - ticker: MXRF11
