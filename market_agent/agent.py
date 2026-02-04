@@ -16,16 +16,26 @@ from .persistence.repository import ResearchRepository
 logger = logging.getLogger(__name__)
 
 class MarketAgent:
-    def __init__(self):
+    def __init__(self, test_mode: bool = False):
+        self.test_mode = test_mode
         self.api_key = Config.load_api_key()
         self.provider = GeminiProvider(self.api_key)
         self.enricher = YFinanceEnricher()
         self.repository = ResearchRepository(Config.RESULTS_DIR)
+        
+        # Load assets based on the mode
         self.assets = self._load_assets()
+        
         self.semaphore = asyncio.Semaphore(1) # Limit concurrency to avoid rate limits
 
+        if self.test_mode:
+            logger.info("MarketAgent initialized in TEST MODE.")
+        else:
+            logger.info("MarketAgent initialized in PRODUCTION MODE.")
+
     def _load_assets(self) -> List[Asset]:
-        raw = Config.load_portfolio()
+        # Pass the test_mode flag to the config loader
+        raw = Config.load_portfolio(test_mode=self.test_mode)
         assets = []
         for item in raw:
             asset_data = item.copy()
@@ -49,7 +59,6 @@ class MarketAgent:
                     logger.info(f"Skipping Sector {sector} (Already completed)")
                     return
 
-                # Execute 3 distinct sector steps
                 bull = await self.provider.research_sector_bull(sector)
                 self.repository.save_sector_research(sector, "bull_thesis", bull, today)
 
@@ -71,10 +80,8 @@ class MarketAgent:
                     logger.info(f"Skipping {asset.ticker} (Already completed)")
                     return
 
-                # Load pre-computed sector data
                 sector_data = self.repository.load_sector_research(asset.sector, today)
 
-                # Asset specific research
                 bull_res = await self.provider.research_asset_bull(asset)
                 self.repository.save_asset_raw(asset.ticker, "bull_thesis", bull_res, today)
 
@@ -87,7 +94,6 @@ class MarketAgent:
                 news_res = await self.provider.research_asset_news(asset)
                 self.repository.save_asset_raw(asset.ticker, "news", news_res, today)
 
-                # Synthesis
                 result = await self.provider.synthesize_report(
                     asset, 
                     sector_data=sector_data,
@@ -113,21 +119,21 @@ class MarketAgent:
         """
         Attempts to add, commit, and push results with retries and exponential backoff.
         """
+        # In test mode, we might want to skip pushing, or push with a specific message.
+        # For now, we follow the requirement: "The only difference must be the source of tickers".
+        # So we keep git behavior identical.
+        
         today_str = date.today().strftime("%Y-%m-%d")
-        commit_msg = f"docs: adding {today_str} results (auto commit)"
+        mode_str = "TEST" if self.test_mode else "PROD"
+        commit_msg = f"docs: adding {today_str} results ({mode_str} auto commit)"
         
         max_retries = 5
         attempts = 0
         
         while attempts <= max_retries:
             try:
-                # 1. Add changes
                 subprocess.run(["git", "add", "results/"], check=True, capture_output=True, text=True)
                 
-                # 2. Commit (Check if there are changes first to avoid empty commit errors)
-                # We simply run commit; if nothing to commit, git usually exits with 1, 
-                # but for this script's resilience we accept it might fail if clean.
-                # However, usually we expect results. We wrap strictly.
                 try:
                     subprocess.run(["git", "commit", "-m", commit_msg], check=True, capture_output=True, text=True)
                 except subprocess.CalledProcessError as e:
@@ -136,14 +142,12 @@ class MarketAgent:
                         return
                     raise e # Re-raise if it's a real error
 
-                # 3. Push
                 subprocess.run(["git", "push"], check=True, capture_output=True, text=True)
                 
                 logger.info(f"Git auto-commit successful: {commit_msg}")
                 return # Success, exit function
 
             except subprocess.CalledProcessError as e:
-                # Calculate backoff time: 2^attempts (1, 2, 4, 8, 16)
                 sleep_time = 2 ** attempts
                 
                 if attempts < max_retries:
@@ -158,23 +162,19 @@ class MarketAgent:
                         f"Git auto-commit failed after {max_retries + 1} attempts. "
                         f"Final error: {e}"
                     )
-                    # Exit gracefully without crashing the app, just log the failure.
                     return
 
     async def run_cycle(self):
         today = date.today()
         logger.info(f"Cycle Date: {today}")
 
-        # Phase 1: Sectors
         sectors = self._get_unique_sectors()
         sector_tasks = [self._process_sector(sector, today) for sector in sectors]
         if sector_tasks:
             await asyncio.gather(*sector_tasks)
 
-        # Phase 2: Assets
         asset_tasks = [self._process_asset(asset, today) for asset in self.assets]
         if asset_tasks:
             await asyncio.gather(*asset_tasks)
         
-        # Phase 3: Persistence
         self._git_auto_commit()

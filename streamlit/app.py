@@ -1,6 +1,8 @@
 import streamlit as st
 import json
 import re
+import subprocess
+import sys
 from pathlib import Path
 from datetime import date
 import yaml
@@ -29,15 +31,52 @@ def load_portfolio_data():
         data = yaml.safe_load(f)
     return data.get("assets", [])
 
-def sanitize_sector_name(sector):
-    return re.sub(r'[<>:"/\\|?*]', '_', sector)
+def run_agent(test_mode=False):
+    """Runs the market agent as a subprocess."""
+    cmd = [sys.executable, "market_agent/main.py"]
+    if test_mode:
+        cmd.append("--test")
+        
+    mode_str = "TEST" if test_mode else "PRODUCTION"
+    
+    with st.spinner(f"Running Agent in {mode_str} mode... This may take a while."):
+        try:
+            result = subprocess.run(cmd, capture_output=True, text=True)
+            if result.returncode == 0:
+                st.success(f"Execution successful in {mode_str} mode!")
+                st.info("Please refresh the page to see new results.")
+                with st.expander("View Logs"):
+                    st.code(result.stdout)
+            else:
+                st.error(f"Execution failed.")
+                with st.expander("View Error Logs"):
+                    st.code(result.stderr)
+                    st.code(result.stdout)
+        except Exception as e:
+            st.error(f"Failed to launch subprocess: {e}")
 
 # --- UI Layout ---
 st.title("🤖 AI Market Research Agent")
 
+# --- Sidebar: Execution Controls ---
+st.sidebar.header("Execution Control")
+
+st.sidebar.info("Production Mode runs the full portfolio.")
+if st.sidebar.button("🚀 Run Production Cycle", type="primary"):
+    run_agent(test_mode=False)
+
+st.sidebar.markdown("---")
+
+st.sidebar.warning("Test Mode runs a small subset (2 Stocks, 2 FIIs).")
+if st.sidebar.button("🧪 Run Test Mode"):
+    run_agent(test_mode=True)
+
+st.sidebar.markdown("---")
+
+# --- Main Content: Report Viewing ---
 dates = load_available_dates()
 if not dates:
-    st.warning("No research data found.")
+    st.warning("No research data found. Run the agent to generate reports.")
     st.stop()
 
 selected_date = st.sidebar.selectbox("Select Date", dates)
@@ -99,13 +138,10 @@ with tab_fiis:
 
 # --- Sectors Tab ---
 with tab_sectors:
-    # Identify unique sectors present in the directory
     sectors_dir = date_dir / "sectors"
     if sectors_dir.exists():
         available_sectors = [d.name for d in sectors_dir.iterdir() if d.is_dir()]
         
-        # We try to map sanitized names back to display names if possible, 
-        # but simpler to just list available folders
         selected_sector_folder = st.selectbox("Select Sector", available_sectors)
         
         if selected_sector_folder:
@@ -113,12 +149,17 @@ with tab_sectors:
             
             # Load the 3 distinct files
             try:
-                with open(sector_path / "bull_thesis.md", "r") as f:
-                    bull = f.read()
-                with open(sector_path / "bear_thesis.md", "r") as f:
-                    bear = f.read()
-                with open(sector_path / "news.md", "r") as f:
-                    news = f.read()
+                # Initialize variables to avoid unbound errors
+                bull, bear, news = "", "", ""
+                
+                if (sector_path / "bull_thesis.md").exists():
+                    with open(sector_path / "bull_thesis.md", "r") as f: bull = f.read()
+                
+                if (sector_path / "bear_thesis.md").exists():
+                    with open(sector_path / "bear_thesis.md", "r") as f: bear = f.read()
+                
+                if (sector_path / "news.md").exists():
+                    with open(sector_path / "news.md", "r") as f: news = f.read()
 
                 st.header(f"Sector Analysis: {selected_sector_folder.replace('_', '/')}")
                 
@@ -134,7 +175,7 @@ with tab_sectors:
                 st.subheader("📰 Recent Sector News")
                 st.markdown(news)
 
-            except FileNotFoundError:
-                st.warning("Incomplete sector data found.")
+            except Exception as e:
+                st.error(f"Error loading sector data: {e}")
     else:
         st.info("No sector data recorded for this date.")
