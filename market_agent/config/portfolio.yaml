@@ -35,11 +35,27 @@ assets:
     type: equity
     sector: Financials
 
+  - ticker: BPAC11
+    name: Banco BTG Pactual S.A.
+    type: equity
+    sector: Financials/Investment Banking
+
+  - ticker: BRSR6
+    name: Banrisul
+    type: equity
+    sector: Financials
+
+  - ticker: BMEB3
+    name: Banco Mercantil do Brasil S.A.
+    type: equity
+    sector: Financials
+
   - ticker: B3SA3
     name: B3 S.A. - Brasil, Bolsa, Balcão
     type: equity
     sector: Financials/Infrastructure
 
+  # --- Insurance ---
   - ticker: PSSA3
     name: Porto Seguro S.A.
     type: equity
@@ -47,6 +63,11 @@ assets:
 
   - ticker: BBSE3
     name: BB Seguridade Participações S.A.
+    type: equity
+    sector: Insurance
+
+  - ticker: CXSE3
+    name: Caixa Seguridade Participações S.A.
     type: equity
     sector: Insurance
 
@@ -61,16 +82,31 @@ assets:
     type: equity
     sector: Utilities/Energy
 
+  - ticker: CMIG3
+    name: Cemig (Companhia Energética de Minas Gerais)
+    type: equity
+    sector: Utilities/Energy
+
   - ticker: PETR4
     name: Petróleo Brasileiro S.A. Petrobras
     type: equity
     sector: Oil & Gas
+
+  - ticker: RAIZ4
+    name: Raízen S.A.
+    type: equity
+    sector: Energy/Sugar & Ethanol
 
   # --- Industrial & Materials ---
   - ticker: VALE3
     name: Vale S.A.
     type: equity
     sector: Mining
+
+  - ticker: GGBR3
+    name: Gerdau S.A.
+    type: equity
+    sector: Materials/Steel
 
   - ticker: POMO3
     name: Marcopolo S.A.
