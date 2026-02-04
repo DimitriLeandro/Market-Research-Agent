@@ -4,5 +4,5 @@ from .base import Asset
 @dataclass
 class EquityAsset(Asset):
     @property
-    def template_name(self) -> str:
-        return "equity.j2"
+    def prompt_subdir(self) -> str:
+        return "stocks"

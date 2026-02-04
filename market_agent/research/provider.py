@@ -27,13 +27,12 @@ class GeminiProvider(IResearchProvider):
         return cleaned.strip()
 
     async def conduct_research(self, asset: Asset, context: dict) -> ResearchResult:
-        # NOTE: This single method is deprecated in the new flow but kept for interface compatibility.
-        # Ideally, the Agent should call specific methods below.
         raise NotImplementedError("Use specific research step methods.")
 
     @retry(retry=retry_if_exception_type(ClientError), stop=stop_after_attempt(5), wait=wait_exponential(multiplier=2, min=4, max=60))
-    async def _execute_step(self, template_name: str, **kwargs) -> str:
-        prompt = self.templates.render(template_name, **kwargs)
+    async def _execute_step(self, template_path: str, **kwargs) -> str:
+        # Template manager now expects a path relative to PROMPTS_DIR, e.g., "stocks/bull.j2"
+        prompt = self.templates.render(template_path, **kwargs)
         
         def _call():
             return self.client.models.generate_content(
@@ -48,35 +47,61 @@ class GeminiProvider(IResearchProvider):
         response = await asyncio.to_thread(_call)
         return response.text if response.text else "No data found."
 
-    async def research_sector(self, asset: Asset) -> str:
-        logger.info(f"Researching Sector: {asset.sector}")
-        queries = SearchVectorGenerator.get_sector_queries(asset.sector)
-        return await self._execute_step("sector.j2", sector=asset.sector, name=asset.name, queries=queries)
+    # --- SECTOR RESEARCH ---
 
-    async def research_fundamentals(self, asset: Asset) -> str:
-        logger.info(f"Researching Fundamentals: {asset.ticker}")
-        queries = SearchVectorGenerator.get_fundamentals_queries(asset)
-        return await self._execute_step("fundamentals.j2", ticker=asset.ticker, name=asset.name, queries=queries)
+    async def research_sector_bull(self, sector: str) -> str:
+        logger.info(f"Sector Bull: {sector}")
+        queries = SearchVectorGenerator.get_sector_bull_queries(sector)
+        return await self._execute_step("sectors/bull.j2", sector=sector, queries=queries)
 
-    async def research_financials(self, asset: Asset) -> str:
-        logger.info(f"Researching Financials: {asset.ticker}")
-        queries = SearchVectorGenerator.get_financials_queries(asset)
-        return await self._execute_step("financials.j2", ticker=asset.ticker, name=asset.name, queries=queries)
+    async def research_sector_bear(self, sector: str) -> str:
+        logger.info(f"Sector Bear: {sector}")
+        queries = SearchVectorGenerator.get_sector_bear_queries(sector)
+        return await self._execute_step("sectors/bear.j2", sector=sector, queries=queries)
 
-    async def research_news(self, asset: Asset) -> str:
-        logger.info(f"Researching News: {asset.ticker}")
+    async def research_sector_news(self, sector: str) -> str:
+        logger.info(f"Sector News: {sector}")
+        queries = SearchVectorGenerator.get_sector_news_queries(sector)
+        return await self._execute_step("sectors/news.j2", sector=sector, queries=queries)
+
+    # --- ASSET RESEARCH ---
+
+    async def research_asset_bull(self, asset: Asset) -> str:
+        logger.info(f"Asset Bull: {asset.ticker}")
+        queries = SearchVectorGenerator.get_bull_queries(asset)
+        # Dynamic path: stocks/bull.j2 or reits/bull.j2
+        return await self._execute_step(f"{asset.prompt_subdir}/bull.j2", ticker=asset.ticker, name=asset.name, queries=queries)
+
+    async def research_asset_bear(self, asset: Asset) -> str:
+        logger.info(f"Asset Bear: {asset.ticker}")
+        queries = SearchVectorGenerator.get_bear_queries(asset)
+        return await self._execute_step(f"{asset.prompt_subdir}/bear.j2", ticker=asset.ticker, name=asset.name, queries=queries)
+
+    async def research_asset_news(self, asset: Asset) -> str:
+        logger.info(f"Asset News: {asset.ticker}")
         queries = SearchVectorGenerator.get_news_queries(asset)
-        return await self._execute_step("news.j2", ticker=asset.ticker, name=asset.name, queries=queries)
+        return await self._execute_step(f"{asset.prompt_subdir}/news.j2", ticker=asset.ticker, name=asset.name, queries=queries)
 
-    async def synthesize_report(self, asset: Asset, sector: str, fundamentals: str, financials: str, news: str) -> ResearchResult:
-        logger.info(f"Synthesizing Final Report: {asset.ticker}")
+    async def research_asset_financials(self, asset: Asset) -> str:
+        logger.info(f"Asset Financials: {asset.ticker}")
+        queries = SearchVectorGenerator.get_financials_queries(asset)
+        return await self._execute_step(f"{asset.prompt_subdir}/financials.j2", ticker=asset.ticker, name=asset.name, queries=queries)
+
+    # --- SYNTHESIS ---
+
+    async def synthesize_report(self, asset: Asset, sector_data: dict, bull: str, bear: str, news: str, financials: str) -> ResearchResult:
+        logger.info(f"Synthesizing: {asset.ticker}")
         
         prompt = self.templates.render(
-            "synthesis.j2",
-            sector_data=sector,
-            fundamentals_data=fundamentals,
-            financials_data=financials,
-            news_data=news
+            "common/synthesis.j2", # We use a common synthesis template that can handle the inputs
+            ticker=asset.ticker,
+            sector_bull=sector_data.get('bull_thesis'),
+            sector_bear=sector_data.get('bear_thesis'),
+            sector_news=sector_data.get('news'),
+            asset_bull=bull,
+            asset_bear=bear,
+            asset_news=news,
+            asset_financials=financials
         )
 
         @retry(retry=retry_if_exception_type(ClientError), stop=stop_after_attempt(5), wait=wait_exponential(multiplier=2, min=4, max=60))

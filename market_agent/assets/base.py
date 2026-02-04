@@ -10,5 +10,6 @@ class Asset(ABC):
 
     @property
     @abstractmethod
-    def template_name(self) -> str:
+    def prompt_subdir(self) -> str:
+        """Returns the subdirectory for prompts (stocks/reits)."""
         pass

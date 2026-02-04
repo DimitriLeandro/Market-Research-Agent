@@ -10,7 +10,8 @@ class Config:
     PORTFOLIO_PATH = BASE_DIR / "market_agent" / "config" / "portfolio.yaml"
     RESULTS_DIR = BASE_DIR / "results"
     LOGS_DIR = BASE_DIR / "logs"
-    PROMPTS_DIR = BASE_DIR / "market_agent" / "prompts" / "files"
+    # Pointing to the root of the prompts directory
+    PROMPTS_DIR = BASE_DIR / "market_agent" / "prompts"
 
     @classmethod
     def load_api_key(cls) -> str:

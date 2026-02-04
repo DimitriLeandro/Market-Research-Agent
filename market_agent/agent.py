@@ -2,7 +2,7 @@ import asyncio
 import logging
 import subprocess
 from datetime import date
-from typing import List
+from typing import List, Set
 
 from .config.settings import Config
 from .assets.base import Asset
@@ -11,7 +11,6 @@ from .assets.fii import FIIAsset
 from .research.provider import GeminiProvider
 from .research.enrichment import YFinanceEnricher
 from .persistence.repository import ResearchRepository
-# Renderer import removed - redundant artifact logic deleted
 
 logger = logging.getLogger(__name__)
 
@@ -22,8 +21,7 @@ class MarketAgent:
         self.enricher = YFinanceEnricher()
         self.repository = ResearchRepository(Config.RESULTS_DIR)
         self.assets = self._load_assets()
-        # Strictly sequential to avoid Rate Limits (429)
-        self.semaphore = asyncio.Semaphore(1)
+        self.semaphore = asyncio.Semaphore(1) # Limit concurrency to avoid rate limits
 
     def _load_assets(self) -> List[Asset]:
         raw = Config.load_portfolio()
@@ -39,75 +37,101 @@ class MarketAgent:
                 assets.append(FIIAsset(**asset_data))
         return assets
 
-    def _git_auto_commit(self):
-        today_str = date.today().strftime("%Y-%m-%d")
-        try:
-            # 1. Add changes
-            subprocess.run(["git", "add", "results/"], check=True)
-            
-            # 2. Commit
-            commit_msg = f"docs: adding {today_str} results (auto commit)"
-            subprocess.run(["git", "commit", "-m", commit_msg], check=True)
-            
-            # 3. Push
-            subprocess.run(["git", "push"], check=True)
-            logger.info(f"Git auto-commit successful: {commit_msg}")
-            
-        except subprocess.CalledProcessError as e:
-            logger.error(f"Git auto-commit failed: {e}")
+    def _get_unique_sectors(self) -> Set[str]:
+        return set(asset.sector for asset in self.assets)
 
-    async def _process_single_asset(self, asset: Asset, today: date):
+    async def _process_sector(self, sector: str, today: date):
         async with self.semaphore:
-            logger.info(f"=== Starting Pipeline for {asset.ticker} ===")
+            logger.info(f"=== Starting Sector Pipeline for {sector} ===")
             try:
-                if self.repository.exists(asset.ticker, today):
+                if self.repository.sector_exists(sector, today):
+                    logger.info(f"Skipping Sector {sector} (Already completed)")
+                    return
+
+                # Execute 3 distinct sector steps
+                bull = await self.provider.research_sector_bull(sector)
+                self.repository.save_sector_research(sector, "bull_thesis", bull, today)
+
+                bear = await self.provider.research_sector_bear(sector)
+                self.repository.save_sector_research(sector, "bear_thesis", bear, today)
+
+                news = await self.provider.research_sector_news(sector)
+                self.repository.save_sector_research(sector, "news", news, today)
+                
+                logger.info(f"=== Completed Sector {sector} ===")
+            except Exception as e:
+                logger.error(f"Failed to process sector {sector}: {e}", exc_info=True)
+
+    async def _process_asset(self, asset: Asset, today: date):
+        async with self.semaphore:
+            logger.info(f"=== Starting Asset Pipeline for {asset.ticker} ===")
+            try:
+                if self.repository.asset_exists(asset.ticker, today):
                     logger.info(f"Skipping {asset.ticker} (Already completed)")
                     return
 
-                # 1. Sector Research
-                sector_res = await self.provider.research_sector(asset)
-                self.repository.save_raw(asset.ticker, "sector_analysis", sector_res, today)
+                # Load pre-computed sector data
+                sector_data = self.repository.load_sector_research(asset.sector, today)
 
-                # 2. Fundamentals Research
-                fund_res = await self.provider.research_fundamentals(asset)
-                self.repository.save_raw(asset.ticker, "fundamentals", fund_res, today)
+                # Asset specific research
+                bull_res = await self.provider.research_asset_bull(asset)
+                self.repository.save_asset_raw(asset.ticker, "bull_thesis", bull_res, today)
 
-                # 3. Financials Research
-                fin_res = await self.provider.research_financials(asset)
-                self.repository.save_raw(asset.ticker, "financials", fin_res, today)
+                bear_res = await self.provider.research_asset_bear(asset)
+                self.repository.save_asset_raw(asset.ticker, "bear_thesis", bear_res, today)
 
-                # 4. News Research
-                news_res = await self.provider.research_news(asset)
-                self.repository.save_raw(asset.ticker, "news", news_res, today)
+                fin_res = await self.provider.research_asset_financials(asset)
+                self.repository.save_asset_raw(asset.ticker, "financials", fin_res, today)
 
-                # 5. Synthesis
+                news_res = await self.provider.research_asset_news(asset)
+                self.repository.save_asset_raw(asset.ticker, "news", news_res, today)
+
+                # Synthesis
                 result = await self.provider.synthesize_report(
                     asset, 
-                    sector=sector_res,
-                    fundamentals=fund_res,
+                    sector_data=sector_data,
+                    bull=bull_res,
+                    bear=bear_res,
                     financials=fin_res,
                     news=news_res
                 )
 
-                # 6. Finalize (JSON ONLY)
                 result.analysis_date = today.isoformat()
                 
-                # FIX: Removed 'report_md' argument to match new Repository signature
-                self.repository.save_final(
+                self.repository.save_asset_final(
                     asset.ticker, 
                     result.model_dump(mode='json'), 
                     today
                 )
-                logger.info(f"=== Completed {asset.ticker} ===")
+                logger.info(f"=== Completed Asset {asset.ticker} ===")
 
             except Exception as e:
-                logger.error(f"Failed to process {asset.ticker}: {e}", exc_info=True)
+                logger.error(f"Failed to process asset {asset.ticker}: {e}", exc_info=True)
+
+    def _git_auto_commit(self):
+        today_str = date.today().strftime("%Y-%m-%d")
+        try:
+            subprocess.run(["git", "add", "results/"], check=True)
+            commit_msg = f"docs: adding {today_str} results (auto commit)"
+            subprocess.run(["git", "commit", "-m", commit_msg], check=True)
+            subprocess.run(["git", "push"], check=True)
+            logger.info(f"Git auto-commit successful: {commit_msg}")
+        except subprocess.CalledProcessError as e:
+            logger.error(f"Git auto-commit failed: {e}")
 
     async def run_cycle(self):
         today = date.today()
         logger.info(f"Cycle Date: {today}")
-        tasks = [self._process_single_asset(asset, today) for asset in self.assets]
-        await asyncio.gather(*tasks)
+
+        # Phase 1: Sectors
+        sectors = self._get_unique_sectors()
+        sector_tasks = [self._process_sector(sector, today) for sector in sectors]
+        if sector_tasks:
+            await asyncio.gather(*sector_tasks)
+
+        # Phase 2: Assets
+        asset_tasks = [self._process_asset(asset, today) for asset in self.assets]
+        if asset_tasks:
+            await asyncio.gather(*asset_tasks)
         
-        # Trigger Git Auto-Commit after all tasks are done
         self._git_auto_commit()

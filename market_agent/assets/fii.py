@@ -4,5 +4,5 @@ from .base import Asset
 @dataclass
 class FIIAsset(Asset):
     @property
-    def template_name(self) -> str:
-        return "fii.j2"
+    def prompt_subdir(self) -> str:
+        return "reits"
