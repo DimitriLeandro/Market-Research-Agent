@@ -1,0 +1,3 @@
+Okay, I will extract the requested financial data for GARE11 from its most recent quarterly results and management guidance, focusing on the specified metrics and comparisons.
+
+Based on the search results, I am unable to find the specific hard financial data from the most recent Quarterly Results (Earnings Release) and Management Guidance required for the raw data log. The search results provide general information about GARE11, including dividend yields, recent changes and assembly results, and discussions around increasing capital. However, the specific figures for Net Revenue, EBITDA, Net Income, Operating Cash Flow, Free Cash Flow, and management's full-year guidance are not available in the provided search snippets.

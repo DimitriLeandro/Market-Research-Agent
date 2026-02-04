@@ -1,0 +1,12 @@
+Okay, I will compile a forensic log of material events for ISAE3 (ISA CTEEP (Transmissão Paulista)) from the last 90 days, focusing on the criteria you've outlined.
+
+Here's the forensic log of material events for ISAE3 (ISA CTEEP) over the last 90 days, in chronological order:
+
+*   **[Feb 03, 2026]** Analyst ratings show that Stephens & Co. Reiterated an Equal-Weight rating for Chipotle Mexican Grill, with a price target change from $35 to $35. Jefferies Maintains a Buy rating for ZoomInfo Technologies, with a price target change from $16 to $12. Needham Reiterates a Buy rating for NXP Semiconductors, with a price target change from $250 to $250. BTIG Reiterates a Neutral rating for PayPal Holdings. BTIG Reiterates a Buy rating for Capri Holdings, with a price target change from $30 to $30. Needham Maintains a Buy rating for FuboTV, with a price target change from $4.25 to $3. JP Morgan Maintains an Overweight rating for Wyndham Hotels & Resorts, with a price target change from $95 to $91. JP Morgan Maintains a Neutral rating for Verizon Communications, with a price target change from $47 to $49. JP Morgan Maintains a Neutral rating for Tyson Foods, with a price target change from $63 to $67. JP Morgan Maintains an Overweight rating for Ryman Hospitality Props, with a price target change from $113 to $111. JP Morgan Maintains a rating for Revvity, with a price target change from $100 to $105.
+*   **[Jan 29, 2026]** ISAE3 had an ex-dividend date of January 29, 2026, with a dividend of R$0.21297, and a payment date of February 24, 2026. The dividend yield was 4.89%.
+*   **[Dec 29, 2025]** ISAE3 was trading at a price of R$34.00. ISAE3 had an ex-dividend date of December 29, 2025, with a dividend of R$0.21297, and a payment date of January 27, 2026. The dividend yield was 6.29%.
+*   **[Dec 17, 2025]** ISAE3 had an ex-dividend date of December 17, 2025, with a dividend of R$0.191249, and a payment date of December 29, 2025. The dividend yield was 7.80%.
+*   **[Nov 24, 2025]** ISAE3 had an ex-dividend date of November 24, 2025, with a dividend of R$0.191249, and a payment date of December 11, 2025. The dividend yield was 7.38%.
+*   **[Oct 30, 2025]** ISAE3 had an ex-dividend date of October 30, 2025, with a dividend of R$0.191249, and a payment date of November 27, 2025. The dividend yield was 6.91%.
+*   **[Oct 28, 2025]** ISA Energia ON released its next earnings report on Feb 24, 2026. The latest release shows an EPS of R$0.4737 and a forecast of R$0.4725. Revenue was R$1.07B and the forecast was R$1.19B.
+
