@@ -1,0 +1,15 @@
+Okay, I will provide a macroeconomic and structural analysis of the Financials sector in Brazil, focusing on the external environment and adhering to the specified format and constraints.
+
+Here's a breakdown of the macroeconomic and structural drivers affecting the Financials sector in Brazil:
+
+*   **Interest Rates:** The Central Bank of Brazil (BCB) maintained the Selic rate at 15.00% in January 2026. The National Confederation of Industry (CNI) identified high interest rates as the main factor in the slowdown of Brazilian industry and the fall in business confidence in 2025. High interest rates have made credit more expensive, reduced consumption, and weakened the economy.
+
+*   **Inflation:** Inflation expectations for 2025 and 2026 remain elevated at 4.5% and 4.2%, respectively. Copom projects inflation at 3.3% for the second quarter of 2027. The twelve-month inflation increased from 4.2% in August to 4.9% in November. Economic analysts' inflation expectations worsened again, reaching 4.6% for 2025 and 4% for 2026, moving further away from the 3% inflation target.
+
+*   **Regulatory Actions:** In 2026, the Brazilian financial sector is expected to undergo substantial regulatory developments, reflecting the strategic priorities under the BCB’s regulatory agenda. These initiatives aim to enhance transparency, operational resilience, and legal certainty, while fostering innovation and aligning domestic standards with international best practices. BCB Instruction No. 701/2026 complements BCB Resolution No. 520/2025, establishing requirements for independent technical certification for virtual asset service providers. Starting in 2028, the minimum capital required for financial institutions to operate in Brazil will rise to USD 1.68 billion from approximately USD 950 million. On 22 May 2025, the Brazilian Federal Government published Decree 12.466/2025, significantly increasing tax rates on credit transactions (IOF-credit) and certain foreign exchange transactions (IOF-FX), effective from 23 May 2025.
+
+*   **Global Correlation:** The US Federal Reserve (FED) maintained its rates for most of 2025. When the FED raises interest rates, it strengthens the dollar against other currencies, including the real. This depreciation increases the cost of importing inputs and raises financing costs for Brazilian companies, reducing their investment capacity. Concerns about slowing economic indicators in China for September added to the market's unease. The Brazilian stock market, Ibovespa, experienced a downturn on Tuesday, October 8, 2024, as investors reacted to China's new stimulus package, which disappointed market expectations.
+
+*   **Commodities:** On October 8, 2024, a disappointing stimulus package in China caused iron ore and oil prices to plummet by over 4%.
+
+*   **Other Macroeconomic Factors:** The Brazilian economy has shown robust performance, with GDP growth exceeding expectations in recent years. GDP growth is slowing to 2.5% in 2025, in line with its potential. The services sector is the main driver of the Brazilian economy, accounting directly and indirectly for about 70% of the Gross Domestic Product (GDP).
