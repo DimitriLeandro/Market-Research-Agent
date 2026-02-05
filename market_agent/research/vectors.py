@@ -103,3 +103,13 @@ class SearchVectorGenerator:
             f'{asset.ticker} apresentação institucional investidores {y}',
             f'{asset.ticker} guidance e perspectivas administração {y}'
         ]
+
+    @staticmethod
+    def get_management_queries(asset: Asset) -> List[str]:
+        y = SearchVectorGenerator._get_year()
+        return [
+            f'{asset.ticker} relatório gerencial mensal recente {y} pdf',
+            f'{asset.ticker} comentário do gestor performance mensal',
+            f'{asset.ticker} detalhamento carteira ativos relatório gerencial',
+            f'{asset.ticker} cronograma amortização dívida relatório gerencial'
+        ]

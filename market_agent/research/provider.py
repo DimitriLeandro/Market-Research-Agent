@@ -91,6 +91,10 @@ class GeminiProvider(IResearchProvider):
         queries = SearchVectorGenerator.get_earnings_queries(asset)
         return await self._execute_step(f"{asset.prompt_subdir}/earnings.j2", ticker=asset.ticker, name=asset.name, queries=queries)
 
+    async def research_asset_management(self, asset: Asset) -> str:
+        queries = SearchVectorGenerator.get_management_queries(asset)
+        return await self._execute_step(f"{asset.prompt_subdir}/management.j2", ticker=asset.ticker, name=asset.name, queries=queries)
+
 
     async def synthesize_sector_report(self, sector: str, bull: str, bear: str, news: str) -> SectorResult:
         # Keeping this for now as the plan doesn't explicitly delete sector synthesis yet.
