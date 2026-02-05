@@ -9,12 +9,27 @@ Você recebeu a seguinte análise em Markdown sobre **{{ ticker }}**:
 ## Missão
 Extraia e formate esta análise estritamente para o JSON schema fornecido.
 
-## Regras de Extração
-1.  **Sentiment Score**: Avalie o tom geral de -1.0 (Muito Bearish) a 1.0 (Muito Bullish).
-2.  **Summary**: Resumo executivo curto e direto.
-3.  **Bullish Thesis**: Copie os argumentos otimistas.
-4.  **Bearish Thesis**: Copie os riscos e argumentos pessimistas.
-5.  **Financial Analysis**: Copie a seção de análise de fundamentos/resultados.
-6.  **News**: Copie o resumo dos eventos recentes.
+## Estrutura de Seções (Array 'sections')
+Gere um objeto para cada uma das seções abaixo:
+
+1.  **id**: `summary`
+    * **title**: "Resumo Executivo"
+    * **content**: Resumo curto e direto.
+
+2.  **id**: `bull_thesis`
+    * **title**: "Tese Bull (Otimista)"
+    * **content**: Argumentos de compra.
+
+3.  **id**: `bear_thesis`
+    * **title**: "Tese Bear (Riscos)"
+    * **content**: Argumentos de risco.
+
+4.  **id**: `financials`
+    * **title**: "Análise Financeira"
+    * **content**: Fundamentos e resultados.
+
+5.  **id**: `news`
+    * **title**: "Eventos Recentes"
+    * **content**: Notícias e fatos relevantes.
 
 **Output JSON apenas.**

@@ -9,11 +9,23 @@ Você recebeu a seguinte análise setorial sobre **{{ sector }}**:
 ## Missão
 Extraia e formate esta análise estritamente para o JSON schema fornecido.
 
-## Regras de Extração
-1.  **Sentiment/Outlook**: Qual a tendência geral?
-2.  **Summary**: Resumo do momento atual do setor.
-3.  **Bullish Thesis**: Drivers de crescimento.
-4.  **Bearish Thesis**: Riscos e desafios.
-5.  **News**: Destaques recentes e mudanças regulatórias.
+## Estrutura de Seções (Array 'sections')
+Gere um objeto para cada uma das seções abaixo:
+
+1.  **id**: `summary`
+    * **title**: "Resumo Setorial"
+    * **content**: Momento atual.
+
+2.  **id**: `bull_thesis`
+    * **title**: "Drivers de Crescimento"
+    * **content**: Oportunidades macro/micro.
+
+3.  **id**: `bear_thesis`
+    * **title**: "Riscos e Desafios"
+    * **content**: Riscos regulatórios e de mercado.
+
+4.  **id**: `news`
+    * **title**: "Destaques Recentes"
+    * **content**: Notícias e regulação.
 
 **Output JSON apenas.**
