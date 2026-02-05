@@ -65,21 +65,41 @@ class SearchVectorGenerator:
 
     @staticmethod
     def get_news_queries(asset: Asset) -> List[str]:
-        # y = SearchVectorGenerator._get_year() # Unused variable
         recent = SearchVectorGenerator._get_time_context()
         return [
-            f'{asset.ticker} fatos relevantes CVM e comunicados {recent}',
-            f'{asset.ticker} notícias corporativas impacto ações {recent}',
-            f'{asset.ticker} processos judiciais e escândalos recentes',
-            f'{asset.ticker} resultados trimestrais destaques reação mercado'
+            f'{asset.ticker} notícias corporativas e escândalos {recent}',
+            f'{asset.ticker} repercussão na mídia resultados {recent}',
+            f'{asset.ticker} processos judiciais e passivos recentes',
+            f'{asset.ticker} opinião analistas e colunistas mercado'
         ]
 
     @staticmethod
     def get_financials_queries(asset: Asset) -> List[str]:
         y = SearchVectorGenerator._get_year()
         return [
-            f'{asset.ticker} análise resultados financeiros trimestrais {y}',
-            f'{asset.ticker} evolução receita ebitda lucro líquido histórico',
-            f'{asset.ticker} indicadores endividamento alavancagem {y}',
-            f'{asset.ticker} fluxo de caixa livre e dividendos recentes'
+            f'{asset.ticker} tabela indicadores financeiros {y}',
+            f'{asset.ticker} evolução margem ebitda e lucro líquido histórico',
+            f'{asset.ticker} balanço patrimonial e fluxo de caixa {y}',
+            f'{asset.ticker} histórico dividendos e payout'
+        ]
+
+    @staticmethod
+    def get_filings_queries(asset: Asset) -> List[str]:
+        y = SearchVectorGenerator._get_year()
+        recent = SearchVectorGenerator._get_time_context()
+        return [
+            f'{asset.ticker} fatos relevantes CVM {recent}',
+            f'{asset.ticker} comunicados ao mercado dividendos {y}',
+            f'{asset.ticker} mudança composição acionária {recent}',
+            f'{asset.ticker} atas assembleias e reuniões conselho {y}'
+        ]
+
+    @staticmethod
+    def get_earnings_queries(asset: Asset) -> List[str]:
+        y = SearchVectorGenerator._get_year()
+        return [
+            f'{asset.ticker} release de resultados trimestrais {y} pdf',
+            f'{asset.ticker} destaques teleconferência resultados {y}',
+            f'{asset.ticker} apresentação institucional investidores {y}',
+            f'{asset.ticker} guidance e perspectivas administração {y}'
         ]
