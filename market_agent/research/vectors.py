@@ -7,72 +7,79 @@ class SearchVectorGenerator:
     def _get_year() -> int:
         return date.today().year
 
-    # --- SECTOR VECTORS ---
+    @staticmethod
+    def _get_time_context() -> str:
+        """Returns a string for recent context constraints."""
+        return "últimos 90 dias"
 
     @staticmethod
     def get_sector_bull_queries(sector: str) -> List[str]:
         y = SearchVectorGenerator._get_year()
         return [
-            f'setor {sector} brasil {y} tendências crescimento',
-            f'fatores macroeconomicos positivos setor {sector} brasil',
-            f'oportunidades investimento setor {sector} {y} relatórios bancos',
-            f'preço commodities impacto positivo {sector} brasil'
+            f'setor {sector} brasil {y} perspectivas positivas e oportunidades crescimento',
+            f'relatórios bancos investimento setor {sector} brasil {y} recomendações compra',
+            f'fatores macroeconômicos favoráveis setor {sector} brasil atual',
+            f'tendências inovação e aumento demanda setor {sector} brasil'
         ]
 
     @staticmethod
     def get_sector_bear_queries(sector: str) -> List[str]:
         y = SearchVectorGenerator._get_year()
         return [
-            f'riscos regulatórios setor {sector} brasil {y}',
-            f'desafios operacionais setor {sector} brasil curto prazo',
-            f'aumento custo capital endividamento setor {sector} brasil',
-            f'impacto inflação e juros setor {sector} analise'
+            f'principais riscos e ameaças setor {sector} brasil {y}',
+            f'impacto aumento juros e inflação custos setor {sector} brasil',
+            f'mudanças regulatórias negativas e riscos fiscais setor {sector} brasil',
+            f'desafios operacionais gargalos logísticos setor {sector} brasil'
         ]
 
     @staticmethod
     def get_sector_news_queries(sector: str) -> List[str]:
         y = SearchVectorGenerator._get_year()
+        recent = SearchVectorGenerator._get_time_context()
         return [
-            f'notícias recentes setor {sector} brasil últimos 30 dias',
-            f'mudanças legislação {sector} brasil {y}',
-            f'fusões aquisições setor {sector} brasil recentes'
+            f'notícias importantes setor {sector} brasil {recent}',
+            f'fusões aquisições e consolidação setor {sector} brasil {y}',
+            f'greves acidentes ou crises setor {sector} brasil {recent}',
+            f'nova legislação e regulação setor {sector} brasil {recent}'
         ]
-
-    # --- ASSET VECTORS ---
 
     @staticmethod
     def get_bull_queries(asset: Asset) -> List[str]:
+        y = SearchVectorGenerator._get_year()
         return [
-            f'{asset.ticker} tese de investimento bull case compra',
-            f'{asset.ticker} vantagens competitivas fosso economico',
-            f'{asset.ticker} projetos expansão crescimento receita',
-            f'{asset.ticker} recomendação bancos compra preço alvo'
+            f'{asset.ticker} tese de investimento compra pontos positivos',
+            f'{asset.ticker} vantagens competitivas e diferenciais mercado',
+            f'{asset.ticker} preço alvo e recomendações analistas {y}',
+            f'{asset.ticker} projetos expansão e guidance {y}'
         ]
 
     @staticmethod
     def get_bear_queries(asset: Asset) -> List[str]:
+        y = SearchVectorGenerator._get_year()
         return [
-            f'{asset.ticker} riscos tese investimento bear case',
-            f'{asset.ticker} endividamento alavancagem riscos',
-            f'{asset.ticker} perda market share concorrência',
-            f'{asset.ticker} pontos negativos analise fundamentalista'
+            f'{asset.ticker} riscos tese de investimento pontos negativos',
+            f'{asset.ticker} desafios operacionais e financeiros {y}',
+            f'{asset.ticker} rebaixamento recomendação analistas venda',
+            f'{asset.ticker} concorrência e perda market share'
         ]
 
     @staticmethod
     def get_news_queries(asset: Asset) -> List[str]:
-        y = SearchVectorGenerator._get_year()
+        # y = SearchVectorGenerator._get_year() # Unused variable
+        recent = SearchVectorGenerator._get_time_context()
         return [
-            f'{asset.ticker} fatos relevantes CVM {y} últimos 90 dias',
-            f'{asset.ticker} processos judiciais passivos contingentes',
-            f'{asset.ticker} notícias corporativas recentes',
-            f'{asset.ticker} resultados trimestrais repercussão mercado'
+            f'{asset.ticker} fatos relevantes CVM e comunicados {recent}',
+            f'{asset.ticker} notícias corporativas impacto ações {recent}',
+            f'{asset.ticker} processos judiciais e escândalos recentes',
+            f'{asset.ticker} resultados trimestrais destaques reação mercado'
         ]
 
     @staticmethod
     def get_financials_queries(asset: Asset) -> List[str]:
         y = SearchVectorGenerator._get_year()
         return [
-            f'{asset.ticker} release resultados trimestrais {y} tabela',
-            f'{asset.ticker} evolução ebitda lucro liquido receita',
-            f'{asset.ticker} fluxo caixa livre capex guidance'
+            f'{asset.ticker} análise resultados financeiros trimestrais {y}',
+            f'{asset.ticker} evolução receita ebitda lucro líquido histórico',
+            f'{asset.ticker} indicadores endividamento alavancagem {y}',
+            f'{asset.ticker} fluxo de caixa livre e dividendos recentes'
         ]
