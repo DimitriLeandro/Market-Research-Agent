@@ -9,6 +9,7 @@ from .config.settings import Config
 from .assets.base import Asset
 from .assets.equity import EquityAsset
 from .assets.reit import REITAsset
+from .assets.sector import SectorAsset
 from .research.provider import GeminiProvider
 from .research.enrichment import YFinanceEnricher
 from .persistence.repository import ResearchRepository
@@ -27,6 +28,8 @@ class MarketAgent:
         self.repository = ResearchRepository(Config.RESULTS_DIR)
         
         self.assets = self._load_assets()
+        # We identify sectors immediately after loading assets
+        self.sectors = self._identify_sectors()
 
         mode_label = "TEST MODE" if self.test_mode else "PRODUCTION MODE"
         logger.info(f"MarketAgent initialized in {mode_label}. Max Parallel Requests: {Config.MAX_CONCURRENT_REQUESTS}")
@@ -45,40 +48,60 @@ class MarketAgent:
                 assets.append(REITAsset(**asset_data))
         return assets
 
-    def _get_unique_sectors(self) -> Set[str]:
-        return set(asset.sector for asset in self.assets)
+    def _identify_sectors(self) -> List[SectorAsset]:
+        """
+        Extracts unique sectors from the asset list and creates SectorAsset objects.
+        """
+        unique_sector_names = set(asset.sector for asset in self.assets)
+        sector_assets = []
+        for name in unique_sector_names:
+            # We use the sector name as the 'ticker' for the SectorAsset
+            sector_assets.append(
+                SectorAsset(
+                    ticker=name,
+                    name=name,
+                    asset_type="sector",
+                    sector=name
+                )
+            )
+        return sector_assets
 
-    async def _process_sector(self, sector: str, today: date) -> Dict[str, str]:
+    async def _process_sector(self, sector_asset: SectorAsset, today: date) -> Dict[str, str]:
         """
         Processes a sector: Checks cache, runs research, synthesizes, returns data map.
+        Now takes a SectorAsset object instead of a raw string.
         """
-        logger.info(f"[{sector}] Starting Sector Pipeline...")
+        sector_name = sector_asset.ticker
+        logger.info(f"[{sector_name}] Starting Sector Pipeline...")
+        
         try:
-            if await self.repository.sector_exists(sector, today):
-                logger.info(f"[{sector}] Loaded from cache.")
-                return await self.repository.load_sector_research(sector, today)
+            if await self.repository.sector_exists(sector_name, today):
+                logger.info(f"[{sector_name}] Loaded from cache.")
+                return await self.repository.load_sector_research(sector_name, today)
 
-            t_bull = self.provider.research_sector_bull(sector)
-            t_bear = self.provider.research_sector_bear(sector)
-            t_news = self.provider.research_sector_news(sector)
+            # Note: Provider and Repository currently expect strings for sectors.
+            # We pass the sector name (stored in .ticker) to them.
+            t_bull = self.provider.research_sector_bull(sector_name)
+            t_bear = self.provider.research_sector_bear(sector_name)
+            t_news = self.provider.research_sector_news(sector_name)
 
             bull, bear, news = await asyncio.gather(t_bull, t_bear, t_news)
 
-            await self.repository.save_sector_raw(sector, "bull_thesis", bull, today)
-            await self.repository.save_sector_raw(sector, "bear_thesis", bear, today)
-            await self.repository.save_sector_raw(sector, "news", news, today)
+            await self.repository.save_sector_raw(sector_name, "bull_thesis", bull, today)
+            await self.repository.save_sector_raw(sector_name, "bear_thesis", bear, today)
+            await self.repository.save_sector_raw(sector_name, "news", news, today)
             
-            logger.info(f"[{sector}] Synthesizing report...")
-            synthesis_result = await self.provider.synthesize_sector_report(sector, bull, bear, news)
+            logger.info(f"[{sector_name}] Synthesizing report...")
+            synthesis_result = await self.provider.synthesize_sector_report(sector_name, bull, bear, news)
             synthesis_result.analysis_date = today.isoformat()
             
             await self.repository.save_sector_final(
-                sector, 
+                sector_name, 
                 synthesis_result.model_dump(mode='json'), 
                 today
             )
             
-            logger.info(f"[{sector}] Completed.")
+            logger.info(f"[{sector_name}] Completed.")
             
             return {
                 "bull_thesis": bull,
@@ -87,7 +110,7 @@ class MarketAgent:
             }
 
         except Exception as e:
-            logger.error(f"[{sector}] Failed: {e}", exc_info=True)
+            logger.error(f"[{sector_name}] Failed: {e}", exc_info=True)
             return {"bull_thesis": "Error", "bear_thesis": "Error", "news": "Error"}
 
     async def _process_asset(self, asset: Asset, sector_task: asyncio.Task, today: date):
@@ -181,12 +204,13 @@ class MarketAgent:
         today = date.today()
         logger.info(f"Cycle Date: {today}")
 
-        unique_sectors = self._get_unique_sectors()
         sector_tasks_map: Dict[str, asyncio.Task] = {}
         
-        for sector in unique_sectors:
-            task = asyncio.create_task(self._process_sector(sector, today))
-            sector_tasks_map[sector] = task
+        # Identify sectors (now objects) and schedule them
+        for sector_asset in self.sectors:
+            task = asyncio.create_task(self._process_sector(sector_asset, today))
+            # We map using the ticker (name) so assets can find their sector task
+            sector_tasks_map[sector_asset.ticker] = task
 
         asset_tasks = []
         for asset in self.assets:
