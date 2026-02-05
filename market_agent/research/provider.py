@@ -103,10 +103,6 @@ class GeminiProvider(IResearchProvider):
         before_sleep=before_sleep_log(logger, logging.WARNING)
     )
     async def synthesize_analysis(self, template_path: str, context: dict) -> str:
-        """
-        Synthesizes collected research into a Markdown report.
-        Does not use JSON schemas or Google Search tools.
-        """
         prompt = self.templates.render(template_path, **context)
         
         async with self.semaphore:
@@ -115,9 +111,40 @@ class GeminiProvider(IResearchProvider):
                     model="gemini-2.0-flash",
                     contents=prompt,
                     config=types.GenerateContentConfig(
-                        temperature=0.4 # Slightly higher creativity for synthesis
+                        temperature=0.4 
                     )
                 )
             
             response = await asyncio.to_thread(_call)
             return response.text if response.text else "Synthesis failed."
+
+    @retry(
+        retry=retry_if_exception_type(ClientError),
+        stop=stop_after_attempt(5),
+        wait=wait_exponential(multiplier=1, min=1, max=60),
+        before_sleep=before_sleep_log(logger, logging.WARNING)
+    )
+    async def generate_json_report(self, category: str, context: dict, is_sector: bool = False) -> dict:
+        """
+        Transforms Markdown synthesis into structured JSON.
+        category: 'stocks', 'reits', 'sectors'
+        """
+        template_path = f"{category}/reporting.j2" if not is_sector else "sectors/reporting.j2"
+        prompt = self.templates.render(template_path, **context)
+        
+        schema = SectorResult if is_sector else ResearchResult
+
+        async with self.semaphore:
+            def _call():
+                return self.client.models.generate_content(
+                    model="gemini-2.0-flash",
+                    contents=prompt,
+                    config=types.GenerateContentConfig(
+                        temperature=0.1,
+                        response_mime_type="application/json",
+                        response_schema=schema.model_json_schema(),
+                    )
+                )
+            
+            response = await asyncio.to_thread(_call)
+            return json.loads(self._clean_json(response.text))

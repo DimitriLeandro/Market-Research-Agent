@@ -67,9 +67,6 @@ class MarketAgent:
         try:
             if await self.repository.sector_exists(sector_name, today):
                 logger.info(f"[{sector_name}] Loaded from cache.")
-                # We need to return a dict to support asset tasks, but loading generic research is tricky
-                # if we only have the synthesis. For now, we rely on raw files if they exist or 
-                # rebuild the cache map from raw files.
                 return await self.repository.load_sector_research(sector_name, today)
 
             t_bull = self.provider.research_sector_bull(sector_name)
@@ -93,12 +90,24 @@ class MarketAgent:
                 }
             )
             
-            # Save Markdown Synthesis to RAW (intermediate step)
             await self.repository.save_sector_raw(sector_name, "synthesis", synthesis, today)
             
+            logger.info(f"[{sector_name}] Generating final JSON...")
+            json_report = await self.provider.generate_json_report(
+                "sectors", 
+                {"sector": sector_name, "synthesis": synthesis},
+                is_sector=True
+            )
+            json_report['analysis_date'] = today.isoformat()
+
+            await self.repository.save_sector_final(
+                sector_name, 
+                json_report, 
+                today
+            )
+
             logger.info(f"[{sector_name}] Completed.")
             
-            # Return context for assets
             return {
                 "bull_thesis": bull,
                 "bear_thesis": bear,
@@ -115,8 +124,10 @@ class MarketAgent:
         logger.info(f"[{asset.ticker}] Starting Asset Pipeline ({category})...")
         
         try:
-            # We skip the check for final report.json existence because we aren't generating it yet.
-            # Only checking if synthesis already exists could be an optimization, but let's run fully for now.
+            if await self.repository.asset_exists(asset.ticker, category, today):
+                logger.info(f"[{asset.ticker}] Loaded from cache.")
+                await sector_task 
+                return
 
             tasks_map = {
                 "bull_thesis": self.provider.research_asset_bull(asset),
@@ -148,7 +159,6 @@ class MarketAgent:
             logger.info(f"[{asset.ticker}] Waiting for sector data ({asset.sector})...")
             sector_data_map = await sector_task
             
-            # We use the sector synthesis as the context to feed into the asset synthesis
             sector_context = sector_data_map.get("synthesis", "Dados do setor indisponíveis.")
 
             logger.info(f"[{asset.ticker}] Synthesizing markdown report...")
@@ -157,7 +167,7 @@ class MarketAgent:
                 "ticker": asset.ticker,
                 "sector": asset.sector,
                 "sector_data": sector_context,
-                **results # Unpack all research results (bull, bear, etc) into context
+                **results 
             }
             
             synthesis = await self.provider.synthesize_analysis(
@@ -165,10 +175,24 @@ class MarketAgent:
                 context
             )
 
-            # Save Markdown Synthesis to RAW
             await self.repository.save_asset_raw(asset.ticker, category, "synthesis", synthesis, today)
 
-            logger.info(f"[{asset.ticker}] Synthesis saved to raw/synthesis.md. (JSON generation pending Phase 3).")
+            logger.info(f"[{asset.ticker}] Generating final JSON...")
+            json_report = await self.provider.generate_json_report(
+                category, 
+                {"ticker": asset.ticker, "synthesis": synthesis},
+                is_sector=False
+            )
+            json_report['analysis_date'] = today.isoformat()
+
+            await self.repository.save_asset_final(
+                asset.ticker, 
+                category,
+                json_report, 
+                today
+            )
+            
+            logger.info(f"[{asset.ticker}] Completed.")
 
         except Exception as e:
             logger.error(f"[{asset.ticker}] Failed: {e}", exc_info=True)

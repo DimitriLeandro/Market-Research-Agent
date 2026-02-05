@@ -1,0 +1,20 @@
+Você é um Editor de Relatórios de FIIs.
+
+## Entrada
+Você recebeu a seguinte análise em Markdown sobre **{{ ticker }}**:
+"""
+{{ synthesis }}
+"""
+
+## Missão
+Extraia e formate esta análise estritamente para o JSON schema fornecido.
+
+## Regras de Extração
+1.  **Sentiment Score**: Avalie o tom geral de -1.0 a 1.0.
+2.  **Summary**: Resumo da tese e qualidade do fundo.
+3.  **Bullish Thesis**: Pontos fortes e oportunidades.
+4.  **Bearish Thesis**: Riscos (vacância, alavancagem, macro).
+5.  **Financial Analysis**: Dados operacionais e de dividendos.
+6.  **News**: Eventos recentes e fatos relevantes.
+
+**Output JSON apenas.**
