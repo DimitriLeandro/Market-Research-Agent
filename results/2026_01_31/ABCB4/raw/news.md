@@ -1,8 +1,0 @@
-Okay, I will compile a forensic log of material events for Banco ABC Brasil S.A. (ABCB4) from the last 90 days, focusing on the criteria you've outlined.
-
-Here's a forensic log of material events for Banco ABC Brasil S.A. (ABCB4) from the last 90 days, in chronological order:
-
-*   **[2026-01-30]** According to MarketScreener, the last close price for Banco ABC Brasil S.A. was BRL 26.62. The average target price is BRL 27.29, with a high target of BRL 31.00 and a low target of BRL 22.00. The analyst consensus is "Outperform".
-*   **[2026-01-22]** According to StockInvest.us, Banco ABC Brasil S.A. was trading at R$25.56. The service downgraded its analysis conclusion for the stock from "Buy" to "Hold/Accumulate" due to some small weaknesses in the technical picture.
-*   **[2026-01-11]** Banco ABC Brasil SA will pay its next dividend on February 11, 2026. To receive the dividend, shares must have been purchased before the ex-date on December 30, 2025.
-*   **[2025-10-31]** Banco ABC Brasil reported Q3 2025 net profit of BRL 257 million (up from BRL 244 million), with EPS of $1.09 missing the $1.11 forecast and revenue of 771.22 million falling short of expectations. The bank achieved a record financial margin of BRL 652 million and improved return on investment to 15.5%, despite revising portfolio growth guidance downward to 1-4%. ABC Brasil launched new vertical sectors in Agro and Real Estate as part of its strategy to diversify revenue streams beyond credit products. CEO Sergio Ulia emphasized becoming 'less dependent on credit,' while the company anticipates economic headwinds with GDP projected to reduce to 1.7% in 2025.

@@ -1,214 +1,168 @@
 import streamlit as st
-import json
-import re
 import subprocess
 import sys
 from pathlib import Path
-from datetime import date
-import yaml
 
-# --- Path Configuration ---
-# We determine the project root relative to this file to make execution robust
-# regardless of where the 'streamlit run' command is executed from.
-BASE_DIR = Path(__file__).resolve().parent
+# Import from local helper module
+import helpers
 
-# Check if we are in the root or a subdirectory (like 'streamlit/')
-if (BASE_DIR / "market_agent").exists():
-    PROJECT_ROOT = BASE_DIR
-elif (BASE_DIR.parent / "market_agent").exists():
-    PROJECT_ROOT = BASE_DIR.parent
-else:
-    # Fallback to current dir if structure is unexpected
-    PROJECT_ROOT = BASE_DIR
+st.set_page_config(layout="wide", page_title="Market Research Agent", page_icon="🤖")
 
-RESULTS_DIR = PROJECT_ROOT / "results"
-PORTFOLIO_PATH = PROJECT_ROOT / "market_agent" / "config" / "portfolio.yaml"
-MAIN_SCRIPT_PATH = PROJECT_ROOT / "market_agent" / "main.py"
+# --- UI Components ---
 
-st.set_page_config(layout="wide", page_title="Market Research Agent")
-
-# --- Helpers ---
-def load_available_dates():
-    if not RESULTS_DIR.exists():
-        return []
-    dates = [d.name.replace("_", "-") for d in RESULTS_DIR.iterdir() if d.is_dir()]
-    dates.sort(reverse=True)
-    return dates
-
-def get_dir_for_date(date_str):
-    return RESULTS_DIR / date_str.replace("-", "_")
-
-def load_portfolio_data():
-    if not PORTFOLIO_PATH.exists():
-        st.error(f"Portfolio config not found at: {PORTFOLIO_PATH}")
-        return []
-    with open(PORTFOLIO_PATH, "r") as f:
-        data = yaml.safe_load(f)
-    return data.get("assets", [])
-
-def run_agent(test_mode=False):
-    """Runs the market agent as a subprocess using absolute paths."""
+def render_dynamic_report(data: dict):
+    """
+    Renders a single report based strictly on the 'sections' list structure.
+    """
+    # Identify the asset
+    identifier = data.get("ticker", data.get("sector", "Unknown"))
     
-    # Verify script exists before running
-    if not MAIN_SCRIPT_PATH.exists():
-        st.error(f"Critical Error: Agent script not found at {MAIN_SCRIPT_PATH}")
+    # Metrics
+    sentiment = data.get("overall_sentiment", "N/A")
+    score = data.get("sentiment_score", None)
+    trend = data.get("price_trend", None)
+    date_str = data.get("analysis_date", "-")
+    
+    emoji = helpers.get_sentiment_emoji(sentiment, score if score is not None else 0)
+    
+    # Collapsible Container
+    label = f"{emoji} {identifier} | {sentiment}"
+    
+    with st.expander(label, expanded=False):
+        # Header Metrics
+        cols = st.columns(4)
+        cols[0].metric("Sentiment", sentiment)
+        if score is not None:
+            cols[1].metric("Score", f"{score}")
+        if trend:
+            cols[2].metric("Trend", trend)
+        cols[3].caption(f"Date: {date_str}")
+        
+        st.divider()
+        
+        # Dynamic Section Rendering
+        sections = data.get("sections", [])
+        
+        if not sections:
+            st.warning("No details available in report.")
+        
+        for section in sections:
+            title = section.get("title", "Untitled Section")
+            raw_content = section.get("content", "")
+            sec_id = section.get("id", "")
+            
+            # Escape content to prevent Latex errors with currency
+            content = helpers.escape_markdown_dollars(raw_content)
+            
+            # Styling based on section type
+            if sec_id == "summary":
+                st.subheader(f"📌 {title}")
+                st.info(content)
+            elif sec_id == "bull_thesis":
+                st.subheader(f"🐂 {title}")
+                st.markdown(content)
+            elif sec_id == "bear_thesis":
+                st.subheader(f"🐻 {title}")
+                st.markdown(content)
+            elif sec_id == "financials":
+                st.subheader(f"📊 {title}")
+                st.markdown(content)
+            elif sec_id == "news":
+                st.subheader(f"📰 {title}")
+                st.markdown(content)
+            else:
+                # Generic fallback for future sections
+                st.subheader(title)
+                st.markdown(content)
+            
+            st.markdown("---")
+
+def run_agent_process(test_mode: bool):
+    """Executes the agent script using paths from helpers."""
+    script_path = helpers.MAIN_SCRIPT_PATH
+    
+    if not script_path.exists():
+        st.error(f"Critical Error: Agent script not found at {script_path}")
         return
 
-    cmd = [sys.executable, str(MAIN_SCRIPT_PATH)]
+    cmd = [sys.executable, str(script_path)]
     if test_mode:
         cmd.append("--test")
-        
-    mode_str = "TEST" if test_mode else "PRODUCTION"
     
-    with st.spinner(f"Running Agent in {mode_str} mode... This may take a while."):
+    mode_label = "TEST" if test_mode else "PRODUCTION"
+    
+    with st.spinner(f"Running Agent in {mode_label} mode..."):
         try:
-            # We run the subprocess with cwd=PROJECT_ROOT to ensure imports in main.py work correctly
             result = subprocess.run(
                 cmd, 
                 capture_output=True, 
                 text=True, 
-                cwd=str(PROJECT_ROOT) 
+                cwd=str(helpers.PROJECT_ROOT)
             )
             
             if result.returncode == 0:
-                st.success(f"Execution successful in {mode_str} mode!")
-                st.info("Please refresh the page to see new results.")
+                st.success("Execution successful!")
+                st.info("Refresh the page to view results.")
+            else:
+                st.error("Execution failed.")
                 with st.expander("View Logs"):
                     st.code(result.stdout)
-            else:
-                st.error(f"Execution failed.")
-                with st.expander("View Error Logs"):
                     st.code(result.stderr)
-                    st.code(result.stdout)
         except Exception as e:
-            st.error(f"Failed to launch subprocess: {e}")
+            st.error(f"Failed to launch process: {e}")
 
-# --- UI Layout ---
-st.title("🤖 AI Market Research Agent")
+# --- Main Layout ---
 
-# --- Sidebar: Execution Controls ---
-st.sidebar.header("Execution Control")
+st.title("Market Research Agent")
 
-st.sidebar.info("Production Mode runs the full portfolio.")
-if st.sidebar.button("🚀 Run Production Cycle", type="primary"):
-    run_agent(test_mode=False)
+# Sidebar: Controls & Navigation
+st.sidebar.header("Controls")
 
-st.sidebar.markdown("---")
+if st.sidebar.button("🚀 Run Full Cycle", type="primary"):
+    run_agent_process(test_mode=False)
 
-st.sidebar.warning("Test Mode runs a small subset (2 Stocks, 2 FIIs).")
 if st.sidebar.button("🧪 Run Test Mode"):
-    run_agent(test_mode=True)
+    run_agent_process(test_mode=True)
 
 st.sidebar.markdown("---")
 
-# --- Main Content: Report Viewing ---
-dates = load_available_dates()
-if not dates:
-    st.warning("No research data found. Run the agent to generate reports.")
-    # We don't stop here anymore so the user can still see the Run buttons
-else:
-    selected_date = st.sidebar.selectbox("Select Date", dates)
-    date_dir = get_dir_for_date(selected_date)
+# Date Selection
+available_dates = helpers.get_available_dates()
 
-    # Tabs
-    tab_stocks, tab_fiis, tab_sectors = st.tabs(["📈 Stocks", "🏢 Real Estate (FIIs)", "🏭 Sectors"])
+if not available_dates:
+    st.warning("No research data found.")
+    st.stop()
 
-    # --- Load Assets ---
-    all_assets = load_portfolio_data()
-    stocks = [a for a in all_assets if a['type'] == 'equity']
-    fiis = [a for a in all_assets if a['type'] == 'fii']
+selected_date_str = st.sidebar.selectbox("Analysis Date", available_dates)
+date_dir_path = helpers.get_dir_for_date(selected_date_str)
 
-    def display_asset_report(ticker):
-        report_path = date_dir / "tickers" / ticker / "final" / "report.json"
-        if not report_path.exists():
-            st.error(f"Report not found for {ticker} on {selected_date}")
-            return
+# Main Content Tabs
+tab_stocks, tab_fiis, tab_sectors = st.tabs(["📈 Stocks", "🏢 Real Estate (FIIs)", "🏭 Sectors"])
 
-        with open(report_path, "r") as f:
-            data = json.load(f)
+# Render Stocks
+with tab_stocks:
+    reports = helpers.load_reports_by_category(date_dir_path, "stocks")
+    if reports:
+        for report in reports:
+            render_dynamic_report(report)
+    else:
+        st.info("No Stock reports found for this date.")
 
-        # Header
-        col1, col2 = st.columns([3, 1])
-        with col1:
-            st.header(f"{data['ticker']}")
-            st.caption(f"Sentiment: {data['overall_sentiment']} | Score: {data['sentiment_score']}")
-        with col2:
-            st.metric("Trend", data['price_trend'])
+# Render REITs (FIIs)
+with tab_fiis:
+    # Note: Folder name is 'reits' based on backend configuration
+    reports = helpers.load_reports_by_category(date_dir_path, "reits")
+    if reports:
+        for report in reports:
+            render_dynamic_report(report)
+    else:
+        st.info("No FII reports found for this date.")
 
-        st.subheader("Executive Summary")
-        st.write(data['summary'])
-
-        with st.expander("🐂 Bull Thesis", expanded=True):
-            st.markdown(data['bullish_thesis'])
-
-        with st.expander("🐻 Bear Thesis", expanded=True):
-            st.markdown(data['bearish_thesis'])
-
-        with st.expander("📊 Financial Analysis"):
-            st.markdown(data['financial_analysis'])
-
-        with st.expander("📰 Recent News & Events"):
-            st.markdown(data['news_and_events'])
-
-    # --- Stocks Tab ---
-    with tab_stocks:
-        if stocks:
-            stock_tickers = [a['ticker'] for a in stocks]
-            selected_stock = st.selectbox("Select Stock", stock_tickers)
-            if selected_stock:
-                display_asset_report(selected_stock)
-        else:
-            st.info("No stocks configured.")
-
-    # --- FIIs Tab ---
-    with tab_fiis:
-        if fiis:
-            fii_tickers = [a['ticker'] for a in fiis]
-            selected_fii = st.selectbox("Select FII", fii_tickers)
-            if selected_fii:
-                display_asset_report(selected_fii)
-        else:
-            st.info("No FIIs configured.")
-
-    # --- Sectors Tab ---
-    with tab_sectors:
-        sectors_dir = date_dir / "sectors"
-        if sectors_dir.exists():
-            available_sectors = [d.name for d in sectors_dir.iterdir() if d.is_dir()]
-            
-            selected_sector_folder = st.selectbox("Select Sector", available_sectors)
-            
-            if selected_sector_folder:
-                sector_path = sectors_dir / selected_sector_folder
-                
-                try:
-                    # Initialize variables to avoid unbound errors
-                    bull, bear, news = "No Data", "No Data", "No Data"
-                    
-                    if (sector_path / "bull_thesis.md").exists():
-                        with open(sector_path / "bull_thesis.md", "r") as f: bull = f.read()
-                    
-                    if (sector_path / "bear_thesis.md").exists():
-                        with open(sector_path / "bear_thesis.md", "r") as f: bear = f.read()
-                    
-                    if (sector_path / "news.md").exists():
-                        with open(sector_path / "news.md", "r") as f: news = f.read()
-
-                    st.header(f"Sector Analysis: {selected_sector_folder.replace('_', '/')}")
-                    
-                    col1, col2 = st.columns(2)
-                    with col1:
-                        st.subheader("🐂 Optimistic Thesis (Bull)")
-                        st.markdown(bull)
-                    with col2:
-                        st.subheader("🐻 Pessimistic Thesis (Bear)")
-                        st.markdown(bear)
-                    
-                    st.divider()
-                    st.subheader("📰 Recent Sector News")
-                    st.markdown(news)
-
-                except Exception as e:
-                    st.error(f"Error loading sector data: {e}")
-        else:
-            st.info("No sector data recorded for this date.")
+# Render Sectors
+with tab_sectors:
+    reports = helpers.load_reports_by_category(date_dir_path, "sectors")
+    if reports:
+        for report in reports:
+            render_dynamic_report(report)
+    else:
+        st.info("No Sector reports found for this date.")
