@@ -1,24 +1,8 @@
 assets:
-  ################
-  ### Equities ###
-  ################
   - ticker: RAIZ4
     name: Raízen S.A.
     type: equity
     sector: Energy/Sugar & Ethanol
-
-  - ticker: PETR4
-    name: Petróleo Brasileiro S.A. Petrobras
-    type: equity
-    sector: Oil & Gas
-
-  ############
-  ### FIIs ###
-  ############
-  - ticker: MXRF11
-    name: Maxi Renda FII
-    type: fii
-    sector: Hybrid/Paper
 
   - ticker: HGLG11
     name: CSHG Logística FII

@@ -9,7 +9,7 @@ from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_excep
 
 from ..config.settings import Config
 from ..assets.base import Asset
-from ..schemas.research_schema import ResearchResult
+from ..schemas.research_schema import ResearchResult, SectorResult
 from .interfaces import IResearchProvider
 from .vectors import SearchVectorGenerator
 from ..prompts.templates import TemplateManager
@@ -30,11 +30,6 @@ class GeminiProvider(IResearchProvider):
     async def conduct_research(self, asset: Asset, context: dict) -> ResearchResult:
         raise NotImplementedError("Use specific research step methods.")
 
-    # Retry Configuration:
-    # 1. Catch ClientError (covers 429/ResourceExhausted).
-    # 2. Wait exponential: 1s, 2s, 4s, 8s, 16s... up to 60s max.
-    # 3. Stop after 10 attempts (robustness).
-    # 4. Log before retrying.
     @retry(
         retry=retry_if_exception_type(ClientError),
         stop=stop_after_attempt(10),
@@ -44,7 +39,6 @@ class GeminiProvider(IResearchProvider):
     async def _execute_step(self, template_path: str, **kwargs) -> str:
         prompt = self.templates.render(template_path, **kwargs)
         
-        # We acquire the semaphore asynchronously to limit concurrency
         async with self.semaphore:
             def _call():
                 return self.client.models.generate_content(
@@ -56,7 +50,6 @@ class GeminiProvider(IResearchProvider):
                     )
                 )
             
-            # Run the blocking API call in a thread to keep event loop responsive
             response = await asyncio.to_thread(_call)
             return response.text if response.text else "No data found."
 
@@ -104,7 +97,6 @@ class GeminiProvider(IResearchProvider):
             asset_financials=financials
         )
 
-        # Synthesis also needs retries and rate limiting
         @retry(
             retry=retry_if_exception_type(ClientError),
             stop=stop_after_attempt(10),
@@ -129,3 +121,37 @@ class GeminiProvider(IResearchProvider):
         response = await _call_synthesis()
         data = json.loads(self._clean_json(response.text))
         return ResearchResult(**data)
+
+    async def synthesize_sector_report(self, sector: str, bull: str, bear: str, news: str) -> SectorResult:
+        prompt = self.templates.render(
+            "sectors/synthesis.j2",
+            sector=sector,
+            bull=bull,
+            bear=bear,
+            news=news
+        )
+
+        @retry(
+            retry=retry_if_exception_type(ClientError),
+            stop=stop_after_attempt(10),
+            wait=wait_exponential(multiplier=1, min=1, max=60),
+            before_sleep=before_sleep_log(logger, logging.WARNING)
+        )
+        async def _call_sector_synthesis():
+            async with self.semaphore:
+                def _inner_call():
+                    return self.client.models.generate_content(
+                        model="gemini-2.0-flash",
+                        contents=prompt,
+                        config=types.GenerateContentConfig(
+                            temperature=0.1,
+                            response_mime_type="application/json",
+                            response_schema=SectorResult.model_json_schema(),
+                        )
+                    )
+                response = await asyncio.to_thread(_inner_call)
+                return response
+
+        response = await _call_sector_synthesis()
+        data = json.loads(self._clean_json(response.text))
+        return SectorResult(**data)

@@ -27,16 +27,12 @@ class ResearchResult(BaseModel):
     financial_analysis: str = Field(..., description="Analysis of revenues, margins, and balance sheet trends.")
     news_and_events: str = Field(..., description="Chronological synthesis of recent material events.")
 
-    class Config:
-        json_schema_extra = {
-            "example": {
-                "ticker": "VALE3",
-                "overall_sentiment": "Neutral",
-                "sentiment_score": 0.1,
-                "summary": "Vale is navigating...",
-                "bullish_thesis": "The iron ore premium...",
-                "bearish_thesis": "China demand remains...",
-                "financial_analysis": "EBITDA margins compressed...",
-                "news_and_events": "On Oct 15, the company announced..."
-            }
-        }
+class SectorResult(BaseModel):
+    sector: str
+    analysis_date: str
+    overall_sentiment: SentimentEnum
+    
+    summary: str = Field(..., description="High-level executive summary of the sector context.")
+    bullish_thesis: str = Field(..., description="Consolidated positive drivers for the sector.")
+    bearish_thesis: str = Field(..., description="Consolidated risks and headwinds for the sector.")
+    news_and_events: str = Field(..., description="Key sector-wide news and regulatory changes.")

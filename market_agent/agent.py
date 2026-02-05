@@ -20,7 +20,6 @@ class MarketAgent:
         self.test_mode = test_mode
         self.api_key = Config.load_api_key()
         
-        # We pass the semaphore to the provider so it can throttle itself globally
         self.global_semaphore = asyncio.Semaphore(Config.MAX_CONCURRENT_REQUESTS)
         self.provider = GeminiProvider(self.api_key, self.global_semaphore)
         
@@ -51,28 +50,36 @@ class MarketAgent:
 
     async def _process_sector(self, sector: str, today: date) -> Dict[str, str]:
         """
-        Processes a sector: Checks cache, runs research steps in parallel, returns data map.
+        Processes a sector: Checks cache, runs research, synthesizes, returns data map.
         """
         logger.info(f"[{sector}] Starting Sector Pipeline...")
         try:
-            # 1. Check if fully exists
             if await self.repository.sector_exists(sector, today):
                 logger.info(f"[{sector}] Loaded from cache.")
                 return await self.repository.load_sector_research(sector, today)
 
-            # 2. Run research steps in parallel
-            # The provider uses the global semaphore, so we can just fire these off
+            # 1. Parallel Research
             t_bull = self.provider.research_sector_bull(sector)
             t_bear = self.provider.research_sector_bear(sector)
             t_news = self.provider.research_sector_news(sector)
 
-            # Gather results
             bull, bear, news = await asyncio.gather(t_bull, t_bear, t_news)
 
-            # 3. Save results (Async I/O)
-            await self.repository.save_sector_research(sector, "bull_thesis", bull, today)
-            await self.repository.save_sector_research(sector, "bear_thesis", bear, today)
-            await self.repository.save_sector_research(sector, "news", news, today)
+            # 2. Save Raw Data
+            await self.repository.save_sector_raw(sector, "bull_thesis", bull, today)
+            await self.repository.save_sector_raw(sector, "bear_thesis", bear, today)
+            await self.repository.save_sector_raw(sector, "news", news, today)
+            
+            # 3. Synthesis
+            logger.info(f"[{sector}] Synthesizing report...")
+            synthesis_result = await self.provider.synthesize_sector_report(sector, bull, bear, news)
+            synthesis_result.analysis_date = today.isoformat()
+            
+            await self.repository.save_sector_final(
+                sector, 
+                synthesis_result.model_dump(mode='json'), 
+                today
+            )
             
             logger.info(f"[{sector}] Completed.")
             
@@ -84,24 +91,21 @@ class MarketAgent:
 
         except Exception as e:
             logger.error(f"[{sector}] Failed: {e}", exc_info=True)
-            # Return empty data so dependent assets don't crash, but log the error
             return {"bull_thesis": "Error", "bear_thesis": "Error", "news": "Error"}
 
     async def _process_asset(self, asset: Asset, sector_task: asyncio.Task, today: date):
         """
-        Processes an asset. Runs asset research in parallel with sector research.
-        Waits for sector data only before synthesis.
+        Processes an asset. Uses asset.prompt_subdir ('stocks' or 'reits') for categorization.
         """
-        logger.info(f"[{asset.ticker}] Starting Asset Pipeline...")
+        category = asset.prompt_subdir
+        logger.info(f"[{asset.ticker}] Starting Asset Pipeline ({category})...")
+        
         try:
-            if await self.repository.asset_exists(asset.ticker, today):
+            if await self.repository.asset_exists(asset.ticker, category, today):
                 logger.info(f"[{asset.ticker}] Loaded from cache.")
-                # We still await the sector task to ensure the graph completes cleanly
                 await sector_task 
                 return
 
-            # 1. Run independent asset research steps in parallel
-            # These do NOT depend on the sector, so we run them immediately
             t_bull = self.provider.research_asset_bull(asset)
             t_bear = self.provider.research_asset_bear(asset)
             t_fin = self.provider.research_asset_financials(asset)
@@ -111,19 +115,16 @@ class MarketAgent:
                 t_bull, t_bear, t_fin, t_news
             )
 
-            # 2. Save Raw Data
             await asyncio.gather(
-                self.repository.save_asset_raw(asset.ticker, "bull_thesis", bull_res, today),
-                self.repository.save_asset_raw(asset.ticker, "bear_thesis", bear_res, today),
-                self.repository.save_asset_raw(asset.ticker, "financials", fin_res, today),
-                self.repository.save_asset_raw(asset.ticker, "news", news_res, today)
+                self.repository.save_asset_raw(asset.ticker, category, "bull_thesis", bull_res, today),
+                self.repository.save_asset_raw(asset.ticker, category, "bear_thesis", bear_res, today),
+                self.repository.save_asset_raw(asset.ticker, category, "financials", fin_res, today),
+                self.repository.save_asset_raw(asset.ticker, category, "news", news_res, today)
             )
 
-            # 3. Wait for Sector Data (Dependency for Synthesis)
             logger.info(f"[{asset.ticker}] Waiting for sector data ({asset.sector})...")
             sector_data = await sector_task
 
-            # 4. Synthesize
             result = await self.provider.synthesize_report(
                 asset, 
                 sector_data=sector_data,
@@ -137,6 +138,7 @@ class MarketAgent:
             
             await self.repository.save_asset_final(
                 asset.ticker, 
+                category,
                 result.model_dump(mode='json'), 
                 today
             )
@@ -182,8 +184,6 @@ class MarketAgent:
         today = date.today()
         logger.info(f"Cycle Date: {today}")
 
-        # 1. Create Sector Tasks (Map: SectorName -> Task)
-        # We start these immediately. They will run in the background.
         unique_sectors = self._get_unique_sectors()
         sector_tasks_map: Dict[str, asyncio.Task] = {}
         
@@ -191,8 +191,6 @@ class MarketAgent:
             task = asyncio.create_task(self._process_sector(sector, today))
             sector_tasks_map[sector] = task
 
-        # 2. Create Asset Tasks
-        # Each asset task takes a reference to its specific sector task
         asset_tasks = []
         for asset in self.assets:
             if asset.sector not in sector_tasks_map:
@@ -202,11 +200,6 @@ class MarketAgent:
             sec_task = sector_tasks_map[asset.sector]
             task = asyncio.create_task(self._process_asset(asset, sec_task, today))
             asset_tasks.append(task)
-
-        # 3. Wait for ALL tasks to complete
-        # Note: We await asset_tasks. Asset tasks inherently await their sector tasks 
-        # before finishing. However, we also await sector_tasks_map.values() ensures 
-        # orphan sectors (if any) also finish, though functionally redundant if mapped correctly.
         
         all_tasks = list(sector_tasks_map.values()) + asset_tasks
         if all_tasks:
