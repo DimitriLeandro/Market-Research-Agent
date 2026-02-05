@@ -1,26 +1,27 @@
-Okay, I will monitor HGLG11 for material events related to emissions, tenant changes, and asset sales/buys within the last 90 days. I will now perform a search to gather the relevant information.
-Based on the search results, here's a summary of material events for HGLG11 within the last 90 days (approximately from November 7, 2025, to February 5, 2026):
+Ok, sou um Monitor de Fundos Imobiliários e vou listar os eventos materiais recentes do HGLG11 (últimos 90 dias) conforme sua missão e objetivos.
 
-**Emissions (Follow-on Offerings or New Quotas):**
+Com base nas informações encontradas, aqui estão os eventos materiais recentes do HGLG11 nos últimos 90 dias (aproximadamente desde o início de Novembro de 2025 até hoje, 5 de Fevereiro de 2026):
 
-*   I don't have information regarding follow-on offerings or new quotas in the last 90 days.
+**Emissões (Follow-ons):**
 
-**Tenant Changes (Exits, Revisions, or Defaults):**
+*   **10ª Emissão de Cotas:** Concluída recentemente, captou R$ 1,4 bilhão e foi utilizada para aquisições de galpões logísticos. O preço da cota na emissão foi de R$ 162,22.
+*   **11ª Emissão de Cotas:** Aprovada recentemente, com potencial de captação de até R$ 700 milhões.
 
-*   **New Leases:** In July 2025, HGLG11's physical vacancy reached a record low of 3.5%, driven by new leases, including Ceva at the G300 Itupeva property.
-*   **Vacancy:** In June 2024, HGLG11 experienced a decrease in physical vacancy to 5.8% and financial vacancy to 5.7% due to two new leases.
-*   **Tenant Concentration:** One source mentions assessing risks related to tenant concentration.
+**Inquilinos:**
 
-**Asset Sales/Buys (Portfolio Recycling):**
+*   **Saídas:** Houve saídas de inquilinos como Roja e Eletrobras no ativo Syslog, e da Memodoc no imóvel de Duque de Caxias. Isso elevou a vacância física do fundo para 2,4%.
+*   **Renegociação:** O contrato da Volkswagen no imóvel HGLG Vinhedo passou por uma revisão, resultando em uma redução de 14% no aluguel. Em contrapartida, o prazo da locação foi estendido por mais cinco anos, até 2033.
 
-*   **Land Acquisition:** In August 2024, HGLG11 announced the purchase of land in Simões Filho (BA) to develop a logistics park of 132,300 square meters. The first phase involves building a BTS asset for Mercado Livre, expected to be delivered by September 2025.
-*   **Fund Allocation:** HGLG11 has allocated capital to other logistics FIIs, such as INLG11 and FIIB11.
+**Reciclagem (Compra ou Venda de Ativos):**
 
-**Other Relevant Information:**
+*   **Aquisições:** As aquisições de galpões logísticos foram viabilizadas pela 10ª emissão de cotas.
+*   **Venda de Terreno:** O fundo está vendendo um terreno desmembrado do condomínio logístico HGLG SJC, localizado em São José dos Campos (SP). O valor final foi ajustado para aproximadamente R$ 10,85 milhões.
 
-*   **Fund Performance:** In July 2025, HGLG11 had a net worth of R$ 5.5 billion, with a book value per share of R$ 162.63 and a market value of R$ 161.36, resulting in a P/VP of 0.99x and a dividend yield of 8.2% per year.
-*   **Management Change:** In July 2024, the management of HGLG11 was transferred to Patria, and the administration to Genial. The fund's name changed to "Pátria Log – Fundo de Investimento Imobiliário – Responsabilidade Limitada," and the ticker remained HGLG11.
-*   **Dividend Distribution:** One source analyzes HGLG11's dividend yield and distribution strategy, noting the use of retained earnings to maintain a consistent distribution.
-*   **Portfolio Composition:** HGLG11's portfolio consists of 28 properties with 1.6 million square meters of GLA, diversified across six states, with a WALE of 4.6 years and predominantly IGPM and IPCA-indexed contracts.
-*   **Leverage:** The fund's leverage was 11.7% (or 13.5% including SPE), considered healthy.
-* Physical vacancy reached a record historical of 3.5%.
+**Outros Eventos Relevantes:**
+
+*   **Resultado e Dividendos:** O fundo distribui R$ 1,10 por cota mensalmente. A gestão projeta um possível aumento para R$ 1,17 por cota no segundo semestre de 2026 e potencial de R$ 1,27 após a consolidação total das aquisições.
+*   **Receitas Represadas:** O fundo possui cerca de R$ 0,38 por cota em receitas represadas, ligadas a carências e descontos concedidos a inquilinos, que devem reforçar os resultados ao longo do ano.
+*   **Reorganização:** Há uma reorganização dos FIIs Logísticos do Patria.
+*   **Faturamento:** Em março de 2025, o fundo teve uma receita total de R$ 34,5 milhões (R$ 1,02 por cota) e um resultado de R$ 27,5 milhões (R$ 0,81 por cota).
+
+Espero que esta informação seja útil!

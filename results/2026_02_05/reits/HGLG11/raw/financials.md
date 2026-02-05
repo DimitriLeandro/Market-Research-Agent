@@ -1,21 +1,25 @@
-Okay, I will extract the recent operational numbers for the target asset HGLG11, focusing on dividends, cap rate, and reserves. I will use search queries to find the most up-to-date information available.
+Olá! Como um contador especializado em FIIs, preparei um resumo das informações operacionais recentes do HGLG11, conforme solicitado:
 
-Here's the information I've gathered for HGLG11:
+Com base nas informações mais recentes sobre o HGLG11, apresento os dados solicitados:
 
-**1. Dividends:**
+### HGLG11 - Análise Operacional (Fevereiro de 2026)
 
-*   **Recent Distribution:** The latest dividend per share was R$1.1, with an ex-date of February 2, 2026, and a payment date of February 13, 2026.
-*   **Monthly Payments:** Dividends are paid monthly.
-*   **Annual Dividend:** The annual dividend is BRL 13.20 per share.
-*   **Dividend Yield:** The current dividend yield is approximately 8.3% to 8.41%.
-*   **Ex-Dividend Dates:** Recent ex-dividend dates include January 2, 2026, December 1, 2025, November 3, 2025, and so on, each with a dividend amount of R$1.10.
+1.  **Dividendos:**
+    *   **Distribuição Recente:** O último dividendo distribuído foi de R$ 1,10 por cota, pago em 13 de fevereiro de 2026. A data base para este pagamento foi 30 de janeiro de 2026.
+    *   **Dividend Yield Anualizado:** O Dividend Yield anualizado do HGLG11 está em torno de 8,40%.
+    *   **Expectativa de Aumento:** Há uma expectativa de aumento nos dividendos para R$ 1,17 por cota no segundo semestre de 2026, dependendo da conclusão de negociações em andamento e da normalização dos fluxos contratuais.
 
-**2. Cap Rate:**
+2.  **Rentabilidade Real:**
+    *   Não foi encontrada uma informação direta sobre o "Cap Rate" do portfólio.
 
-*   One source indicates a cap rate of 7.0% for the properties.
+3.  **Reservas:**
+    *   O fundo possui reservas acumuladas. O relatório mais recente indica uma reserva de aproximadamente R$ 0,44 por cota. O fundo utilizou reservas para complementar a distribuição de dividendos em meses anteriores.
 
-**3. Reserves:**
+**Outras Informações Relevantes:**
 
-*   As of January 29, 2026, accumulated reserves were R$ 0.21 per share.
+*   O HGLG11 é um FII do tipo tijolo, com foco em imóveis logísticos e industriais.
+*   O fundo possui um patrimônio líquido de aproximadamente R$ 10 bilhões e mais de 500 mil cotistas.
+*   O P/VP (Preço sobre Valor Patrimonial) está em torno de 0,94, indicando que o fundo está sendo negociado com um desconto em relação ao seu valor patrimonial.
+*   A taxa de administração do fundo é de 0,60% ao ano sobre o valor de mercado das cotas.
 
-Please note that real estate investment information can fluctuate, and more current data may exist. This information is based on the latest available data from the searches.
+Espero que esta análise detalhada seja útil para sua avaliação do HGLG11. Se precisar de mais alguma informação, é só perguntar!

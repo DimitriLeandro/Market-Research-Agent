@@ -1,71 +1,50 @@
-Okay, I will perform a financial audit on RAIZ4, extracting data regarding revenue and income trends, margins, cash flow, and management guidance. I will use search queries to gather the most recent financial results and present a data-heavy summary.
+Ok, sou um Auditor Financeiro pronto para analisar os dados da RAIZ4. Farei o possível para extrair as informações financeiras solicitadas e apresentá-las de forma clara e concisa em português do Brasil, priorizando tabelas e listas.
 
-Here's a data-heavy summary of RAIZ4's recent financial performance:
+Com base nas informações encontradas, aqui está uma análise da situação financeira da RAIZ4:
 
-**1. Revenue & Income:**
+**1. Receita e Lucro:**
 
-*   **Latest Quarter (Q2 2026):** Revenue was R$59.91 billion, and net income was -R$2.32 billion.
-*   **QoQ Trend:** Revenue increased from R$54.22 billion in the previous quarter, but net income decreased from -R$1.85 billion.
-*   **Q3 2024:** Revenue was R$66.87 billion, a decrease of 8.28% from the previous quarter (Q2 2024). The company reported a loss of -R$2.59 billion.
-*   **Revenue per Share (2025Q1):** R$5.25.
-*   **EPS (TTM):** -R$0.90.
-*   **Sales (Latest Quarter):** R$59.91 billion.
-*   **Net Income (Latest Quarter):** -R$2.32 billion.
-*   **EPS (Latest Quarter):** -R$0.22.
-*   **Revenue (TTM):** R$238.73 billion.
-*   **Net Income (TTM):** -R$9.29 billion.
+*   **Tendências:** A Raízen tem apresentado um volume expressivo de receitas, mas isso não tem se convertido em geração de lucro. No último exercício analisado, a companhia registrou cerca de R$ 255 bilhões em receita.
+*   **Prejuízo:** A empresa apresentou um prejuízo líquido de R$ 4,2 bilhões no último exercício.
 
-**2. Margins:**
+**2. Margens:**
 
-*   **Gross Margin (Q3 2024):** 4.35%.
-*   **Net Profit Margin (Q3 2024):** -3.87%.
-*   **Gross Margin (TTM):** 4.03%.
-*   **Net Profit Margin (TTM):** -3.89%.
-*   **EBITDA Margin (Annual):** 4.38%.
-*   **EBITDA Margin (Quarterly):** 2.27%.
-*   **EBITDA (TTM Ended Sep 2025):** R$3.59 billion.
-*   **EBITDA (Three Months Ended Sep 2025):** R$1.36 billion.
+*   As margens da Raízen têm apresentado variações.
+*   A margem EBITDA de 3,91%.
+*   Margem Bruta de 4,03%.
+*   Margem Líquida de -3,89%.
 
-**3. Cash Flow:**
+**3. Fluxo de Caixa:**
 
-*   **Operating Cash Flow (2025Q1):** -R$0.97.
-*   **Free Cash Flow (2025Q1):** -R$1.12.
-*   **Free Cash Flow per Share (2025Q1):** -R$1.12.
-*   **Operating Cash Flow (Q2 2024):** R$193.64 million.
-*   **Free Cash Flow (Q2 2024):** -R$2.14 billion.
-*   **Cash Flow Optimization:** Improved working capital management generated R$1.2 billion more operating cash flow (excluding atypical movements) than last year in the same quarter.
+*   A Raízen tem enfrentado pressão nas finanças, com projeção de *cash burn* (queima de caixa) nos próximos dois anos.
 
-**4. Guidance (Crop Year 2025'26):**
+**4. Endividamento:**
 
-*   **Sugarcane Crushing:** Estimated between 72 and 75 million tons.
-*   **Sugar Production Mix:** Estimated between 52% and 54%.
-*   **Efficiency Gains:** Reduction and optimization of corporate and operational structures, generating an estimated benefit of approximately R$500 million for the year, positively impacting segment EBITDA.
-*   **CAPEX:** R$9.0 billion - R$9.8 billion.
+*   A Raízen opera com uma alavancagem considerada extremamente elevada em comparação com os padrões médios de mercado.
+*   A dívida líquida atingiu R$ 53,4 bilhões no 2º trimestre da safra 2025/26, um aumento expressivo de 48,8% em relação ao ano anterior.
+*   Indicadores de endividamento: Dívida Líquida/EBITDA em torno de 6,2x (considerado saudável até 2,5x) e Dívida Líquida/Patrimônio muito acima de 1x (considerado saudável até 1,0x).
 
-**Additional Data:**
+**5. Guidance:**
 
-*   **Total Debt-to-Equity Ratio:** 535.52%.
-*   **Total Debt-to-Equity Ratio:** 475.9%.
-*   **Trailing Twelve Months (TTM) Return on Investment (ROI):** -50.10%.
-*   **Revenue per Share (Latest Quarter):** R$150.80.
-*   **EBITDA (Latest twelve months):** R$8.81 billion.
-*   **EBITDA Growth Rate (Past 12 months):** -74.00% per year.
-*   **EBITDA Growth Rate (Past 3 years):** -7.10% per year.
-*   **EBITDA Growth Rate (Past 5 years):** 17.10% per year.
-*   **Debt-to-EBITDA:** 21.37.
-*   **Interest Coverage:** 0.32.
-*   **Cash-To-Debt:** 0.24.
-*   **Equity-to-Asset:** 0.1.
-*   **Operating Cash Flow (3Y):** -50%.
-*   **Investing Cash Flow (3Y):** +16%.
-*   **Financing Cash Flow (3Y):** +124%.
+*   Não foram encontradas informações específicas sobre *guidance* (metas) da administração para o ano de 2026 nos resultados da pesquisa.
 
-**Key Points:**
+**Tabela Resumo de Indicadores (2024):**
 
-*   Raizen's revenue increased QoQ, but net income decreased.
-*   The company is experiencing negative net profit margins.
-*   EBITDA has shown significant volatility in recent years.
-*   Management is focused on efficiency gains and deleveraging.
-*   The company is actively divesting non-core assets.
+| Indicador                  | Valor   |
+| -------------------------- | ------- |
+| P/L                        | -1,09   |
+| P/RECEITA (PSR)            | 0,04    |
+| P/VP                       | 0,73    |
+| MARGEM LÍQUIDA            | -3,89%  |
+| MARGEM BRUTA              | 4,03%   |
+| MARGEM EBITDA             | 3,91%   |
+| DÍVIDA LÍQUIDA / EBITDA   | 6,34    |
+| LIQUIDEZ CORRENTE          | 1,71    |
 
-**Disclaimer:** This analysis is based on the latest available financial data. It is important to note that some data is from different reporting periods, and a comprehensive analysis would require a deeper dive into the complete financial statements.
+**Observações:**
+
+*   A Raízen tem passado por um período de reestruturação de portfólio, com desinvestimentos de ativos.
+*   Analistas da XP Investimentos atualizaram o preço-alvo para março/26 para BRL 2,4/ação.
+*   A ação da Raízen tem apresentado alta volatilidade e é vista como uma operação tática de alto risco.
+
+**Disclaimer:** Esta análise é baseada nas informações disponíveis até o momento e não constitui recomendação de investimento. É importante realizar uma análise completa e considerar seus próprios objetivos e perfil de risco antes de tomar qualquer decisão de investimento.

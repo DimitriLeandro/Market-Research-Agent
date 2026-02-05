@@ -1,37 +1,31 @@
-Okay, I will list the material events related to RAIZ4 in chronological order from the last 90 days, based on CVM filings, legal matters, and analyst ratings changes. Since today is February 5, 2026, I will start from approximately November 7, 2025.
+Okay, sou um Monitor Corporativo focado em **RAIZ4**. Minha missão é listar eventos materiais e sua repercussão na mídia nos últimos 90 dias, cobrindo notícias em grandes portais, processos judiciais relevantes e mudanças de recomendação por analistas. Apresentarei as informações de forma estritamente factual e cronológica, em Português do Brasil.
 
-Here's a summary of material events for RAIZ4 from approximately November 7, 2025, to February 5, 2026:
+Com base nas informações encontradas, aqui está um resumo dos eventos relevantes para RAIZ4 nos últimos 90 dias (aproximadamente desde o início de Novembro de 2025 até o presente, Fevereiro de 2026):
 
-**CVM Filings & Material Facts:**
+**Mídia e Sentimento:**
 
-*   **2026-01-30:** Notice to the Market - Change in the Board of Directors.
-*   **2026-01-28:** Material Fact - Operational Preview Q3 25'26.
-*   **2025-12-22:** JP Morgan maintained a Neutral recommendation.
-*   **2025-12-16:** Material Fact - S&P National Ratings Update.
-*   **2025-12-15:** Material Fact - S&P Global Rating Update.
-*   **2025-12-09:** Notice to the Market - Procedures for the qualification of preferred share price.
-*   **2025-10-23:** Safra maintained a Buy recommendation with a target price of R$ 1.40.
+*   **Fevereiro de 2026:**
+    *   Ações da Raízen (RAIZ4) voltam a ser negociadas como "penny stock" (abaixo de R$1), refletindo preocupações com o endividamento e a estratégia de desalavancagem. A aquisição da participação da Sumitomo na Raízen Biomassa é vista como um fator que aumenta a pressão sobre o caixa.
+    *   A XP Investimentos rebaixou a recomendação para RAIZ4 de "compra" para "neutro", reduzindo o preço-alvo devido ao aumento do risco de alavancagem. A XP projeta queima de caixa no curto prazo e aumento da alavancagem.
+    *   A Raízen (RAIZ4) nega rumores de reestruturação da dívida ou pedido de recuperação judicial. A empresa reafirma a solidez de suas operações e o apoio dos acionistas.
+    *   Há preocupações no mercado sobre o endividamento da Raízen, com a S&P Global Ratings e a Moody's Ratings rebaixando a classificação da empresa.
+    *   Bonds da Raízen estão sendo negociados com desconto, indicando preocupações dos investidores.
+*   **Janeiro de 2026:**
+    *   As ações da Raízen (RAIZ4) tiveram um aumento de 20% em um dia, saindo da faixa de "penny stock". O mercado reagiu à expectativa de aumento de capital e apoio dos controladores Cosan e Shell. A venda de um ativo de biogás e a queda dos juros futuros também impulsionaram o movimento.
 
-**Analyst Ratings Changes:**
+**Jurídico:**
 
-*   **2026-01-14:** Bradesco BBI issued a Buy recommendation with a target price of R$ 1.00.
-*   **2025-12-05:** UBS downgraded Raizen stock to Sell due to sugar price concerns. The price target was cut to R$0.80.
-*   **2025-12-02:** Citi issued a Neutral rating with a target price of R$ 0.90.
-*   **2025-11-14:** HSBC upgraded Cosan stock rating to Hold.
-*   **2025-10-13:** BofA Merrill Lynch issued a Sell recommendation with a target price of R$ 0.75.
+*   Não foram encontradas informações específicas sobre novos processos judiciais relevantes ou acordos nos resultados da pesquisa.
 
-**Other Relevant Information:**
+**Analistas:**
 
-*   Analysts have been regularly downgrading their EPS expectations for the last 12 months.
-*   Analysts predict worse results for the company against their predictions a year ago.
-*   For the last four months, earnings estimated by analysts have been revised downwards with respect to the next two years.
-*   Most analysts recommend that the stock should be sold or reduced.
-*   The average consensus view of analysts covering the stock has deteriorated over the past four months.
-*   UBS downgraded Raizen SA (BVMF: RAIZ4) from Neutral to Sell on Tuesday, while cutting its price target to R$0.80.
-*   Raizen SA (B3:RAIZ4) released its second-quarter fiscal 25'26 results on November 14, 2025.
-*   Fitch Ratings downgraded Raizen S.A. and Raizen Energia S.A. to 'BBB-' from 'BBB' and placed the ratings on watch negative.
-*   Analysts' average price target has been revised downwards significantly over the past four months.
-*   The consensus target price from analysts is R$ 2.01.
-*   Raízen S.A. will release earnings BMO on Thursday, February 12, 2026.
+*   **Fevereiro de 2026:** A XP Investimentos rebaixou a recomendação para RAIZ4 de "compra" para "neutro" e reduziu o preço-alvo.
+*   A XP mantém recomendação neutra para Raízen (RAIZ4), com preço-alvo reduzido para março de 2027 para R$ 1,10 (de R$ 2,40).
 
-Please note that this is a summary of the information available in the search results and may not be exhaustive.
+Observações:
+
+*   As notícias indicam uma volatilidade recente nas ações da Raízen (RAIZ4), com preocupações sobre endividamento e perspectivas de fluxo de caixa.
+*   A empresa tem tomado medidas para otimizar sua estrutura de capital, incluindo a venda de ativos e a busca por aportes de capital.
+*   Analistas têm visões mistas sobre a Raízen, com algumas expressando preocupações sobre a alavancagem e outras vendo potencial de recuperação.
+
+É importante notar que esta é uma visão geral com base nas informações disponíveis e pode não ser exaustiva. Recomenda-se consultar fontes de notícias financeiras e relatórios de análise para obter informações mais detalhadas e atualizadas.
