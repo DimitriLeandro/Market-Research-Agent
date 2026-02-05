@@ -96,37 +96,28 @@ class GeminiProvider(IResearchProvider):
         return await self._execute_step(f"{asset.prompt_subdir}/management.j2", ticker=asset.ticker, name=asset.name, queries=queries)
 
 
-    async def synthesize_sector_report(self, sector: str, bull: str, bear: str, news: str) -> SectorResult:
-        # Keeping this for now as the plan doesn't explicitly delete sector synthesis yet.
-        prompt = self.templates.render(
-            "sectors/synthesis.j2",
-            sector=sector,
-            bull=bull,
-            bear=bear,
-            news=news
-        )
-
-        @retry(
-            retry=retry_if_exception_type(ClientError),
-            stop=stop_after_attempt(10),
-            wait=wait_exponential(multiplier=1, min=1, max=60),
-            before_sleep=before_sleep_log(logger, logging.WARNING)
-        )
-        async def _call_sector_synthesis():
-            async with self.semaphore:
-                def _inner_call():
-                    return self.client.models.generate_content(
-                        model="gemini-2.0-flash",
-                        contents=prompt,
-                        config=types.GenerateContentConfig(
-                            temperature=0.1,
-                            response_mime_type="application/json",
-                            response_schema=SectorResult.model_json_schema(),
-                        )
+    @retry(
+        retry=retry_if_exception_type(ClientError),
+        stop=stop_after_attempt(5),
+        wait=wait_exponential(multiplier=1, min=1, max=60),
+        before_sleep=before_sleep_log(logger, logging.WARNING)
+    )
+    async def synthesize_analysis(self, template_path: str, context: dict) -> str:
+        """
+        Synthesizes collected research into a Markdown report.
+        Does not use JSON schemas or Google Search tools.
+        """
+        prompt = self.templates.render(template_path, **context)
+        
+        async with self.semaphore:
+            def _call():
+                return self.client.models.generate_content(
+                    model="gemini-2.0-flash",
+                    contents=prompt,
+                    config=types.GenerateContentConfig(
+                        temperature=0.4 # Slightly higher creativity for synthesis
                     )
-                response = await asyncio.to_thread(_inner_call)
-                return response
-
-        response = await _call_sector_synthesis()
-        data = json.loads(self._clean_json(response.text))
-        return SectorResult(**data)
+                )
+            
+            response = await asyncio.to_thread(_call)
+            return response.text if response.text else "Synthesis failed."

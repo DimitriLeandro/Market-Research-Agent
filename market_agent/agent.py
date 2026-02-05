@@ -67,6 +67,9 @@ class MarketAgent:
         try:
             if await self.repository.sector_exists(sector_name, today):
                 logger.info(f"[{sector_name}] Loaded from cache.")
+                # We need to return a dict to support asset tasks, but loading generic research is tricky
+                # if we only have the synthesis. For now, we rely on raw files if they exist or 
+                # rebuild the cache map from raw files.
                 return await self.repository.load_sector_research(sector_name, today)
 
             t_bull = self.provider.research_sector_bull(sector_name)
@@ -79,64 +82,93 @@ class MarketAgent:
             await self.repository.save_sector_raw(sector_name, "bear_thesis", bear, today)
             await self.repository.save_sector_raw(sector_name, "news", news, today)
             
-            logger.info(f"[{sector_name}] Synthesizing report...")
-            synthesis_result = await self.provider.synthesize_sector_report(sector_name, bull, bear, news)
-            synthesis_result.analysis_date = today.isoformat()
-            
-            await self.repository.save_sector_final(
-                sector_name, 
-                synthesis_result.model_dump(mode='json'), 
-                today
+            logger.info(f"[{sector_name}] Synthesizing markdown report...")
+            synthesis = await self.provider.synthesize_analysis(
+                "sectors/synthesis.j2",
+                {
+                    "sector": sector_name,
+                    "bull_thesis": bull,
+                    "bear_thesis": bear,
+                    "news": news
+                }
             )
+            
+            # Save Markdown Synthesis to RAW (intermediate step)
+            await self.repository.save_sector_raw(sector_name, "synthesis", synthesis, today)
             
             logger.info(f"[{sector_name}] Completed.")
             
+            # Return context for assets
             return {
                 "bull_thesis": bull,
                 "bear_thesis": bear,
-                "news": news
+                "news": news,
+                "synthesis": synthesis
             }
 
         except Exception as e:
             logger.error(f"[{sector_name}] Failed: {e}", exc_info=True)
-            return {"bull_thesis": "Error", "bear_thesis": "Error", "news": "Error"}
+            return {"synthesis": "Error during sector processing"}
 
     async def _process_asset(self, asset: Asset, sector_task: asyncio.Task, today: date):
         category = asset.prompt_subdir
         logger.info(f"[{asset.ticker}] Starting Asset Pipeline ({category})...")
         
         try:
-            if await self.repository.asset_exists(asset.ticker, category, today):
-                logger.info(f"[{asset.ticker}] Loaded from cache.")
-                await sector_task 
-                return
+            # We skip the check for final report.json existence because we aren't generating it yet.
+            # Only checking if synthesis already exists could be an optimization, but let's run fully for now.
 
-            t_bull = self.provider.research_asset_bull(asset)
-            t_bear = self.provider.research_asset_bear(asset)
-            t_fin = self.provider.research_asset_financials(asset)
-            t_news = self.provider.research_asset_news(asset)
+            tasks_map = {
+                "bull_thesis": self.provider.research_asset_bull(asset),
+                "bear_thesis": self.provider.research_asset_bear(asset),
+                "financials": self.provider.research_asset_financials(asset),
+                "news": self.provider.research_asset_news(asset),
+                "filings": self.provider.research_asset_filings(asset)
+            }
 
-            bull_res, bear_res, fin_res, news_res = await asyncio.gather(
-                t_bull, t_bear, t_fin, t_news
-            )
+            if isinstance(asset, EquityAsset):
+                tasks_map["earnings"] = self.provider.research_asset_earnings(asset)
+            elif isinstance(asset, REITAsset):
+                tasks_map["management"] = self.provider.research_asset_management(asset)
 
-            await asyncio.gather(
-                self.repository.save_asset_raw(asset.ticker, category, "bull_thesis", bull_res, today),
-                self.repository.save_asset_raw(asset.ticker, category, "bear_thesis", bear_res, today),
-                self.repository.save_asset_raw(asset.ticker, category, "financials", fin_res, today),
-                self.repository.save_asset_raw(asset.ticker, category, "news", news_res, today)
-            )
+            keys = list(tasks_map.keys())
+            coroutines = list(tasks_map.values())
+            
+            results_list = await asyncio.gather(*coroutines)
+            results = dict(zip(keys, results_list))
+
+            save_coroutines = []
+            for step_name, content in results.items():
+                save_coroutines.append(
+                    self.repository.save_asset_raw(asset.ticker, category, step_name, content, today)
+                )
+
+            await asyncio.gather(*save_coroutines)
 
             logger.info(f"[{asset.ticker}] Waiting for sector data ({asset.sector})...")
-            sector_data = await sector_task
-
-            # --- SYNTHESIS DISABLED TEMPORARILY (Pending Phase 3) ---
-            # logger.info(f"[{asset.ticker}] Synthesizing...")
-            # result = await self.provider.synthesize_report(...)
-            # await self.repository.save_asset_final(...)
-            # --------------------------------------------------------
+            sector_data_map = await sector_task
             
-            logger.info(f"[{asset.ticker}] Research completed (Synthesis pending refactor).")
+            # We use the sector synthesis as the context to feed into the asset synthesis
+            sector_context = sector_data_map.get("synthesis", "Dados do setor indisponíveis.")
+
+            logger.info(f"[{asset.ticker}] Synthesizing markdown report...")
+            
+            context = {
+                "ticker": asset.ticker,
+                "sector": asset.sector,
+                "sector_data": sector_context,
+                **results # Unpack all research results (bull, bear, etc) into context
+            }
+            
+            synthesis = await self.provider.synthesize_analysis(
+                f"{category}/synthesis.j2",
+                context
+            )
+
+            # Save Markdown Synthesis to RAW
+            await self.repository.save_asset_raw(asset.ticker, category, "synthesis", synthesis, today)
+
+            logger.info(f"[{asset.ticker}] Synthesis saved to raw/synthesis.md. (JSON generation pending Phase 3).")
 
         except Exception as e:
             logger.error(f"[{asset.ticker}] Failed: {e}", exc_info=True)
