@@ -8,7 +8,7 @@ from typing import List, Set, Dict, Any
 from .config.settings import Config
 from .assets.base import Asset
 from .assets.equity import EquityAsset
-from .assets.fii import FIIAsset
+from .assets.reit import REITAsset
 from .research.provider import GeminiProvider
 from .research.enrichment import YFinanceEnricher
 from .persistence.repository import ResearchRepository
@@ -41,8 +41,8 @@ class MarketAgent:
 
             if asset_type_str == 'equity':
                 assets.append(EquityAsset(**asset_data))
-            elif asset_type_str == 'fii':
-                assets.append(FIIAsset(**asset_data))
+            elif asset_type_str == 'reit':
+                assets.append(REITAsset(**asset_data))
         return assets
 
     def _get_unique_sectors(self) -> Set[str]:
@@ -58,19 +58,16 @@ class MarketAgent:
                 logger.info(f"[{sector}] Loaded from cache.")
                 return await self.repository.load_sector_research(sector, today)
 
-            # 1. Parallel Research
             t_bull = self.provider.research_sector_bull(sector)
             t_bear = self.provider.research_sector_bear(sector)
             t_news = self.provider.research_sector_news(sector)
 
             bull, bear, news = await asyncio.gather(t_bull, t_bear, t_news)
 
-            # 2. Save Raw Data
             await self.repository.save_sector_raw(sector, "bull_thesis", bull, today)
             await self.repository.save_sector_raw(sector, "bear_thesis", bear, today)
             await self.repository.save_sector_raw(sector, "news", news, today)
             
-            # 3. Synthesis
             logger.info(f"[{sector}] Synthesizing report...")
             synthesis_result = await self.provider.synthesize_sector_report(sector, bull, bear, news)
             synthesis_result.analysis_date = today.isoformat()

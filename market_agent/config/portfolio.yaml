@@ -135,101 +135,101 @@ assets:
     sector: Agriculture
 
   ############
-  ### FIIs ###
+  ### REITs ###
   ############ 
   
   # Logistics
   - ticker: XPLG11
     name: XP Log FII
-    type: fii
+    type: reit
     sector: Logistics
   
   - ticker: HGLG11
     name: CSHG Logística FII
-    type: fii
+    type: reit
     sector: Logistics
   
   - ticker: BTLG11
     name: BTG Pactual Logística FII
-    type: fii
+    type: reit
     sector: Logistics
   
   - ticker: GARE11
     name: Guardian Real Estate FII
-    type: fii
+    type: reit
     sector: Hybrid/Logistics
 
   # Shopping Malls
   - ticker: XPML11
     name: XP Malls FII
-    type: fii
+    type: reit
     sector: Shopping Malls
   
   - ticker: VISC11
     name: Vinci Shopping Centers FII
-    type: fii
+    type: reit
     sector: Shopping Malls
 
   # Urban
   - ticker: TRXF11
     name: TRX Real Estate FII
-    type: fii
+    type: reit
     sector: Retail/Big Box
   
   - ticker: HGRU11
     name: CSHG Renda Urbana FII
-    type: fii
+    type: reit
     sector: Retail/Urban Income
 
   # Agro Land
   - ticker: RZTR11
     name: Riza Terrax FII
-    type: fii
+    type: reit
     sector: Agro/Land
   
   - ticker: BTRA11
     name: BTG Pactual Terras Agrícolas FII
-    type: fii
+    type: reit
     sector: Agro/Land
 
   # Paper
   - ticker: KNCR11
     name: Kinea Rendimentos Imobiliários FII
-    type: fii
+    type: reit
     sector: Paper/Receivables
   
   - ticker: KNIP11
     name: Kinea Índice de Preços FII
-    type: fii
+    type: reit
     sector: Paper/Receivables
   
   - ticker: XPCI11
     name: XP Crédito Imobiliário FII
-    type: fii
+    type: reit
     sector: Paper/Receivables
   
   - ticker: KNCA11
     name: Kinea Crédito Agro FII
-    type: fii
+    type: reit
     sector: Paper/Agro
 
   - ticker: RZAK11
     name: Riza Akin FII
-    type: fii
+    type: reit
     sector: Paper/High Yield
 
   # Liquidity
   - ticker: MXRF11
     name: Maxi Renda FII
-    type: fii
+    type: reit
     sector: Hybrid/Paper
   
   - ticker: KNSC11
     name: Kinea Securities FII
-    type: fii
+    type: reit
     sector: Paper/Hedge
   
   - ticker: BTHF11
     name: BTG Pactual Hedge Fund
-    type: fii
+    type: reit
     sector: Hedge Fund

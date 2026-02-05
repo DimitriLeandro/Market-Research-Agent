@@ -6,5 +6,5 @@ assets:
 
   - ticker: HGLG11
     name: CSHG Logística FII
-    type: fii
+    type: reit
     sector: Logistics
