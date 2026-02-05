@@ -8,13 +8,14 @@ class Config:
     BASE_DIR = Path(__file__).resolve().parent.parent.parent
     CREDENTIALS_PATH = BASE_DIR / "credentials" / "credentials.json"
     
-    # Paths for both Production and Test portfolios
     PORTFOLIO_PATH = BASE_DIR / "market_agent" / "config" / "portfolio.yaml"
     TEST_PORTFOLIO_PATH = BASE_DIR / "market_agent" / "config" / "portfolio_test.yaml"
     
     RESULTS_DIR = BASE_DIR / "results"
     LOGS_DIR = BASE_DIR / "logs"
     PROMPTS_DIR = BASE_DIR / "market_agent" / "prompts"
+    
+    MAX_CONCURRENT_REQUESTS = 8
 
     @classmethod
     def load_api_key(cls) -> str:
@@ -26,11 +27,6 @@ class Config:
 
     @classmethod
     def load_portfolio(cls, test_mode: bool = False) -> List[Dict[str, Any]]:
-        """
-        Loads the portfolio assets. 
-        If test_mode is True, loads from portfolio_test.yaml.
-        Otherwise, loads from the standard portfolio.yaml.
-        """
         target_path = cls.TEST_PORTFOLIO_PATH if test_mode else cls.PORTFOLIO_PATH
         
         if not target_path.exists():

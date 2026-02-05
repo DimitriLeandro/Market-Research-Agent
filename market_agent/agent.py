@@ -3,7 +3,7 @@ import logging
 import subprocess
 import time
 from datetime import date
-from typing import List, Set
+from typing import List, Set, Dict, Any
 
 from .config.settings import Config
 from .assets.base import Asset
@@ -19,22 +19,20 @@ class MarketAgent:
     def __init__(self, test_mode: bool = False):
         self.test_mode = test_mode
         self.api_key = Config.load_api_key()
-        self.provider = GeminiProvider(self.api_key)
+        
+        # We pass the semaphore to the provider so it can throttle itself globally
+        self.global_semaphore = asyncio.Semaphore(Config.MAX_CONCURRENT_REQUESTS)
+        self.provider = GeminiProvider(self.api_key, self.global_semaphore)
+        
         self.enricher = YFinanceEnricher()
         self.repository = ResearchRepository(Config.RESULTS_DIR)
         
-        # Load assets based on the mode
         self.assets = self._load_assets()
-        
-        self.semaphore = asyncio.Semaphore(1) # Limit concurrency to avoid rate limits
 
-        if self.test_mode:
-            logger.info("MarketAgent initialized in TEST MODE.")
-        else:
-            logger.info("MarketAgent initialized in PRODUCTION MODE.")
+        mode_label = "TEST MODE" if self.test_mode else "PRODUCTION MODE"
+        logger.info(f"MarketAgent initialized in {mode_label}. Max Parallel Requests: {Config.MAX_CONCURRENT_REQUESTS}")
 
     def _load_assets(self) -> List[Asset]:
-        # Pass the test_mode flag to the config loader
         raw = Config.load_portfolio(test_mode=self.test_mode)
         assets = []
         for item in raw:
@@ -51,78 +49,103 @@ class MarketAgent:
     def _get_unique_sectors(self) -> Set[str]:
         return set(asset.sector for asset in self.assets)
 
-    async def _process_sector(self, sector: str, today: date):
-        async with self.semaphore:
-            logger.info(f"=== Starting Sector Pipeline for {sector} ===")
-            try:
-                if self.repository.sector_exists(sector, today):
-                    logger.info(f"Skipping Sector {sector} (Already completed)")
-                    return
+    async def _process_sector(self, sector: str, today: date) -> Dict[str, str]:
+        """
+        Processes a sector: Checks cache, runs research steps in parallel, returns data map.
+        """
+        logger.info(f"[{sector}] Starting Sector Pipeline...")
+        try:
+            # 1. Check if fully exists
+            if await self.repository.sector_exists(sector, today):
+                logger.info(f"[{sector}] Loaded from cache.")
+                return await self.repository.load_sector_research(sector, today)
 
-                bull = await self.provider.research_sector_bull(sector)
-                self.repository.save_sector_research(sector, "bull_thesis", bull, today)
+            # 2. Run research steps in parallel
+            # The provider uses the global semaphore, so we can just fire these off
+            t_bull = self.provider.research_sector_bull(sector)
+            t_bear = self.provider.research_sector_bear(sector)
+            t_news = self.provider.research_sector_news(sector)
 
-                bear = await self.provider.research_sector_bear(sector)
-                self.repository.save_sector_research(sector, "bear_thesis", bear, today)
+            # Gather results
+            bull, bear, news = await asyncio.gather(t_bull, t_bear, t_news)
 
-                news = await self.provider.research_sector_news(sector)
-                self.repository.save_sector_research(sector, "news", news, today)
-                
-                logger.info(f"=== Completed Sector {sector} ===")
-            except Exception as e:
-                logger.error(f"Failed to process sector {sector}: {e}", exc_info=True)
+            # 3. Save results (Async I/O)
+            await self.repository.save_sector_research(sector, "bull_thesis", bull, today)
+            await self.repository.save_sector_research(sector, "bear_thesis", bear, today)
+            await self.repository.save_sector_research(sector, "news", news, today)
+            
+            logger.info(f"[{sector}] Completed.")
+            
+            return {
+                "bull_thesis": bull,
+                "bear_thesis": bear,
+                "news": news
+            }
 
-    async def _process_asset(self, asset: Asset, today: date):
-        async with self.semaphore:
-            logger.info(f"=== Starting Asset Pipeline for {asset.ticker} ===")
-            try:
-                if self.repository.asset_exists(asset.ticker, today):
-                    logger.info(f"Skipping {asset.ticker} (Already completed)")
-                    return
+        except Exception as e:
+            logger.error(f"[{sector}] Failed: {e}", exc_info=True)
+            # Return empty data so dependent assets don't crash, but log the error
+            return {"bull_thesis": "Error", "bear_thesis": "Error", "news": "Error"}
 
-                sector_data = self.repository.load_sector_research(asset.sector, today)
+    async def _process_asset(self, asset: Asset, sector_task: asyncio.Task, today: date):
+        """
+        Processes an asset. Runs asset research in parallel with sector research.
+        Waits for sector data only before synthesis.
+        """
+        logger.info(f"[{asset.ticker}] Starting Asset Pipeline...")
+        try:
+            if await self.repository.asset_exists(asset.ticker, today):
+                logger.info(f"[{asset.ticker}] Loaded from cache.")
+                # We still await the sector task to ensure the graph completes cleanly
+                await sector_task 
+                return
 
-                bull_res = await self.provider.research_asset_bull(asset)
-                self.repository.save_asset_raw(asset.ticker, "bull_thesis", bull_res, today)
+            # 1. Run independent asset research steps in parallel
+            # These do NOT depend on the sector, so we run them immediately
+            t_bull = self.provider.research_asset_bull(asset)
+            t_bear = self.provider.research_asset_bear(asset)
+            t_fin = self.provider.research_asset_financials(asset)
+            t_news = self.provider.research_asset_news(asset)
 
-                bear_res = await self.provider.research_asset_bear(asset)
-                self.repository.save_asset_raw(asset.ticker, "bear_thesis", bear_res, today)
+            bull_res, bear_res, fin_res, news_res = await asyncio.gather(
+                t_bull, t_bear, t_fin, t_news
+            )
 
-                fin_res = await self.provider.research_asset_financials(asset)
-                self.repository.save_asset_raw(asset.ticker, "financials", fin_res, today)
-
-                news_res = await self.provider.research_asset_news(asset)
+            # 2. Save Raw Data
+            await asyncio.gather(
+                self.repository.save_asset_raw(asset.ticker, "bull_thesis", bull_res, today),
+                self.repository.save_asset_raw(asset.ticker, "bear_thesis", bear_res, today),
+                self.repository.save_asset_raw(asset.ticker, "financials", fin_res, today),
                 self.repository.save_asset_raw(asset.ticker, "news", news_res, today)
+            )
 
-                result = await self.provider.synthesize_report(
-                    asset, 
-                    sector_data=sector_data,
-                    bull=bull_res,
-                    bear=bear_res,
-                    financials=fin_res,
-                    news=news_res
-                )
+            # 3. Wait for Sector Data (Dependency for Synthesis)
+            logger.info(f"[{asset.ticker}] Waiting for sector data ({asset.sector})...")
+            sector_data = await sector_task
 
-                result.analysis_date = today.isoformat()
-                
-                self.repository.save_asset_final(
-                    asset.ticker, 
-                    result.model_dump(mode='json'), 
-                    today
-                )
-                logger.info(f"=== Completed Asset {asset.ticker} ===")
+            # 4. Synthesize
+            result = await self.provider.synthesize_report(
+                asset, 
+                sector_data=sector_data,
+                bull=bull_res,
+                bear=bear_res,
+                financials=fin_res,
+                news=news_res
+            )
 
-            except Exception as e:
-                logger.error(f"Failed to process asset {asset.ticker}: {e}", exc_info=True)
+            result.analysis_date = today.isoformat()
+            
+            await self.repository.save_asset_final(
+                asset.ticker, 
+                result.model_dump(mode='json'), 
+                today
+            )
+            logger.info(f"[{asset.ticker}] Completed.")
+
+        except Exception as e:
+            logger.error(f"[{asset.ticker}] Failed: {e}", exc_info=True)
 
     def _git_auto_commit(self):
-        """
-        Attempts to add, commit, and push results with retries and exponential backoff.
-        """
-        # In test mode, we might want to skip pushing, or push with a specific message.
-        # For now, we follow the requirement: "The only difference must be the source of tickers".
-        # So we keep git behavior identical.
-        
         today_str = date.today().strftime("%Y-%m-%d")
         mode_str = "TEST" if self.test_mode else "PROD"
         commit_msg = f"docs: adding {today_str} results ({mode_str} auto commit)"
@@ -133,48 +156,62 @@ class MarketAgent:
         while attempts <= max_retries:
             try:
                 subprocess.run(["git", "add", "results/"], check=True, capture_output=True, text=True)
-                
                 try:
                     subprocess.run(["git", "commit", "-m", commit_msg], check=True, capture_output=True, text=True)
                 except subprocess.CalledProcessError as e:
                     if "nothing to commit" in e.stdout.lower():
                         logger.info("Git: Nothing to commit.")
                         return
-                    raise e # Re-raise if it's a real error
+                    raise e 
 
                 subprocess.run(["git", "push"], check=True, capture_output=True, text=True)
-                
                 logger.info(f"Git auto-commit successful: {commit_msg}")
-                return # Success, exit function
+                return
 
             except subprocess.CalledProcessError as e:
                 sleep_time = 2 ** attempts
-                
                 if attempts < max_retries:
-                    logger.warning(
-                        f"Git auto-commit attempt {attempts + 1} failed: {e}. "
-                        f"Retrying in {sleep_time} seconds..."
-                    )
+                    logger.warning(f"Git auto-commit attempt {attempts + 1} failed. Retrying in {sleep_time}s...")
                     time.sleep(sleep_time)
                     attempts += 1
                 else:
-                    logger.error(
-                        f"Git auto-commit failed after {max_retries + 1} attempts. "
-                        f"Final error: {e}"
-                    )
+                    logger.error(f"Git auto-commit failed: {e}")
                     return
 
     async def run_cycle(self):
         today = date.today()
         logger.info(f"Cycle Date: {today}")
 
-        sectors = self._get_unique_sectors()
-        sector_tasks = [self._process_sector(sector, today) for sector in sectors]
-        if sector_tasks:
-            await asyncio.gather(*sector_tasks)
-
-        asset_tasks = [self._process_asset(asset, today) for asset in self.assets]
-        if asset_tasks:
-            await asyncio.gather(*asset_tasks)
+        # 1. Create Sector Tasks (Map: SectorName -> Task)
+        # We start these immediately. They will run in the background.
+        unique_sectors = self._get_unique_sectors()
+        sector_tasks_map: Dict[str, asyncio.Task] = {}
         
+        for sector in unique_sectors:
+            task = asyncio.create_task(self._process_sector(sector, today))
+            sector_tasks_map[sector] = task
+
+        # 2. Create Asset Tasks
+        # Each asset task takes a reference to its specific sector task
+        asset_tasks = []
+        for asset in self.assets:
+            if asset.sector not in sector_tasks_map:
+                logger.error(f"Asset {asset.ticker} has unknown sector {asset.sector}. Skipping.")
+                continue
+            
+            sec_task = sector_tasks_map[asset.sector]
+            task = asyncio.create_task(self._process_asset(asset, sec_task, today))
+            asset_tasks.append(task)
+
+        # 3. Wait for ALL tasks to complete
+        # Note: We await asset_tasks. Asset tasks inherently await their sector tasks 
+        # before finishing. However, we also await sector_tasks_map.values() ensures 
+        # orphan sectors (if any) also finish, though functionally redundant if mapped correctly.
+        
+        all_tasks = list(sector_tasks_map.values()) + asset_tasks
+        if all_tasks:
+            logger.info(f"Scheduled {len(sector_tasks_map)} sectors and {len(asset_tasks)} assets. Running...")
+            await asyncio.gather(*all_tasks)
+        
+        logger.info("All research tasks finished.")
         self._git_auto_commit()
