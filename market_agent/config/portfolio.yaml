@@ -4,230 +4,230 @@ assets:
   ### Equities ###
   ################
   
-  # --- Financials ---
+  # --- Financeiro ---
   - ticker: BNBR3
     name: Banco do Nordeste do Brasil S.A.
     type: equity
-    sector: Financials
+    sector: Financeiro
   
   - ticker: BBAS3
     name: Banco do Brasil S.A.
     type: equity
-    sector: Financials
+    sector: Financeiro
 
   - ticker: ABCB4
     name: Banco ABC Brasil S.A.
     type: equity
-    sector: Financials
+    sector: Financeiro
 
   - ticker: ITSA4
     name: Itaúsa S.A.
     type: equity
-    sector: Financials/Holding
+    sector: Financeiro/Holding
 
   - ticker: ITUB3
     name: Itaú Unibanco Holding S.A.
     type: equity
-    sector: Financials
+    sector: Financeiro
 
   - ticker: BBDC3
     name: Banco Bradesco S.A.
     type: equity
-    sector: Financials
+    sector: Financeiro
 
   - ticker: BPAC11
     name: Banco BTG Pactual S.A.
     type: equity
-    sector: Financials/Investment Banking
+    sector: Financeiro/Banco de Investimento
 
   - ticker: BRSR6
     name: Banrisul
     type: equity
-    sector: Financials
+    sector: Financeiro
 
   - ticker: BMEB3
     name: Banco Mercantil do Brasil S.A.
     type: equity
-    sector: Financials
+    sector: Financeiro
 
   - ticker: B3SA3
     name: B3 S.A. - Brasil, Bolsa, Balcão
     type: equity
-    sector: Financials/Infrastructure
+    sector: Financeiro/Infraestrutura
 
-  # --- Insurance ---
+  # --- Seguros ---
   - ticker: PSSA3
     name: Porto Seguro S.A.
     type: equity
-    sector: Insurance
+    sector: Seguros
 
   - ticker: BBSE3
     name: BB Seguridade Participações S.A.
     type: equity
-    sector: Insurance
+    sector: Seguros
 
   - ticker: CXSE3
     name: Caixa Seguridade Participações S.A.
     type: equity
-    sector: Insurance
+    sector: Seguros
 
-  # --- Utilities & Energy ---
+  # --- Utilidade Pública & Energia ---
   - ticker: ISAE3
     name: ISA CTEEP (Transmissão Paulista)
     type: equity
-    sector: Utilities/Energy
+    sector: Utilidade Pública/Energia
 
   - ticker: TAEE3
     name: Taesa S.A.
     type: equity
-    sector: Utilities/Energy
+    sector: Utilidade Pública/Energia
 
   - ticker: CMIG3
     name: Cemig (Companhia Energética de Minas Gerais)
     type: equity
-    sector: Utilities/Energy
+    sector: Utilidade Pública/Energia
 
   - ticker: PETR4
     name: Petróleo Brasileiro S.A. Petrobras
     type: equity
-    sector: Oil & Gas
+    sector: Óleo e Gás
 
   - ticker: RAIZ4
     name: Raízen S.A.
     type: equity
-    sector: Energy/Sugar & Ethanol
+    sector: Energia/Açúcar e Etanol
 
-  # --- Industrial & Materials ---
+  # --- Industrial & Materiais Básicos ---
   - ticker: VALE3
     name: Vale S.A.
     type: equity
-    sector: Mining
+    sector: Mineração
 
   - ticker: GGBR3
     name: Gerdau S.A.
     type: equity
-    sector: Materials/Steel
+    sector: Materiais Básicos/Siderurgia
 
   - ticker: POMO3
     name: Marcopolo S.A.
     type: equity
-    sector: Industrial/Automotive
+    sector: Industrial/Automotivo
 
   - ticker: KEPL3
     name: Kepler Weber S.A.
     type: equity
-    sector: Industrial/Agro Storage
+    sector: Industrial/Armazenagem
 
   - ticker: UNIP3
     name: Unipar Carbocloro S.A.
     type: equity
-    sector: Materials/Chemicals
+    sector: Materiais Básicos/Química
 
-  # --- Retail & Agro ---
+  # --- Varejo & Agro ---
   - ticker: GMAT3
     name: Grupo Mateus S.A.
     type: equity
-    sector: Retail
+    sector: Varejo
 
   - ticker: AGRO3
     name: BrasilAgro - Cia Brasileira de Propriedades Agrícolas
     type: equity
-    sector: Agriculture
+    sector: Agropecuária
 
   ############
   ### REITs ###
   ############ 
   
-  # Logistics
+  # Logística
   - ticker: XPLG11
     name: XP Log FII
     type: reit
-    sector: Logistics
+    sector: Logística
   
   - ticker: HGLG11
     name: CSHG Logística FII
     type: reit
-    sector: Logistics
+    sector: Logística
   
   - ticker: BTLG11
     name: BTG Pactual Logística FII
     type: reit
-    sector: Logistics
+    sector: Logística
   
   - ticker: GARE11
     name: Guardian Real Estate FII
     type: reit
-    sector: Hybrid/Logistics
+    sector: Híbrido/Logística
 
-  # Shopping Malls
+  # Shoppings
   - ticker: XPML11
     name: XP Malls FII
     type: reit
-    sector: Shopping Malls
+    sector: Shoppings
   
   - ticker: VISC11
     name: Vinci Shopping Centers FII
     type: reit
-    sector: Shopping Malls
+    sector: Shoppings
 
-  # Urban
+  # Renda Urbana
   - ticker: TRXF11
     name: TRX Real Estate FII
     type: reit
-    sector: Retail/Big Box
+    sector: Varejo/Big Box
   
   - ticker: HGRU11
     name: CSHG Renda Urbana FII
     type: reit
-    sector: Retail/Urban Income
+    sector: Varejo/Renda Urbana
 
-  # Agro Land
+  # Agro (Terras)
   - ticker: RZTR11
     name: Riza Terrax FII
     type: reit
-    sector: Agro/Land
+    sector: Agro/Terras
   
   - ticker: BTRA11
     name: BTG Pactual Terras Agrícolas FII
     type: reit
-    sector: Agro/Land
+    sector: Agro/Terras
 
-  # Paper
+  # Papel (Recebíveis)
   - ticker: KNCR11
     name: Kinea Rendimentos Imobiliários FII
     type: reit
-    sector: Paper/Receivables
+    sector: Papel/Recebíveis
   
   - ticker: KNIP11
     name: Kinea Índice de Preços FII
     type: reit
-    sector: Paper/Receivables
+    sector: Papel/Recebíveis
   
   - ticker: XPCI11
     name: XP Crédito Imobiliário FII
     type: reit
-    sector: Paper/Receivables
+    sector: Papel/Recebíveis
   
   - ticker: KNCA11
     name: Kinea Crédito Agro FII
     type: reit
-    sector: Paper/Agro
+    sector: Papel/Agro
 
   - ticker: RZAK11
     name: Riza Akin FII
     type: reit
-    sector: Paper/High Yield
+    sector: Papel/High Yield
 
-  # Liquidity
+  # Híbrido / Hedge
   - ticker: MXRF11
     name: Maxi Renda FII
     type: reit
-    sector: Hybrid/Paper
+    sector: Híbrido/Papel
   
   - ticker: KNSC11
     name: Kinea Securities FII
     type: reit
-    sector: Paper/Hedge
+    sector: Papel/Hedge
   
   - ticker: BTHF11
     name: BTG Pactual Hedge Fund

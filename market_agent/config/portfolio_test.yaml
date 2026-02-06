@@ -2,9 +2,9 @@ assets:
   - ticker: RAIZ4
     name: Raízen S.A.
     type: equity
-    sector: Energy/Sugar & Ethanol
+    sector: Energia/Açúcar e Etanol
 
   - ticker: HGLG11
     name: CSHG Logística FII
     type: reit
-    sector: Logistics
+    sector: Logística

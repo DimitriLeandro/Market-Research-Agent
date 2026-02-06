@@ -9,6 +9,4 @@ class IFinancialEnricher(ABC):
         pass
 
 class IResearchProvider(ABC):
-    @abstractmethod
-    async def conduct_research(self, asset: Asset, context: Dict[str, Any]) -> ResearchResult:
-        pass
+    pass

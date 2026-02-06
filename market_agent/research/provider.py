@@ -27,9 +27,6 @@ class GeminiProvider(IResearchProvider):
         cleaned = re.sub(r"```", "", cleaned)
         return cleaned.strip()
 
-    async def conduct_research(self, asset: Asset, context: dict) -> ResearchResult:
-        raise NotImplementedError("Use specific research step methods.")
-
     @retry(
         retry=retry_if_exception_type(ClientError),
         stop=stop_after_attempt(10),
