@@ -1,0 +1,53 @@
+```markdown
+# Relatório de Análise de FII: VISC11 - Fevereiro 2026
+
+### 1. Resumo Geral
+
+O VISC11 (Vinci Shopping Centers FII) se apresenta como um fundo consolidado no setor de shoppings, com um portfólio diversificado em 30 empreendimentos distribuídos por 16 estados do Brasil. O fundo demonstra resiliência, impulsionado por indicadores operacionais sólidos, como o aumento do NOI/m² e das vendas/m², além de uma taxa de ocupação elevada. O VISC11 busca gerar renda através do investimento em shoppings de grande porte, com posição dominante em suas regiões e parcerias estratégicas com seus administradores. Apesar dos pontos fortes, é crucial monitorar a alavancagem, a vacância e a concentração em classes C e D, fatores que podem impactar a rentabilidade e a distribuição de dividendos.
+
+### 2. Tese de Investimento (Pontos Fortes)
+
+*   **Qualidade e Diversificação do Portfólio:** O VISC11 possui participações em 30 shoppings, totalizando 288 mil m² de ABL própria, distribuídos em 16 estados. Essa diversificação geográfica reduz a dependência de uma única região. Além disso, o fundo apresenta diversificação entre os administradores das propriedades, com o NOI administrado por diferentes empresas como Ancar, Argo, Soul Malls e Saphyr.
+
+*   **Sólidos Indicadores Operacionais:** Em novembro de 2025, o NOI/m² foi de R$ 95,00, representando um crescimento de 8,9% em relação ao mesmo período de 2023. As vendas/m² dos shoppings também apresentaram um aumento de 4,3% no mesmo período. Os indicadores de aluguel das mesmas lojas (SSR) e vendas das mesmas lojas (SSS) também apontaram crescimentos robustos de 3,5% e 6,2%, respectivamente, em comparação ao 3T23. A taxa de ocupação é de **95,3%**, o maior nível dos últimos cinco anos. A inadimplência líquida apresentou uma redução de 1,2 p.p. em relação a novembro de 2023, permanecendo em um patamar considerado saudável de 2%, com um baixo nível de concessão de desconto a lojistas (2,2%).
+
+*   **Dividend Yield Atrativo:** O VISC11 apresentou um dividend yield de **8,93%** nos últimos 12 meses. O último dividendo foi de R$ 0,84 por cota (pago em 13/02/2026).
+
+*   **Valuation Descontado:** O P/VP (Preço sobre Valor Patrimonial) do VISC11 está em **0,92**. Isso indica que o fundo está sendo negociado com um desconto em relação ao seu valor patrimonial, o que pode ser uma oportunidade.
+
+### 3. Riscos e Desafios (Pontos de Atenção)
+
+*   **Concentração em Classes C e D:** O fundo apresenta uma maior concentração em shoppings voltados para as classes C e D, o que pode resultar em maior sensibilidade nos resultados.
+
+*   **Alavancagem:** O fundo demonstra um aumento da alavancagem em 2026 devido a aquisições recentes. A alavancagem financeira em relação ao patrimônio líquido foi de **14.90%** em 2025. Novas dívidas podem ser estruturadas para recompor o caixa, o que eleva o risco financeiro e exige acompanhamento. Atualmente, o VISC11 possui R$ 564 milhões em obrigações referentes a aquisições de imóveis e previsões de pagamento de *earnout*.
+
+*   **Vacância:** Embora a vacância física do VISC11 esteja relativamente controlada em **5,00%**, é importante monitorar a tendência. Uma alta na vacância, seja por dificuldades de locação ou por fechamento de lojas (impacto de vendas online, crise econômica), pode reduzir a receita de aluguel e, consequentemente, os dividendos distribuídos aos cotistas. A vacância financeira em 2025 foi de **5.61%**.
+
+*   **Concentração em Inquilinos e Imóveis:** É crucial analisar a concentração em inquilinos e imóveis. Se uma parcela significativa da receita do fundo depende de poucos inquilinos ou de um único shopping, a saída de um desses inquilinos ou um problema grave em um dos shoppings pode ter um impacto significativo nos resultados do fundo.
+
+### 4. Análise Operacional e Financeira
+
+*   **Destaques do Gestor:** (Dado não encontrado nos relatórios públicos.)
+
+*   **Métricas Chave:**
+    *   **Dividend Yield:** 8,93% (anualizado).
+    *   **P/VP:** 0,92.
+    *   **Vacância:** 5,00% (física).
+    *   **Último Dividendo:** R$ 0,84 por cota (pago em 13/02/2026).
+    *   **Valor Patrimonial por Cota:** R$ 117,99.
+    *   **Movimentações Recentes:** Conclusão da aquisição do Midway Mall em Dezembro de 2025.
+
+*   **Guidance:** Há uma expectativa de que o fundo possa distribuir até R$ 0,90 por cota até o final de 2026.
+
+### 5. Notícias e Fatos Relevantes
+
+*   **Fevereiro 2026 - VISC11 anuncia maiores dividendos em 18 meses:** O fundo anunciou os maiores dividendos dos últimos 18 meses, demonstrando a solidez de suas operações e a capacidade de gerar renda para os cotistas.
+*   **Fevereiro 2026 - Comunicado ao Mercado:** Publicação de comunicado ao mercado, classificado como "Outros Comunicados Não Considerados Fatos Relevantes".
+*   **Janeiro 2026 - Informe Mensal:** Relatório mensal reportou a distribuição de rendimento no valor de R$ 0,81 por cota.
+*   **Janeiro 2026 - Pagamento de Rendimento:** Pagamento de rendimento de R$ 0,81 por cota.
+*   **Janeiro 2026 - Relatório Gerencial:** Publicação do relatório gerencial.
+*   **Janeiro 2026 - Comunicado ao Mercado:** Publicação de comunicado ao mercado, classificado como "Outros Comunicados Não Considerados Fatos Relevantes".
+*   **Dezembro 2025 - Data Base para Rendimento:** Data base para rendimento de R$ 0,84 por cota, com fechamento a R$ 109,04, representando um rendimento de 0,74%.
+*   **Dezembro 2025 - Aviso aos Cotistas:** Publicação de Aviso aos Cotistas sobre Rendimentos e Amortizações.
+*   **Dezembro 2025 - Comunicado ao Mercado:** Publicação de dois comunicados ao mercado, classificados como "Outros Comunicados Não Considerados Fatos Relevantes".
+```

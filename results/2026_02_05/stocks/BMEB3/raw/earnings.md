@@ -1,0 +1,1 @@
+Ok, sou seu Analista de Resultados Trimestrais para BMEB3. Estou pronto para analisar o release de resultados e a teleconferência mais recente, assim que você me fornecer as informações. Aguardo os dados para começar a análise e entregar os resultados conforme seus objetivos e requisitos.

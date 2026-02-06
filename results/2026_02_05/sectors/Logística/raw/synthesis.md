@@ -1,0 +1,50 @@
+# Relatório de Inteligência Setorial - Logística no Brasil
+
+### 1. Outlook Setorial (Resumo Geral)
+
+O setor de logística no Brasil encontra-se em um momento de **consolidação e expansão seletiva**, impulsionado principalmente pelo crescimento contínuo do e-commerce e pela busca por eficiência e sustentabilidade. Apesar dos desafios relacionados à infraestrutura e custos elevados, a digitalização e os investimentos estratégicos em infraestrutura, juntamente com um ambiente regulatório em evolução, oferecem oportunidades significativas para empresas que buscam inovação e otimização. O principal driver macroeconômico atual é a expectativa de redução da taxa Selic, que pode impulsionar investimentos e reduzir o custo do capital para as empresas do setor.
+
+### 2. Drivers de Crescimento (Bull Case)
+
+*   **Crescimento do E-commerce:** O setor de e-commerce continua a expandir, atingindo níveis recordes em vendas em 2024, impulsionando a demanda por serviços logísticos mais ágeis e eficientes, como micro-hubs urbanos, parcerias com transportadoras locais e roteirização dinâmica.
+*   **Transformação Digital:** A modernização e a digitalização do setor estão contribuindo para uma melhoria expressiva na qualidade do serviço e nos resultados do segmento. A adoção de tecnologias como Inteligência Artificial (IA), Big Data e IoT (Internet das Coisas) está revolucionando a gestão de frotas, o rastreamento de cargas e a previsibilidade de demandas, com empresas que adotam IA relatando aumento de eficiência e redução do tempo de entrega.
+*   **Investimentos em Infraestrutura:** A Associação Brasileira da Infraestrutura e Indústrias de Base (ABDIB) prevê investimentos de mais de R$ 124 bilhões em transporte e logística até 2026. O governo federal está investindo na modernização da infraestrutura portuária, buscando assegurar investimentos contínuos, ampliar a segurança da navegação e aumentar a capacidade operacional do sistema portuário nacional.
+*   **Concessões Rodoviárias:** A Agência Nacional de Transportes Terrestres (ANTT) administra 31 contratos de concessão, somando mais de 15 mil quilômetros de rodovias, como a concessão da Rota da Celulose, com investimentos previstos de R$ 10,1 bilhões ao longo de 30 anos.
+*   **Logística Sustentável:** Há uma crescente demanda por responsabilidade ambiental, com empresas investindo em práticas sustentáveis, como otimização de rotas para reduzir emissões de CO2 e uso de veículos elétricos ou híbridos.
+*   **Taxa Selic Decrescente:** A queda da taxa Selic pode reduzir o custo do crédito, facilitando o financiamento de investimentos em expansão e modernização do setor.
+*   **Câmbio Favorável:** A valorização do real frente ao dólar pode reduzir os custos de importação de insumos essenciais para o setor, como combustíveis e peças, além de incentivar a busca por fornecedores nacionais.
+*   **Inflação Controlada:** A redução da projeção de taxa de câmbio média mantém a tendência de baixa da inflação de bens industrializados.
+*   **Incentivos Fiscais:** Alguns estados, como o Espírito Santo, oferecem incentivos fiscais robustos para empresas do setor de logística, como os programas COMPETE, INVEST e REOA, que podem reduzir custos e aumentar a competitividade.
+*   **Corredores Logísticos Sustentáveis:** A ANTT está criando um Corredor Logístico Sustentável, buscando inovação e segurança nas estradas e ferrovias.
+*   **Concessão de Canais de Acesso:** O governo federal está implementando um novo modelo de concessão dos canais de acesso aos portos brasileiros, buscando assegurar investimentos contínuos, ampliar a segurança da navegação e aumentar a capacidade operacional do sistema portuário nacional, como o leilão do canal de acesso ao Porto de Paranaguá, com investimentos previstos superiores a R$ 1 bilhão ao longo de 25 anos.
+
+### 3. Riscos e Desafios (Bear Case)
+
+*   **Infraestrutura Deficiente:** A infraestrutura inadequada, com portos ineficientes, estradas em más condições e a falta de integração entre os diferentes modais de transporte, eleva os custos e reduz a eficiência, impactando negativamente a rentabilidade.
+*   **Custos Logísticos Elevados:** Os custos logísticos no Brasil representam uma parcela significativa do PIB, chegando a 15,5% em 2025, o que é considerado alto em comparação com economias mais desenvolvidas, pressionando as margens das empresas.
+*   **Déficit de Motoristas:** A crescente escassez de motoristas de caminhão no Brasil pode levar a um "apagão" no setor, afetando o abastecimento e aumentando os custos com a contratação e retenção de profissionais.
+*   **Ineficiência e Burocracia:** A burocracia excessiva e os procedimentos administrativos complexos atrasam processos, aumentam os custos operacionais e reduzem a eficiência do setor, impactando a rentabilidade e a competitividade.
+*   **Roubo de Cargas:** O roubo e a perda de cargas representam um risco significativo, impactando a lucratividade e a segurança das operações, aumentando os custos com seguros e segurança.
+*   **Caminhões Rodando Vazios:** Cerca de 35% dos caminhões nas estradas estão rodando vazios, o que eleva os custos e impacta a inflação dos alimentos, reduzindo a eficiência e a rentabilidade das operações.
+*   **Juros Altos:** A taxa Selic elevada (projetada entre 12% e 13% em 2026) encarece o crédito e o capital de giro para as empresas do setor, afetando os investimentos em renovação de frota, tecnologia e expansão.
+*   **Inflação:** A inflação causa aumentos nos preços de combustíveis, manutenção de veículos, pneus e outros insumos, aumentando os custos de transporte e pressionando as margens das empresas.
+*   **Inadimplência:** A inadimplência das famílias brasileiras atingiu um patamar recorde em 2025, com 30,4% de endividados, o que pode reduzir o consumo e, consequentemente, a demanda por serviços de logística.
+*   **Aumento de Impostos:** A Reforma Tributária pode aumentar a carga tributária sobre o setor de logística, com a taxa do Imposto sobre Bens e Serviços (IBS) podendo ser superior à alíquota atual de PIS e Cofins.
+*   **Leis Ambientais Mais Rígidas:** O não cumprimento das regulamentações ambientais pode gerar multas elevadas, restrições operacionais e até o bloqueio das atividades, aumentando os custos de conformidade.
+*   **Risco de Intervenção Estatal:** A instabilidade política e econômica pode aumentar o risco de intervenção estatal no setor, gerando incertezas e afetando os investimentos.
+*   **Novos Entrantes Estrangeiros:** A entrada de novos players globais pode aumentar a competição e pressionar as margens das empresas locais.
+*   **Tecnologias Disruptivas:** Empresas que não se adaptarem às tecnologias disruptivas, impulsionadas pela digitalização e pela inteligência artificial, podem perder competitividade.
+*   **Automação:** A implementação da automação de armazéns e processos logísticos exige investimentos e pode gerar resistência por parte dos trabalhadores, aumentando os custos iniciais.
+
+### 4. Destaques Recentes e Agenda Regulatória
+
+*   **Fevereiro de 2026 - ANEEL Revoga Autorizações:** A ANEEL revogou a autorização de implantação e exploração de 153 centrais geradoras a pedido de empreendedores.
+*   **Fevereiro de 2026 - ANEEL Mantém Termo de Intimação:** A ANEEL manteve o Termo de Intimação após apuração de inadimplência junto à CCEE.
+*   **Fevereiro de 2026 - Nova Lei de Licenciamento Ambiental:** Entrou em vigor a nova Lei Geral do Licenciamento Ambiental (nº 15.190/2025), que pode acelerar a autorização para empreendimentos de alto impacto ambiental, como a repavimentação da rodovia BR-319.
+*   **Fevereiro de 2026 - Ampliação de Ferrovias:** A ANTT busca ampliação de ferrovias para reduzir custo logístico do país.
+*   **Fevereiro de 2026 - Alerta de Custos:** Alta de custos em transporte e estoque acende alerta nas empresas em 2026.
+*   **Janeiro de 2026 - Piso Mínimo do Frete:** A ANTT concluiu a revisão técnica da metodologia do piso mínimo do frete rodoviário e publicou a Resolução ANTT nº 6.076/2026, que atualiza os valores utilizados no cálculo do frete mínimo, conforme determina a Lei nº 13.703/2018. A norma passou a vigorar a partir de 20 de janeiro de 2026.
+*   **Janeiro de 2026 - Fórum TRC:** A Agência Nacional de Transportes Terrestres (ANTT) participou da 4ª Reunião do Fórum TRC para modernizar o transporte de cargas.
+*   **Outubro de 2025 - Logística Reversa de Embalagens:** O Governo do Brasil publicou um decreto sobre o tratamento da logística reversa de embalagens de plástico, definindo metas de uso de conteúdo reciclado e priorizando cooperativas de catadores. O Ministério do Meio Ambiente definirá os requisitos e procedimentos técnicos para a retirada em até 90 dias, com consulta ao CIISC.
+*   **Abril de 2025 - Aquisição da Zero Carbon Logistics:** A Lenarge anunciou a aquisição da Zero Carbon Logistics, visando expandir sua atuação em transporte sustentável e alcançar um faturamento conjunto de R$ 2 bilhões no primeiro ano após a fusão.
+*   **Setembro de 2024 - Aquisição da Santos Brasil:** A CMA CGM adquiriu 48% da Santos Brasil por R$ 6,3 bilhões.

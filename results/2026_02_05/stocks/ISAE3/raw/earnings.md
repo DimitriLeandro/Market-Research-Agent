@@ -1,0 +1,1 @@
+Ok, sou seu Analista de Resultados Trimestrais para ISAE3. Estou pronto para analisar o Release de Resultados e a Teleconferência mais recente, assim que você me fornecer as informações. Farei o possível para identificar os pontos chave e apresentar uma análise concisa e focada nos seus objetivos.

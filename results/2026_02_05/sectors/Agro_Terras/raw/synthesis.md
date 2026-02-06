@@ -1,0 +1,53 @@
+# Relatório de Inteligência Setorial: Agro/Terras - Brasil
+
+### 1. Outlook Setorial (Resumo Geral)
+
+O setor de Agro/Terras no Brasil demonstra resiliência e potencial de crescimento, impulsionado pela expansão da produção, diversificação de culturas e um câmbio favorável. Apesar de um cenário macroeconômico desafiador, com juros altos e crédito restrito, o agronegócio se mantém como um dos principais motores da economia nacional. O setor se encontra em um momento de **expansão**, com o PIB do agronegócio projetado para crescer até 5% em 2025. No entanto, a crescente inadimplência, a dependência de insumos importados e a incerteza climática representam desafios significativos. A **taxa de juros Selic**, embora em queda, ainda exerce pressão sobre os custos de financiamento, impactando o crescimento e a rentabilidade do setor.
+
+### 2. Drivers de Crescimento (Bull Case)
+
+*   **Crescimento do PIB do Agronegócio:** A Confederação da Agricultura e Pecuária do Brasil (CNA) projeta um crescimento de até 5% no PIB do agronegócio para 2025, podendo atingir R$ 3,79 trilhões. Este crescimento é impulsionado pelo aumento na produção agrícola e pelo desenvolvimento da agroindústria.
+*   **Aumento da Produção e Exportações:** O agronegócio brasileiro atingiu o maior resultado econômico de sua história em 2025, com um Valor Bruto da Produção (VBP) de R$ 1,42 trilhão. As exportações do agronegócio representaram quase metade do total exportado pelo Brasil em 2025, atingindo US$ 169,2 bilhões.
+*   **Diversificação da Produção:** A agricultura brasileira tem passado por um processo acelerado de diversificação, com culturas como soja, milho, café e cacau liderando o movimento, acompanhados por culturas emergentes como amendoim, gergelim, cevada e centeio. O amendoim, por exemplo, apresentou crescimento real de 176% no valor da produção em dez anos.
+*   **Expansão para Novos Mercados:** 50% dos CEOs do agro no Brasil afirmam que suas empresas passaram a competir em novos setores nos últimos cinco anos, impulsionado por tecnologia, sustentabilidade e novos modelos de negócio.
+*   **Aumento da Produtividade na Pecuária:** O aumento da produção de carne bovina não ocorreu apenas pelo crescimento do rebanho, mas também pelo aumento do peso médio das carcaças e pela redução da idade ao abate.
+*   **Expansão da Área Irrigada:** O Brasil tem um potencial de 55 milhões de hectares para irrigar, dos quais apenas 8,5 milhões são irrigados, indicando um grande potencial de crescimento.
+*   **Câmbio Favorável:** A alta do dólar pode atuar de duas formas positivas para o produtor agrícola: elevando a receita das exportações convertida em reais e, em geral, o aumento da receita supera a elevação dos custos.
+*   **Redução da Inflação:** A CNA avaliou que o agro foi responsável pelos resultados positivos dos índices macroeconômicos, como a redução da inflação, que deve fechar o ano em 4,4%.
+*   **Queda da Selic:** A queda da taxa Selic pode baratear os financiamentos para o produtor.
+*   **Inteligência Artificial:** O uso de IA já resultou em aumento de receita para 33% das empresas do agronegócio nos últimos 12 meses. Do lado dos custos, 33% observaram redução, atribuída a ganhos de eficiência e automação.
+*   **Incentivos Fiscais:** O agronegócio brasileiro recebe isenções de cerca de R$ 158 bilhões por ano.
+*   **Renegociação de Dívidas Rurais:** Medida Provisória autoriza a repactuação de dívidas de produtores afetados por secas e enchentes, com R$ 12 bilhões em recursos, podendo chegar a R$ 32 bilhões.
+*   **Programa Solo Vivo:** Programa com investimento inicial de R$ 42,8 milhões busca recuperar áreas degradadas e fortalecer a agricultura familiar.
+*   **Rota da Celulose:** Projeto de concessão com duração de 30 anos, englobando 870 quilômetros e prevendo cerca de R$ 7 bilhões em investimentos em obras de infraestrutura, além de aproximadamente R$ 3 bilhões em custos operacionais.
+*   **Reidi Irrigação:** Regime Especial de Incentivos para o Desenvolvimento da Infraestrutura de Irrigação, que suspende a exigência da contribuição para o PIS/PASEP (1,65%) e para a COFINS (7,6%), reduzindo em até 9,25% os custos de execução do projeto de irrigação.
+
+### 3. Riscos e Desafios (Bear Case)
+
+*   **Eventos Climáticos Extremos:** A imprevisibilidade do regime de chuvas (excesso ou escassez) é uma variável crítica e potencialmente disruptiva, impactando a produtividade e rentabilidade das lavouras. A ONU projeta um aumento de até 50% nos incêndios extremos até o fim do século, com perdas econômicas globais que podem chegar a US$ 224 bilhões.
+*   **Dependência de Insumos Importados:** O Brasil importa mais de 90% dos fertilizantes que sustentam sua produtividade, tornando o setor vulnerável a instabilidades geopolíticas e flutuações de preços.
+*   **Fogo como Risco de Negócio:** A crise dos incêndios florestais deixou de ser um fenômeno localizado e se tornou estrutural, global e cada vez mais extrema, representando um risco sistêmico ao patrimônio ambiental, econômico e social do Brasil.
+*   **Erosão Gradual:** O risco no agronegócio avança em silêncio, como uma erosão gradual que só se revela quando transborda na planilha de custos.
+*   **Juros Altos e Crédito Restrito:** A manutenção da taxa Selic em níveis elevados para controlar a inflação impacta diretamente o agronegócio, diminuindo o apetite dos consumidores por bens industriais. No primeiro trimestre da safra 2025/26, os recursos destinados ao custeio recuaram 23% e os investimentos caíram 44% em relação ao ciclo anterior.
+*   **Inadimplência Crescente:** A inadimplência no agronegócio atingiu 8,3% da população rural no terceiro trimestre de 2025, um aumento de 0,9 ponto percentual em relação ao ano anterior. A inadimplência do crédito rural com recursos direcionados alcançou 9,35% em agosto de 2025, o maior índice desde 2011.
+*   **Margens Apretadas:** A valorização do real tende a apertar ainda mais as margens já estreitas dos produtores. Em muitos casos, compromissos financeiros e contratos de arrendamento consomem toda a receita, deixando o produtor sem margem alguma ao final da safra.
+*   **Custos Elevados:** Produtores continuam operando com margens apertadas e um fluxo de caixa pressionado dentro do contexto, que mantém custos elevados, preços voláteis e uma concessão de crédito mais seletiva.
+*   **Reforma Tributária:** A reforma tributária pode aumentar a tributação do agronegócio, extinguindo benefícios fiscais e aplicando uma alíquota efetiva de 11,2%, triplicando a carga atual.
+*   **Aperto em Benefícios Fiscais:** O governo inicia 2026 com regras mais duras para limitar os gastos tributários, o que desagrada o agronegócio e a indústria.
+*   **Regulamentação Agroambiental:** O ano de 2026 tende a se afirmar como o ano da regulação agroambiental no Brasil, com normas produzindo efeitos diretos sobre crédito, seguro rural, valuation de ativos, decisões de investimento, acesso a mercados internacionais e organização das cadeias produtivas.
+*   **Dívida Ativa:** A dívida ativa da agropecuária soma R$ 52,4 bilhões, valor que corresponde a mais de 10% de todo o orçamento do plano Safra para 2025/2026.
+*   **Novos Mercados e Competição:** 51% das empresas passaram a competir em novos mercados, aumentando a pressão competitiva.
+*   **Inteligência Artificial e Desemprego:** A inteligência artificial tem um efeito colateral, que é a preocupação com a redução do nível de empregos, muito associadas às categorias menos experientes.
+*   **Fluxo Global de Recursos:** Aproximadamente US$ 7,3 trilhões financiaram atividades consideradas prejudiciais à natureza, incluindo a expansão de combustíveis fósseis, o desmatamento, a poluição e o uso insustentável do solo, impactando a sustentabilidade do setor.
+
+### 4. Destaques Recentes e Agenda Regulatória
+
+*   **Fevereiro 2026 - Acordo Comercial Mercosul-União Europeia:** Acordo comercial entre Mercosul e União Europeia gera reação da bancada do agronegócio, que deve levar o governo a adotar medidas bilaterais para contornar salvaguardas impostas aos produtos agropecuários sul-americanos.
+*   **Fevereiro 2026 - Nova Lei Geral do Licenciamento Ambiental:** A nova Lei Geral do Licenciamento Ambiental (Lei nº 15.190/2025) passou a valer, promovendo uma das mais amplas reformulações nas regras para obtenção de licenças ambientais no Brasil.
+*   **Fevereiro 2026 - Anulação de Resolução do CNJ:** A Comissão de Agricultura aprovou um projeto de decreto legislativo (PDL 327/2023) que anula os efeitos de uma resolução de 2023 do Conselho Nacional de Justiça (CNJ) que permite ao Judiciário mediar conflitos fundiários.
+*   **Fevereiro 2026 - Inflexão Institucional:** O agronegócio brasileiro inicia 2026 diante de uma inflexão institucional relevante, com foco na regulamentação infralegal, atuação administrativa do Estado e consolidação da segurança jurídica no Judiciário.
+*   **Fevereiro 2026 - Fusões e Aquisições em Crescimento:** Fusões e aquisições no setor cresceram cerca de 20% em 2025, indicando confiança das empresas mesmo em um cenário econômico desafiador.
+*   **Fevereiro 2026 - Fusão Massari Fértil e Morro Verde:** A fusão entre Massari Fértil e Morro Verde cria uma gigante de fertilizantes no Brasil, com um faturamento de R$ 500 milhões e capacidade de produção de 3 milhões de toneladas por ano. A estratégia visa soberania e eficiência em fertilizantes, buscando reduzir a dependência externa do agronegócio.
+*   **Fevereiro 2026 - Cenário Externo Protagonista:** O cenário externo deve seguir sendo protagonista ao longo de 2026.
+*   **Janeiro 2026 - Novas Regras para Transporte de Produtos Agropecuários:** O Governo do Brasil atualizou as regras para o transporte de produtos agropecuários em bagagens, buscando impedir a entrada de agentes causadores de doenças e pragas. As novas regras entraram em vigor a partir de 4 de fevereiro.
+*   **Janeiro 2026 - M&A no Agronegócio:** O agronegócio brasileiro registrou 60 operações de fusões e aquisições entre janeiro e novembro de 2025, um aumento de 15% em relação ao mesmo período de 2024. A PwC Brasil projeta que o número de operações de M&A no agronegócio brasileiro cresça 40% em relação a 2024 até o final de 2025.

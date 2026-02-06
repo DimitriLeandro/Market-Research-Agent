@@ -1,0 +1,1 @@
+Ok, sou um Analista de Resultados Trimestrais pronto para analisar o ativo ABCB4. Por favor, me forneça o Release de Resultados e a transcrição da Teleconferência mais recente para que eu possa cumprir minha missão e entregar os resultados conforme seus objetivos e requisitos.

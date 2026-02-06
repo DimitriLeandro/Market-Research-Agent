@@ -1,0 +1,35 @@
+# Relatório de Análise de FII: XPML11 (XP Malls) - Fevereiro 2026
+
+## 1. Resumo Geral
+
+O XPML11, fundo imobiliário do tipo tijolo com foco em shoppings centers, apresenta um momento de estabilidade com distribuição de dividendos consistentes e um portfólio diversificado em diversas regiões do Brasil. Sua estratégia principal reside na aquisição de participações minoritárias em shoppings de alta qualidade, buscando renda através da exploração imobiliária. O fundo demonstra solidez, com um *dividend yield* atrativo e um P/VP próximo de 1, indicando que está sendo negociado próximo ao seu valor patrimonial. No entanto, é crucial monitorar a vacância, a alavancagem e os riscos macroeconômicos que podem impactar o setor de shoppings.
+
+## 2. Tese de Investimento (Pontos Fortes)
+
+*   **Qualidade do Portfólio:** O XPML11 investe em um portfólio diversificado de shoppings centers, detendo participação em 31 empreendimentos administrados por grandes players do setor, como o Grupo AD Shopping. Os ativos estão localizados em cidades relevantes, buscando um equilíbrio entre potencial de crescimento e resiliência.
+*   **Dividend Yield Atrativo:** O *Dividend Yield* (DY) anual do XPML11 está em torno de **9.98% a 10.04%**, superando a média dos menores pagadores de dividendos do mercado brasileiro. O último dividendo distribuído foi de **R$ 0,92** por cota, demonstrando uma distribuição consistente.
+*   **Valuation Justo:** O P/VP (Preço sobre Valor Patrimonial) do XPML11 está em torno de **1,02**, indicando que o fundo está sendo negociado próximo ao seu valor patrimonial. Isso sugere que o mercado não está precificando um ágio excessivo sobre os ativos do fundo.
+
+## 3. Riscos e Desafios (Pontos de Atenção)
+
+*   **Vacância:** A vacância física do XPML11 está em **4,20%**. É crucial monitorar a evolução dessa taxa, pois um aumento pode indicar dificuldades na gestão dos shoppings, na capacidade de atrair e reter lojistas, ou em um cenário macroeconômico desfavorável para o setor de varejo.
+*   **Alavancagem:** Em dezembro de 2025, o XPML11 reduziu sua alavancagem de **27,3% para 16,5%** após a conclusão da venda de participações em shoppings. Apesar dessa redução, é crucial acompanhar a evolução da dívida do fundo, especialmente em um cenário de taxas de juros elevadas, pois o serviço da dívida pode pressionar os rendimentos distribuídos aos cotistas.
+*   **Cenário Macroeconômico:** O setor de shoppings centers está sujeito a riscos macroeconômicos, como inflação, juros altos e baixo crescimento do consumo, que podem afetar o desempenho dos lojistas e a capacidade de pagamento dos aluguéis. A concorrência do e-commerce também representa um desafio constante.
+
+## 4. Análise Operacional e Financeira
+
+*   **Destaques do Gestor:** O relatório gerencial de Dezembro de 2025 apresentou um *guidance* para a distribuição de rendimentos do Fundo para o próximo semestre. A gestão estabeleceu um *guidance* formal de distribuição de rendimentos para o primeiro semestre de 2026, indicando uma faixa de R$ 0,86 a R$ 0,92 por cota. A gestora pretende manter o teto enquanto os resultados permitirem.
+*   **Métricas Chave:**
+    *   **Dividend Yield Anualizado:** 9,97% a 11,47%
+    *   **P/VP:** 1,02
+    *   **Vacância Física:** 4,20%
+    *   **Movimentação Recente de Portfólio:** Em 05 de dezembro de 2025, o XP Malls e o Neomall FII concluíram a alienação de 9 participações em empreendimentos imobiliários para o Fundo de Investimento Imobiliário Atria.
+*   **Guidance:** A gestora do fundo estabeleceu um *guidance* formal de distribuição de rendimentos para o primeiro semestre de 2026, indicando uma faixa de **R$ 0,86 a R$ 0,92** por cota.
+
+## 5. Notícias e Fatos Relevantes
+
+*   **Janeiro 2026 - Distribuição de Rendimento:** Foi informado a distribuição de rendimento no valor de R$ 0,92 por cota, com pagamento em 23/01/2026. A data base para este rendimento foi 16/01/2026, com o valor da cota em R$ 110,01.
+*   **Janeiro 2026 - Oferta Pública de Distribuição de Cotas:** Houve uma oferta pública de distribuição de cotas.
+*   **Dezembro 2025 - Alienação de Participações:** Em 05 de dezembro de 2025, o XP Malls e o Neomall FII concluíram a alienação de 9 participações em empreendimentos imobiliários para o Fundo de Investimento Imobiliário Atria.
+*   **23/10/2025 - Operação com CPSH11:** O fundo realizou uma operação de R$ 267 milhões com o Capitânia Shoppings FII (CPSH11), adquirindo participações em quatro shoppings (Praia de Belas, Metrô Tatuapé, Metrô Boulevard Tatuapé e Iguatemi Bosque) e vendendo 4,8% do Internacional Shopping Guarulhos (SP).
+*   **29/08/2025 - Venda de Participações:** O fundo anunciou a venda de participações em 9 shoppings por R$ 1,6 bilhão (68% à vista e 32% em até 5 anos).

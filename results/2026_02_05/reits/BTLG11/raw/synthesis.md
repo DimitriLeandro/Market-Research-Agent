@@ -1,0 +1,53 @@
+```markdown
+# Relatório de Análise de FII: BTLG11
+
+### 1. Resumo Geral
+
+O BTLG11 (BTG Pactual Logística FII) se posiciona como um dos maiores FIIs de logística da B3, com um patrimônio líquido de R$ 5,49 bilhões. O fundo busca gerar renda recorrente e ganho de capital através da exploração de empreendimentos imobiliários voltados ao setor logístico, com foco em ativos de alta qualidade e contratos de longo prazo. A estratégia principal envolve a gestão ativa do portfólio, incluindo reformas, expansões e vendas de ativos "non-core" para reinvestir em ativos mais estratégicos. Atualmente, o fundo apresenta um perfil defensivo, com baixa vacância e alavancagem controlada, mas é crucial monitorar a tendência da vacância, o impacto da inflação no serviço da dívida e a capacidade de manter o nível de distribuição de dividendos no longo prazo.
+
+### 2. Tese de Investimento (Pontos Fortes)
+
+*   **Qualidade do Portfólio e Localização Estratégica:** Exposição relevante ao estado de São Paulo, com localizações estratégicas próximas à capital, buscando ampliar sua presença em um raio de até 60 km de São Paulo. Além de São Paulo, possui ativos no Rio de Janeiro, Santa Catarina e Ceará.
+*   **Carteira de Inquilinos Diversificada e de Alta Qualidade:** A carteira de locatários é pulverizada e inclui grandes empresas como Unilever, DHL, Nestlé e Shopee. O fundo busca inquilinos aprovados após avaliação de risco de crédito, preferencialmente com contratos de longo prazo.
+*   **Contratos de Longo Prazo e Atípicos:** O BTLG11 busca contratos de locação de longo prazo, incluindo contratos atípicos que preveem multas altas em caso de rescisão antecipada. O prazo médio de vencimento dos contratos do portfólio é de 6 anos, com aproximadamente 51% dos contratos sendo atípicos.
+*   **Gestão Ativa e Reciclagem de Ativos:** O BTLG11 tem gestão ativa, buscando gerar valor no longo prazo através de reformas, expansões e vendas de ativos "non-core" para reinvestir em ativos de alta qualidade.
+*   **Boa Liquidez:** O BTLG11 possui boa liquidez na B3, facilitando a compra e venda de cotas.
+
+### 3. Riscos e Desafios (Pontos de Atenção)
+
+*   **Potencial Aumento da Vacância:** A vacância financeira do BTLG11 está em **2,9%**. Embora considerada baixa, é importante monitorar a tendência, especialmente com uma parcela dos contratos vencendo em 2026. Uma desaceleração econômica ou aumento na oferta de galpões logísticos pode impactar negativamente a receita do fundo.
+*   **Impacto da Inflação na Dívida:** A alavancagem do BTLG11 é considerada saudável, com um baixo LTV de apenas **2,4%**. O custo médio ponderado da dívida é de IPCA + **5,91%** ao ano. Um aumento inesperado da inflação poderia pressionar o serviço da dívida, reduzindo a distribuição de dividendos.
+*   **Concentração Geográfica:** A maior parte dos ativos está localizada em São Paulo. Essa concentração geográfica pode ser um risco, pois a economia da região pode impactar o desempenho do fundo.
+*   **Sustentabilidade dos Dividendos:** O fundo distribuiu R$ 0,79 por cota, enquanto o resultado recorrente gira entre R$ 0,68 e R$ 0,70 por cota. Isso indica que, no curto prazo, o BTLG11 está utilizando ganhos com vendas de ativos, ajustes de competência e consumo controlado de reservas para manter o nível de distribuição. É importante monitorar se o fundo conseguirá manter esse nível de distribuição no longo prazo sem comprometer seu patrimônio.
+*   **Contexto Setorial:** O setor de logística enfrenta desafios como infraestrutura deficiente, custos logísticos elevados e a crescente escassez de motoristas de caminhão.
+
+### 4. Análise Operacional e Financeira
+
+*   **Destaques do Gestor:** (Dado não encontrado na busca pública, necessita consulta ao relatório gerencial).
+*   **Métricas Chave:**
+    *   **Dividend Yield Anualizado:** Entre **9,15%** e **9,25%**.
+    *   **P/VP:** Próximo de **1,00**.
+    *   **Vacância:** **3,00%**.
+    *   **Valor Patrimonial por Cota:** R$ **102,92**.
+    *   **Taxa de Administração:** **0,9%** ao ano sobre o valor de mercado.
+    *   **Cap Rate da transação:** **9,5%** ao ano.
+*   **Movimentações Recentes de Portfólio:**
+    *   Aquisição de dois ativos logísticos pertencentes ao CPLG11.
+    *   Aquisição dos ativos do SARE11 por R$ 448 milhões.
+    *   Aquisição de três empreendimentos logísticos por R$ 760 milhões em dezembro de 2025.
+    *   Venda do imóvel BTLG Campinas.
+    *   Venda de 75% do WT Morumbi (SP) e o Ed. Work Bela Cintra (SP) por R$ 557 milhões.
+    *   Recebimento de R$ 22 milhões referentes à última parcela da venda dos imóveis Feira de Santana (BA) e Guarulhos (SP).
+*   **Guidance:** (Dado não encontrado na busca pública, necessita consulta ao relatório gerencial).
+
+### 5. Notícias e Fatos Relevantes
+
+*   **Fevereiro de 2026 - Retorno Total em 2025:** O BTLG11 encerrou 2025 com um retorno total de **20,3%**. A vacância financeira consolidada do portfólio foi reduzida para **2,9%** após a locação de um módulo de 4 mil metros quadrados em Cabreúva.
+*   **Janeiro de 2026 - Distribuição de Rendimentos:** O fundo distribuiu R$ **0,79** por cota no dia 23/01/2026.
+*   **Janeiro de 2026 - Locação em Cabreúva:** Conclusão da locação de um módulo de aproximadamente 4 mil metros quadrados no ativo BTLG Cabreúva para uma empresa do setor de embalagens, com prazo contratual de cinco anos.
+*   **Dezembro de 2025 - Distribuição de Rendimentos:** O fundo distribuiu R$ **0,79** por cota no dia 23/12/2025.
+*   **Dezembro de 2025 - Aquisição de Empreendimentos Logísticos:** O fundo adquiriu três empreendimentos logísticos por R$ 760 milhões.
+*   **Novembro de 2025 - Aprovação da 15ª Emissão de Cotas:** A 15ª emissão de cotas foi aprovada, buscando captar inicialmente R$ 299.999.952,27. O preço de emissão por cota foi de R$ 103,33, com uma taxa de distribuição de R$ 2,48 por cota, totalizando um custo de R$ 105,81 por cota para o investidor.
+*   **Outubro de 2025 - Conclusão da 14ª Emissão de Cotas:** Conclusão da 14ª emissão de cotas, com captação de R$ 603,56 milhões, o que correspondeu a 100,59% da oferta inicial.
+*   **Outubro de 2025 - Aquisição de Ativos do SARE11:** O fundo concluiu a aquisição dos ativos do SARE11 por R$ 448 milhões.
+```

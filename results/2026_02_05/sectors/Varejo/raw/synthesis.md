@@ -1,0 +1,49 @@
+# Relatório de Inteligência Setorial: Varejo (Brasil) - 2026
+
+### 1. Outlook Setorial (Resumo Geral)
+
+O setor de varejo no Brasil apresenta um cenário misto para 2026, caracterizado por uma fase de adaptação e consolidação. Embora existam drivers de crescimento significativos, como a expansão do e-commerce e a resiliência do varejo físico, o setor enfrenta desafios consideráveis, incluindo a alta inadimplência, a concorrência acirrada de marketplaces internacionais e a necessidade de adaptação à transformação digital. A expectativa de queda da taxa Selic a partir do segundo trimestre de 2026 pode impulsionar o consumo, mas o setor permanece sensível às flutuações macroeconômicas e aos riscos regulatórios. A gestão eficiente de custos, a inovação e a adaptação às novas tecnologias serão cruciais para o sucesso das empresas do setor. O principal driver macroeconômico atual é a inflação, que, apesar de mostrar sinais de desaceleração, ainda exerce pressão sobre o poder de compra do consumidor.
+
+### 2. Drivers de Crescimento (Bull Case)
+
+*   **Crescimento do E-commerce:** O e-commerce no Brasil continua em expansão, com projeções de faturamento acima de R$ 258 bilhões em 2026, representando um crescimento de 10%. Em 2025, o setor faturou mais de R$ 200 bilhões. O crescimento é impulsionado pela personalização por Inteligência Artificial, que aumenta as vendas e a fidelização.
+*   **Resiliência do Varejo Físico:** O comércio físico brasileiro encerrou 2025 com um crescimento de 2,9%, impulsionado pela manutenção do consumo, mercado de trabalho aquecido e medidas de apoio à renda. Todos os segmentos do varejo físico fecharam o período em campo positivo.
+*   **Avanço das Marcas Próprias:** As marcas próprias estão ganhando protagonismo no varejo, impulsionadas pela combinação entre preço competitivo, qualidade percebida e maior confiança nas bandeiras do varejo.
+*   **Impacto Positivo do Carnaval:** O Carnaval de 2026 se consolida como um dos principais vetores de curto prazo para o varejo brasileiro, com projeções que apontam crescimento de até 5% nas vendas.
+*   **Mercado de Trabalho Aquecido e Sustentação da Renda:** O mercado de trabalho aquecido e os mecanismos de sustentação da renda ajudam a preservar a demanda, mesmo com um cenário econômico mais apertado.
+*   **Desaceleração da Inflação:** A diminuição da taxa de inflação em algumas categorias dá fôlego para o consumidor, permitindo um crescimento mais saudável do varejo, com menos repasse de preços e mais consumo.
+*   **Queda da Taxa Selic:** A expectativa é de redução da Selic a partir do segundo trimestre de 2026. A XP Investimentos aponta que as Lojas Renner (LREN3) são as principais beneficiárias das mudanças esperadas no cenário macroeconômico, com o impacto dos cortes previstos nas taxas de juros impulsionando o crescimento da companhia.
+*   **Incentivos Fiscais e Financeiros:** Existem diversos incentivos fiscais e financeiros para estimular setores estratégicos da economia, incluindo o varejo. Os governos federal, estadual e municipal oferecem benefícios para reduzir a carga tributária ou facilitar o acesso ao crédito, como o Pronampe e o Simples Nacional.
+*   **Crescimento do Varejo Ampliado:** Um estudo da NielsenIQ mostra que o varejo brasileiro cresceu 9,1%, mesmo com o impacto da inflação sobre os alimentos.
+*   **Volume de Vendas em Shoppings:** Shoppings têm recorde em volume de vendas em 2025.
+*   **Inovação e Tecnologia:** Empresas que investirem de forma estratégica em tecnologia, inovação e pessoas sairão na frente.
+
+### 3. Riscos e Desafios (Bear Case)
+
+*   **Endividamento e Inadimplência:** Níveis elevados de endividamento e inadimplência das famílias brasileiras comprimem o orçamento familiar e reprimem a demanda no varejo. Em dezembro de 2025, a inadimplência medida pelo Banco Central fechou em 6,9%, um aumento de 0,6 ponto percentual em relação ao mês anterior e 1,7 ponto percentual acima de dezembro de 2024.
+*   **Concorrência Agressiva de Marketplaces Internacionais:** A competição com marketplaces internacionais como Shopee e Shein, que oferecem preços competitivos, frete grátis e variedade de produtos, desafia o varejo nacional, impactando as margens e a participação de mercado.
+*   **Transformação Digital e Investimentos:** A necessidade de adaptação às novas tecnologias e à evolução do comportamento do consumidor digital exige investimentos em digitalização e experiência de compra. A falta de investimento em tecnologia e automação pode levar à perda de competitividade e redução da rentabilidade.
+*   **Impacto da Reforma Tributária:** A reforma tributária pode impactar o varejo de forma distinta, dependendo do tipo de produto comercializado. O fim dos incentivos de ICMS, previsto para 2033, também deve modificar a estrutura de custos de diversos segmentos, afetando a precificação e a competitividade.
+*   **Custos Trabalhistas e Novas Regras:** A nova regra sobre trabalho em feriados, que exige negociação coletiva para autorizar o trabalho nesses dias, pode gerar engessamento da atividade e insegurança jurídica, aumentando os custos operacionais e reduzindo a flexibilidade.
+*   **Altas Taxas de Juros:** As altas taxas de juros encarecem o crédito e desestimulam o consumo, especialmente de bens de maior valor agregado, impactando diretamente o volume de vendas e a receita do setor.
+*   **Pressão Inflacionária:** A inflação pressiona o varejo brasileiro, causando uma queda real nas vendas e reduzindo o poder de compra do consumidor, o que pode levar a uma diminuição da rentabilidade das empresas.
+*   **Aumento de Impostos:** A reforma tributária pode aumentar a carga tributária para empresas de serviços, impactando a rentabilidade e a competitividade do setor.
+*   **Novas Regras para Supermercados:** Novas regras para supermercados visam aumentar a transparência e proteger o consumidor, mas podem gerar custos adicionais para o setor, reduzindo as margens de lucro.
+*   **Crescimento do Atacarejo:** O crescimento do modelo de atacarejo tem mudado o mapa do varejo de alimentos, com redes de supermercados tradicionais perdendo espaço para os atacarejos, impactando a participação de mercado e a rentabilidade.
+*   **Perdas e Riscos Operacionais:** O aumento das perdas no varejo, devido a furtos, quebras e erros de inventário, tem levado à adoção de tecnologias de inteligência artificial para prevenção de riscos. Em 2024, o setor acumulou R$ 36,5 bilhões em perdas.
+*   **Falta de Interesse de Investidores Estrangeiros:** Há pouco interesse de investidores estrangeiros no varejo brasileiro, que preferem investir em outros setores como bancos, utilities e commodities, limitando o acesso a capital e o potencial de crescimento das empresas do setor.
+
+### 4. Destaques Recentes e Agenda Regulatória
+
+*   **Fevereiro 2026 - Shopee Reforça Incentivos e Capacitação:** A Shopee reforçou os incentivos e a capacitação de vendedores em 2026, com foco em micro, pequenas e médias empresas (PMEs), intensificando a competição no e-commerce.
+*   **Fevereiro 2026 - "Nova" Hering se Reapresenta:** A "nova" Hering está se reaproximando de franqueados para alavancar a potência da marca, buscando recuperar espaço no mercado de vestuário.
+*   **Fevereiro 2026 - Fusão Massari Fértil e Morro Verde:** Aconteceu a fusão entre Massari Fértil e Morro Verde, criando um grande grupo de fertilizantes no Brasil, com faturamento de R$ 500 milhões e capacidade de produção de 3 milhões de toneladas por ano. O objetivo é reduzir a dependência externa do agronegócio em fertilizantes.
+*   **Fevereiro 2026 - Juros Altos e Estoques de Caminhões:** Juros altos levam montadoras de caminhões a rever estoques e destravar capital de giro, impactando a cadeia de suprimentos e a logística do varejo.
+*   **Janeiro 2026 - Grupo Petz-Cobasi Pós-Fusão:** O Grupo Petz-Cobasi realizou teleconferência com analistas após a combinação de negócios, com o objetivo de se tornar o melhor caso de fusão no varejo brasileiro, sinalizando um movimento de consolidação no setor pet.
+*   **Janeiro 2026 - Reforma Tributária e Cadeia de Suprimentos:** A implementação da reforma tributária desafia as cadeias de suprimentos, com a eliminação gradual de incentivos fiscais, o que leva a uma reorganização da localização de fábricas e centros de distribuição.
+*   **Janeiro 2026 - Estudo NielsenIQ sobre Crescimento do Varejo:** Um estudo da NielsenIQ mostrou que o varejo brasileiro cresceu 9,1%, mesmo com o impacto da inflação sobre os alimentos, indicando resiliência do setor.
+*   **Janeiro 2026 - Queda no Índice de Confiança do Empresário do Comércio (Icec):** O Índice de Confiança do Empresário do Comércio (Icec) registrou uma queda de 6,1% em janeiro de 2026 na comparação anual, impactado pelas altas taxas de juros, sinalizando cautela por parte dos empresários.
+*   **Dezembro 2025 - Aurora Coop Adquire Gran Mestri:** A Aurora Coop concluiu a aquisição da Gran Mestri, empresa catarinense especializada na produção de laticínios, fortalecendo sua atuação no setor de alimentos.
+*   **[Sem Data Específica] - Regras do CDC:** O Código de Defesa do Consumidor (CDC) estabelece regras importantes para o varejo, como a proibição de substituir o troco por mercadorias, a impossibilidade de exigir valor mínimo para pagamentos com cartão e a responsabilidade por danos em veículos no estacionamento.
+*   **[Sem Data Específica] - Lei em Campinas sobre Validade de Produtos:** Em Campinas, é lei que estabelecimentos comerciais devem colocar avisos sobre a data de validade de produtos em promoção que estejam próximos do vencimento.
+*   **Janeiro 2024 - Lei no Distrito Federal sobre Prazo de Validade:** Foi sancionada a Lei nº 7.398/2024 no Distrito Federal, determinando que o prazo de validade de produtos deve estar destacado e legível. (Mencionado como contexto, mas relevante).

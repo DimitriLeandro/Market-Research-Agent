@@ -1,0 +1,1 @@
+Ok, sou seu Analista de Resultados Trimestrais para RAIZ4. Estou pronto para analisar o release de resultados e a teleconferência mais recente, assim que você me fornecer as informações. Aguardo os documentos para realizar a análise seguindo os objetivos e requisitos que você especificou.

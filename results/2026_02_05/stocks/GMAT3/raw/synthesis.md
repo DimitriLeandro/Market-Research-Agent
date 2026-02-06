@@ -1,0 +1,67 @@
+Ok, aqui está o relatório de análise de investimento para GMAT3, formatado conforme suas instruções:
+
+# Relatório de Análise de Investimento: GMAT3 (Grupo Mateus S.A.)
+
+### 1. Resumo Geral
+
+O Grupo Mateus (GMAT3) opera em um cenário misto, com oportunidades de crescimento impulsionadas pela expansão geográfica, novos formatos de loja e a integração do Novo Atacarejo. A empresa demonstra liderança regional no Norte e Nordeste, com um modelo de negócios resiliente e indicadores de valuation que, apesar de flutuações, permanecem atrativos. No entanto, a ação enfrenta desafios significativos, incluindo a desconfiança gerada por um erro contábil de R$ 1,1 bilhão, a concorrência acirrada no setor de varejo e a sensibilidade às condições macroeconômicas. A recente doação de ações por um dos principais acionistas e as revisões nas recomendações por parte de analistas refletem a volatilidade e a incerteza que cercam o ativo. A capacidade da empresa de restaurar a confiança dos investidores, gerenciar seus estoques de forma eficiente e capitalizar sobre as sinergias da aquisição do Novo Atacarejo serão cruciais para determinar seu desempenho futuro.
+
+### 2. Tese de Investimento (Bull Case)
+
+*   **Liderança Regional e Conhecimento do Consumidor:** O Grupo Mateus é a terceira maior rede varejista de alimentos do país, com forte presença e liderança consolidada nos segmentos de Atacarejo, Atacado e Varejo no Norte e Nordeste do Brasil. A empresa possui um profundo conhecimento do padrão de consumo e das preferências dos consumidores em cada região onde atua, permitindo oferecer um *mix* de produtos diferenciados, serviços de qualidade e preços atrativos.
+*   **Logística Eficiente e Adensamento de Rotas:** A estrutura logística do Grupo Mateus permite alcançar cidades que concorrentes maiores não conseguem, oferecendo o sortimento mais adequado para cada região. A empresa foca no adensamento de rotas, o que reduz riscos e otimiza a distribuição.
+*   **Expansão Geográfica e Novos Formatos de Loja:** O Grupo Mateus tem um plano de crescimento contínuo, visando consolidar ainda mais sua liderança e presença regional por meio da expansão geográfica das lojas físicas. A empresa pretende expandir principalmente nos formatos de rápido crescimento: "Cash & Carry" (Mix Atacarejo) e lojas de vizinhança (Camiño). A empresa também está expandindo seus modelos de loja, com a abertura de unidades Mateus Food Service (atacarejo de menor porte) e Spazio (empório premium).
+*   **Aquisições Estratégicas e Sinergias:** O Grupo Mateus concluiu a compra da rede Novo Atacarejo, expandindo sua atuação nos estados de Pernambuco, Paraíba e Alagoas. A empresa combinada terá 50 lojas em operação e um faturamento bruto estimado de R$ 6,8 bilhões. A integração do Novo Atacarejo pode gerar sinergias comerciais, melhorias operacionais e logísticas, além de ganhos de eficiência com otimização de custos, despesas e investimentos.
+*   **Valuation Atrativo:** Os indicadores fundamentalistas de GMAT3 apresentam um P/L de **6,13**, P/VP de **1,13** e um Dividend Yield de **5,06%**. O EV/EBITDA é de **4,41**. O P/L de GMAT3 (6,13) é superior ao do setor (5,23). O EV/EBITDA de GMAT3 (4,41) é inferior ao do setor (5,05).
+*   **Resiliência no Setor de Varejo:** O Grupo Mateus é visto como uma opção mais resiliente no setor, combinando baixa alavancagem financeira, um *valuation* barato e exposição a regiões onde os *players* nacionais são menos predominantes. O setor de varejo físico brasileiro encerrou 2025 com um crescimento de 2,9%, impulsionado pela manutenção do consumo, mercado de trabalho aquecido e medidas de apoio à renda.
+
+### 3. Riscos e Pontos de Atenção (Bear Case)
+
+*   **Erro Contábil e Desconfiança:** A reavaliação de R$ 1,1 bilhão no estoque após a divulgação do balanço gerou desconfiança no mercado. A falta de clareza sobre a origem das distorções e a comunicação tardia aumentaram a tensão com o mercado. O erro bilionário é um sinal de vulnerabilidade nos procedimentos contábeis, fiscais e operacionais.
+*   **Gestão de Inventário:** O caso expôs a gestão precária dos inventários, cuja realização esporádica mascarou desvios e prejuízos operacionais. Analistas apontam que a estrutura de controle de estoques ficou defasada diante da abertura de novas lojas.
+*   **Dependência do Desempenho Econômico:** A empresa está sujeita à dependência do desempenho econômico nacional e às pressões inflacionárias, que podem limitar a capacidade de repasse de custos.
+*   **Concorrência Agressiva:** O setor de varejo enfrenta um ambiente macroeconômico desafiador. A volatilidade nos gastos do consumidor e as pressões inflacionárias podem impactar as vendas. A competição com marketplaces internacionais como Shopee e Shein, que oferecem preços competitivos, frete grátis e variedade de produtos, desafia o varejo nacional, impactando as margens e a participação de mercado.
+*   **Histórico de Problemas:** Em 2020, a Grant Thornton já havia identificado 42 pontos de atenção, que sumiram dos relatórios posteriores. Em 2020, um acidente em uma loja Mix Atacarejo resultou em feridos e uma morte. O Grupo Mateus foi condenado a pagar R$ 10 milhões devido a esse acidente.
+*   **Rebaixamento de Recomendações:** O JPMorgan rebaixou a recomendação das ações do Grupo Mateus de "Neutro" para "Underweight", citando perspectivas desafiadoras para 2026. O UBS rebaixou a recomendação do Grupo Mateus de "Compra" para "Neutro", reduzindo o preço-alvo de R$ 8,50 para R$ 5,50 devido a desafios macroeconômicos.
+
+### 4. Análise de Fundamentos e Resultados
+
+*   **Receita:** A receita bruta do Grupo Mateus tem apresentado crescimento, impulsionada principalmente pelos segmentos de Construção e Atacado. No entanto, há uma desaceleração no crescimento das vendas mesmas lojas (SSS). No 3T25, o SSS consolidado desacelerou para 3,4% (comparado a 6,1% no 2T25).
+*   **Lucro Líquido:** No 3T24, o Grupo Mateus reportou um lucro líquido de R$ 379,2 milhões, um aumento de 20,9% em relação ao mesmo período do ano anterior. Esse resultado foi influenciado pela melhoria do EBITDA e pelo redesenho do planejamento tributário da companhia.
+*   **Margens:** As margens do Grupo Mateus têm apresentado resiliência, mesmo com pressões. No 3T25, as margens foram relativamente controladas (estáveis ano a ano). Em 2024, a margem bruta foi de **22,63%**, a margem EBITDA foi de **7,69%** e a margem líquida foi de **4,11%**. No 3T25, a margem EBITDA (ex-IFRS) do Novo Atacarejo foi superior à do ASAI (6% vs. 5,7%).
+*   **Fluxo de Caixa:** No 3T25, o ciclo de caixa melhorou cerca de 10 dias, principalmente devido a uma melhor gestão de estoques.
+
+**Tabela de Indicadores Financeiros (Dados de 2024 e Atual):**
+
+| Indicador             | 2024   | Atual  |
+| --------------------- | ------ | ------ |
+| P/L                   | 11,17  | 6,13   |
+| P/Receita (PSR)       | 0,46   | 0,32   |
+| P/VP                  | 1,49   | 1,13   |
+| Margem Líquida        | 4,11%  | 5,16%  |
+| Margem Bruta          | 22,63% | 22,50% |
+| Margem EBITDA         | 7,69%  | 7,97%  |
+| ROE                   | 13,38% | 18,52% |
+| ROIC                  | 15,73% | 17,32% |
+
+*   **Guidance:** Não foram encontradas informações específicas sobre o *guidance* (metas) da administração para o ano de 2026. No entanto, o JPMorgan rebaixou a recomendação das ações do Grupo Mateus devido a uma projeção mais desafiadora para o crescimento da receita em 2026.
+
+### 5. Notícias e Eventos Corporativos
+
+*   **2026-02-05 - Doação de Ações:** O Grupo Mateus informou a doação de ações por Maria Barros Pinheiro a seus filhos Ilson Mateus Rodrigues Junior e Denilson Pinheiro Rodrigues. Após a doação, Ilson Junior passou a deter 17,66% e Denilson 18,84% do capital da empresa. Parte das ações foi doada em nua-propriedade, com usufruto vitalício reservado à doadora. Foram doadas 248,4 milhões de ações em plena propriedade (124,2 milhões para cada herdeiro) e 106 milhões de ações em nua propriedade. A empresa afirmou que a doação não tem como objetivo alterar o controle ou a estrutura administrativa.
+*   **2026-02-02 - BB Investimentos Adiciona GMAT3 à Carteira Recomendada:** O BB Investimentos adicionou o Grupo Mateus (GMAT3) à sua carteira recomendada de small caps em fevereiro, com peso de 10%.
+*   **2026-01-30 - Estimativa de Aumento de Receitas por Isenção de IR:** O Santander estimou que o Grupo Mateus (GMAT3) pode ter um aumento de R$ 437 milhões em suas receitas no ano devido à isenção do Imposto de Renda, o que representa um incremento de 0,7% na receita total.
+*   **2026-01-06 - Homologação do Aumento de Capital:** Homologação do Aumento de Capital pelo Conselho de Administração.
+*   **2026-01-06 - Conselho de Administração - Homologação do Aumento de Capital.**
+*   **2025-12-19 - JPMorgan Rebaixa Recomendação:** O JPMorgan rebaixou a recomendação das ações do Grupo Mateus de "Neutro" para "Underweight", citando perspectivas desafiadoras para 2026.
+*   **2025-11/12 - Pagamento de JCP:** Pagamento de JCP no valor de R$ 0,049574 por ação, com data de registro em 19/11/2025 e pagamento em 30/12/2025.
+*   **2025-11-26 - UBS Rebaixa Recomendação:** O UBS rebaixou a recomendação do Grupo Mateus de "Compra" para "Neutro", reduzindo o preço-alvo de R$ 8,50 para R$ 5,50 devido a desafios macroeconômicos.
+*   **2025-11-25 - Pressão Máxima na Ação:** Análise do Investing.com apontou que o gráfico mensal do Grupo Mateus revela um cenário de pressão máxima para a ação, que acumulou queda de -21,41% no último mês e de -25,1% nos últimos 3 meses. Com a ação cotada a R$ 5,03, o papel opera perigosamente próximo da mínima de 52 semanas (R$ 4,90).
+*   **2025-11-22 - Queda nas Ações e Questionamentos sobre Governança:** As ações do Grupo Mateus (GMAT3) caíram mais de 20% na bolsa desde a apresentação dos resultados do terceiro trimestre de 2025, em 13 de novembro. Isso ocorreu porque o balanço revelou um erro bilionário na avaliação dos seus estoques, levantando questionamentos sobre a governança na empresa.
+*   **2025-11-21 - Bradesco BBI Mantém Recomendação Outperform:** Apesar dos desafios, o Bradesco BBI manteve a recomendação *outperform* (desempenho acima da média do mercado, equivalente à compra), com preço-alvo de R$ 9.
+*   **2025-11-21 - Queda Contínua das Ações:** As ações do Grupo Mateus (GMAT3) enfrentaram um período turbulento no mercado, com uma sequência de quedas significativas. Na sexta-feira (21), as ações GMAT3 registraram a sétima sessão consecutiva de queda, acumulando perdas de aproximadamente 25% no período. A baixa já alcançava 20% em 5 pregões.
+*   **2025-11-21 - Erro Contábil de R$ 1,1 Bilhão:** Foi divulgado um erro contábil de R$ 1,1 bilhão, informado ao mercado na última semana, com a divulgação dos resultados do terceiro trimestre (3T25). A varejista identificou que havia erros na forma como os estoques e o custo das mercadorias vendidas eram calculados. Com a revisão, a empresa entendeu que os estoques estavam registrados por um valor maior do que deveriam. Isso levou a companhia a ajustar os números de períodos anteriores e reapresentar as demonstrações financeiras de 2024 e 2023, para que tudo ficasse consistente e comparável. A correção teve efeito direto no valor dos estoques: o saldo consolidado de dezembro de 2024 caiu de R$ 6,047 bilhões para R$ 4,939 bilhões, uma redução de R$ 1,107 bilhão. Além disso, houve um impacto adicional no valor dos investimentos contabilizados pela controladora, que caiu em R$ 694,7 milhões, refletindo a necessidade de ajustar o valor das empresas do grupo impactadas por esses novos cálculos. Com a queda forte dos papéis na B3, a companhia perdeu cerca de R$ 2,5 bilhões em valor de mercado.
+*   **2025-11-17 - Aprovação da Distribuição de JCP:** O Conselho de Administração aprovou a distribuição de R$ 111,2 milhões em JCP, correspondendo a R$ 0,0495738577 por ação.
+*   **2025-11 - Aprovado Aumento de Capital:** Aprovado aumento de capital com valor mínimo de R$ 291,7 milhões e máximo de R$ 475,9 milhões, através da emissão de novas ações ordinárias.
+*   **2025-11 - Resultados 3T25:** Lucro líquido atribuído aos controladores de R$ 850,5 milhões, um aumento de 152,5% em relação ao 3T24.
+*   **2024-12-20 - Acordo de Parceria com Novo Atacarejo:** O Grupo Mateus firmou um acordo de parceria com a Novo Atacarejo, rede que opera 32 lojas em Pernambuco. Com o negócio, o Mateus deterá 51% de participação na nova companhia combinada, reforçando sua atuação no segmento de atacarejo na região. Para viabilizar a associação, o Grupo Mateus aportará ativos localizados em Pernambuco, Paraíba e Alagoas, além de um investimento financeiro de R$ 378,5 milhões.

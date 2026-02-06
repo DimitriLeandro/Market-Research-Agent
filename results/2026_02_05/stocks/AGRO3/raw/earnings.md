@@ -1,0 +1,1 @@
+Ok, sou seu Analista de Resultados Trimestrais para AGRO3. Estou pronto para analisar o Release de Resultados e a Teleconferência mais recente, assim que você me fornecer as informações. Aguardo os documentos para começar a análise e entregar os resultados conforme seus objetivos e requisitos.

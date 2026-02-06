@@ -1,0 +1,66 @@
+# Relatório de Inteligência Setorial: Híbrido/Logística - Fevereiro 2026
+
+### 1. Outlook Setorial (Resumo Geral)
+
+O setor de Híbrido/Logística no Brasil se encontra em um momento de **expansão**, impulsionado principalmente pelo crescimento contínuo do e-commerce e pela busca por eficiência e inovação. Apesar dos desafios macroeconômicos e estruturais, o setor demonstra resiliência e capacidade de adaptação, com investimentos em tecnologia e infraestrutura buscando otimizar processos e reduzir custos. O principal driver macroeconômico atual é a expectativa de queda da taxa Selic, que pode estimular o consumo e o investimento no setor.
+
+### 2. Drivers de Crescimento (Bull Case)
+
+*   **E-commerce em Expansão:** O hábito de compra online dos brasileiros está consolidado, gerando demanda crescente por entregas rápidas e eficientes. A tendência D2C (Direct-to-consumer) também impulsiona essa demanda.
+*   **Avanço Tecnológico:** A logística está se tornando mais estratégica, com foco em tecnologia, eficiência e dados. Em 2026, espera-se um uso ainda maior de tecnologias como Inteligência Artificial para rastreamento de cargas e aumento da velocidade de entrega.
+*   **Inovação e IA:** A demanda por inovação e tecnologia na logística está em alta. Soluções baseadas em Inteligência Artificial (IA) são vistas como determinantes na escolha de operadores logísticos.
+*   **Crescimento do Setor Farmacêutico:** A expectativa de alta no mercado farmacêutico brasileiro desafia a logística, com demanda crescente por serviços personalizados, especialmente no transporte de medicamentos de prescrição (RX) e insumos para a indústria de saúde e estética.
+*   **Investimentos em Centros Logísticos:** A estruturação de centros logísticos surge como estratégia para superar desafios, servindo como pontos de coordenação para produtos, dados e documentos.
+*   **Possível Queda da Selic:** O mercado projeta o início da redução da taxa Selic a partir do segundo trimestre de 2026, o que pode estimular o consumo de bens de maior valor agregado e permitir investimentos em sistemas automatizados de armazenagem.
+*   **Valorização do Real (Potencial):** Uma política monetária mais restritiva pode valorizar o real, reduzindo os custos de importação de insumos essenciais para o setor, como combustíveis e peças.
+*   **Poder de Repasse:** Indicadores de preços contribuem para tornar divergências mais objetivas, permitindo que os agentes negociem diferenças e ajustes em torno de uma referência observável.
+*   **Incentivos Fiscais:** O governo federal pretende elevar de R$ 1 bilhão para R$ 3 bilhões o orçamento destinado ao Regime Especial da Indústria Química (Reiq) para este ano.
+*   **Programa Autonomia e Renda Petrobras:** O programa visa contribuir para a ampliação das oportunidades de empregabilidade de pessoas moradoras de comunidades próximas das operações na cadeia de fornecedores do setor de Energia.
+*   **Concessão de Canais de Acesso:** A adoção do modelo de concessão dos canais de acesso aos portos brasileiros busca assegurar investimentos contínuos, ampliar a segurança da navegação e aumentar a capacidade operacional do sistema portuário nacional.
+*   **Tomada de Subsídios para Corredor Logístico Sustentável:** A Agência Nacional de Transportes Terrestres (ANTT) abriu a Tomada de Subsídios nº 006/2025, convidando a sociedade e os agentes do setor a contribuírem para o aprimoramento do edital que vai selecionar participantes do Sandbox Regulatório do Corredor Logístico Sustentável de Transporte Multimodal.
+*   **Incentivos à Industrialização da Cadeia Mineral em Goiás:** O Governo de Goiás deu um passo decisivo para fortalecer sua posição na nova economia global ao incluir oficialmente o setor extrativista mineral no Programa de Desenvolvimento Industrial do Estado de Goiás (ProGoiás).
+
+### 3. Riscos e Desafios (Bear Case)
+
+*   **Infraestrutura Deficiente:** Estradas congestionadas, rodovias em más condições e falta de modais alternativos eficientes (ferrovias e hidrovias) geram gargalos logísticos, impactando a competitividade das exportações.
+*   **Custos Logísticos Elevados:** Os custos logísticos no Brasil representam 15,5% do PIB em 2025, e a expectativa é de aumento nos custos de transporte e armazenamento.
+*   **Ineficiência:** Cerca de 35% dos caminhões nas estradas rodam vazios, aumentando os custos de combustível, manutenção e mão de obra, o que impacta os preços dos alimentos.
+*   **Reforma Tributária:** A reforma tributária pode gerar incertezas e litigiosidade, especialmente para o setor de serviços, devido a mudanças na carga tributária e dificuldades de creditamento.
+*   **Falta de mão de obra qualificada:** A escassez de mão de obra qualificada exige investimento em capacitação.
+*   **Juros Altos:** Juros altos impactam negativamente a indústria, restringindo investimentos produtivos e diminuindo o apetite dos consumidores por bens industriais.
+*   **Inadimplência:** A inadimplência no transporte marítimo está aumentando, impactando armadores, agentes de carga, terminais e importadores.
+*   **Inflação:** A inflação, juntamente com a alta do frete marítimo, pressiona os custos.
+*   **Aumento de Impostos:** A reforma tributária pode aumentar a carga tributária para alguns setores.
+*   **Leis Ambientais Mais Rígidas:** O setor de logística enfrenta o desafio de otimizar operações e minimizar o impacto ambiental. O não cumprimento das leis ambientais pode gerar multas e sanções.
+*   **Risco Jurídico Ambiental:** A Lei Geral do Licenciamento Ambiental (Lei nº 15.190/2025) pode gerar contestações judiciais, elevando o risco de paralisações e reprecificação de garantias.
+*   **Novos Entrantes Estrangeiros:** A Amazon está lançando promoções de logística, aumentando a competição com Mercado Livre e Shopee.
+*   **Tecnologias Disruptivas:** A digitalização e a automação estão transformando a cadeia logística, exigindo que as empresas invistam em novas tecnologias para se manterem competitivas.
+*   **Custos e Logística da Shein:** A Shein enfrentou dificuldades em implementar seu plano de produção no Brasil devido a custos e exigências logísticas.
+
+### 4. Destaques Recentes e Agenda Regulatória
+
+*   **2026-02-05 - Custo do Transporte de Grãos Pressionado:** O custo para transportar grãos no Brasil entrou em um dos períodos mais pressionados do calendário agrícola, com a expectativa de aumento nos valores do frete rodoviário.
+*   **2026-02-05 - Recorde de Vendas de Petróleo:** O Brasil bateu um recorde histórico em 2025 ao vender muito mais petróleo do que comprou, gerando quase US$ 30 bilhões de saldo positivo.
+*   **2026-02-04 - Despesas com Logística:** As despesas com logística no Brasil se aproximam de R$ 1 trilhão por ano, consumindo cerca de 15% do PIB nacional.
+*   **2026-02-02 - Perdas Logísticas no Setor Cafeeiro:** O setor cafeeiro fechou 2025 com R$ 66,1 milhões em perdas logísticas devido a gargalos.
+*   **2026-02-02 - Alterações no Piso Mínimo de Frete:** Alterações nas regras de pagamento do piso mínimo de frete.
+*   **2026-02-01 - Aumento nos Preços do Transporte:** Um estudo do Instituto de Logística e Supply Chain (Ilos) mostra que 52% das empresas brasileiras esperam aumento nos preços do transporte para 2026.
+*   **2026-01-30 - Inflação e Infraestrutura Impulsionam IA no Frete:** A inflação de insumos e o impacto da infraestrutura nos custos operacionais impulsionam o uso de Inteligência Artificial no frete em 2026.
+*   **2026-01-30 - Desvalorização do Real Pressiona Custos do Agronegócio:** A desvalorização do real pressiona os custos do agronegócio, já que uma parcela relevante dos insumos utilizados na produção agrícola é importada ou tem preços atrelados ao dólar.
+*   **2026-01-29 - Taxa Selic Mantida:** O Banco Central do Brasil manteve a taxa Selic em 15%.
+*   **2026-01-26 - Lei sobre Limpeza da Rede Elétrica:** A Lei que transfere a limpeza do entorno da rede elétrica ao produtor é considerada inadequada.
+*   **2026-01-09 - Supermercados Adotam Jornada 5x2:** Supermercados adotam jornada 5x2 para reter funcionários e acabar com a escassez de mão de obra.
+*   **2026-01-07 - Balança Comercial Positiva:** O Brasil encerrou 2025 com a terceira melhor balança comercial da história, com um saldo positivo de US$ 68 bilhões, sustentado por volumes recordes de minério de ferro, petróleo e soja.
+*   **2025-12-01 - Proteção Aduaneira da Propriedade Intelectual:** A Receita Federal do Brasil publicou o Ato Declaratório Interpretativo nº 03/2025, consolidando o entendimento sobre a aplicação da proteção aduaneira da Propriedade Intelectual no país.
+*   **2025-10-15 - Guerra na Ucrânia e Mar Vermelho Elevam Custos:** A guerra na Ucrânia e os ataques no Mar Vermelho elevaram os custos logísticos globais em até 15%.
+*   **2025-09-18 - Novas Regras de Comercialização (ANEEL):** A ANEEL (Agência Nacional de Energia Elétrica) aprovou novas regras de comercialização para contratos do LRCAP (Leilão de Reserva de Capacidade).
+*   **2025-09-18 - M&A no Setor de Logística:** Apesar das incertezas macroeconômicas, o setor de logística manteve um ritmo acelerado de fusões e aquisições (M&A) no Brasil.
+*   **2025-09-01 - Investimentos em M&A:** O setor de logística acumulou 250 investimentos em M&A, mesmo com incertezas macroeconômicas.
+*   **2025-07-17 - Cenário Desafiador (CNT):** A CNT (Confederação Nacional do Transporte) divulgou um boletim apontando um cenário desafiador para a economia brasileira, com inflação persistente e taxa de juros elevada.
+*   **2025-07-04 - Crise Logística e Impactos:** A crise logística está gerando impactos significativos nas operações internacionais, impulsionada por fatores como o aumento dos preços dos contêineres e a seca na Amazônia.
+*   **2025-05-29 - Novas Regras de Acesso à Rede Básica (ANEEL):** A ANEEL publicou novas regras para o acesso de grandes cargas à Rede Básica.
+*   **2025 (Trimestre Janeiro-Março) - Transações de M&A:** Estima-se que cerca de 40 transações de fusões e aquisições ocorreram no segmento de logística e transporte no Brasil.
+*   **2024-12-11 - Conflito Irã-Israel:** O conflito entre Irã e Israel pode afetar a logística brasileira, com potencial para aumentar os custos devido ao impacto nos preços do petróleo.
+*   **2024-09-18 - Obstáculos na Logística de Importação:** A logística de importação tem enfrentado obstáculos significativos, como conflitos internacionais, congestionamentos em rotas estratégicas e condições climáticas adversas.
+*   **2024-06-26 - Ataques no Mar Vermelho:** Ataques no Mar Vermelho ameaçam a cadeia logística brasileira e aumentam os custos de fretes internacionais.
+*   **2022-01-21 - Elevação dos Custos de Produção:** A elevação dos custos de produção foi mencionada por 65,6% das empresas, seguido por atraso nas entregas (32,7%), Necessidade de compra maior de insumos para estocagem (17,5%) e dificuldade na entrega/logística (16,6%).

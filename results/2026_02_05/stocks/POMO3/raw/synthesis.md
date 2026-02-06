@@ -1,0 +1,78 @@
+# Relatório de Análise de Investimento - POMO3 (Marcopolo S.A.)
+
+### 1. Resumo Geral
+
+A Marcopolo S.A. (POMO3) opera em um setor cíclico, mas apresenta um momento interessante impulsionado por sua liderança de mercado e potencial de crescimento, especialmente com a expectativa de relançamento do programa Caminho da Escola e novos contratos, como o com o Ministério da Saúde. Seus indicadores fundamentalistas parecem atrativos em comparação com seus pares, e a empresa é vista como uma boa pagadora de dividendos. No entanto, a recente pressão nas margens, a dependência de programas governamentais e a volatilidade do setor exigem cautela. O cancelamento da licitação do programa Caminho da Escola e a alienação de participação acionária por alguns investidores também levantam questões sobre a governança e a capacidade da empresa de influenciar decisões políticas. A divulgação dos resultados do 4T25 em 26 de fevereiro de 2026 será crucial para confirmar as perspectivas otimistas e avaliar a sustentabilidade do desempenho financeiro.
+
+### 2. Tese de Investimento (Bull Case)
+
+*   **Liderança de Mercado:** A Marcopolo é uma das maiores fabricantes de carrocerias de ônibus e micro-ônibus do mundo, com uma forte marca e *market share* que lhe confere algum poder de precificação. A empresa acumula vasta experiência no setor desde a década de 40.
+*   **Potencial de Crescimento com o Programa Caminho da Escola:** Embora tenha havido um recente cancelamento de uma licitação do programa Caminho da Escola, analistas acreditam que o programa será relançado. A Marcopolo historicamente detém cerca de 50% de participação nesse programa, o que representa um importante motor de crescimento.
+*   **Novos Contratos e Expansão:** A Volkswagen, em parceria com a Marcopolo, tinha um contrato para fornecer até 3 mil micro-ônibus ao Ministério da Saúde em 2026, com a expectativa de que pelo menos 700 unidades se convertam em pedidos firmes. A Marcopolo também possui forte atuação no mercado externo.
+*   **Crescimento Consistente de Receita e Lucros:** A empresa apresentou um CAGR (Taxa de Crescimento Anual Composta) de receita de **21,21%** e de lucros de **27,61%** nos últimos 5 anos.
+*   **Valuation Atrativo:** Os indicadores fundamentalistas de POMO3 parecem atrativos em comparação com seus pares do setor de Bens Industriais, com um P/L de **6,11**, P/VP de **1,65**, e um EV/EBITDA de **5,76**.
+*   **Dividend Yield Elevado:** A empresa apresenta um *Dividend Yield* de **21,54%**.
+*   **Catalisadores:** O relançamento do programa Caminho da Escola, a conversão de pedidos firmes do contrato com o Ministério da Saúde, a bonificação de ações de 10% e a aquisição de participação em empresa chilena para avançar na eletrificação podem impulsionar o crescimento.
+*   **Crescimento Contínuo do Mercado Automotivo:** O mercado automotivo brasileiro iniciou 2026 com otimismo, apresentando um crescimento de **7,42%** nos emplacamentos em janeiro em comparação com o mesmo período de 2025, demonstrando uma manutenção da demanda.
+*   **Avanço da Eletrificação:** O mercado de veículos eletrificados (híbridos e elétricos) segue em trajetória de crescimento. Em 2025, as buscas e visitas por esses veículos aumentaram **38,3%** em relação ao ano anterior, com um aumento de **60,8%** nos emplacamentos.
+*   **Expansão do Mercado de Usados:** O mercado de veículos usados também apresentou um crescimento significativo em interesse, com um aumento de **42,7%** nas buscas e visitas em 2025, impulsionado pela eletrificação e preços mais acessíveis.
+*   **Crescimento do Segmento de Motocicletas:** O segmento de motocicletas continua em ascensão, impulsionado pelo uso profissional (serviços de entrega), busca por mobilidade individual e ampliação do uso de consórcios. Em janeiro de 2026, os emplacamentos de motocicletas cresceram **17,49%** em relação a janeiro de 2025.
+*   **Incentivos Fiscais do Programa Mover:** O governo lançou o programa Mover, que prevê R$ 19,3 bilhões em incentivos fiscais até 2028. Esse programa visa estimular o desenvolvimento da indústria automotiva nacional, com foco em veículos sustentáveis e atividades de pesquisa e desenvolvimento.
+
+### 3. Riscos e Pontos de Atenção (Bear Case)
+
+*   **Ciclicidade do Negócio:** A Marcopolo opera em um setor altamente cíclico, dependente da renovação de frotas, investimentos públicos em mobilidade, condições de crédito e nível de atividade econômica.
+*   **Pressão nas Margens:** A Marcopolo tem apresentado queda nas margens EBITDA. No terceiro trimestre de 2025, a margem EBITDA consolidada foi de **16,8%**, uma queda de **3,3 pontos percentuais** em relação ao mesmo período de 2024.
+*   **Cancelamento de Licitação:** O governo federal cancelou a licitação do programa Caminho da Escola, que previa a compra de cerca de 7,5 mil ônibus escolares. Essa decisão é negativa no curto prazo para a Marcopolo, elevando o risco de um hiato nas entregas.
+*   **Dependência de Programas Públicos e Crédito:** A Marcopolo depende de programas públicos e da disponibilidade de crédito, o que a torna vulnerável a mudanças nas políticas governamentais e nas condições econômicas.
+*   **Volatilidade da Ação:** A ação da Marcopolo apresenta forte volatilidade ao longo dos ciclos econômicos.
+*   **Dívida:** Embora a dívida líquida/EBITDA esteja em um nível considerado confortável (**0,8 vezes**), é importante monitorar a evolução desse indicador, especialmente em um cenário de pressão nas margens e incertezas no mercado.
+*   **Alienação de Participação Acionária:** Alaska Investimentos e LAPB reduziram a participação na empresa para **19,98%** das ações ordinárias em 05 de fevereiro de 2026. É importante investigar os motivos dessas vendas e seus potenciais impactos na governança e no controle da empresa.
+*   **Estrutura Societária:** A estrutura de controle ainda é concentrada, com os quatro maiores acionistas detendo **61%** das ações ordinárias. Paulo Pedro Bellini é o principal acionista, com uma participação de **28,2%**.
+*   **Custos de Produção Elevados:** A alta carga tributária, que pode representar de 30% a 48% do valor final do veículo, inibe o potencial exportador e a competitividade da indústria nacional.
+*   **Mercado Interno Limitado:** Comparado a outros grandes mercados, o Brasil possui um mercado interno relativamente pequeno e uma economia pouco integrada ao comércio global.
+*   **Juros Altos:** A taxa Selic elevada encarece o crédito, reduz o consumo e inibe investimentos, pressionando a indústria.
+*   **Inadimplência:** A inadimplência no financiamento de veículos é uma preocupação.
+*   **Crédito Restrito:** O crédito para o setor automotivo está prejudicado.
+*   **Aumento de Impostos:** A reforma tributária pode extinguir benefícios fiscais importantes para o setor, impactando o preço final dos veículos.
+*   **Leis Ambientais Mais Rígidas:** Regulamentações mais rigorosas para reduzir as emissões veiculares e o consumo de combustível podem aumentar os custos de P&D e fabricação.
+*   **Competição de Novos Entrantes Estrangeiros:** A BYD e outras montadoras chinesas estão aumentando sua participação no mercado brasileiro, representando uma ameaça para as montadoras tradicionais.
+*   **Tecnologias Disruptivas:** A rápida evolução tecnológica, especialmente em direção aos veículos elétricos e autônomos, exige investimentos significativos em P&D e pode tornar obsoletas as tecnologias existentes.
+*   **Transição para Veículos Elétricos:** A transição forçada para veículos elétricos pode elevar o preço médio dos veículos, restringindo o acesso da população. O fim da isenção fiscal para kits de carros elétricos e híbridos montados no país pode aumentar os preços.
+
+### 4. Análise de Fundamentos e Resultados
+
+*   **Receita e Lucro:** No último trimestre reportado (3T25), a empresa apresentou lucro por ação (LPA) de **R$ 0,27**, superando a estimativa de R$ 0,25. A receita para o mesmo período foi de **R$ 2,50 bilhões**, abaixo da estimativa de R$ 2,63 bilhões.
+*   **Perspectivas:** O JPMorgan espera um primeiro semestre de 2026 (1S26) sazonalmente mais forte, apoiado pelas vendas recentes ao Ministério da Saúde.
+*   **Guidance:** O Itaú BBA manteve recomendação *outperform* (equivalente à compra) para a Marcopolo, com preço-alvo de R$ 10,00 para o fim de 2026. O JPMorgan avalia que POMO4 pode ter atingido um piso entre R$ 6,90 e R$ 7,00. Os executivos mostraram otimismo quanto à demanda e à rentabilidade no 4T25 e em 2026, e esperam novidades em breve sobre uma nova rodada do programa Caminho da Escola.
+*   **Dividendos:** A Marcopolo é vista como uma boa pagadora de dividendos. O último dividendo do POMO3 foi de R$ 0,78 por cota em 15/12/2025.
+*   **Balanço:** A Marcopolo possui um balanço sólido, com caixa e aplicações em nível elevado e dívida líquida/EBITDA ao redor de **0,8 vez**.
+
+### 5. Notícias e Eventos Corporativos
+
+*   **Fevereiro de 2026:** A BR Partners projeta um primeiro semestre de 2026 mais forte em fusões e aquisições (M&A), influenciado pela valorização do Ibovespa e o forte fluxo estrangeiro para o mercado local.
+*   **Fevereiro de 2026:** Presidentes de montadoras (Volkswagen, Stellantis, Toyota e General Motors) enviaram uma carta ao presidente Lula contra a prorrogação de benefícios tributários que zeraram o imposto de importação para kits desmontados de veículos elétricos, medida que favoreceu a BYD.
+*   **Fevereiro de 2026:** A reforma tributária redefine benefícios fiscais e impõe adaptações tecnológicas para o setor de transporte de cargas, impactando a competitividade de empresas que concentram produção em estados com incentivos fiscais.
+*   **Fevereiro de 2026:** Juros altos levam montadoras de caminhões a rever estoques e destravar capital de giro, com a normalização das cadeias de suprimentos após a pandemia.
+*   **Fevereiro de 2026:** Transformações no setor de transporte de cargas devido a tensões geopolíticas, oscilações econômicas e o avanço de novas tecnologias.
+*   **Fevereiro de 2026:** Aumento na busca por carros blindados novos, com um aumento de 23,4%, superando o crescimento de veículos comuns.
+*   **05 de Fevereiro de 2026 - Comunicado ao Mercado:** Não especificado.
+*   **04 de Fevereiro de 2026 - Cotação:** POMO3 a R$ 6,14, com alta de 0,66%.
+*   **Janeiro de 2026:** A indústria global mantém ritmo de crescimento, mas o Brasil perde fôlego no cenário internacional.
+*   **Janeiro de 2026:** Juros altos travam o crédito para oito em cada dez indústrias, segundo a CNI.
+*   **Janeiro de 2026:** O Gecex aprovou a aplicação de direito antidumping definitivo, por um prazo de até 5 anos, às importações brasileiras de aços pré-pintados, originárias da China e da Índia.
+*   **Janeiro de 2026:** Desafios para o setor automotivo em 2026 exigem "otimismo contido", segundo a Anfavea.
+*   **19 de Janeiro de 2026 - Comunicado ao Mercado:** Alienação de Participação Acionária Relevante.
+*   **19 de Dezembro de 2025 - Fato Relevante:** Bonificação.
+*   **23 de Dezembro de 2025 - Comunicado ao Mercado:** Alienação de participação acionária.
+*   **15 de Dezembro de 2025 - Dividendos:** O último dividendo do POMO3 foi de R$0,78 por cota.
+*   **17 de Novembro de 2025 - Fato Relevante:** Não especificado.
+*   **24 de Novembro de 2025 - Proventos:** Pagamento de JCP (R$0,09) e Dividendo (R$0,69).
+*   **31 de Outubro de 2025 - Comunicado ao Mercado:** Apresentação da teleconferência de resultados e alienação de participação acionária.
+*   **15 de Outubro de 2025 - Comunicado ao Mercado:** Alienação de participação acionária.
+*   **21 de Agosto de 2025 - Fato Relevante:** Distribuição de dividendos e JCP.
+*   **08 de Setembro de 2025 - Proventos:** Pagamento de Dividendo (R$0,075) e JCP (R$0,09).
+*   **25 de Abril de 2025 - Fato Relevante:** Juros sobre o Capital Próprio.
+*   **20 de Fevereiro de 2025 - Fato Relevante:** Declaração de dividendos.
+*   **30 de Agosto de 2024 - Recomendação JPMorgan:** O JPMorgan reiterou sua visão positiva com a ação da Marcopolo, com recomendação de compra e elevando preço-alvo de R$ 10 para R$ 12.
+*   **Julho de 2024 - Programa Mobilidade Verde e Inovação (Mover):** O governo sancionou a Lei 14.902/24, que institui o Programa Mobilidade Verde e Inovação (Mover) e prevê incentivos financeiros de R$ 19,3 bilhões em cinco anos, além de reduzir o IPI para estimular a produção de veículos com menor emissão de gases do efeito estufa.
