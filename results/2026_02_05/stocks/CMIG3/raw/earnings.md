@@ -1,0 +1,1 @@
+Ok, sou seu Analista de Resultados Trimestrais para CMIG3. Estou pronto para analisar o release de resultados e teleconferência mais recentes, assim que você me fornecer as informações. Aguardo os dados para começar a análise e entregar os resultados conforme seus objetivos e requisitos.

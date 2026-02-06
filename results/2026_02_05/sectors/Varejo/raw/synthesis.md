@@ -1,0 +1,45 @@
+# Relatório de Inteligência Setorial - Varejo
+
+### 1. Outlook Setorial (Resumo Geral)
+
+O setor de varejo no Brasil apresenta um cenário complexo, com elementos tanto de expansão quanto de desafios. Apesar do crescimento do comércio físico e do e-commerce, impulsionados pela retomada do turismo e pela adoção de estratégias omnichannel, o setor enfrenta obstáculos significativos. A alta carga tributária, a concorrência acirrada, a inflação persistente e os juros elevados continuam a pressionar a rentabilidade das empresas. A consolidação do mercado através de fusões e aquisições sugere uma busca por maior eficiência e escala. O principal driver macroeconômico atual é a inflação, que, embora em desaceleração, ainda impacta o poder de compra do consumidor e as estratégias de precificação das empresas.
+
+### 2. Drivers de Crescimento (Bull Case)
+
+*   **Crescimento do E-commerce:** A conveniência e o aumento da confiança do consumidor nas compras online continuam a impulsionar o crescimento do e-commerce, expandindo o mercado endereçável para o varejo.
+*   **Retomada do Turismo:** O setor de turismo e transporte está em crescimento, impulsionado pela retomada das viagens após a pandemia. O Carnaval de 2026 deve impulsionar o varejo, com alta de até 5% nas vendas, beneficiando segmentos como vestuário, acessórios, moda praia e itens de conveniência.
+*   **Varejo Omnichannel:** A combinação de lojas físicas e online oferece uma experiência integrada ao consumidor, permitindo comprar online e retirar na loja, ou devolver produtos adquiridos online em loja física.
+*   **Crescimento do Comércio Físico:** O comércio físico brasileiro encerrou 2025 em expansão, crescendo 2,9% no acumulado do ano. Todos os segmentos do varejo físico fecharam o período no campo positivo.
+*   **Desaceleração da Inflação:** A inflação está desacelerando, o que pode dar fôlego para o consumidor e permitir um crescimento mais saudável do varejo com menos repasse de preços e mais consumo. Em 2025, leite e cereais exerceram um papel central na contenção da inflação.
+*   **Queda do Dólar:** A queda do dólar frente ao real pode beneficiar o varejo, especialmente setores ligados ao consumo interno.
+*   **Mercado de Trabalho Resiliente:** O mercado de trabalho continua resiliente, com uma taxa de desocupação de 5,1% em dezembro.
+*   **Crédito:** As concessões nominais de crédito acumuladas no ano aumentaram 9,1% em 2025.
+*   **Custos de Insumos:** Houve queda em itens básicos e de alto peso na cesta, reduzindo a pressão sobre os preços no varejo alimentar. Os cereais apresentaram deflação acumulada de 18,85% em 2025, com destaque para o arroz, que caiu 25,65%, e o feijão, com recuo de 6,16%.
+*   **Apoio Regulatório:** Existem diversos incentivos fiscais e financeiros para estimular setores estratégicos da economia, incluindo o varejo. Alguns exemplos são o Simples Nacional e a desoneração da folha de pagamento. O governo federal pretende elevar de R$ 1 bilhão para R$ 3 bilhões o orçamento destinado ao Regime Especial da Indústria Química (Reiq) para este ano.
+
+### 3. Riscos e Desafios (Bear Case)
+
+*   **Carga Tributária Elevada e Burocracia:** A alta carga tributária e a burocracia dificultam a competitividade do varejo nacional, especialmente em relação a plataformas internacionais de e-commerce.
+*   **Infraestrutura Precária:** A infraestrutura precária no Brasil é um obstáculo que dificulta o crescimento do setor varejista.
+*   **Concorrência Aumentada:** O aumento do nível de competitividade no cenário futuro do varejo brasileiro parece ser uma tendência que provavelmente continuará. A digitalização do varejo e o crescimento do comércio eletrônico estão permitindo que novos concorrentes entrem no mercado com relativa facilidade.
+*   **Juros Altos e Crédito Restritivo:** Juros elevados e um cenário de crédito mais restritivo impactam negativamente o varejo, encarecendo o crédito e desestimulando o consumo de bens de maior valor agregado.
+*   **Inadimplência:** Os elevados níveis de endividamento e inadimplência continuam pesando contra a expansão das vendas do setor. A inadimplência no varejo subiu para 8,46% em janeiro, interrompendo a queda de 2025 e indicando um aumento de 1,57% na comparação anual.
+*   **Inflação:** A inflação ainda sensível em itens essenciais e um comportamento de compra mais prudente desenham um período de desafios para o varejo alimentar. A inflação pressiona o carrinho online e muda a estratégia de consumo. A alta nominal das vendas pode mascarar a desaceleração real do varejo, com o avanço real permanecendo contido devido à inflação.
+*   **Aumento de Impostos:** O aumento de impostos, como a "taxa das blusinhas" (imposto de importação de 20% sobre compras internacionais de até US$ 50), pode impactar o consumo e as estratégias de compra.
+*   **Leis Ambientais Mais Rígidas:** Varejistas europeias cobram tradings sobre o cumprimento da Moratória da Soja, o que pode gerar pressão por práticas mais sustentáveis e impactar cadeias de fornecimento.
+*   **Normas Regulamentadoras (NR):** O descumprimento de Normas Regulamentadoras (NR) pode resultar em multas, interdições e passivos trabalhistas relevantes.
+*   **Novos Entrantes Estrangeiros:** A presença avassaladora de marketplaces internacionais, como Shopee e Shein, redesenhou o comportamento de compra no país e impôs um novo nível de competitividade ao varejo nacional.
+*   **Tecnologias Disruptivas:** Tecnologias disruptivas transformam o varejo, exigindo adaptação e investimento em inovação. A inteligência artificial (IA) está revolucionando a forma como as empresas entendem e atendem às necessidades individuais dos clientes.
+
+### 4. Destaques Recentes e Agenda Regulatória
+
+*   **2026-02-15 - Avanços na Infraestrutura:** O Brasil tem feito avanços significativos em sua infraestrutura, especialmente no setor de transportes. O país possui uma vasta rede de rodovias, ferrovias, portos e aeroportos que são cruciais para o movimento eficiente de mercadorias.
+*   **2026-02-12 - Lei de Validade em Campinas:** Em Campinas, entrou em vigor a lei que obriga estabelecimentos a destacar a data de validade de produtos próximos ao vencimento que estejam em promoção.
+*   **2026-02-05 - Vendas de Automóveis em Janeiro:** No varejo de automóveis em janeiro, o Hyundai Creta liderou as vendas, e a Ranger vendeu mais que a Hilux.
+*   **2026-02-03 - Impacto Macroeconômico Global:** O mercado global está sendo impactado por fatores macroeconômicos e políticos que pressionam os ativos de risco. A indicação de Kevin Warsh para a presidência do Fed gerou incertezas, sinalizando um possível fim do ciclo de cortes de juros e um combate mais rigoroso à inflação.
+*   **2026-02-03 - Atacarejo em Expansão:** A explosão de abertura de lojas de atacarejo na última década mudou o mapa do varejo brasileiro de alimentos e bebidas.
+*   **2026-02-02 - Revisão de Estoques em Montadoras:** Montadoras de caminhões estão revendo estoques e buscando destravar capital de giro devido aos juros altos. A normalização das cadeias de suprimentos após o período pandêmico, combinada ao aperto monetário, criou condições para uma revisão da eficiência na cadeia.
+*   **2026-01-30 - Crescimento em M&A:** Um relatório da Bain & Company indicou que o mercado brasileiro de Fusões e Aquisições (M&A) deve encerrar 2025 com um aumento de 8%, ultrapassando US$ 50 bilhões em transações.
+*   **2026-01-27 - Liminares contra Regras do PAT:** A Justiça Federal de São Paulo concedeu liminar à Pluxee, suspendendo fiscalizações e punições do governo federal relacionadas ao decreto que regulamenta o Programa de Alimentação do Trabalhador (PAT). Ticket e VR obtiveram liminares semelhantes.
+*   **2025-12-21 - Aprovação de Venda da Do Bem:** O Cade aprovou a venda da marca de sucos Do Bem, da Ambev, para a fabricante de sucos mineira Tial.
+*   **2025-12-21 - Aquisição da Kenvue pela Kimberly-Clark:** A Kimberly-Clark adquiriu a Kenvue, dona das marcas Tylenol, Listerine, O.B., Neutrogena e Carefree, em uma transação avaliada em US$ 48,7 bilhões.

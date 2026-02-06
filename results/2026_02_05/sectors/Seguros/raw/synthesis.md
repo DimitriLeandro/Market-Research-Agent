@@ -1,0 +1,57 @@
+# Relatório de Inteligência Setorial: Seguros no Brasil
+
+### 1. Outlook Setorial (Resumo Geral)
+
+O setor de seguros no Brasil demonstra um momento de expansão, impulsionado pelo crescimento do mercado de seguros de pessoas e pela crescente conscientização do consumidor sobre a importância da proteção financeira. Apesar de um cenário macroeconômico desafiador, com taxas de juros elevadas, o setor tem se beneficiado da capacidade de repasse de preços e da busca por otimização de custos através da tecnologia. A nova legislação do setor, o Marco Legal do Seguro, promete fortalecer a segurança jurídica e a previsibilidade, atraindo investimentos e fomentando a inovação. O principal driver macroeconômico no momento é a taxa de juros, que, apesar de alta, impacta positivamente a rentabilidade das reservas técnicas das seguradoras.
+
+### 2. Drivers de Crescimento (Bull Case)
+
+*   **Crescimento do Mercado Segurador:** O setor tem demonstrado um ritmo de expansão contínuo, movimentando aproximadamente R$313 bilhões entre janeiro e setembro de 2025, com um crescimento nominal acima de 7% em comparação com o ano anterior.
+*   **Expansão dos Seguros de Pessoas:** Impulsionado pelos seguros de pessoas, o setor tem apresentado um crescimento notável. O seguro de vida registrou um avanço de dois dígitos no acumulado de 2025, refletindo uma demanda mais qualificada por proteção diante de riscos financeiros, sucessórios e de saúde. Entre janeiro e novembro de 2025, o setor de seguros de pessoas arrecadou R$ 71,9 bilhões em prêmios, um crescimento de 8,3% em relação ao ano anterior.
+*   **Conscientização do Consumidor:** O consumidor está mais informado e exigente, buscando entender o impacto das decisões de seguro no orçamento familiar e patrimônio, priorizando clareza contratual, personalização de coberturas e orientação técnica.
+*   **Aumento da Demanda por Seguros Cibernéticos:** Há um aumento na procura por proteção contra riscos cibernéticos, impulsionado pelo aumento de golpes e prejuízos. O número de crimes cibernéticos aumentou 13,6% em 2024.
+*   **Retomada do Setor Imobiliário:** O seguro habitacional é impulsionado pela forte retomada dos lançamentos imobiliários e pelo avanço de programas habitacionais.
+*   **Avanço dos Veículos Elétricos:** O avanço dos carros elétricos e híbridos no Brasil pressiona o mercado de seguros a se adaptar ao novo perfil dos veículos. Em 2025, foram vendidos mais de 223 mil carros elétricos e híbridos no Brasil.
+*   **Nova Lei de Seguros:** A nova legislação estabelece um regime jurídico próprio para os contratos de seguro no país, ampliando a segurança jurídica e a previsibilidade nas relações contratuais.
+*   **Seguro como Serviço Contínuo:** Crescem soluções com sensores em frotas e máquinas, programas de saúde preventiva, orientação financeira e apoio em proteção de dados.
+*   **Taxa de Juros Elevada (Selic):** A alta da Selic pode aumentar a rentabilidade das reservas técnicas das seguradoras, já que parte dessas reservas é aplicada em títulos públicos indexados à inflação e aos juros.
+*   **Inflação Controlada:** A inflação no Brasil encerrou 2025 dentro da banda de tolerância.
+*   **Capitalização como Garantia:** A capitalização avança como instrumento de garantia em licitações, concessões e PPPs, apoiada por marcos legais recentes. A regulamentação da Resolução Conjunta nº 12 amplia o uso dos Títulos de Capitalização em operações de crédito.
+*   **Poder de Repasse de Preços:** A crescente conscientização do consumidor sobre a importância da proteção financeira permite que as seguradoras tenham maior poder de repasse de preços.
+*   **Gestão de Custos:** As seguradoras estão investindo em tecnologia da informação para otimizar a gestão de custos e aumentar a eficiência dos processos.
+*   **Programa de Subvenção ao Prêmio do Seguro Rural (PSR):** O PSR oferece aos agricultores a oportunidade de segurar sua produção com custo reduzido, por meio de auxílio financeiro do governo federal.
+*   **Incentivos para Caminhões:** As linhas de financiamento para compra de caminhões permitem a inclusão de seguro do bem e seguro prestamista.
+
+### 3. Riscos e Desafios (Bear Case)
+
+*   **Aumento da Sinistralidade:** Eventos climáticos extremos (secas, inundações, tempestades) e crises econômicas podem elevar os custos com indenizações, pressionando a rentabilidade das seguradoras. A falta de previsibilidade orçamentária no seguro rural amplia os riscos para o mercado e crédito agrícola.
+*   **Volatilidade das Taxas de Juros e Regras de Capital:** A variação das taxas de juros, combinada com novas regras de capital (Resolução CNSP 432/2021), pode encarecer produtos de longo prazo (vida, previdência) e dificultar a oferta. As novas regras aumentam a exigência de capital das empresas, sem aumento proporcional dos riscos assumidos.
+*   **Desaceleração da Arrecadação:** O setor apresentou resultado negativo na arrecadação acumulada, interrompendo o ciclo de expansão observado desde a recuperação pós-COVID19. As contribuições para planos de Previdência Aberta recuaram 14,1%.
+*   **Incerteza Política:** As eleições de 2026 geram preocupação com políticas públicas e tensões geopolíticas.
+*   **Juros Altos:** A taxa Selic elevada (15% ao ano em 2025) pode desestimular o crédito, encarecer financiamentos e aumentar a inadimplência, impactando a demanda por seguros. A Coface projeta um crescimento do PIB brasileiro de cerca de 1,9% em 2026, refletindo o impacto prolongado dos juros altos sobre consumo, crédito e investimento.
+*   **Inadimplência:** A inadimplência acima de 90 dias do Santander Brasil é de 3,7% no 4º trimestre, ante 3,2% um ano antes.
+*   **Inflação:** A inflação persistente pode pressionar as margens das seguradoras, especialmente em produtos com preços fixos.
+*   **Aumento de Impostos:** A reforma tributária pode elevar a carga tributária do setor, impactando a precificação dos produtos. O aumento do IOF sobre operações de câmbio pode gerar um custo adicional de cerca de R$ 800 milhões para o mercado. A alíquota da Contribuição sobre o Lucro Líquido (CSLL) aumentou de 15% para 20%.
+*   **Intervenção Estatal:** Embora o governo tenha recuado na criação de uma estatal de seguros, o risco de intervenção estatal no setor ainda existe.
+*   **Novas Leis:** A adaptação à nova Lei nº 15.040/2024 (Marco Legal de Seguros) é um desafio, com potencial para gerar custos e incertezas.
+*   **Novos Entrantes Estrangeiros:** A abertura do mercado de resseguros aumentou a competição, com a entrada de resseguradoras estrangeiras. Seguradoras estrangeiras atuando no Brasil são mais eficientes operacionalmente que seus pares locais.
+*   **Tecnologias Disruptivas (Insurtechs):** As Insurtechs podem representar uma ameaça para as seguradoras tradicionais, exigindo investimentos em tecnologia e inovação para se manterem competitivas. A inteligência artificial (IA) pode ser usada para violar a segurança das seguradoras.
+*   **Concentração:** Apesar da competição, o mercado de seguros pode ser considerado concentrado em alguns ramos.
+
+### 4. Destaques Recentes e Agenda Regulatória
+
+*   **2026-02-05 - Zurich Seguros e Zurich Santander Destinam Recursos ao Fundo de Catástrofes:** A Zurich Seguros e a Zurich Santander destinaram R$ 2 milhões ao Fundo de Catástrofes para 2026, iniciativa voltada ao apoio da população brasileira em situação de vulnerabilidade em função de desastres climáticos e situações de calamidade pública.
+*   **2026-02-05 - Publicação da Resolução SUSEP n.º 73:** A Superintendência de Seguros Privados (Susep) publicou a Resolução SUSEP n.º 73, de 30 de janeiro de 2026, que dispõe sobre a transferência de carteira integral ou parcial entre sociedades seguradoras, sociedades de capitalização, sociedades cooperativas de seguros, entidades abertas de previdência complementar e resseguradores locais, estabelecendo ainda seus efeitos nos planos. A Resolução consolida e moderniza o regime aplicável às transferências de carteira, com reforço de requisitos prudenciais, regras de conduta e diretrizes operacionais.
+*   **2026-02-05 - Crescimento do Mercado de Seguros de Alta Renda:** O mercado de seguros de alta renda em São Paulo ganha novo escritório, sinalizando uma tendência de valorização do atendimento personalizado em serviços financeiros e patrimoniais.
+*   **2026-02-05 - Corretoras de Seguros como Pontes de Planejamento Financeiro:** As corretoras de seguros estão deixando de ser um canal de venda e passando a atuar como ponte entre risco, proteção e planejamento financeiro, com foco na educação financeira do cliente.
+*   **2026-02-03 - Alinhamento do Brasil com Normas Internacionais:** O novo Marco Legal dos Seguros no Brasil, em vigor desde 11 de dezembro de 2025, estabelece normas claras para os contratos de seguros, alinhando o país a padrões internacionais e impulsionando o crescimento do setor.
+*   **2026-01-28 - Lucro Líquido das Seguradoras em Ascensão:** As seguradoras brasileiras registraram R$ 36,3 bilhões de lucro líquido nos onze primeiros meses de 2025, montante 11,3% superior ao consolidado no mesmo período de 2024. O faturamento do mercado segurador no período foi de R$ 202,4 bilhões.
+*   **2026-01-08 - Aprovação do Plano de Regulação da Susep para 2026:** A Susep aprovou o Plano de Regulação para 2026, que inclui o desenvolvimento de regras para entidades de proteção patrimonial mutualista e o aprimoramento de regras prudenciais, de governança e de prevenção à lavagem de dinheiro.
+*   **2025-12-11 - Entrada em Vigor do Novo Marco Legal do Seguro:** Entrou em vigor a Lei nº 15.040/2024, o novo Marco Legal do Seguro, que estabelece normas claras para os contratos de seguros e consolida princípios de boa-fé, transparência e eticidade contratual.
+*   **2025-11-10 - Projeções de Crescimento do Mercado de Seguros:** O mercado de seguros no Brasil está em crescimento, com projeções de alta de pelo menos 10% para 2025. No entanto, apenas 20% da população brasileira contrata alguma modalidade de seguro.
+*   **2025-10-22 - Impacto de Conflitos Geopolíticos e Tensões Internacionais:** Conflitos geopolíticos, políticas protecionistas e tensões internacionais afetam diretamente a disponibilidade de insumos, os custos logísticos e até a continuidade das operações das empresas brasileiras.
+*   **2025-10-22 - Desafios na Cadeia de Suprimentos:** Manter a fluidez das cadeias de suprimentos tornou-se um dos principais desafios das empresas, inclusive as brasileiras.
+*   **2025-10-16 - Brasil Lidera em Fusões e Aquisições na América Latina:** O mercado brasileiro de fusões e aquisições (M&A) manteve-se como o mais ativo da América Latina até o terceiro trimestre de 2025, com 1.303 transações e valor agregado de US$ 37,1 bilhões.
+*   **2025-10-13 - Exigência de Seguro Cibernético para Fornecedores de Tecnologia:** O Banco Central exige seguro cibernético para fornecedores de tecnologia, o que traz mais proteção para bancos e usuários, reduz o risco sistêmico e pressiona todo o ecossistema a elevar seus padrões de segurança digital.
+*   **2025-09-24 - Crescimento do Seguro de M&A (R&W):** O seguro de M&A (R&W) vem ganhando tração no Brasil, protegendo compradores e vendedores contra passivos ocultos, facilitando negociações e reduzindo litígios pós-fechamento.
+*   **2025-07-23 - ANTT Reforça Obrigatoriedade de Seguros no Transporte Rodoviário de Carga:** A ANTT reforça a obrigatoriedade de seguros no transporte rodoviário de carga, medida que fortalece a segurança e a gestão de riscos no setor.

@@ -1,0 +1,26 @@
+Ok, sou seu Analista de Relatórios Gerenciais de Fundos Imobiliários. Farei a análise do RZAK11 conforme suas instruções.
+
+Com base nas informações encontradas, apresento a análise do RZAK11:
+
+**Mês/Ano de Referência:** Dezembro de 2025.
+
+1.  **Palavra do Gestor:**
+
+*   O fundo manteve a distribuição de rendimentos estável em R$ 1,10 por cota, o mesmo valor pago no mês anterior.
+*   Este valor está dentro da banda de *guidance* (previsão) da gestão, que varia de R$ 1,00 a R$ 1,20 para os próximos três meses.
+*   Houve um aumento significativo nas reservas acumuladas (lucro retido), que passaram de R$ 0,22 por cota em novembro para R$ 0,42 por cota em dezembro.
+*   A cota patrimonial subiu de R$ 87,34 para R$ 88,70, um aumento de cerca de 1,55% em um mês, impulsionado pela reavaliação positiva dos patrimônios dos Fundos Imobiliários BRL Direcional e Riza Viseu, além do impacto positivo da estrutura de *hedge* do fundo frente às oscilações da curva de juros.
+
+2.  **Movimentação da Carteira:**
+
+*   Dado não encontrado na busca pública.
+
+3.  **Guidance de Rendimentos:**
+
+*   A gestão indica uma previsão de rendimentos entre R$ 1,00 e R$ 1,20 para os próximos três meses (a partir de dezembro de 2025).
+
+4.  **Gestão de Passivos:**
+
+*   A alocação bruta saltou de 98,94% do Patrimônio Líquido em novembro para 108,54% em dezembro, utilizando operações compromissadas reversas para otimizar o retorno.
+*   Houve um aumento na exposição ao CDI, que passou de aproximadamente 28% para quase 35%, enquanto a exposição ao IPCA teve uma leve redução proporcional, ficando próxima de 44%.
+*   Os CRIs Starbucks (Southrock) permanecem classificados como "Em Recuperação".
