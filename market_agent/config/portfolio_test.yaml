@@ -1,10 +1,40 @@
 assets:
-  - ticker: RAIZ4
-    name: Raízen S.A.
+  - ticker: PSSA3
+    name: Porto Seguro S.A.
     type: equity
-    sector: Energia/Açúcar e Etanol
+    sector: Seguros
 
-  - ticker: HGLG11
-    name: CSHG Logística FII
+  - ticker: BRSR6
+    name: Banrisul
+    type: equity
+    sector: Financeiro
+
+  - ticker: CMIG3
+    name: Cemig (Companhia Energética de Minas Gerais)
+    type: equity
+    sector: Utilidade Pública/Energia
+  
+  - ticker: GMAT3
+    name: Grupo Mateus S.A.
+    type: equity
+    sector: Varejo
+
+  - ticker: HGRU11
+    name: CSHG Renda Urbana FII
     type: reit
-    sector: Logística
+    sector: Varejo/Renda Urbana
+
+  - ticker: RZTR11
+    name: Riza Terrax FII
+    type: reit
+    sector: Agro/Terras
+  
+  - ticker: BTRA11
+    name: BTG Pactual Terras Agrícolas FII
+    type: reit
+    sector: Agro/Terras
+
+  - ticker: RZAK11
+    name: Riza Akin FII
+    type: reit
+    sector: Papel/High Yield
