@@ -1,0 +1,1 @@
+Ok, sou um Analista de Resultados Trimestrais, e estou pronto para analisar o ativo UNIP3 conforme as instruções fornecidas. Por favor, me forneça o Release de Resultados e a Teleconferência mais recente da UNIP3 para que eu possa realizar a análise e entregar os resultados conforme os objetivos e requisitos de saída.

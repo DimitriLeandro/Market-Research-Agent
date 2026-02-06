@@ -1,0 +1,65 @@
+## Relatório de Análise de FII: KNCA11
+
+### 1. Resumo Geral
+
+O KNCA11 (Kinea Crédito Agro FII) se apresenta como um FIAGRO com foco em CRAs do agronegócio, administrado pela Kinea Investimentos. O fundo demonstra um Dividend Yield competitivo e um P/VP próximo de 1, indicando um pequeno desconto em relação ao seu valor patrimonial. A estratégia do fundo é gerar renda mensal através de investimentos nas cadeias produtivas agroindustriais, com uma carteira diversificada setorial e geograficamente. Apesar da diversificação e da adimplência atual, o aumento das recuperações judiciais no setor agro e a utilização de alavancagem moderada exigem monitoramento constante da qualidade de crédito e do cenário macroeconômico. A performance do fundo tem sido positiva, com alta expressiva no ano.
+
+### 2. Tese de Investimento (Pontos Fortes)
+
+*   **Gestão Experiente:** A Kinea Investimentos realiza análise, estruturação e monitoramento de crédito, com equipe experiente no setor agro, incluindo profissionais com experiência em instituições como o Rabobank.
+*   **Dividend Yield Atrativo:** O Dividend Yield (DY) atual do KNCA11 está entre 13,5% e 14,97%, com dividendos pagos mensalmente. Para dezembro de 2025, a distribuição foi de R$ 1,20 por cota, representando 1,18% sobre a cota média de R$ 101,77.
+*   **Valuation Favorável:** O P/VP (Preço sobre Valor Patrimonial) do KNCA11 está em torno de 0,96 a 0,97, indicando que o fundo está sendo negociado com um pequeno desconto em relação ao seu valor patrimonial, que é de aproximadamente R$ 101,38 por cota.
+*   **Diversificação da Carteira:** O KNCA11 apresenta uma carteira diversificada setorial e geograficamente, com exposição a diferentes cadeias produtivas do agronegócio e presença em praticamente todo o território nacional. Os principais setores de exposição são bioenergia (33,1%), citricultura, proteína animal, celulose e fertilizantes/insumos agrícolas.
+
+### 3. Riscos e Desafios (Pontos de Atenção)
+
+*   **Alavancagem Moderada:** O KNCA11 utiliza operações compromissadas, o que caracteriza um nível moderado de alavancagem. As taxas médias das operações são CDI + 3,66% ao ano e IPCA + 8,18% ao ano.
+*   **Cenário Macroeconômico do Agronegócio:** O cenário macro do agronegócio se deteriorou no segundo semestre de 2025, com um aumento expressivo nos pedidos de recuperação judicial no setor.
+*   **Volatilidade do Setor Agro:** O setor agro tende a ser mais volátil que o setor imobiliário, o que pode impactar os Fiagros de CRAs.
+*   **Risco Sistêmico:** Apesar da diversificação, o fundo não elimina o risco sistêmico do setor.
+*   **Vulnerabilidade a Choques Externos:** O Brasil importa mais de 90% dos fertilizantes que sustentam sua produtividade. A instabilidade geopolítica pode elevar os preços dos fertilizantes, impactando a rentabilidade do produtor.
+*   **Dependência de biomassa externa (etanol de milho):** Usinas de etanol de milho dependem da compra de biomassa externa, como cavacos de madeira, que representam cerca de 7% do custo total de operação.
+*   **Crise Ambiental:** O agravamento da crise ambiental no Brasil pode "manchar" a imagem do setor e dificultar o acesso ao crédito internacional.
+*   **Pressão por Práticas Sustentáveis:** A crescente pressão por práticas sustentáveis exige adaptação contínua dos modelos produtivos e operacionais.
+*   **Juros Altos:** A taxa Selic elevada encarece o crédito para o setor produtivo, restringindo investimentos e reduzindo o apetite dos consumidores por produtos industriais.
+*   **Inflação:** A inflação preocupa os CEOs do agro. O aumento generalizado e contínuo dos preços de bens e serviços corrói as margens de lucro e aumenta os custos de produção.
+*   **Inadimplência:** A escalada da inadimplência rural pode atingir instituições financeiras.
+*   **Câmbio:** A combinação de dólar elevado e juros altos tende a encarecer o financiamento, afetando o custeio da safra e projetos de investimento de longo prazo.
+*   **Clima:** Ondas de calor podem impactar lavouras e pecuária, aumentando o estresse térmico e hídrico em culturas e rebanhos.
+*   **Novas Leis Ambientais:** A nova Lei Geral do Licenciamento Ambiental amplia a responsabilização de quem declara informações ambientais.
+*   **Mercado de Carbono:** A regulamentação do mercado de carbono no Brasil pode trazer questões sensíveis para o agro, como critérios técnicos de mensuração, relato e verificação (MRV).
+*   **Acordo Mercosul-União Europeia:** Salvaguardas adicionais incluídas pela União Europeia podem afetar a competitividade das exportações brasileiras.
+*   **Intervenção Estatal:** O TCU identificou irregularidades na soja destinada ao biodiesel e recomendou o acompanhamento dos riscos de desmatamento.
+*   **Concorrência Acirrada:** Intensificação da concorrência além das fronteiras tradicionais do agronegócio.
+*   **Avanços Tecnológicos:** Avanços tecnológicos, principalmente no desenvolvimento de bioprodutos em fábricas de celulose, podem ameaçar a competitividade do setor.
+
+### 4. Análise Operacional e Financeira
+
+*   **Destaques do Gestor:** Ao final de dezembro de 2025, o fundo possuía 96,8% do patrimônio alocado em ativos-alvo, 7,2% em LCI e 5,5% em instrumentos de caixa. A alocação em CRA atrelada ao IPCA correspondia a 39,5% do patrimônio, enquanto a parcela em CRA atrelada ao CDI era de 43,1%. O investimento em Fiagro FIDC representava 14,2% do PL.
+*   **Métricas Chave:**
+    *   **Dividend Yield Anualizado:** Varia entre 13,72% e 14,87%.
+    *   **P/VP:** 0,96 a 0,97.
+    *   **Vacância:** Não há informações que indiquem uma alta vacância no KNCA11.
+    *   **Patrimônio Líquido:** Aproximadamente R$ 2,2 bilhões.
+    *   **Número de Cotistas:** Aproximadamente 83.000.
+    *   **Taxa de Administração:** 1,20% ao ano.
+    *   **Rentabilidade Real:**
+        *   Yield (IPCA+): 10,52%
+        *   Yield (-) Tx Adm: 9,32%
+        *   Spread (CDI+): 5,60%
+        *   Taxa média de CDI + 5,04% ao ano (a.a)
+*   **Guidance:** Os dividendos referentes a dezembro de 2025, distribuídos em 14/01/2026, foram de R$ 1,20 por cota. Esse valor representou uma rentabilidade de 1,18% isenta de IR para pessoas físicas, considerando a cota média de ingresso de R$ 101,77. A rentabilidade correspondeu a 97% da taxa DI do período (114% do CDI considerando o *gross-up* do IR à alíquota de 15%).
+
+### 5. Notícias e Fatos Relevantes
+
+*   **Fevereiro de 2026 - Produtoras de soja lideram recuperações judiciais:** Produtoras de soja lideraram as recuperações judiciais do setor do agronegócio no último trimestre de 2025, registrando 217 pedidos, mais do que dobrando em um ano.
+*   **Fevereiro de 2026 - Acordo Mercosul-UE e Competitividade:** Acordo Mercosul-UE pode turbinar a competitividade do agro, mas com efeitos mistos. Senadores pedem garantias para os produtores brasileiros no acordo Mercosul-União Europeia. A bancada ruralista articula reciprocidade às salvaguardas no acordo Mercosul-UE.
+*   **Fevereiro de 2026 - Estudo PwC sobre Fusões e Aquisições:** Estudo da PwC projeta alta nas fusões do agro até 2027. A atuação de investidores estrangeiros tem diminuído nas fusões e aquisições do agro, mas isso pode mudar caso o acordo entre União Europeia e Mercosul saia do papel.
+*   **Fevereiro de 2026 - Último Rendimento Divulgado:** O último rendimento divulgado foi de R$ 1,10 por cota, com data de pagamento em 12 de fevereiro de 2026.
+*   **Janeiro de 2026 - Cenário Macroeconômico Global:** O cenário externo deve seguir sendo protagonista ao longo de 2026. A continuidade é a palavra do ano na economia brasileira, com o cenário externo influenciando as expectativas.
+*   **Janeiro de 2026 - M&A como Estratégia:** Empresas recorrendo às operações de M&A como estratégia para ganho de escala, redução de custos e sustentação das margens, pressionadas pela volatilidade global.
+*   **Janeiro de 2026 - Impacto da Reforma Tributária:** A entrada em vigor da Reforma Tributária, em janeiro de 2026, trouxe mudanças no sistema de arrecadação de impostos no Brasil, impactando o setor agropecuário.
+*   **Janeiro de 2026 - Fusões e Aquisições no Agronegócio:** O agronegócio brasileiro registrou 60 operações de fusões e aquisições entre janeiro e novembro de 2025, um aumento de 15% em relação ao mesmo período de 2024.
+*   **Janeiro de 2026 - Rendimento de Dezembro:** Os dividendos referentes a dezembro de 2025, distribuídos em 14/01/2026, foram de R$ 1,20 por cota.
+*   **Dezembro de 2025 - Lei sobre Agrotóxicos:** A Lei nº 14.785, de 27 de dezembro de 2023, dispõe sobre a pesquisa, a experimentação, a produção, a embalagem, a rotulagem, o transporte, o armazenamento, a comercialização, a utilização, a importação, a exportação, o destino final dos resíduos e das embalagens, o registro, a classificação, o controle, a inspeção e a fiscalização de agrotóxicos, de produtos de controle ambiental, de seus produtos técnicos e afins.
+*   **Novembro de 2025 - Rendimento de Novembro:** O rendimento referente a novembro de 2025 foi de R$ 1,01 por cota, com pagamento em 11/12/2025.

@@ -1,0 +1,46 @@
+# Relatório de Análise de FII: BTHF11
+
+## 1. Resumo Geral
+
+O BTHF11, fundo de "Hedge Fund" da BTG Pactual, apresenta um momento interessante para análise. Com uma estratégia diversificada que abrange FIIs, CRIs e outros ativos imobiliários, o fundo busca maximizar o retorno para seus cotistas. O BTHF11 negocia com um P/VP abaixo de 1,0, indicando um possível desconto em relação ao seu valor patrimonial. A gestão tem implementado uma estratégia de reciclagem de ativos, buscando otimizar a alocação de capital e gerar ganhos para o fundo. No entanto, é crucial monitorar os riscos associados à carteira de CRIs, a volatilidade do mercado e o cenário macroeconômico, que podem impactar a rentabilidade do fundo.
+
+## 2. Tese de Investimento (Pontos Fortes)
+
+*   **Dividend Yield Atrativo:** O *Dividend Yield* anualizado do BTHF11 está entre **11,47% e 13,42%**, o que pode ser atrativo para investidores em busca de renda passiva.
+*   **Desconto no P/VP:** O P/VP do BTHF11 está entre **0,88 e 0,94**, indicando que o fundo está sendo negociado com desconto em relação ao seu valor patrimonial, o que pode representar uma oportunidade de compra.
+*   **Diversificação da Carteira:** O BTHF11 investe em uma carteira diversificada de FIIs, CRIs, ações e ativos reais, o que pode mitigar o risco de concentração em um único tipo de ativo ou emissor. Destaque para investimentos em BTCI11, BTHI11 e IRIM11.
+*   **Liquidez Diária:** O BTHF11 possui uma boa liquidez diária, o que facilita a compra e venda de cotas.
+*   **Posição de Caixa:** O fundo possui um valor em caixa considerável, que pode ser utilizado para novas aquisições ou para distribuição de dividendos.
+*   **Taxa Média da Carteira:** A Taxa Média da Carteira é de **+3,9% acima do CDI**.
+
+## 3. Riscos e Desafios (Pontos de Atenção)
+
+*   **Risco de Crédito dos CRIs:** É fundamental analisar a fundo a carteira de CRIs do fundo, verificando a qualidade dos devedores e as garantias oferecidas. A indexação dos CRIs (54% atrelado ao IPCA e 44% ao CDI) pode ser um risco dependendo do cenário macroeconômico.
+*   **Volatilidade do Mercado de CRIs:** As mudanças nas taxas de juros e no cenário econômico podem afetar o valor dos CRIs detidos pelo fundo.
+*   **Vacância:** Embora a vacância física do BTHF11 esteja atualmente em 0,00%, é crucial monitorar a capacidade do fundo de manter essa taxa baixa no futuro.
+*   **Cenário Macroeconômico:** Um aumento inesperado da inflação ou da taxa CDI pode impactar negativamente a rentabilidade do fundo.
+*   **Liquidez dos Ativos:** Alguns ativos do fundo, como FIIs menos líquidos ou ativos reais, podem ser difíceis de vender rapidamente em caso de necessidade.
+*   **Falta de Definição Clara e Regulação Específica:** A ausência de uma regulamentação específica para Hedge Funds no Brasil pode gerar incertezas e dificultar o desenvolvimento consistente do setor.
+
+## 4. Análise Operacional e Financeira
+
+*   **Destaques do Gestor:** No relatório de Janeiro de 2026 (referente a Dezembro de 2025), a gestão destacou que o fundo teve um resultado de R$ 0,114 por cota, acima dos R$ 0,093 de Novembro, impulsionado por receitas recorrentes e não recorrentes. A distribuição aumentou para R$ 0,106 por cota de forma extraordinária. O relatório de Janeiro de 2025 apontava que o BTHF11 negociava com um deságio injustificado em relação aos seus pares, o que foi corrigido ao longo de 2025.
+*   **Métricas Chave:**
+    *   **Dividend Yield Anualizado:** 11,47% - 13,42%
+    *   **P/VP:** 0,88 - 0,94
+    *   **Vacância:** 0,00%
+    *   **Movimentações Recentes de Portfólio:** Desinvestimento do Ez Tower (ganho de R$ 46 milhões) e integralização em cotas de TRXF11 (nova posição de 10% do PL). Venda parcial de TRXF11 já foi realizada (R$ 35-50 milhões).
+*   **Guidance:** Não há informações disponíveis sobre projeções de rendimentos futuros.
+
+## 5. Notícias e Fatos Relevantes
+
+*   **03/02/2026 - Comunicado ao Mercado:** Outros Comunicados Não Considerados Fatos Relevantes.
+*   **15/01/2026 - Pagamento de Rendimento:** O último rendimento do BTHF11 foi de R$0,11 por cota. O pagamento foi realizado em 15/01/2026, com base na cotação de R$ 8,90 da data com (08/01/2026), representando um Dividend Yield de 1,19%.
+*   **08/01/2026 - Data "Com" para Rendimento:** Data "com" para o rendimento de R$0,11 por cota, pago em 15/01/2026.
+*   **05/12/2025 - Data "Com" para Rendimento:** Data "com" para o rendimento de R$0,09 por cota, pago em 12/12/2025.
+*   **12/12/2025 - Pagamento de Rendimento:** Pagamento de rendimento no valor de R$ 0,09 por cota.
+*   **05/12/2025 - Aviso aos Cotistas:** Rendimentos e Amortizações.
+*   **28/11/2025 - Relatório Gerencial:** Publicação do Relatório Gerencial referente a Novembro de 2025.
+*   **Dezembro de 2024 - Emissão de Cotas:** Houve uma emissão de cotas do BTHF11 exclusivamente para aquisição do portfólio integral do BCFF11. O BTHF11 recebeu todos os ativos do BCFF11, crescendo na mesma proporção.
+*   **Ao Longo de 2025 - Reciclagem de Ativos:** O fundo implementou uma estratégia de reciclagem de ativos, com o desinvestimento quase total de um imóvel corporativo após forte melhora operacional e redução expressiva da vacância. A venda ocorreu com um preço por metro quadrado acima do custo médio histórico, gerando um ganho de capital superior a R$ 6 milhões.
+

@@ -1,0 +1,1 @@
+Ok, sou um Analista de Resultados Trimestrais focado em RAIZ4. Estou pronto para analisar o release de resultados e a teleconferência mais recente, assim que você me fornecer as informações necessárias. Meu objetivo é entregar uma análise concisa e focada nos pontos chave que você especificou.

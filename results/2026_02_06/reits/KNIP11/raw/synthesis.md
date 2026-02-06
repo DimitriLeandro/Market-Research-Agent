@@ -1,0 +1,45 @@
+# Relatório de Análise de FII: KNIP11
+
+### 1. Resumo Geral
+
+O KNIP11, fundo de papel indexado ao IPCA gerido pela Kinea Investimentos, apresenta um momento de estabilidade com um Dividend Yield atrativo e um P/VP ligeiramente abaixo de 1, indicando um pequeno desconto em relação ao seu valor patrimonial. Sua estratégia principal reside na alocação em CRIs corporativos, buscando proteger o poder de compra dos investidores através da indexação à inflação. A qualidade do portfólio é reforçada pelas garantias dos CRIs, como alienação fiduciária e cessão de aluguéis, embora a concentração em IPCA e os riscos de crédito dos devedores demandem monitoramento constante. O fundo mantém uma reserva de lucros não distribuídos, oferecendo uma margem de segurança para a linearização dos rendimentos futuros.
+
+### 2. Tese de Investimento (Pontos Fortes)
+
+*   **Proteção Contra a Inflação:** O KNIP11 investe predominantemente em CRIs indexados ao IPCA (93,7% do portfólio), oferecendo proteção contra a inflação e mantendo o poder de compra dos investidores.
+*   **Dividend Yield Atrativo:** O Dividend Yield (DY) dos últimos 12 meses é de 10,95%, com o último rendimento distribuído sendo de R$ 0,70 por cota, tornando-o atraente para investidores focados em renda.
+*   **Desconto no Valor Patrimonial:** O P/VP de 0,98 indica que o fundo está sendo negociado com um pequeno desconto em relação ao seu valor patrimonial, oferecendo uma oportunidade de entrada.
+*   **Gestão Experiente:** A gestão é realizada pela Kinea Investimentos, uma gestora reconhecida no mercado de FIIs, o que confere credibilidade e expertise na administração do fundo.
+*   **Diversificação da Carteira:** O fundo aloca seus recursos em CRIs corporativos, com ou sem garantia, buscando diversificar o risco de crédito.
+*   **Taxa Média Atrativa dos CRIs:** A parcela investida em CRI possui taxa (MTM) de IPCA + 10,32% a.a. e duration de 3,8 anos (Dez/2025).
+
+### 3. Riscos e Desafios (Pontos de Atenção)
+
+*   **Risco de Crédito dos CRIs:** A inadimplência dos CRIs que compõem a carteira pode impactar negativamente a receita do fundo e os dividendos distribuídos. É crucial monitorar a saúde financeira dos devedores dos CRIs.
+*   **Alavancagem:** O fundo aumentou sua alavancagem através de operações compromissadas reversas, que passaram de 8,4% para 10,5% do Patrimônio Líquido em Dezembro de 2025. Um aumento da alavancagem pode aumentar a vulnerabilidade do fundo a choques de mercado e a elevações nas taxas de juros.
+*   **Concentração em IPCA:** O KNIP11 possui 100% da carteira indexada ao IPCA. Em cenários de baixa inflação ou deflação, a receita do fundo pode ser impactada negativamente, resultando em menores dividendos.
+*   **Volatilidade do Mercado de FIIs:** O mercado de FIIs está sujeito a volatilidade, o que pode impactar o preço das cotas do KNIP11.
+*   **Marcação a Mercado:** A marcação a mercado dos CRIs pode gerar volatilidade no valor patrimonial do fundo, especialmente em momentos de stress no mercado de crédito.
+*   **Concentração da Carteira:** Se uma parcela significativa dos CRIs for emitida por um único devedor ou estiver concentrada em um único setor da economia, o fundo estará mais vulnerável a eventos negativos que afetem esse devedor ou setor.
+
+### 4. Análise Operacional e Financeira
+
+*   **Destaques do Gestor:** A gestão do KNIP11 explicou que a distribuição de rendimentos de dezembro foi impactada pelos índices de inflação mais baixos registrados em outubro (0,09%) e novembro (0,18%), devido à defasagem de aproximadamente dois meses no repasse da inflação. Analistas econômicos pontuam que o cenário de inflação permanece incerto, com pressões altistas vindas da depreciação do câmbio, das incertezas fiscais e de outros fatores domésticos que podem levar a um incremento da inflação nos próximos períodos.
+*   **Métricas Chave:**
+    *   **Dividend Yield (Anualizado):** Varia entre 10,95% e 12,81% (dependendo da fonte).
+    *   **P/VP:** 0,98
+    *   **Vacância:** 0,00%
+    *   **Movimentação Recente do Portfólio (Dezembro de 2025):** Alocação de R$ 138,1 milhões, com destaque para nova tranche de CRIs da Creditas (R$ 94,6 milhões), operação com a construtora Tenda e operação Brasol I (R$ 37,5 milhões).
+*   **Guidance:** O fundo distribuiu R$ 0,70 por cota referente a dezembro (pago em 14/01/2026) e mantém uma reserva acumulada de lucros não distribuídos de R$ 0,74 por cota. Os dividendos referentes a janeiro (distribuição em 13/02/2025) são de R$ 0,95 por cota.
+
+### 5. Notícias e Fatos Relevantes
+
+*   **30/01/2026 - Aviso aos Acionistas (Kinea):** A Kinea divulgou um aviso aos acionistas sobre as distribuições.
+*   **30/01/2026 - Rendimento Declarado (Data COM):** O KNIP11 declarou um rendimento de R$0,70 por cota, com pagamento em 12/02/2026. O Dividend Yield foi de 0,76% baseado na cotação de R$91,81.
+*   **14/01/2026 - Informe Mensal:** Foi divulgado o informe mensal referente a janeiro de 2026.
+*   **13/01/2026 - Relatório Gerencial:** Foi divulgado o relatório gerencial referente a janeiro de 2026.
+*   **30/12/2025 - Aviso aos Acionistas (Kinea):** A Kinea divulgou um aviso aos acionistas sobre as distribuições.
+*   **30/12/2025 - Rendimento Declarado (Data COM):** O KNIP11 declarou um rendimento de R$0,70 por cota, com pagamento em 14/01/2026. O Dividend Yield foi de 0,77% baseado na cotação de R$90,54.
+*   **15/12/2025 - Informe Mensal:** Foi divulgado o informe mensal.
+*   **28/11/2025 - Rendimento Declarado (Data COM):** O KNIP11 declarou um rendimento de R$0,72 por cota, com pagamento em 11/12/2025. O Dividend Yield foi de 0,81% baseado na cotação de R$89,03.
+*   **Setembro/2025 - Impacto da Inflação:** A distribuição de R$0,60 por cota foi impactada pela baixa inflação (IPCA) nos meses de julho e agosto.

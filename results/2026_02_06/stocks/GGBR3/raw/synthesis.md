@@ -1,0 +1,74 @@
+# Relatório de Análise de Investimento: GGBR3 (Gerdau S.A.)
+
+### 1. Resumo Geral
+
+A Gerdau (GGBR3) navega um período desafiador, marcado pela intensa competição com o aço importado, especialmente da China, e por um cenário macroeconômico interno instável. Apesar de apresentar um diferencial competitivo sólido, com liderança de mercado e diversificação geográfica, a empresa enfrenta riscos de valuation, aumento da dívida de longo prazo e preocupações com governança. A reabertura da siderúrgica em Maracanaú e o projeto de mineração Miguel Burnier representam vetores de crescimento, mas a valorização da ação, o desempenho inferior ao mercado e a lentidão no crescimento da receita exigem cautela. A recente ampliação das restrições às importações de aço pelo governo pode oferecer algum alívio, mas a capacidade da Gerdau de se adaptar às novas exigências ambientais e de defender suas margens frente à concorrência desleal será crucial para determinar seu desempenho futuro.
+
+### 2. Tese de Investimento (Bull Case)
+
+*   **Liderança e Escala:** A Gerdau é a maior produtora brasileira de aço e líder no segmento de aços longos nas Américas. Sua escala permite diluir custos fixos e obter melhores condições de negociação com fornecedores e clientes.
+*   **Diversificação Geográfica:** A empresa possui operações industriais em diversos países nas Américas, o que reduz a dependência de um único mercado e diversifica os riscos.
+*   **Reciclagem de Aço:** A Gerdau se destaca como uma das maiores recicladoras de aço da América Latina, transformando sucata em novos produtos. Essa atividade contribui para a redução de custos (menor dependência de minério de ferro), menor impacto ambiental e alinhamento com práticas ESG.
+*   **Autossuficiência em Minério de Ferro:** A Gerdau busca aumentar sua autossuficiência em minério de ferro, o que a protege de flutuações de preços e garante o abastecimento. O projeto de mineração em Miguel Burnier (MG) é um exemplo disso.
+*   **Capex para Manutenção e Competitividade:** A Gerdau continua investindo em Capex para manter e modernizar suas operações. Para 2026, o Capex previsto é de **R$ 4,7 bilhões**, sendo **R$ 2,9 bilhões** para manutenção e **R$ 1,8 bilhão** para competitividade.
+*   **Projeto de Mineração Miguel Burnier:** Este projeto é um dos principais vetores de crescimento da Gerdau. Espera-se que adicione **R$ 400 milhões** ao EBITDA em 2026 e, após a maturação, pode alcançar **R$ 1,1 bilhão** anuais. A mina terá capacidade de produção de **5,5 milhões de toneladas por ano** de *pellet feed* de alto teor.
+*   **Reabertura de Siderúrgica em Maracanaú:** A Gerdau reabriu sua siderúrgica em Maracanaú (CE) com um investimento de **R$ 200 milhões**. A unidade terá capacidade de produzir **160 mil toneladas de aço por ano**, focada no mercado interno, principalmente na construção civil.
+*   **Investimentos em Eficiência e ESG:** A Gerdau tem investido em tecnologias e práticas mais sustentáveis, como o uso de energia limpa e a produção de aço com menor emissão de carbono. Esses investimentos podem gerar economia de custos, melhorar a imagem da empresa e atrair investidores com foco em ESG.
+*   **Indicadores Atrativos:** Os indicadores fundamentalistas da Gerdau sugerem que a ação pode estar descontada em relação a seus pares e à sua média histórica. Em 04 de fevereiro de 2026, alguns indicadores chave eram:
+    *   P/L: **12,78**
+    *   P/VP: **0,70**
+    *   EV/EBITDA: **4,95**
+*   **Aumento da Demanda por Aço:** A retomada do crescimento econômico global e o aumento dos investimentos em infraestrutura podem impulsionar a demanda por aço e beneficiar a Gerdau.
+*   **Políticas de Proteção à Indústria Nacional:** Medidas governamentais para proteger a indústria nacional, como a implementação de regras de importação mais rigorosas, podem favorecer a Gerdau. A recente ampliação das restrições às importações de aço pelo governo em fevereiro de 2026 é um exemplo.
+*   **Valorização do Minério de Ferro:** A alta nos preços do minério de ferro pode impactar positivamente a receita e a rentabilidade da Gerdau, especialmente com o aumento da produção na mina de Miguel Burnier.
+
+### 3. Riscos e Pontos de Atenção (Bear Case)
+
+*   **Potencialmente Sobrevalorizada:** Análises indicam que a ação GGBR3 pode estar sobrevalorizada, com um "Fair Value Upside" a ser desbloqueado, sugerindo que a ação pode não estar intrinsecamente barata.
+*   **Comparativos Setoriais Desfavoráveis:** O P/E Ratio (Preço/Lucro) de GGBR3 é de **13.8x**, enquanto a média do setor de "Basic Materials" é de apenas **2.0x**. O Price/Book (Preço/Valor Patrimonial) de GGBR3 é **0.8x**, abaixo da média dos seus pares (**1.1x**), mas ainda assim abaixo da média do setor (**1.6x**). O Price/LTM Sales (Preço/Vendas dos últimos doze meses) de GGBR3 é **0.6x**, também abaixo da média dos seus pares (**0.8x**) e do setor (**1.4x**).
+*   **Desempenho Inferior ao Mercado:** GGBR3 performou abaixo do mercado brasileiro e do setor de "Metais e Mineração" no último ano.
+*   **Crescimento de Receita Lento:** A receita da GGBR3 tem uma previsão de crescimento mais lento (**3.2% ao ano**) do que o mercado brasileiro (**7% ao ano**).
+*   **Margens sob Pressão:** Apesar do bom desempenho na América do Norte, a Gerdau enfrenta desafios com importações no Brasil.
+*   **Disputa Antitruste:** Em 2025, a Gerdau resolveu uma disputa antitruste no Brasil, pagando **R$256,1 milhões** (US$41,3 milhões) relacionada a alegações de fixação de preços de vergalhões de aço. Embora a empresa não tenha admitido culpa, o pagamento indica um risco regulatório e potencial impacto na reputação.
+*   **Earnings Abaixo do Esperado:** A empresa reportou um lucro por ação de **US$0,10** no último trimestre, ficando abaixo da estimativa de **US$0,11**.
+*   **Aumento da Dívida de Longo Prazo:** A dívida de longo prazo da Gerdau apresentou um aumento considerável. Em setembro de 2025, a dívida de longo prazo era de **US$2,991 bilhões**, um aumento de **43,11%** em relação ao ano anterior. Em 2024, a dívida de longo prazo foi de **US$2,55 bilhões**, um aumento de **27,28%** em relação a 2023.
+*   **Dívida Total:** A dívida total da Gerdau era de **US$3,75 bilhões** em setembro de 2025.
+*   **Investigação Passada:** A Gerdau esteve envolvida na "Operação Zelotes" no Brasil, que investigava a influência em decisões do Conselho Administrativo de Recursos Fiscais (CARF). Embora a SEC dos EUA tenha encerrado o inquérito, o caso levanta preocupações sobre a governança corporativa.
+*   **Estrutura Familiar:** A estrutura de governança da Gerdau inclui membros da família Johannpeter. Embora isso possa trazer estabilidade, também pode gerar potenciais conflitos de interesse.
+*   **Exposição à Volatilidade Cambial:** Mais da metade do fluxo de caixa da Gerdau é gerado no Brasil e em outros países da América Latina, o que a expõe à volatilidade das taxas de câmbio.
+*   **Setor Cíclico:** A Gerdau está exposta à natureza cíclica da indústria do aço.
+*   **Concorrência Desleal da China:** A crescente importação de aço chinês a preços predatórios pressiona as margens das empresas brasileiras e ameaça a viabilidade de longo prazo do setor.
+*   **Infraestrutura Logística Deficiente:** A escassez de infraestrutura logística adequada aumenta os custos de transporte e dificulta a competitividade do setor.
+*   **Carga Tributária Elevada:** A alta carga tributária e a cumulatividade de impostos no Brasil reduzem a competitividade do setor siderúrgico.
+*   **Custos de Produção Elevados:** Custos elevados de energia e matérias-primas impactam negativamente as margens das empresas siderúrgicas.
+*   **Ociosidade na Capacidade Produtiva:** A indústria siderúrgica nacional opera com alta capacidade ociosa, o que impacta a rentabilidade das empresas.
+*   **Legislação Ambiental Mais Rígida:** As crescentes exigências dos órgãos ambientais e a pressão por descarbonização exigem investimentos em tecnologias limpas, elevando os custos de produção.
+
+### 4. Análise de Fundamentos e Resultados
+
+*   **Lucro Líquido 3T25:** R$ 1,09 bilhão (queda de **23,9%** A/A).
+*   **Receita Próximo Trimestre:** A receita da Gerdau S.A. deverá atingir ‪16,74 B‬ BRL.
+*   **EBITDA Ajustado 3T25:** R$ 2,7 bilhões.
+*   **Margem EBITDA Ajustada 3T25:** **15,2%**.
+*   **Data de Divulgação dos Resultados:** 08/01/2026.
+*   **Previsão de EPS:** O EPS da GGBR3 no último trimestre foi de 0,54 BRL, apesar da estimativa de 0,61 BRL. No próximo trimestre, espera-se que o EPS atinja 0,41 BRL.
+
+Não foi possível encontrar dados específicos sobre a geração de FCF (Fluxo de Caixa Livre) vs. Lucro Líquido nos resultados mais recentes, nem informações sobre guidance (metas da administração para o ano).
+
+### 5. Notícias e Eventos Corporativos
+
+*   **07/01/2026 - Aviso aos Acionistas:** Aviso aos Acionistas sobre a data prevista para a assembleia.
+*   **23/01/2026 - Rebaixamento da Recomendação pelo BTG:** O BTG rebaixou a recomendação para as ações da Gerdau (BVMF:GGBR4) para neutra, após uma valorização de cerca de 40% em 6 meses.
+*   **31/01/2026 - Bank of America Prefere Outras Ações:** O Bank of America prefere duas ações no setor de metais devido à sazonalidade.
+*   **Fevereiro 2026 - Governo Amplia Restrições às Importações de Aço:** O governo ampliou as restrições às importações de aço e reforçou as medidas de defesa comercial para proteger a indústria siderúrgica brasileira, atingindo principalmente produtos da China e da Índia, incluindo tarifas adicionais para fechar brechas usadas via Mercosul.
+*   **Fevereiro 2026 - Novo Salário Mínimo:** O novo salário mínimo de R$ 1.621 começou a ser pago, impactando 61,9 milhões de brasileiros e injetando R$ 81,7 bilhões na economia em 2026.
+*   **Fevereiro 2026 - Fusão no Setor de TI:** As empresas capixabas de tecnologia da informação Mogai e Etaure se fundiram, criando a Nova Mogai, com foco em grandes indústrias como ArcelorMittal, Gerdau e Vale, e também mirando mercados internacionais. A Etaure é especializada no setor siderúrgico, atendendo a ArcelorMittal Tubarão e outras siderúrgicas no país.
+*   **Janeiro 2026 - CSN Avalia Venda da Operação de Siderurgia:** A CSN (CSNA3) iniciou contatos informais com concorrentes para avaliar o interesse na compra de sua operação de siderurgia, podendo vender até 100% do negócio, buscando reduzir o endividamento da companhia.
+*   **Janeiro 2026 - Aplicação de Direito Antidumping:** O Comitê-Executivo de Gestão (Gecex) aprovou a aplicação de direito antidumping definitivo, por um prazo de até 5 anos, às importações brasileiras de aços pré-pintados, originárias da China e da Índia.
+*   **Janeiro 2026 - Gerdau Reabre Siderúrgica no Ceará:** A Gerdau reabriu a siderúrgica em Maracanaú (CE) após um investimento de R$ 200 milhões, com a expectativa de produzir 160 mil toneladas de aço por ano, voltada para o mercado interno, principalmente a construção civil.
+*   **Janeiro 2026 - Setor Siderúrgico Registra Cortes:** O setor de siderurgia no Brasil registrou corte de 5,1 mil empregos e suspensão de R$ 2,5 bilhões em investimentos.
+*   **Janeiro 2026 - MPF Ajuíza Ação Contra a Vale:** O Ministério Público Federal (MPF) ingressou com uma ação judicial contra a Vale, solicitando o bloqueio de R$1 bilhão e a suspensão das atividades na mina de Fábrica (MG) após um evento de extravasamento de água.
+*   **11/12/2025 - Pagamento de Dividendo:** Foi pago o último dividendo no valor de R$0,28 por ação.
+*   **Dezembro 2025 - Gerdau Reduz Operação:** A Gerdau está reduzindo operação, cortando mais de 1.500 empregos e suspendendo bilhões em investimentos no Brasil.
+*   **21/11/2024 - Aquisição da Gerdau Summit:** A Gerdau celebrou um acordo para adquirir a totalidade das ações da Gerdau Summit Aços Fundidos e Forjados S.A. da Sumitomo Corporation e da The Japan Steel Works Ltd. O preço de aquisição é de aproximadamente US$ 32,6 milhões, a ser pago à vista. O fechamento da transação está previsto para o início de 2025, sujeito às aprovações regulatórias.
+*   **10/10/2025 - BB-BI Reduz Preço-Alvo:** O BB-BI (Banco do Brasil Investimentos) manteve a recomendação de compra para as ações da Gerdau (GGBR3; GGBR4), mas reduziu o preço-alvo de R$ 24 para R$ 22, o que ainda representa um potencial de valorização de 26,8% em relação ao fechamento daquele dia.

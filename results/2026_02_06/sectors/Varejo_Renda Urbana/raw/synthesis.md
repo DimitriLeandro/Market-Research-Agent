@@ -1,0 +1,49 @@
+## Relatório de Inteligência Setorial: Varejo/Renda Urbana (Brasil) - Fevereiro 2026
+
+### 1. Outlook Setorial (Resumo Geral)
+
+O setor de Varejo/Renda Urbana no Brasil encontra-se em um momento de **expansão moderada**, impulsionado pelo crescimento contínuo do e-commerce e pela resiliência do consumo interno, apesar dos desafios macroeconômicos persistentes. A dinâmica é complexa, com o varejo físico mostrando sinais de recuperação, enquanto a competição acirrada, especialmente com a entrada de *players* internacionais, exige adaptação e inovação constantes. A **taxa de juros elevada** continua sendo o principal driver macroeconômico a impactar negativamente o setor, restringindo o acesso ao crédito e o poder de compra dos consumidores.
+
+### 2. Drivers de Crescimento (Bull Case)
+
+*   **Crescimento do E-commerce:** O varejo eletrônico continua sua trajetória ascendente, impulsionado pela crescente adesão dos consumidores às compras online.
+*   **Mercado de Beleza e Cosméticos:** O Brasil se mantém como um dos maiores mercados globais de beleza, com projeções de crescimento de vendas online de 14% ao ano até 2025. Produtos naturais e personalizados são vetores importantes.
+*   **Impulso do Carnaval:** O Carnaval de 2026 projeta um impacto positivo no varejo, com estimativas de crescimento de até 5% nas vendas e um ticket médio em torno de R$ 160. Vestuário, acessórios, moda praia e supermercados são os segmentos mais beneficiados.
+*   **Expansão da Renda Urbana:** O segmento de renda urbana apresenta um potencial de valorização devido à escassez de imóveis em bairros consolidados e à expansão de grandes redes varejistas, com especialistas projetando crescimento dentro do universo de fundos imobiliários.
+*   **Abertura de Novos CNPJs:** Fortaleza registrou um aumento significativo na abertura de novas empresas, com 58.252 novos CNPJs em 2025, representando um crescimento de 34,13% em relação a 2024. Serviços, logística urbana, educação e comércio são os principais motores da economia local.
+*   **Recuperação do Varejo Físico:** O comércio físico brasileiro encerrou 2025 em expansão, com um crescimento de 2,9% no acumulado do ano, impulsionado pela manutenção do consumo, pelo mercado de trabalho aquecido e por medidas de apoio à renda.
+*   **Fluxo Cambial Positivo:** O Brasil registrou um fluxo cambial positivo de US$ 4,180 bilhões na semana de 26 a 30 de janeiro de 2026, indicando um ambiente favorável para investimentos.
+*   **Crescimento do Crédito:** As concessões nominais de crédito acumuladas no ano aumentaram 9,1% em 2025, sinalizando um maior acesso ao financiamento para empresas e consumidores.
+*   **Confiança do Empresário:** O Índice de Confiança do Empresário do Comércio (Icec) apresentou sinais de recuperação mensal, com a expectativa de redução da Selic a partir do segundo trimestre do ano.
+*   **Crescimento Geral do Varejo:** Um estudo da NielsenIQ revelou que o varejo brasileiro cresceu 9,1%, mesmo com o impacto da inflação sobre os alimentos.
+*   **Retail Media:** A estratégia de retail media se consolidou como um componente central no planejamento comercial de grandes redes supermercadistas no Brasil.
+*   **Incentivos Fiscais:** A disponibilidade de incentivos fiscais e financeiros para setores estratégicos da economia, incluindo o varejo, oferecidos pelos governos federal, estadual e municipal, auxilia na redução da carga tributária e facilita o acesso ao crédito.
+
+### 3. Riscos e Desafios (Bear Case)
+
+*   **Carga Tributária Elevada e Complexa:** O sistema tributário brasileiro, complexo e com alta carga tributária, prejudica a competitividade do varejo nacional, especialmente em relação às plataformas internacionais de e-commerce.
+*   **Infraestrutura Precária e Burocracia:** A infraestrutura inadequada e a burocracia excessiva continuam a ser obstáculos significativos para o crescimento do setor.
+*   **Falta de Fiscalização sobre Produtos Estrangeiros:** A ausência de fiscalização adequada sobre mercadorias importadas pela internet representa um risco para a saúde e segurança do consumidor, além de prejudicar a concorrência leal.
+*   **Juros Altos:** A taxa Selic elevada (15% em 2025) encarece o crédito e desestimula o consumo de bens de maior valor agregado, impactando negativamente o desempenho do varejo.
+*   **Inadimplência:** O aumento da inadimplência entre consumidores e empresas representa um risco para a rentabilidade do setor, limitando o poder de compra e aumentando os custos de crédito.
+*   **Endividamento das Famílias:** O alto nível de endividamento das famílias comprime o orçamento familiar e restringe a demanda no varejo.
+*   **Inflação:** A inflação, embora controlada em 2025 (IPCA fechou em 4,26%), ainda impacta o poder de compra do consumidor, especialmente em alimentos.
+*   **Aumento de Impostos:** A Reforma Tributária pode aumentar a carga de impostos para o setor de serviços, com a alíquota do IVA chegando a 28%.
+*   **Legislação Ambiental:** O não cumprimento de leis ambientais pode resultar em penalidades financeiras e ações de responsabilidade civil e criminal, com um risco crescente de exigências de *due diligence* ambiental.
+*   **Insegurança Regulatória:** A indefinição sobre regimes tributários especiais pode provocar demissões em massa e fechamento de fábricas.
+*   **Concorrência Aumentada:** A digitalização do varejo e o crescimento do comércio eletrônico intensificam a competição, com a entrada de novos *players* e modelos de negócios.
+*   **Entrantes Estrangeiros:** A presença de marketplaces internacionais como Shopee e Shein redesenhou o comportamento de compra e impôs um novo nível de competitividade ao varejo nacional.
+*   **Tecnologias Disruptivas:** A rápida evolução das tecnologias disruptivas exige adaptação constante, com o risco de perda de competitividade para empresas que não adotarem novas tecnologias.
+*   **Novos Modelos de Negócios:** Novos modelos de negócios, como assinaturas, economia compartilhada e comércio social, desafiam as abordagens tradicionais de varejo.
+
+### 4. Destaques Recentes e Agenda Regulatória
+
+*   **2026-02-06 - Inadimplência no Varejo Aumenta:** A inadimplência no varejo subiu em janeiro de 2026, atingindo 8,46%, um aumento em relação ao mesmo mês de 2025 (6,89%), indicando um possível aperto financeiro dos consumidores e empresas do setor.
+*   **2026-02-06 - Desafios Logísticos no Norte e Centro-Oeste:** Desafios logísticos, como grandes distâncias geográficas e infraestrutura limitada, impõem dificuldades extras para distribuidores nas regiões Norte e Centro-Oeste do Brasil, aumentando a relevância do atacado nessas regiões.
+*   **2026-01-27 - Suspensão das Novas Regras para Vale-Alimentação:** Novas regras para o vale-alimentação, estabelecidas por decreto do presidente Lula em novembro de 2025, foram suspensas na Justiça, impactando a dinâmica de mercado e a liberdade econômica das empresas.
+*   **2026-01-15 - Recorde nas Exportações de Carne Bovina para Países Árabes:** As exportações brasileiras de carne bovina para os países árabes alcançaram um novo recorde em 2025, totalizando US$ 1,79 bilhão, influenciando a cadeia de suprimentos e a demanda interna.
+*   **2026-01-13 - Aumento no Mercado de M&A no Varejo:** O mercado de fusões e aquisições (M&A) no varejo apresentou alta em 2024, com um aumento de cerca de 50% nas negociações em relação ao ano anterior, indicando uma tendência de consolidação no setor.
+*   **2025-12-21 - Aurora Coop Conclui Aquisição da Gran Mestri:** A Aurora Coop concluiu a aquisição da Gran Mestri, empresa catarinense especializada na produção de laticínios, fortalecendo sua posição no setor de alimentos.
+*   **2025-11-13 - Atividade do Varejo Recua em Setembro:** A atividade do varejo brasileiro recuou 0,3% em setembro, sinalizando uma possível desaceleração no ritmo de crescimento do setor.
+*   **2025-10-15 - Vendas no Varejo Avançam em Agosto:** As vendas no varejo brasileiro avançaram 0,2% em agosto, indicando uma recuperação parcial após quedas anteriores.
+*   **2025-09-11 - Vendas no Varejo Recuam em Julho:** As vendas no varejo do Brasil recuaram 0,3% em julho, acumulando queda de 1,1% desde março, refletindo um período de instabilidade no consumo.

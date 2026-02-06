@@ -1,0 +1,48 @@
+## Relatório de Inteligência Setorial: Óleo e Gás (Brasil)
+
+### 1. Outlook Setorial (Resumo Geral)
+
+O setor de Óleo e Gás no Brasil demonstra um momento de **expansão**, impulsionado principalmente pelo aumento da produção, especialmente nas áreas do pré-sal, e pelos investimentos contínuos em exploração e produção. Apesar dos desafios inerentes à transição energética global e à volatilidade dos preços do petróleo, o setor se beneficia de incentivos fiscais e de um ambiente regulatório que busca otimizar a produção e atrair investimentos. O principal driver macroeconômico atual é a perspectiva de queda da taxa Selic, que pode estimular investimentos e impulsionar o crescimento do setor. No entanto, a alta carga tributária e a complexidade do licenciamento ambiental representam obstáculos significativos que precisam ser superados para garantir a sustentabilidade e o crescimento contínuo do setor.
+
+### 2. Drivers de Crescimento (Bull Case)
+
+*   **Aumento da Produção:** O Brasil atingiu um recorde na produção de petróleo em 2025, com 3,77 milhões de barris por dia, um aumento de 12,3% em relação a 2024. A produção de gás natural também aumentou 17%, atingindo 179 milhões de metros cúbicos por dia. Esse crescimento é impulsionado pela entrada em operação de novas plataformas, especialmente na região do pré-sal.
+*   **Descobertas no Pré-Sal:** As descobertas no pré-sal transformaram o Brasil em um dos principais produtores mundiais de petróleo, com reservas estimadas em mais de 14 bilhões de barris. Em 2025, o pré-sal foi responsável por 79,63% da produção nacional de petróleo e gás.
+*   **Investimentos Contínuos:** A indústria de petróleo e gás deve investir R$ 102 bilhões ao ano em exploração e produção até 2025. A Petrobras planeja investir US$ 102 bilhões nos próximos cinco anos.
+*   **Exportações:** O petróleo liderou a pauta de exportações brasileiras em 2025, com vendas de US$ 44,6 bilhões.
+*   **Perspectiva de Queda da Selic:** A Secretaria de Política Econômica do Ministério da Fazenda projeta uma inflação menor para este ano (cerca de 3,6%) e indica que o alívio em relação a 2025 deve possibilitar a redução na taxa Selic. Juros mais baixos podem estimular investimentos no setor.
+*   **Redução de Custos:** O custo de extração no pré-sal alcançou um nível de US$ 5 por barril.
+*   **Repasse de Preços:** A Petrobras anunciou uma redução média de 7,8% nos preços de venda do gás natural para as distribuidoras. Essa redução acumulada desde dezembro de 2022 é de cerca de 38%.
+*   **Incentivos Fiscais:** Foi sancionada uma lei que concede incentivos fiscais ao setor de produção de petróleo e gás, visando a reindustrialização brasileira.
+*   **Programa Gás do Povo:** O Senado aprovou a MP que cria o programa "Gás do Povo", que garante a retirada gratuita do botijão de gás por famílias de baixa renda. Em 2026, está prevista uma necessidade orçamentária de R$ 5,1 bilhões para atender cerca de 15 milhões de famílias. O programa também concede depreciação acelerada como incentivo fiscal à construção de navios-tanque produzidos no Brasil, destinados ao transporte de petróleo e derivados.
+*   **Redução de Tarifas:** A ANP aprovou um desconto de 15% nas tarifas de transporte de gás natural de longo prazo.
+
+### 3. Riscos e Desafios (Bear Case)
+
+*   **Declínio da Produção e Dependência de Novas Descobertas:** A taxa natural de declínio de 7% a 10% ao ano dos campos de óleo e gás exige investimentos contínuos apenas para manter a produção no mesmo patamar. Sem novas descobertas significativas, o Brasil corre o risco de voltar a importar petróleo nos próximos anos, revertendo um cenário positivo para a balança comercial.
+*   **Transição Energética:** A crescente pressão global por transição energética, com foco em fontes renováveis, pode reduzir a demanda por petróleo e gás a longo prazo, impactando a rentabilidade de projetos de longo prazo e a valoração de ativos.
+*   **Riscos Ocupacionais:** A indústria de óleo e gás apresenta riscos ocupacionais significativos, incluindo materiais perigosos, ambientes confinados, incêndios e explosões, e problemas relacionados à ergonomia, aumentando os custos com seguros e potencialmente afetando a reputação das empresas.
+*   **Demora no Licenciamento Ambiental:** A demora no processo de licenciamento ambiental pode gerar prejuízos de milhões de dólares para as concessionárias, atrasando projetos e impactando o fluxo de caixa.
+*   **Juros Altos:** A política de juros altos impacta negativamente a indústria, encarecendo o crédito, reduzindo investimentos e diminuindo o apetite dos consumidores por produtos industriais, comprimindo as margens de lucro.
+*   **Inflação:** A inflação alta, juntamente com as altas taxas de juros e taxas de câmbio flutuantes, representa um risco para o setor, aumentando os custos de produção e reduzindo o poder de compra dos consumidores.
+*   **Aumento de Impostos:** Aumento de impostos sobre a extração de petróleo e gás e na comercialização de combustíveis pode encarecer produtos essenciais e impactar na inflação, reduzindo a competitividade do setor.
+*   **Risco de Intervenção Estatal:** Há um risco de intervenção estatal no setor, com medidas que podem inviabilizar planos de exploração e produção já aprovados, representando aumento de custos e quebra de contratos, gerando incerteza e desincentivando investimentos.
+*   **Legislação Ambiental Mais Rígida:** A legislação ambiental mais rígida e o licenciamento ambiental complexo podem dificultar a exploração e produção de petróleo e gás, aumentando os custos e atrasando projetos.
+*   **Novos Entrantes Estrangeiros:** A abertura do mercado tem atraído novos entrantes estrangeiros, aumentando a competição no setor e potencialmente reduzindo as margens de lucro.
+*   **Concorrência Europeia e Asiática:** Há concorrência europeia e asiática por petróleo e gás, impactando os preços e a demanda pelos produtos brasileiros.
+*   **Transição para Fontes Renováveis:** A crescente busca por fontes de energia renováveis pode representar uma ameaça ao status quo do setor de petróleo e gás, reduzindo a demanda e impactando a rentabilidade a longo prazo.
+
+### 4. Destaques Recentes e Agenda Regulatória
+
+*   **2026-02-05 - Conexões MME:** O Conexões MME, encontro nacional de grandes compradores da indústria de petróleo, gás e naval, foi realizado em Ipatinga, com o objetivo de fortalecer a cadeia industrial brasileira e gerar oportunidades de negócios, empregos e investimentos.
+*   **2026-02-05 - Exportação de Petróleo em Alta:** A exportação de petróleo do Brasil cresceu 13,3% em janeiro, atingindo o maior volume mensal em quase três anos, impulsionada pela entrada de novas plataformas em campos do pré-sal em 2025. No entanto, a receita com as vendas externas de petróleo caiu 7,8% em janeiro, devido à queda nos preços da commodity.
+*   **2026-02-05 - Alerta na Cadeia de Suprimentos:** A DNO ASA, apesar de apresentar aumento de receita no 4º trimestre de 2025, alerta que potenciais interrupções na cadeia de suprimentos podem impactar cronogramas de produção.
+*   **2026-02-05 - Dívida Ativa:** A dívida ativa dos setores de construção civil, petróleo e agro soma R$ 365 bilhões. A dívida do setor de petróleo e derivados é de R$ 120,6 bilhões.
+*   **2026-02-05 - Produção da ABPIP:** A produção das empresas ligadas à Associação Brasileira dos Produtores Independentes de Petróleo e Gás (ABPIP) fechou 2025 com média de 364,3 mil barris de óleo equivalente por dia (boe/d), uma alta de 22,8% em relação a 2024.
+*   **2026-02-05 - Putin e a Índia:** Putin reverte parte do prejuízo com a suspensão da venda de petróleo para a Índia por pressão de Trump.
+*   **2026-02-04 - Produção da Prio:** A Prio produziu 155.560 barris de óleo equivalente por dia em janeiro, um leve recuo de 0,14% em relação a dezembro.
+*   **2026-02-03 - MP do Gás do Povo:** A MP do gás do povo incorpora proposta com incentivo para a indústria naval e setor de petróleo.
+*   **2026-02-03 - Recorde de Produção:** A produção de petróleo e gás no Brasil atingiu um recorde de 4,897 milhões de barris de óleo equivalente por dia (boe/d) em 2025, um aumento de 13,3% em relação ao ano anterior. A produção de petróleo alcançou 3,770 milhões de barris/dia, e a de gás natural atingiu 179 milhões de metros cúbicos por dia (m³/d). O pré-sal representou 79,63% da produção total.
+*   **2026-02-02 - Redução Linear de Benefícios Fiscais:** A Receita Federal esclarece a redução linear de benefícios fiscais, impactando potencialmente PIS/Cofins setoriais, deduções de IRPJ, créditos presumidos e alíquotas reduzidas.
+*   **2024-12-27 - Lei nº 15.075/2024:** Foi sancionada a Lei nº 15.075/2024, que permite a transferência de excedentes de conteúdo local entre contratos de exploração e produção de petróleo e gás natural. A lei visa otimizar a utilização desses créditos e incentivar a indústria nacional. A lei também permite a prorrogação dos prazos dos Contratos de Partilha de Produção nas condições que demonstrem vantagem para a União.
+*   **2025-08-23 - M&A no Setor:** No 1º semestre de 2025, fusões e aquisições no setor de petróleo e gás no Brasil somaram 10 operações, queda de 28,6% em relação ao mesmo período de 2024. No entanto, houve maior protagonismo de capital estrangeiro, com 70% das operações envolvendo empresas estrangeiras adquirindo participação em companhias estabelecidas no Brasil. Dentre os negócios, destacam-se a venda de 70% da Vast Infraestrutura pela Prumo Logística para a China Merchants Port, aquisição de blocos exploratórios na bacia da Foz do Amazonas pela Petrobras e ExxonMobil, e a compra de 3 blocos exploratórios na bacia de Pelotas pela Petrobras e Petrogal.

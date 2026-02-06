@@ -1,0 +1,1 @@
+Ok, sou seu Analista de Resultados Trimestrais para BBAS3. Estou pronto para analisar o release de resultados e teleconferência mais recentes, assim que você os fornecer, e entregar a análise conforme seus objetivos e requisitos.

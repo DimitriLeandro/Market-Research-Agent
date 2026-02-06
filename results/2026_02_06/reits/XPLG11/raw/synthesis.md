@@ -1,0 +1,55 @@
+# Relatório de Análise de FII: XPLG11
+
+## 1. Resumo Geral
+
+O XPLG11, XP Log FII, apresenta-se como um fundo de tijolo com foco em ativos logísticos diversificados geograficamente e setorialmente, buscando gerar renda estável para seus cotistas. O fundo se destaca pela qualidade de seu portfólio, com inquilinos de grande porte e contratos de locação com prazos alongados. Recentemente, o XPLG11 concluiu a aquisição do portfólio do RBRL11, expandindo significativamente seu patrimônio e área bruta locável. O momento atual é de consolidação dessa aquisição e manutenção da distribuição de dividendos, com atenção aos riscos de concentração de inquilinos e inadimplência. A estratégia principal do fundo é a gestão ativa do portfólio, buscando otimizar a rentabilidade e o valor patrimonial.
+
+## 2. Tese de Investimento (Pontos Fortes)
+
+*   **Qualidade do Portfólio:** O portfólio do XPLG11 é composto por 17 condomínios logísticos bem diversificados geograficamente, localizados em São Paulo (46,6%), Pernambuco (21,3%), Rio de Janeiro (14,4%), Minas Gerais (7,6%), Santa Catarina (6,2%) e Rio Grande do Sul (3,9%).
+*   **Qualidade dos Inquilinos:** O fundo possui 45 locatários, com destaque para Via Varejo, Leroy Merlin e Renner. A diversificação setorial dos inquilinos é positiva, com predominância do setor de comércio varejista (57% da receita imobiliária), seguido por material de construção (12%), alimentos (6%) e logística (8%).
+*   **Dividend Yield Atrativo:** O *dividend yield* (DY) atual do XPLG11 está em torno de **9,52%** a **9,55%**. Em fevereiro de 2026, o dividendo foi de **R$ 0,82** por cota, representando um *dividend yield* de **0,79%**.
+*   **Valuation com Desconto:** O P/VP (Preço sobre Valor Patrimonial) do XPLG11 está em **0,98**. Isso indica que o fundo está sendo negociado com um pequeno desconto em relação ao seu valor patrimonial.
+*   **Contratos com Vencimentos Longos:** Uma parcela significativa dos contratos de locação (89%) tem vencimento a partir de 2025. Uma parte relevante dos contratos é atípica (66%).
+*   **Aquisição Estratégica:** A aquisição do portfólio do RBRL11, concluída em dezembro de 2025, adicionou ativos logísticos de alta qualidade ao portfólio, com um cap rate projetado de **9,7%** para o primeiro ano.
+
+## 3. Riscos e Desafios (Pontos de Atenção)
+
+*   **Concentração de Inquilinos:** O XPLG11 possui uma concentração relevante em alguns inquilinos, como a Leroy Merlin, que representa **13%** da receita imobiliária. A dependência de poucos inquilinos pode ser um risco, pois a saída de um deles teria um impacto significativo na receita do fundo.
+*   **Concentração Geográfica:** Quase metade dos ativos do fundo estão concentrados no estado de São Paulo (**49,2%**). Concentração geográfica pode ser um risco caso a economia local não performe bem.
+*   **Risco de Vacância:** A vacância física do fundo é de **4,60%**. É importante monitorar se a taxa de vacância se mantém estável ou apresenta tendência de alta, o que pode impactar negativamente a receita do fundo.
+*   **Risco de Mercado:** Variações nas taxas de juros e na atividade econômica podem impactar o valor das cotas e a rentabilidade do fundo.
+*   **Risco de Crédito:** Inadimplência dos inquilinos pode afetar a distribuição de dividendos.
+*   **Inadimplência Recente:** Um inquilino atrasou o pagamento, levando o fundo a cobrar multa. A recorrência desse problema aumenta a percepção de risco em relação à concentração de receita.
+*   **Custos Logísticos Elevados:** O setor de logística enfrenta desafios com custos elevados, impactando a rentabilidade dos inquilinos e, consequentemente, a capacidade de pagamento dos aluguéis.
+
+## 4. Análise Operacional e Financeira
+
+*   **Destaques do Gestor:** (Dado não encontrado na busca pública.)
+*   **Métricas Chave:**
+    *   **Dividend Yield Anualizado:** 9,52% (outra fonte indica 9,30%)
+    *   **P/VP:** 0,98
+    *   **Vacância Física:** 4,60%
+    *   **Movimentações Recentes de Portfólio:** Aquisição do portfólio do RBRL11 e do imóvel Bricklog Guarulhos.
+*   **Guidance:** A XP Asset informou que a transação de aquisição do portfólio do RBRL11 tem um cap rate projetado de 9,7% para o primeiro ano e que a tendência é que os dividendos do XPLG11 sejam mantidos no patamar atual, de R$ 0,82 por cota. O NE Logistic FII, que é totalmente detido pelo XPLG11, encerrou o período com um resultado base caixa acumulado e não distribuído de R$ 1,45 por cota (já considerando as novas cotas emitidas na 8ª emissão).
+
+## 5. Notícias e Fatos Relevantes
+
+*   **06/02/2026 - Inadimplência de Inquilino:** Inquilino atrasa pagamento e fundo reage com cobrança de multa. A recorrência do problema de inadimplência aumenta a percepção de risco em relação à concentração de receita do fundo, já que qualquer atraso impacta diretamente a distribuição de rendimentos aos cotistas.
+*   **30/01/2026 - Data "Com" para Rendimentos:** Data "com" para o pagamento de rendimentos de R$ 0,82 por cota, com pagamento em 13/02/2026.
+*   **Janeiro/2026 - Desempenho da Cota:** O XPLG11 acumula uma baixa no ano de 2026. A cotação iniciou o ano negociando na casa dos R$104,72 e está em R$103,31.
+*   **07/01/2026 - Fato Relevante:** Fato relevante publicado (não especificado o conteúdo).
+*   **30/12/2025 - Data "Com" para Rendimentos:** Data "com" para o pagamento de rendimentos de R$ 0,82 por cota, com pagamento em 15/01/2026.
+*   **23/12/2025 - Conclusão da Aquisição do RBRL11:** Conclusão da aquisição do portfólio de ativos logísticos do RBRL11 e do imóvel Bricklog Guarulhos. O valor total da transação foi de R$ 1.593.315.080,52. O XPLG11 desembolsou R$ 322.897.187,13 em dinheiro, R$ 20 milhões através da assunção de obrigações financeiras do RBRL11 e R$ 936.067.007,51 através da subscrição e integralização de cotas da 8ª emissão do XPLG11. O fundo passa a ter um patrimônio líquido de R$ 4,4 bilhões, com 25 empreendimentos em 6 estados e 1,41 milhão de m² de ABL. A carteira é composta por 78 empresas, com 32% da receita de locação vinda de contratos atípicos e prazo médio de 5,1 anos. O cap rate projetado para o primeiro ano é de 9,7%. A tendência é que os dividendos sejam mantidos em R$ 0,82 por cota.
+*   **03/12/2025 - Inadimplência e Vacância:** Inadimplência alta e vacância mínima. A inadimplência subiu para 6,3%. A vacância caiu para 4,4%.
+*   **28/11/2025 - Data "Com" para Rendimentos:** Data "com" para o pagamento de rendimentos de R$ 0,82 por cota, com pagamento em 12/12/2025.
+*   **31/10/2025 - Data "Com" para Rendimentos:** Data "com" para o pagamento de rendimentos de R$ 0,82 por cota, com pagamento em 14/11/2025.
+*   **08/10/2025 - Aprovação da 8ª Emissão de Cotas:** O fundo aprovou a realização de sua 8ª emissão de cotas no valor de R$ 1,1 bilhão.
+*   **30/09/2025 - Data "Com" para Rendimentos:** Data "com" para o pagamento de rendimentos de R$ 0,82 por cota, com pagamento em 14/10/2025.
+*   **22/09/2025 - Novo Contrato de Locação:** Fechamento de contrato de locação para centro de distribuição em Americana, SP. A partir do 37º mês, a receita mensal estimada é de R$ 0,0156 por cota.
+*   **29/08/2025 - Data "Com" para Rendimentos:** Data "com" para o pagamento de rendimentos de R$ 0,82 por cota, com pagamento em 12/09/2025.
+*   **01/08/2025 - Aquisição de Fração Restante do WT Extrema (MG):** O fundo celebrou um aditamento para adquirir os 37,9% restantes do WT Extrema (MG) por R$ 124 milhões. O pagamento será parcelado em três vezes: (i) R$ 47 milhões à vista; (ii) R$ 38 milhões em 6 meses; e (iii) R$ 39 milhões em 12 meses. A partir do primeiro pagamento, o fundo passa a receber integralmente a receita da nova fração.
+*   **Julho/2025 - Carta de Intenções para Aquisição de Ativos:** Carta de Intenções para aquisição dos imóveis dos fundos RBRL11 e RDLI11 por R$ 1,54 bilhão.
+*   **27/01/2025 - Alienação de Galpão:** Anúncio de alienação de galpão localizado em Pernambuco.
+*   **04/12/2024 - Venda de Imóvel:** Finalização da venda de imóvel por R$ 119,2 milhões.
+*   **26/03/2024 - Rescisão de Contrato e Inadimplência:** Recebimento de aviso de rescisão antecipada de contrato de locação do Dia Brasil em Americana, SP. O Dia Brasil está inadimplente com o aluguel referente a fevereiro de 2024 e com a parcela das verbas rescisórias do imóvel de Ribeirão Preto. Os valores em aberto somam cerca de R$ 0,04 por cota.

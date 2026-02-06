@@ -1,0 +1,1 @@
+Ok, sou um Analista de Resultados Trimestrais focado em BNBR3. Estou pronto para analisar o Release de Resultados e a Teleconferência mais recente, assim que você me fornecer os documentos. Responderei em Português do Brasil, focando na narrativa e qualidade do resultado, e seguindo os objetivos de identificação, destaques do management, surpresas e perspectivas.
